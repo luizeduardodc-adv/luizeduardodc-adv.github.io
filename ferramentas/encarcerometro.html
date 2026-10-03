@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encarcerômetro · Luiz Eduardo Dias Cardoso</title>
+<meta name="description" content="Estimativa em tempo real do gasto público com o sistema prisional brasileiro e de Santa Catarina no ano, a partir dos dados de custo do preso da SENAPPEN.">
+<meta property="og:title" content="Encarcerômetro · Luiz Eduardo Dias Cardoso">
+<meta property="og:description" content="Estimativa em tempo real do gasto público com o sistema prisional brasileiro e de Santa Catarina no ano, a partir dos dados de custo do preso da SENAPPEN.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232E5B88'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%23F4F6F8' text-anchor='middle'%3ELE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script src="../assets/js/tema.js"></script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="site-header"><div class="in">
+  <a class="brand" href="../index.html">Luiz Eduardo Dias Cardoso<small>Direito Penal · Processo Penal · Análise Econômica do Direito</small></a>
+  <nav aria-label="Principal"><ul class="nav">
+    <li><a href="../index.html">Início</a></li>
+    <li><a href="../sobre.html">Sobre e currículo</a></li>
+    <li><a href="../publicacoes.html">Publicações</a></li>
+    <li><a href="../aulas.html">Aulas</a></li>
+    <li><a href="../wiki.html">Wiki</a></li>
+    <li><a href="../ferramentas/index.html" aria-current="page">Ferramentas</a></li>
+    <li><a href="../links.html">Links úteis</a></li>
+    <li><a href="../podcast.html">Podcast</a></li>
+    <li><a href="../tcc.html">Orientação de TCC</a></li>
+  </ul></nav>
+  <button class="theme-btn" id="tema" type="button">Tema escuro</button>
+</div></header>
+<main id="conteudo">
+<style>
+.enc-hero{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:24px 20px;margin:24px 0 8px}
+.enc-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.enc-label{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:18px 0 4px}
+.enc-num{font:500 clamp(24px,7vw,64px)/1.1 var(--mono);font-variant-numeric:tabular-nums;letter-spacing:-.03em;margin:0;color:var(--fg);white-space:nowrap}
+.enc-num .cents{color:var(--muted);font-size:.55em}
+.enc-sub{color:var(--muted);font-size:14px;margin:8px 0 0}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:16px 0}
+@media (max-width:820px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px;min-width:0}
+.kpi .k{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.kpi .v{font:500 clamp(16px,4.4vw,22px) var(--mono);font-variant-numeric:tabular-nums;margin:4px 0 2px;letter-spacing:-.02em}
+.kpi .d{font-size:12.5px;color:var(--muted)}
+.comp{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px;margin:12px 0}
+.comp h2{font-size:20px;margin:0 0 10px}
+.bar{display:flex;height:14px;border-radius:7px;overflow:hidden;background:var(--rule)}
+.bar i{display:block;height:100%}
+.bar .p{background:var(--accent)}.bar .o{background:var(--mark)}
+.leg{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:10px;font-size:13.5px}
+.leg span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.sw.p{background:var(--accent)}.sw.o{background:var(--mark)}
+.leg b{font:500 13px var(--mono);font-variant-numeric:tabular-nums}
+</style>
+
+<p class="eyebrow">Ferramentas · Sistema prisional</p>
+<h1>Encarcerômetro</h1>
+<p class="lede">Estimativa, em tempo real, de quanto o poder público gasta com o sistema prisional desde 1º de janeiro, a partir da despesa informada pelos estados à Secretaria Nacional de Políticas Penais (SENAPPEN).</p>
+
+<section class="enc-hero" aria-labelledby="enc-t">
+  <div class="enc-top">
+    <h2 id="enc-t" style="margin:0;font-size:20px">Gasto estimado em <span id="ano"></span></h2>
+    <div class="seg" role="group" aria-label="Recorte">
+      <button class="chip" type="button" data-r="br" aria-pressed="true">Brasil</button>
+      <button class="chip" type="button" data-r="sc" aria-pressed="false">Santa Catarina</button>
+    </div>
+  </div>
+  <p class="enc-label" id="enc-lbl">Brasil, desde 1º de janeiro</p>
+  <p class="enc-num" id="enc-num" aria-live="off">R$ 0</p>
+  <p class="enc-sub">Desde que você abriu esta página: <strong id="enc-sess" style="font-family:var(--mono);font-variant-numeric:tabular-nums">R$ 0,00</strong></p>
+</section>
+
+<div class="kpis" id="kpis"></div>
+
+<section class="comp" aria-labelledby="comp-t">
+  <h2 id="comp-t">Para onde vai o dinheiro (2025)</h2>
+  <div class="bar" id="bar" role="img"></div>
+  <div class="leg" id="leg"></div>
+</section>
+
+<div class="prose">
+<h2>Como o número é calculado</h2>
+<ol>
+  <li>A base é a despesa total de 2025, último ano completo no painel Custo do Preso da SENAPPEN (consulta em 03/10/2026): <span id="m-br"></span> no Brasil e <span id="m-sc"></span> em Santa Catarina.</li>
+  <li>O contador divide esse total pelos segundos de um ano e acumula o resultado desde a 0h de 1º de janeiro do ano corrente (horário de Brasília).</li>
+  <li>O custo médio por preso é o calculado pela SENAPPEN: soma do custo mensal dividida pela população daquele mês.</li>
+</ol>
+<p class="note">É uma projeção, e não o gasto apurado em tempo real. O painel depende do envio mensal pelos estados, com tolerância de dois meses; em 03/10/2026, a SENAPPEN apontava atraso superior a esse prazo de AM, AP, CE, ES, GO, MA, MS, MT, PB, RJ, RS, TO e do Sistema Penitenciário Federal. O estudo do CNJ <em>Calculando custos prisionais</em> usa outra metodologia, e seus números não se comparam diretamente com estes.</p>
+<p><strong>Fonte:</strong> <a href="https://www.gov.br/senappen/pt-br/servicos/sisdepen/custo-do-preso" rel="noopener">SENAPPEN, Custo do Preso</a>. Veja também o <a href="carcere-em-numeros.html">Cárcere em Números</a>, com população, vagas e déficit por unidade da federação.</p>
+</div>
+
+<script>
+(function(){
+  // Despesa de 2025 (SENAPPEN, painel Custo do Preso, consulta em 03/10/2026)
+  var D={
+    br:{nome:"Brasil",total:26763328549.87,pessoal:17998522399.71,outras:8764806150.16,medio:2637.75},
+    sc:{nome:"Santa Catarina",total:1339332214.55,pessoal:1020657637.00,outras:318674577.55,medio:3749.57}
+  };
+  var ANO_BASE=2025, SEG_ANO=365*86400;
+  var R='br', t0=Date.now();
+  var brl0=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+  var brl2=new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});
+  var pct=function(v){return v.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1})+'%'};
+  function mi(v){var x=v/1e6;return 'R$ '+x.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1})+(x<2?' milhão':' milhões')}
+  function bi(v){var x=v/1e9;if(x<1)return 'R$ '+Math.round(v/1e6).toLocaleString('pt-BR')+' milhões';return 'R$ '+x.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+(x<2?' bilhão':' bilhões')}
+  var agora=new Date(), ano=agora.getFullYear();
+  // 1º de janeiro, 0h, horário de Brasília (UTC-3)
+  var inicio=Date.UTC(ano,0,1,3,0,0);
+  document.getElementById('ano').textContent=ano;
+  document.getElementById('m-br').textContent=brl2.format(D.br.total);
+  document.getElementById('m-sc').textContent=brl2.format(D.sc.total);
+  var num=document.getElementById('enc-num'), sess=document.getElementById('enc-sess');
+  function porSeg(){return D[R].total/SEG_ANO}
+  function draw(){
+    var now=Date.now(), v=Math.max(0,(now-inicio)/1000)*porSeg();
+    var s=brl2.format(v), i=s.lastIndexOf(',');
+    num.innerHTML=s.slice(0,i)+'<span class="cents">'+s.slice(i)+'</span>';
+    sess.textContent=brl2.format((now-t0)/1000*porSeg());
+  }
+  function fixo(){
+    var d=D[R];
+    document.getElementById('enc-lbl').textContent=d.nome+', desde 1º de janeiro';
+    num.setAttribute('aria-label','Gasto estimado: '+brl0.format(Math.max(0,(Date.now()-inicio)/1000)*porSeg()));
+    var K=[
+      {k:'Por segundo',v:brl2.format(porSeg()),d:'média de '+ANO_BASE},
+      {k:'Por dia',v:mi(d.total/365),d:'média de '+ANO_BASE},
+      {k:'Total em '+ANO_BASE,v:bi(d.total),d:'despesa informada'},
+      {k:'Por preso, por mês',v:brl2.format(d.medio),d:'custo médio em '+ANO_BASE}
+    ];
+    document.getElementById('kpis').innerHTML=K.map(function(x){return '<div class="kpi"><div class="k">'+x.k+'</div><div class="v">'+x.v+'</div><div class="d">'+x.d+'</div></div>'}).join('');
+    var pp=d.pessoal/d.total*100, po=d.outras/d.total*100;
+    var bar=document.getElementById('bar');
+    bar.innerHTML='<i class="p" style="width:'+pp.toFixed(2)+'%"></i><i class="o" style="width:'+po.toFixed(2)+'%"></i>';
+    bar.setAttribute('aria-label','Pessoal '+pct(pp)+'; outras despesas '+pct(po));
+    document.getElementById('leg').innerHTML='<span><i class="sw p"></i>Pessoal <b>'+pct(pp)+'</b> ('+bi(d.pessoal)+')</span><span><i class="sw o"></i>Outras despesas <b>'+pct(po)+'</b> ('+bi(d.outras)+')</span>';
+  }
+  document.querySelectorAll('[data-r]').forEach(function(b){b.addEventListener('click',function(){R=b.getAttribute('data-r');t0=Date.now();document.querySelectorAll('[data-r]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});fixo();draw()})});
+  fixo();draw();
+  var reduz=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  setInterval(draw, reduz?1000:100);
+})();
+</script>
+</main>
+<footer class="site-footer"><div class="in">
+  <p>Luiz Eduardo Dias Cardoso · Florianópolis/SC</p>
+  <p>Site de conteúdo acadêmico, sem oferta de serviços jurídicos.</p>
+</div></footer>
+</body>
+</html>
