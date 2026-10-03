@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monitor Legislativo Penal · Luiz Eduardo Dias Cardoso</title>
+<meta name="description" content="Protótipo de monitor das proposições penais na Câmara dos Deputados, atualizado automaticamente a partir dos dados abertos.">
+<meta property="og:title" content="Monitor Legislativo Penal · Luiz Eduardo Dias Cardoso">
+<meta property="og:description" content="Protótipo de monitor das proposições penais na Câmara dos Deputados, atualizado automaticamente a partir dos dados abertos.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232E5B88'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%23F4F6F8' text-anchor='middle'%3ELE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script src="../assets/js/tema.js"></script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="site-header"><div class="in">
+  <a class="brand" href="../index.html">Luiz Eduardo Dias Cardoso<small>Direito Penal · Processo Penal · Análise Econômica do Direito</small></a>
+  <nav aria-label="Principal"><ul class="nav">
+    <li><a href="../index.html">Início</a></li>
+    <li><a href="../sobre.html">Sobre e currículo</a></li>
+    <li><a href="../publicacoes.html">Publicações</a></li>
+    <li><a href="../aulas.html">Aulas</a></li>
+    <li><a href="../wiki.html">Wiki</a></li>
+    <li><a href="../ferramentas/index.html" aria-current="page">Ferramentas</a></li>
+    <li><a href="../links.html">Links úteis</a></li>
+    <li><a href="../podcast.html">Podcast</a></li>
+    <li><a href="../tcc.html">Orientação de TCC</a></li>
+  </ul></nav>
+  <button class="theme-btn" id="tema" type="button">Tema escuro</button>
+</div></header>
+<main id="conteudo">
+<style>
+.mon-top{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:20px 0 8px}
+.mon-top input,.mon-top select{font:14px var(--body);padding:7px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--fg);min-width:0}
+.mon-top input{flex:1 1 240px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.chips .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px;align-self:center}
+.chip{font:500 12.5px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:5px 10px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.chip b{font:500 11px var(--mono);margin-left:4px;opacity:.75}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:16px 0}
+@media (max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:12px 14px;min-width:0}
+.kpi .k{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.kpi .v{font:500 24px var(--mono);font-variant-numeric:tabular-nums}
+.meses{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px;margin:12px 0}
+.meses h2{font-size:18px;margin:0 0 8px}
+.bars{display:flex;align-items:flex-end;gap:2px;height:90px}
+.bars i{flex:1;background:var(--accent);border-radius:2px 2px 0 0;min-height:1px}
+.bars i:hover{background:var(--mark)}
+.bars-x{display:flex;justify-content:space-between;font:11px var(--mono);color:var(--muted);margin-top:4px}
+.count{font-size:13.5px;color:var(--muted);margin:10px 0}
+.lista{list-style:none;margin:0;padding:0}
+.item{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;margin:0 0 10px}
+.item .h{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
+.item .id{font:600 14px var(--mono)}
+.item .id a{color:var(--accent);text-decoration:none}
+.item .d{font:12.5px var(--mono);color:var(--muted)}
+.item p{margin:6px 0;font-size:14.5px;line-height:1.5}
+.item .meta{font-size:13px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.tag{font:500 11px var(--body);border-radius:999px;padding:2px 8px;background:var(--accent-soft);color:var(--fg)}
+.tag.n{background:var(--mark-soft);color:var(--mark)}
+.tag.enc{background:var(--rule);color:var(--muted)}
+.mais{display:block;margin:12px auto;font:500 14px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:8px;padding:8px 16px;cursor:pointer}
+.badge{display:inline-block;font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mark);background:var(--mark-soft);border-radius:999px;padding:2px 8px;vertical-align:middle;margin-left:6px}
+</style>
+
+<p class="eyebrow">Ferramentas · Legislação penal</p>
+<h1>Monitor Legislativo Penal <span class="badge">protótipo</span></h1>
+<p class="lede">Proposições de natureza penal em tramitação na Câmara dos Deputados, atualizadas automaticamente a partir dos dados abertos da Casa: projetos de lei (PL), projetos de lei complementar (PLP) e propostas de emenda à Constituição (PEC) apresentados desde 2023.</p>
+
+<div class="kpis" id="kpis"></div>
+
+<section class="meses" aria-labelledby="m-t">
+  <h2 id="m-t">Proposições penais apresentadas por mês</h2>
+  <div class="bars" id="bars" role="img"></div>
+  <div class="bars-x" id="bars-x"></div>
+</section>
+
+<div class="mon-top" role="search">
+  <input id="q" type="search" placeholder="Buscar na ementa, número ou autor" aria-label="Buscar">
+  <select id="f-ano" aria-label="Ano de apresentação"><option value="">Todos os anos</option></select>
+  <select id="f-sit" aria-label="Situação">
+    <option value="tram">Em tramitação</option><option value="">Todas as situações</option><option value="enc">Encerradas</option>
+  </select>
+  <select id="f-ord" aria-label="Ordenar">
+    <option value="apr">Mais recentes (apresentação)</option><option value="tra">Última movimentação</option>
+  </select>
+</div>
+<div class="chips" id="c-dip"><span class="lbl">Diploma</span></div>
+<div class="chips" id="c-nat"><span class="lbl">Natureza</span></div>
+<p class="count" id="count" aria-live="polite"></p>
+<ul class="lista" id="lista"></ul>
+<button class="mais" id="mais" type="button" hidden>Mostrar mais</button>
+
+<div class="prose">
+<h2>Como funciona</h2>
+<ol>
+  <li>Todos os dias, uma rotina automática baixa os arquivos de dados abertos da Câmara dos Deputados (proposições, temas e autores) e seleciona PL, PLP e PEC apresentados desde 2023.</li>
+  <li>Entram as proposições classificadas pela Câmara no tema "Direito Penal e Processual Penal" e as que trazem, na ementa, termos de natureza penal (Código Penal, Código de Processo Penal, Lei de Execução Penal, crime, pena, tipificação, entre outros).</li>
+  <li>Os rótulos de diploma e de natureza são atribuídos por palavras-chave na ementa. É uma classificação automática, sujeita a erros: confira sempre o inteiro teor e a tramitação na página da Câmara.</li>
+</ol>
+<p class="note" id="nota-fonte"></p>
+</div>
+
+<script>
+(function(){
+  var DADOS=null, PASSO=40, mostrados=PASSO, fDip=null, fNat=null;
+  var el=function(id){return document.getElementById(id)};
+  var nf=new Intl.NumberFormat('pt-BR');
+  function dt(s){if(!s)return '';var p=s.split('-');return p[2]+'/'+p[1]+'/'+p[0]}
+  function norm(s){return (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase()}
+  function esc(s){return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  fetch('../data/monitor/camara.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).then(init).catch(function(e){
+    el('count').textContent='Os dados ainda não foram gerados ou não puderam ser carregados ('+e.message+').';
+  });
+  function init(d){
+    DADOS=d; d.itens.forEach(function(x){x._q=norm(x.sigla+' '+x.numero+'/'+x.ano+' '+x.ementa+' '+x.autores.join(' '))});
+    var anos={}; d.itens.forEach(function(x){anos[x.ano]=1});
+    Object.keys(anos).sort().reverse().forEach(function(a){var o=document.createElement('option');o.value=a;o.textContent=a;el('f-ano').appendChild(o)});
+    var tram=d.itens.filter(function(x){return x.em_tramitacao}).length;
+    var ult30=d.itens.filter(function(x){return x.apresentacao && (Date.now()-new Date(x.apresentacao+'T12:00:00'))<30*864e5}).length;
+    el('kpis').innerHTML=[['Proposições penais',nf.format(d.total)],['Em tramitação',nf.format(tram)],['Apresentadas em 30 dias',nf.format(ult30)],['Atualizado em',d.atualizado_em.split(' ')[0].split('-').reverse().join('/')]]
+      .map(function(k){return '<div class="kpi"><div class="k">'+k[0]+'</div><div class="v">'+k[1]+'</div></div>'}).join('');
+    el('nota-fonte').innerHTML='<strong>Fonte:</strong> '+esc(d.fonte)+', <a href="https://dadosabertos.camara.leg.br/" rel="noopener">dadosabertos.camara.leg.br</a>. Última coleta: '+esc(d.atualizado_em)+' (horário de Brasília). Foram analisadas '+nf.format(d.analisadas)+' proposições dos tipos '+d.tipos.join(', ')+'.';
+    barras(); chips('c-dip','diplomas',function(v){fDip=v}); chips('c-nat','natureza',function(v){fNat=v});
+    ['q','f-ano','f-sit','f-ord'].forEach(function(id){el(id).addEventListener(id==='q'?'input':'change',function(){mostrados=PASSO;render()})});
+    el('mais').addEventListener('click',function(){mostrados+=PASSO;render()});
+    render();
+  }
+  function barras(){
+    var m={}; DADOS.itens.forEach(function(x){if(x.apresentacao){var k=x.apresentacao.slice(0,7);m[k]=(m[k]||0)+1}});
+    var ks=Object.keys(m).sort(); if(!ks.length)return;
+    var a=ks[0].split('-').map(Number), b=ks[ks.length-1].split('-').map(Number), all=[];
+    var y=a[0],mo=a[1]; while(y<b[0]||(y===b[0]&&mo<=b[1])){all.push(y+'-'+(mo<10?'0':'')+mo); mo++; if(mo>12){mo=1;y++}}
+    var mx=Math.max.apply(null,all.map(function(k){return m[k]||0}));
+    el('bars').innerHTML=all.map(function(k){var v=m[k]||0;return '<i style="height:'+(v/mx*100).toFixed(1)+'%" title="'+k.split('-').reverse().join('/')+': '+v+'"></i>'}).join('');
+    el('bars').setAttribute('aria-label','Proposições penais por mês, de '+all[0]+' a '+all[all.length-1]+'; máximo de '+mx+' em um mês');
+    el('bars-x').innerHTML='<span>'+all[0].split('-').reverse().join('/')+'</span><span>'+all[all.length-1].split('-').reverse().join('/')+'</span>';
+  }
+  function chips(id,campo,set){
+    var c={}; DADOS.itens.forEach(function(x){x[campo].forEach(function(t){c[t]=(c[t]||0)+1})});
+    var box=el(id);
+    Object.keys(c).sort(function(a,b){return c[b]-c[a]}).forEach(function(t){
+      var b=document.createElement('button');b.className='chip';b.type='button';b.setAttribute('aria-pressed','false');
+      b.innerHTML=esc(t)+'<b>'+nf.format(c[t])+'</b>';
+      b.addEventListener('click',function(){var on=b.getAttribute('aria-pressed')==='true';box.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed','false')});if(!on){b.setAttribute('aria-pressed','true');set(t)}else set(null);mostrados=PASSO;render()});
+      box.appendChild(b);
+    });
+  }
+  function render(){
+    var q=norm(el('q').value.trim()), ano=el('f-ano').value, sit=el('f-sit').value, ord=el('f-ord').value;
+    var L=DADOS.itens.filter(function(x){
+      if(q && x._q.indexOf(q)<0) return false;
+      if(ano && String(x.ano)!==ano) return false;
+      if(sit==='tram' && !x.em_tramitacao) return false;
+      if(sit==='enc' && x.em_tramitacao) return false;
+      if(fDip && x.diplomas.indexOf(fDip)<0) return false;
+      if(fNat && x.natureza.indexOf(fNat)<0) return false;
+      return true;
+    });
+    if(ord==='tra') L=L.slice().sort(function(a,b){return (b.ultima_tramitacao||'').localeCompare(a.ultima_tramitacao||'')});
+    el('count').textContent=nf.format(L.length)+' proposições encontradas';
+    el('lista').innerHTML=L.slice(0,mostrados).map(function(x){
+      var aut=x.autores.length?x.autores.join('; ')+(x.n_autores>x.autores.length?' e outros ('+x.n_autores+' no total)':''):'Autoria não informada';
+      var tags=x.diplomas.map(function(t){return '<span class="tag">'+esc(t)+'</span>'}).join('')+x.natureza.map(function(t){return '<span class="tag n">'+esc(t)+'</span>'}).join('')+(x.em_tramitacao?'':'<span class="tag enc">Encerrada</span>');
+      return '<li class="item"><div class="h"><span class="id"><a href="'+x.url+'" rel="noopener">'+x.sigla+' '+x.numero+'/'+x.ano+'</a></span><span class="d">apresentada em '+dt(x.apresentacao)+'</span></div>'+
+        '<p>'+esc(x.ementa)+'</p>'+
+        '<div class="meta"><strong>Autoria:</strong> '+esc(aut)+'</div>'+
+        '<div class="meta"><strong>Situação:</strong> '+esc(x.situacao||'não informada')+(x.orgao?' ('+esc(x.orgao)+')':'')+(x.ultima_tramitacao?' · última movimentação em '+dt(x.ultima_tramitacao):'')+(x.inteiro_teor?' · <a href="'+esc(x.inteiro_teor)+'" rel="noopener">inteiro teor</a>':'')+'</div>'+
+        (tags?'<div class="tags">'+tags+'</div>':'')+'</li>';
+    }).join('');
+    el('mais').hidden=L.length<=mostrados;
+  }
+})();
+</script>
+</main>
+<footer class="site-footer"><div class="in">
+  <p>Luiz Eduardo Dias Cardoso · Florianópolis/SC</p>
+  <p>Site de conteúdo acadêmico, sem oferta de serviços jurídicos.</p>
+</div></footer>
+</body>
+</html>
