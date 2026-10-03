@@ -14,7 +14,10 @@ from datetime import datetime, timezone, timedelta
 BASE = "https://dadosabertos.camara.leg.br/arquivos"
 TIPOS = {"PL", "PLP", "PEC"}
 HOJE = datetime.now(timezone(timedelta(hours=-3)))
-ANOS = [int(a) for a in os.environ.get("ANOS", ",".join(str(y) for y in range(2023, HOJE.year + 1))).split(",")]
+# 57ª legislatura: iniciada em 1º/02/2023
+INICIO_LEGISLATURA = os.environ.get("INICIO", "2023-02-01")
+LEGISLATURA = "57ª legislatura (desde 1º/02/2023)"
+ANOS = [int(a) for a in os.environ.get("ANOS", ",".join(str(y) for y in range(int(INICIO_LEGISLATURA[:4]), HOJE.year + 1))).split(",")]
 SAIDA = os.path.join(os.path.dirname(__file__), "..", "data", "monitor", "camara.json")
 
 
@@ -106,28 +109,35 @@ def main():
             nome = g(a, "nomeAutor")
             if not pid or not nome:
                 continue
+            if str(g(a, "proponente") or "1").strip() not in ("1", "true", "True"):
+                continue
             partido, uf = g(a, "siglaPartidoAutor"), g(a, "siglaUFAutor")
-            rot = nome + (f" ({partido}/{uf})" if partido and uf else "")
             try:
                 ordem = int(g(a, "ordemAssinatura") or 999)
             except ValueError:
                 ordem = 999
-            autores.setdefault(pid, []).append((ordem, rot))
+            autores.setdefault(pid, []).append((ordem, [nome.strip(), partido, uf]))
 
         for p in props:
             sigla = g(p, "siglaTipo")
             if sigla not in TIPOS:
                 continue
-            analisadas += 1
             pid = str(g(p, "id"))
+            apres = (g(p, "dataApresentacao") or "")[:10]
+            if not apres or apres < INICIO_LEGISLATURA:
+                continue
             ementa = (g(p, "ementa") or "").strip()
+            analisadas += 1
             temas_p = tema_penal.get(pid, set())
             por_tema = any("penal" in t.lower() for t in temas_p)
             if not (por_tema or PENAL.search(ementa)):
                 continue
             texto = ementa + " " + (g(p, "ementaDetalhada") or "") + " " + (g(p, "keywords") or "")
             situacao = g(p, "ultimoStatus_descricaoSituacao")
-            lista_aut = [r for _, r in sorted(autores.get(pid, []))]
+            vistos, lista_aut = set(), []
+            for _, r in sorted(autores.get(pid, []), key=lambda t: t[0]):
+                if r[0] not in vistos:
+                    vistos.add(r[0]); lista_aut.append(r)
             itens[pid] = {
                 "id": int(pid),
                 "casa": "Câmara",
@@ -135,15 +145,15 @@ def main():
                 "numero": int(g(p, "numero") or 0),
                 "ano": int(g(p, "ano") or ano),
                 "ementa": ementa,
-                "apresentacao": (g(p, "dataApresentacao") or "")[:10],
-                "autores": lista_aut[:6],
-                "n_autores": len(lista_aut),
+                "apresentacao": apres,
+                "aut": lista_aut,
                 "situacao": situacao,
                 "em_tramitacao": not ENCERRADA.search(situacao or ""),
                 "orgao": g(p, "ultimoStatus_siglaOrgao"),
                 "ultima_tramitacao": (g(p, "ultimoStatus_dataHora") or "")[:10],
                 "descricao_tramitacao": g(p, "ultimoStatus_descricaoTramitacao"),
                 "url": f"https://www.camara.leg.br/propostas-legislativas/{pid}",
+                "tramitacao": f"https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao={pid}",
                 "inteiro_teor": g(p, "urlInteiroTeor"),
                 "temas": sorted(temas_p),
                 "por_tema": por_tema,
@@ -157,6 +167,8 @@ def main():
         "atualizado_em": HOJE.strftime("%Y-%m-%d %H:%M"),
         "fonte": "Câmara dos Deputados, dados abertos (arquivos anuais de proposições, temas e autores)",
         "anos": ANOS,
+        "legislatura": LEGISLATURA,
+        "inicio": INICIO_LEGISLATURA,
         "tipos": sorted(TIPOS),
         "analisadas": analisadas,
         "total": len(dados),

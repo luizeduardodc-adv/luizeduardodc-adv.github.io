@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Monitor Legislativo Penal · Luiz Eduardo Dias Cardoso</title>
-<meta name="description" content="Protótipo de monitor das proposições penais na Câmara dos Deputados, atualizado automaticamente a partir dos dados abertos.">
+<meta name="description" content="Painel interativo das proposições penais apresentadas na Câmara dos Deputados na 57ª legislatura, com filtros por ano, estado, partido, legislador e diploma, atualizado diariamente.">
 <meta property="og:title" content="Monitor Legislativo Penal · Luiz Eduardo Dias Cardoso">
-<meta property="og:description" content="Protótipo de monitor das proposições penais na Câmara dos Deputados, atualizado automaticamente a partir dos dados abertos.">
+<meta property="og:description" content="Painel interativo das proposições penais apresentadas na Câmara dos Deputados na 57ª legislatura, com filtros por ano, estado, partido, legislador e diploma, atualizado diariamente.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232E5B88'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%23F4F6F8' text-anchor='middle'%3ELE%3C/text%3E%3C/svg%3E">
@@ -35,148 +35,243 @@
 </div></header>
 <main id="conteudo">
 <style>
-.mon-top{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:20px 0 8px}
-.mon-top input,.mon-top select{font:14px var(--body);padding:7px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--fg);min-width:0}
-.mon-top input{flex:1 1 240px}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
-.chips .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px;align-self:center}
-.chip{font:500 12.5px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:5px 10px;cursor:pointer}
-.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
-.chip b{font:500 11px var(--mono);margin-left:4px;opacity:.75}
-.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:16px 0}
+.mon .badge{display:inline-block;font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mark);background:var(--mark-soft);border-radius:999px;padding:2px 8px;vertical-align:middle;margin-left:6px}
+.filtros{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:20px 0 6px;position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0}
+.filtros input,.filtros select{font:14px var(--body);padding:7px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--fg);min-width:0}
+.filtros input{flex:1 1 220px}
+.btn{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:8px;padding:7px 12px;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.ativos{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-height:30px;margin:0 0 6px;font-size:13px;color:var(--muted)}
+.ativos .f{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--mark);background:var(--mark-soft);color:var(--fg);border-radius:999px;padding:3px 6px 3px 10px;font-size:12.5px}
+.ativos .f button{border:0;background:transparent;color:var(--fg);cursor:pointer;font-size:14px;line-height:1;padding:0 4px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:10px 0 16px}
 @media (max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .kpi{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:12px 14px;min-width:0}
 .kpi .k{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .kpi .v{font:500 24px var(--mono);font-variant-numeric:tabular-nums}
-.meses{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px;margin:12px 0}
-.meses h2{font-size:18px;margin:0 0 8px}
-.bars{display:flex;align-items:flex-end;gap:2px;height:90px}
-.bars i{flex:1;background:var(--accent);border-radius:2px 2px 0 0;min-height:1px}
-.bars i:hover{background:var(--mark)}
-.bars-x{display:flex;justify-content:space-between;font:11px var(--mono);color:var(--muted);margin-top:4px}
-.count{font-size:13.5px;color:var(--muted);margin:10px 0}
+.kpi .d{font-size:12px;color:var(--muted)}
+.grade{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:860px){.grade{grid-template-columns:minmax(0,1fr)}}
+.painel{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;min-width:0}
+.painel.largo{grid-column:1/-1}
+.painel h2{font-size:18px;margin:0 0 2px}
+.painel .sub{font-size:12.5px;color:var(--muted);margin:0 0 10px}
+.hb{display:flex;flex-direction:column;gap:2px}
+.hb button{display:grid;grid-template-columns:minmax(0,38%) minmax(0,1fr) 52px;gap:10px;align-items:center;width:100%;border:0;background:transparent;color:var(--fg);font:13px var(--body);text-align:left;padding:3px 4px;border-radius:6px;cursor:pointer}
+.hb button:hover{background:var(--accent-soft)}
+.hb .l{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hb .t{height:12px;position:relative}
+.hb .t i{position:absolute;left:0;top:2px;height:8px;border-radius:0 4px 4px 0;background:var(--accent);min-width:2px}
+.hb .v{font:12.5px var(--mono);font-variant-numeric:tabular-nums;text-align:right;color:var(--muted)}
+.hb button.sel .l{font-weight:600}
+.hb button.sel .t i{background:var(--mark)}
+.hb button.sel .v{color:var(--mark);font-weight:600}
+.hb .vazio{font-size:13px;color:var(--muted);padding:6px 4px}
+.mais-b{font:500 12.5px var(--body);border:0;background:transparent;color:var(--accent);cursor:pointer;padding:6px 4px}
+.vb{display:flex;align-items:flex-end;gap:10px;height:150px;padding-top:18px}
+.vb button{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;border:0;background:transparent;cursor:pointer;color:var(--fg);padding:0;border-radius:6px}
+.vb button:hover{background:var(--accent-soft)}
+.vb .n{font:12px var(--mono);color:var(--muted);margin-bottom:3px}
+.vb i{display:block;width:62%;background:var(--accent);border-radius:4px 4px 0 0;min-height:2px}
+.vb .a{font:12.5px var(--mono);margin-top:5px}
+.vb button.sel i{background:var(--mark)}
+.vb button.sel .n,.vb button.sel .a{color:var(--mark);font-weight:600}
+.mes{display:flex;align-items:flex-end;gap:2px;height:80px}
+.mes i{flex:1;background:var(--accent);border-radius:2px 2px 0 0;min-height:1px;opacity:.85}
+.mes-x{display:flex;justify-content:space-between;font:11px var(--mono);color:var(--muted);margin-top:4px}
+.tip{position:fixed;pointer-events:none;background:var(--fg);color:var(--bg);font-size:12.5px;line-height:1.4;padding:6px 9px;border-radius:6px;max-width:260px;z-index:20}
+.lista-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;margin:26px 0 8px}
+.lista-h h2{margin:0}
+.count{font-size:13.5px;color:var(--muted)}
 .lista{list-style:none;margin:0;padding:0}
 .item{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;margin:0 0 10px}
 .item .h{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
 .item .id{font:600 14px var(--mono)}
-.item .id a{color:var(--accent);text-decoration:none}
+.item .id a{color:var(--accent)}
 .item .d{font:12.5px var(--mono);color:var(--muted)}
 .item p{margin:6px 0;font-size:14.5px;line-height:1.5}
 .item .meta{font-size:13px;color:var(--muted)}
+.item .lk{font-size:13px;margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 14px}
 .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
 .tag{font:500 11px var(--body);border-radius:999px;padding:2px 8px;background:var(--accent-soft);color:var(--fg)}
 .tag.n{background:var(--mark-soft);color:var(--mark)}
 .tag.enc{background:var(--rule);color:var(--muted)}
 .mais{display:block;margin:12px auto;font:500 14px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:8px;padding:8px 16px;cursor:pointer}
-.badge{display:inline-block;font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mark);background:var(--mark-soft);border-radius:999px;padding:2px 8px;vertical-align:middle;margin-left:6px}
 </style>
 
+<div class="mon">
 <p class="eyebrow">Ferramentas · Legislação penal</p>
 <h1>Monitor Legislativo Penal <span class="badge">protótipo</span></h1>
-<p class="lede">Proposições de natureza penal em tramitação na Câmara dos Deputados, atualizadas automaticamente a partir dos dados abertos da Casa: projetos de lei (PL), projetos de lei complementar (PLP) e propostas de emenda à Constituição (PEC) apresentados desde 2023.</p>
+<p class="lede">Painel das proposições de natureza penal apresentadas na Câmara dos Deputados na 57ª legislatura (desde 1º de fevereiro de 2023): projetos de lei (PL), projetos de lei complementar (PLP) e propostas de emenda à Constituição (PEC), atualizados automaticamente todos os dias a partir dos dados abertos da Casa. Clique nas barras dos gráficos para filtrar.</p>
+
+<div class="filtros" role="search">
+  <input id="q" type="search" placeholder="Buscar na ementa, número ou autor" aria-label="Buscar">
+  <select id="f-sit" aria-label="Situação"><option value="">Todas as situações</option><option value="tram">Em tramitação</option><option value="enc">Encerradas</option></select>
+  <select id="f-tipo" aria-label="Tipo"><option value="">PL, PLP e PEC</option><option>PL</option><option>PLP</option><option>PEC</option></select>
+  <select id="f-modo" aria-label="Autoria considerada nos gráficos"><option value="p">Autor principal</option><option value="t">Todos os coautores</option></select>
+  <button class="btn" id="limpar" type="button">Limpar filtros</button>
+  <button class="btn" id="csv" type="button">Baixar CSV</button>
+</div>
+<div class="ativos" id="ativos" aria-live="polite"></div>
 
 <div class="kpis" id="kpis"></div>
 
-<section class="meses" aria-labelledby="m-t">
-  <h2 id="m-t">Proposições penais apresentadas por mês</h2>
-  <div class="bars" id="bars" role="img"></div>
-  <div class="bars-x" id="bars-x"></div>
-</section>
-
-<div class="mon-top" role="search">
-  <input id="q" type="search" placeholder="Buscar na ementa, número ou autor" aria-label="Buscar">
-  <select id="f-ano" aria-label="Ano de apresentação"><option value="">Todos os anos</option></select>
-  <select id="f-sit" aria-label="Situação">
-    <option value="tram">Em tramitação</option><option value="">Todas as situações</option><option value="enc">Encerradas</option>
-  </select>
-  <select id="f-ord" aria-label="Ordenar">
-    <option value="apr">Mais recentes (apresentação)</option><option value="tra">Última movimentação</option>
-  </select>
+<div class="grade">
+  <section class="painel" aria-labelledby="t-ano"><h2 id="t-ano">Por ano de apresentação</h2><p class="sub">Clique em um ano para filtrar.</p><div class="vb" id="g-ano"></div></section>
+  <section class="painel" aria-labelledby="t-mes"><h2 id="t-mes">Por mês</h2><p class="sub">Proposições apresentadas por mês, com os filtros ativos.</p><div class="mes" id="g-mes" role="img"></div><div class="mes-x" id="g-mes-x"></div></section>
+  <section class="painel" aria-labelledby="t-dip"><h2 id="t-dip">Por diploma alterado</h2><p class="sub">Uma proposição pode alterar mais de um diploma.</p><div class="hb" id="g-dip"></div></section>
+  <section class="painel" aria-labelledby="t-nat"><h2 id="t-nat">Por natureza da alteração</h2><p class="sub">Classificação automática pela ementa.</p><div class="hb" id="g-nat"></div></section>
+  <section class="painel" aria-labelledby="t-uf"><h2 id="t-uf">Por estado</h2><p class="sub" id="s-uf"></p><div class="hb" id="g-uf"></div></section>
+  <section class="painel" aria-labelledby="t-par"><h2 id="t-par">Por partido</h2><p class="sub" id="s-par"></p><div class="hb" id="g-par"></div></section>
+  <section class="painel largo" aria-labelledby="t-aut"><h2 id="t-aut">Por legislador</h2><p class="sub" id="s-aut"></p><div class="hb" id="g-aut"></div></section>
 </div>
-<div class="chips" id="c-dip"><span class="lbl">Diploma</span></div>
-<div class="chips" id="c-nat"><span class="lbl">Natureza</span></div>
-<p class="count" id="count" aria-live="polite"></p>
+
+<div class="lista-h"><h2>Proposições</h2><span class="count" id="count" aria-live="polite"></span></div>
 <ul class="lista" id="lista"></ul>
 <button class="mais" id="mais" type="button" hidden>Mostrar mais</button>
 
 <div class="prose">
 <h2>Como funciona</h2>
 <ol>
-  <li>Todos os dias, uma rotina automática baixa os arquivos de dados abertos da Câmara dos Deputados (proposições, temas e autores) e seleciona PL, PLP e PEC apresentados desde 2023.</li>
+  <li>Todos os dias, uma rotina automática baixa os arquivos de dados abertos da Câmara dos Deputados (proposições, temas e autores) e seleciona PL, PLP e PEC apresentados desde 1º de fevereiro de 2023, início da 57ª legislatura.</li>
   <li>Entram as proposições classificadas pela Câmara no tema "Direito Penal e Processual Penal" e as que trazem, na ementa, termos de natureza penal (Código Penal, Código de Processo Penal, Lei de Execução Penal, crime, pena, tipificação, entre outros).</li>
-  <li>Os rótulos de diploma e de natureza são atribuídos por palavras-chave na ementa. É uma classificação automática, sujeita a erros: confira sempre o inteiro teor e a tramitação na página da Câmara.</li>
+  <li>Os rótulos de diploma e de natureza são atribuídos por palavras-chave na ementa. É uma classificação automática, sujeita a erros: confira sempre a tramitação e o texto na página da Câmara.</li>
+  <li>Estado e partido são os do autor registrados pela Câmara na proposição. No modo "Autor principal", conta-se só o primeiro signatário; em "Todos os coautores", cada proposição conta uma vez para cada autor. Autorias de órgãos (Poder Executivo, Senado, comissões) aparecem como "Sem UF" e "Sem partido".</li>
 </ol>
 <p class="note" id="nota-fonte"></p>
 </div>
+</div>
+<div class="tip" id="tip" hidden></div>
 
 <script>
 (function(){
-  var DADOS=null, PASSO=40, mostrados=PASSO, fDip=null, fNat=null;
-  var el=function(id){return document.getElementById(id)};
-  var nf=new Intl.NumberFormat('pt-BR');
+  var D=null, PASSO=30, mostrados=PASSO, F={ano:null,dip:null,nat:null,uf:null,par:null,aut:null}, LIM={par:15,aut:20};
+  var NOMES={ano:'Ano',dip:'Diploma',nat:'Natureza',uf:'Estado',par:'Partido',aut:'Legislador'};
+  var $=function(id){return document.getElementById(id)}, nf=new Intl.NumberFormat('pt-BR');
+  var SEM_UF='Sem UF (outros autores)', SEM_PAR='Sem partido (outros autores)', SEM_ROT='Sem rótulo';
   function dt(s){if(!s)return '';var p=s.split('-');return p[2]+'/'+p[1]+'/'+p[0]}
   function norm(s){return (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase()}
-  function esc(s){return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-  fetch('../data/monitor/camara.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).then(init).catch(function(e){
-    el('count').textContent='Os dados ainda não foram gerados ou não puderam ser carregados ('+e.message+').';
-  });
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rotAut(a){return a[0]+(a[1]&&a[2]?' ('+a[1]+'/'+a[2]+')':'')}
+  fetch('../data/monitor/camara.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).then(init)
+    .catch(function(e){$('count').textContent='Os dados não puderam ser carregados ('+e.message+').'});
+
   function init(d){
-    DADOS=d; d.itens.forEach(function(x){x._q=norm(x.sigla+' '+x.numero+'/'+x.ano+' '+x.ementa+' '+x.autores.join(' '))});
-    var anos={}; d.itens.forEach(function(x){anos[x.ano]=1});
-    Object.keys(anos).sort().reverse().forEach(function(a){var o=document.createElement('option');o.value=a;o.textContent=a;el('f-ano').appendChild(o)});
-    var tram=d.itens.filter(function(x){return x.em_tramitacao}).length;
-    var ult30=d.itens.filter(function(x){return x.apresentacao && (Date.now()-new Date(x.apresentacao+'T12:00:00'))<30*864e5}).length;
-    el('kpis').innerHTML=[['Proposições penais',nf.format(d.total)],['Em tramitação',nf.format(tram)],['Apresentadas em 30 dias',nf.format(ult30)],['Atualizado em',d.atualizado_em.split(' ')[0].split('-').reverse().join('/')]]
-      .map(function(k){return '<div class="kpi"><div class="k">'+k[0]+'</div><div class="v">'+k[1]+'</div></div>'}).join('');
-    el('nota-fonte').innerHTML='<strong>Fonte:</strong> '+esc(d.fonte)+', <a href="https://dadosabertos.camara.leg.br/" rel="noopener">dadosabertos.camara.leg.br</a>. Última coleta: '+esc(d.atualizado_em)+' (horário de Brasília). Foram analisadas '+nf.format(d.analisadas)+' proposições dos tipos '+d.tipos.join(', ')+'.';
-    barras(); chips('c-dip','diplomas',function(v){fDip=v}); chips('c-nat','natureza',function(v){fNat=v});
-    ['q','f-ano','f-sit','f-ord'].forEach(function(id){el(id).addEventListener(id==='q'?'input':'change',function(){mostrados=PASSO;render()})});
-    el('mais').addEventListener('click',function(){mostrados+=PASSO;render()});
-    render();
-  }
-  function barras(){
-    var m={}; DADOS.itens.forEach(function(x){if(x.apresentacao){var k=x.apresentacao.slice(0,7);m[k]=(m[k]||0)+1}});
-    var ks=Object.keys(m).sort(); if(!ks.length)return;
-    var a=ks[0].split('-').map(Number), b=ks[ks.length-1].split('-').map(Number), all=[];
-    var y=a[0],mo=a[1]; while(y<b[0]||(y===b[0]&&mo<=b[1])){all.push(y+'-'+(mo<10?'0':'')+mo); mo++; if(mo>12){mo=1;y++}}
-    var mx=Math.max.apply(null,all.map(function(k){return m[k]||0}));
-    el('bars').innerHTML=all.map(function(k){var v=m[k]||0;return '<i style="height:'+(v/mx*100).toFixed(1)+'%" title="'+k.split('-').reverse().join('/')+': '+v+'"></i>'}).join('');
-    el('bars').setAttribute('aria-label','Proposições penais por mês, de '+all[0]+' a '+all[all.length-1]+'; máximo de '+mx+' em um mês');
-    el('bars-x').innerHTML='<span>'+all[0].split('-').reverse().join('/')+'</span><span>'+all[all.length-1].split('-').reverse().join('/')+'</span>';
-  }
-  function chips(id,campo,set){
-    var c={}; DADOS.itens.forEach(function(x){x[campo].forEach(function(t){c[t]=(c[t]||0)+1})});
-    var box=el(id);
-    Object.keys(c).sort(function(a,b){return c[b]-c[a]}).forEach(function(t){
-      var b=document.createElement('button');b.className='chip';b.type='button';b.setAttribute('aria-pressed','false');
-      b.innerHTML=esc(t)+'<b>'+nf.format(c[t])+'</b>';
-      b.addEventListener('click',function(){var on=b.getAttribute('aria-pressed')==='true';box.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed','false')});if(!on){b.setAttribute('aria-pressed','true');set(t)}else set(null);mostrados=PASSO;render()});
-      box.appendChild(b);
+    D=d;
+    d.itens.forEach(function(x){
+      x.aut=x.aut||[];
+      x._q=norm(x.sigla+' '+x.numero+'/'+x.ano+' '+x.ementa+' '+x.aut.map(function(a){return a[0]}).join(' '));
+      x._ano=String((x.apresentacao||'').slice(0,4)||x.ano);
+      x._dip=x.diplomas.length?x.diplomas:[SEM_ROT];
+      x._nat=x.natureza.length?x.natureza:[SEM_ROT];
     });
+    $('nota-fonte').innerHTML='<strong>Fonte:</strong> '+esc(d.fonte)+', <a href="https://dadosabertos.camara.leg.br/" rel="noopener">dadosabertos.camara.leg.br</a>. Última coleta: '+esc(d.atualizado_em)+' (horário de Brasília). Período: '+esc(d.legislatura||'desde 2023')+'. Foram analisadas '+nf.format(d.analisadas)+' proposições dos tipos '+d.tipos.join(', ')+'.';
+    ['q','f-sit','f-tipo','f-modo'].forEach(function(id){$(id).addEventListener(id==='q'?'input':'change',function(){mostrados=PASSO;tudo()})});
+    $('limpar').addEventListener('click',function(){for(var k in F)F[k]=null;$('q').value='';$('f-sit').value='';$('f-tipo').value='';mostrados=PASSO;tudo()});
+    $('mais').addEventListener('click',function(){mostrados+=PASSO;lista(filtrar(null))});
+    $('csv').addEventListener('click',csv);
+    tudo();
   }
-  function render(){
-    var q=norm(el('q').value.trim()), ano=el('f-ano').value, sit=el('f-sit').value, ord=el('f-ord').value;
-    var L=DADOS.itens.filter(function(x){
-      if(q && x._q.indexOf(q)<0) return false;
-      if(ano && String(x.ano)!==ano) return false;
-      if(sit==='tram' && !x.em_tramitacao) return false;
-      if(sit==='enc' && x.em_tramitacao) return false;
-      if(fDip && x.diplomas.indexOf(fDip)<0) return false;
-      if(fNat && x.natureza.indexOf(fNat)<0) return false;
+  function autoresContados(x){return $('f-modo').value==='p'?x.aut.slice(0,1):x.aut}
+  function chaves(x,dim){
+    if(dim==='ano')return [x._ano];
+    if(dim==='dip')return x._dip;
+    if(dim==='nat')return x._nat;
+    var A=autoresContados(x); if(!A.length)A=[['Autoria não informada','','']];
+    if(dim==='uf')return uniq(A.map(function(a){return a[2]||SEM_UF}));
+    if(dim==='par')return uniq(A.map(function(a){return a[1]||SEM_PAR}));
+    if(dim==='aut')return uniq(A.map(rotAut));
+  }
+  function uniq(a){var s={},o=[];a.forEach(function(v){if(!s[v]){s[v]=1;o.push(v)}});return o}
+  function filtrar(exceto){
+    var q=norm($('q').value.trim()), sit=$('f-sit').value, tipo=$('f-tipo').value;
+    return D.itens.filter(function(x){
+      if(q && x._q.indexOf(q)<0)return false;
+      if(sit==='tram' && !x.em_tramitacao)return false;
+      if(sit==='enc' && x.em_tramitacao)return false;
+      if(tipo && x.sigla!==tipo)return false;
+      for(var k in F){ if(k===exceto||F[k]==null)continue; if(chaves(x,k).indexOf(F[k])<0)return false; }
       return true;
     });
-    if(ord==='tra') L=L.slice().sort(function(a,b){return (b.ultima_tramitacao||'').localeCompare(a.ultima_tramitacao||'')});
-    el('count').textContent=nf.format(L.length)+' proposições encontradas';
-    el('lista').innerHTML=L.slice(0,mostrados).map(function(x){
-      var aut=x.autores.length?x.autores.join('; ')+(x.n_autores>x.autores.length?' e outros ('+x.n_autores+' no total)':''):'Autoria não informada';
+  }
+  function contar(L,dim){var c={};L.forEach(function(x){chaves(x,dim).forEach(function(k){c[k]=(c[k]||0)+1})});return c}
+  function tudo(){
+    var L=filtrar(null);
+    kpis(L); ativos(); anos(); meses(L);
+    hbar('dip','g-dip',0); hbar('nat','g-nat',0); hbar('uf','g-uf',0); hbar('par','g-par',LIM.par); hbar('aut','g-aut',LIM.aut);
+    var m=$('f-modo').value==='p'?'Contagem pelo autor principal (primeiro signatário).':'Contagem por todos os coautores: cada proposição conta para cada autor.';
+    $('s-uf').textContent=m; $('s-par').textContent=m; $('s-aut').textContent=m;
+    lista(L);
+  }
+  function kpis(L){
+    var tram=L.filter(function(x){return x.em_tramitacao}).length, a={};
+    L.forEach(function(x){x.aut.forEach(function(y){if(y[1])a[y[0]]=1})});
+    var ult=D.atualizado_em.split(' ')[0].split('-').reverse().join('/');
+    $('kpis').innerHTML=[['Proposições',nf.format(L.length),'de '+nf.format(D.total)+' no período'],['Em tramitação',nf.format(tram),L.length?Math.round(tram/L.length*100)+'% das filtradas':''],['Deputados autores',nf.format(Object.keys(a).length),'entre os coautores'],['Atualizado em',ult,'coleta diária automática']]
+      .map(function(k){return '<div class="kpi"><div class="k">'+k[0]+'</div><div class="v">'+k[1]+'</div><div class="d">'+k[2]+'</div></div>'}).join('');
+  }
+  function ativos(){
+    var h=[]; for(var k in F){ if(F[k]!=null) h.push('<span class="f">'+NOMES[k]+': '+esc(F[k])+'<button type="button" data-k="'+k+'" aria-label="Remover filtro '+NOMES[k]+'">×</button></span>'); }
+    $('ativos').innerHTML=h.length?'Filtros ativos: '+h.join(''):'Nenhum filtro de gráfico ativo.';
+    $('ativos').querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){F[b.dataset.k]=null;mostrados=PASSO;tudo()})});
+  }
+  function toggle(dim,val){F[dim]=(F[dim]===val)?null:val;mostrados=PASSO;tudo()}
+  function anos(){
+    var c=contar(filtrar('ano'),'ano'), ini=parseInt((D.inicio||'2023').slice(0,4)), fim=new Date().getFullYear(), ks=[];
+    for(var y=ini;y<=fim;y++)ks.push(String(y));
+    var mx=Math.max.apply(null,ks.map(function(k){return c[k]||0}).concat([1]));
+    $('g-ano').innerHTML=ks.map(function(k){var v=c[k]||0;return '<button type="button" data-v="'+k+'" class="'+(F.ano===k?'sel':'')+'" aria-pressed="'+(F.ano===k)+'" aria-label="'+k+': '+v+' proposições" data-tip="'+k+': '+nf.format(v)+' proposições"><span class="n">'+nf.format(v)+'</span><i style="height:'+(v/mx*100*0.8).toFixed(1)+'%"></i><span class="a">'+k+'</span></button>'}).join('');
+    bind('g-ano','ano');
+  }
+  function meses(L){
+    var m={}, ini=(D.inicio||'2023-02-01').slice(0,7); L.forEach(function(x){if(x.apresentacao){var k=x.apresentacao.slice(0,7);if(k>=ini)m[k]=(m[k]||0)+1}});
+    var all=[], y=parseInt(ini.slice(0,4)), mo=parseInt(ini.slice(5,7)), now=new Date(), yb=now.getFullYear(), mb=now.getMonth()+1;
+    while(y<yb||(y===yb&&mo<=mb)){all.push(y+'-'+(mo<10?'0':'')+mo);mo++;if(mo>12){mo=1;y++}}
+    var mx=Math.max.apply(null,all.map(function(k){return m[k]||0}).concat([1]));
+    $('g-mes').innerHTML=all.map(function(k){var v=m[k]||0;return '<i style="height:'+(v/mx*100).toFixed(1)+'%" data-tip="'+k.split('-').reverse().join('/')+': '+nf.format(v)+'"></i>'}).join('');
+    $('g-mes').setAttribute('aria-label','Proposições por mês; máximo de '+mx+' em um mês');
+    $('g-mes-x').innerHTML='<span>'+all[0].split('-').reverse().join('/')+'</span><span>'+all[all.length-1].split('-').reverse().join('/')+'</span>';
+    tips($('g-mes'));
+  }
+  function hbar(dim,id,lim){
+    var c=contar(filtrar(dim),dim), ks=Object.keys(c).sort(function(a,b){return c[b]-c[a]||a.localeCompare(b)});
+    var box=$(id), aberto=box.dataset.aberto==='1', mostra=(lim&&!aberto)?ks.slice(0,lim):ks;
+    if(F[dim]!=null && mostra.indexOf(F[dim])<0 && c[F[dim]]) mostra.push(F[dim]);
+    var mx=Math.max.apply(null,mostra.map(function(k){return c[k]}).concat([1]));
+    var h=mostra.map(function(k){var v=c[k],s=F[dim]===k;return '<button type="button" data-v="'+esc(k)+'" class="'+(s?'sel':'')+'" aria-pressed="'+s+'" aria-label="'+esc(k)+': '+v+' proposições" data-tip="'+esc(k)+': '+nf.format(v)+' proposições"><span class="l">'+esc(k)+'</span><span class="t"><i style="width:'+(v/mx*100).toFixed(1)+'%"></i></span><span class="v">'+nf.format(v)+'</span></button>'}).join('');
+    if(!ks.length)h='<div class="vazio">Nenhuma proposição com os filtros atuais.</div>';
+    if(lim && ks.length>lim) h+='<button type="button" class="mais-b" data-mais="1">'+(aberto?'Mostrar só os '+lim+' primeiros':'Mostrar todos ('+ks.length+')')+'</button>';
+    box.innerHTML=h; bind(id,dim);
+    var mb=box.querySelector('[data-mais]'); if(mb) mb.addEventListener('click',function(){box.dataset.aberto=aberto?'0':'1';hbar(dim,id,lim)});
+  }
+  function bind(id,dim){var box=$(id);box.querySelectorAll('button[data-v]').forEach(function(b){b.addEventListener('click',function(){toggle(dim,b.dataset.v)})});tips(box)}
+  var tip=$('tip');
+  function tips(box){
+    box.onmousemove=function(e){var t=e.target.closest('[data-tip]');if(!t){tip.hidden=true;return}tip.textContent=t.dataset.tip;tip.hidden=false;var w=tip.offsetWidth,h=tip.offsetHeight;tip.style.left=Math.min(e.clientX+12,innerWidth-w-8)+'px';tip.style.top=Math.max(8,e.clientY-h-10)+'px'};
+    box.onmouseleave=function(){tip.hidden=true};
+  }
+  function lista(L){
+    $('count').textContent=nf.format(L.length)+' proposições';
+    $('lista').innerHTML=L.slice(0,mostrados).map(function(x){
+      var n=x.aut.length, aut=n?x.aut.slice(0,5).map(rotAut).join('; ')+(n>5?' e outros ('+n+' autores)':''):'Autoria não informada';
       var tags=x.diplomas.map(function(t){return '<span class="tag">'+esc(t)+'</span>'}).join('')+x.natureza.map(function(t){return '<span class="tag n">'+esc(t)+'</span>'}).join('')+(x.em_tramitacao?'':'<span class="tag enc">Encerrada</span>');
-      return '<li class="item"><div class="h"><span class="id"><a href="'+x.url+'" rel="noopener">'+x.sigla+' '+x.numero+'/'+x.ano+'</a></span><span class="d">apresentada em '+dt(x.apresentacao)+'</span></div>'+
+      var tram=x.tramitacao||('https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao='+x.id);
+      return '<li class="item"><div class="h"><span class="id"><a href="'+esc(tram)+'" rel="noopener" title="Ficha de tramitação na Câmara">'+x.sigla+' '+x.numero+'/'+x.ano+'</a></span><span class="d">apresentada em '+dt(x.apresentacao)+'</span></div>'+
         '<p>'+esc(x.ementa)+'</p>'+
         '<div class="meta"><strong>Autoria:</strong> '+esc(aut)+'</div>'+
-        '<div class="meta"><strong>Situação:</strong> '+esc(x.situacao||'não informada')+(x.orgao?' ('+esc(x.orgao)+')':'')+(x.ultima_tramitacao?' · última movimentação em '+dt(x.ultima_tramitacao):'')+(x.inteiro_teor?' · <a href="'+esc(x.inteiro_teor)+'" rel="noopener">inteiro teor</a>':'')+'</div>'+
+        '<div class="meta"><strong>Situação:</strong> '+esc(x.situacao||'não informada')+(x.orgao?' ('+esc(x.orgao)+')':'')+(x.ultima_tramitacao?' · última movimentação em '+dt(x.ultima_tramitacao):'')+'</div>'+
+        '<div class="lk"><a href="'+esc(tram)+'" rel="noopener">Ficha de tramitação</a><a href="'+esc(x.url)+'" rel="noopener">Página da proposição</a>'+(x.inteiro_teor?'<a href="'+esc(x.inteiro_teor)+'" rel="noopener">Texto original (PDF)</a>':'')+'</div>'+
         (tags?'<div class="tags">'+tags+'</div>':'')+'</li>';
     }).join('');
-    el('mais').hidden=L.length<=mostrados;
+    $('mais').hidden=L.length<=mostrados;
+  }
+  function csv(){
+    var L=filtrar(null), q=function(s){return '"'+String(s==null?'':s).replace(/"/g,'""')+'"'};
+    var rows=[['Proposição','Apresentação','Ementa','Autores','Situação','Órgão','Última movimentação','Diplomas','Natureza','Ficha de tramitação']].concat(L.map(function(x){
+      return [x.sigla+' '+x.numero+'/'+x.ano,x.apresentacao,x.ementa,x.aut.map(rotAut).join('; '),x.situacao,x.orgao,x.ultima_tramitacao,x.diplomas.join('; '),x.natureza.join('; '),x.tramitacao||''];
+    }));
+    var blob=new Blob(['﻿'+rows.map(function(r){return r.map(q).join(';')}).join('\n')],{type:'text/csv;charset=utf-8'});
+    var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='monitor-legislativo-penal.csv'; document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},500);
   }
 })();
 </script>
