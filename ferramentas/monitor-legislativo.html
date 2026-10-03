@@ -136,7 +136,7 @@
   }
   function barras(){
     var m={}; DADOS.itens.forEach(function(x){if(x.apresentacao){var k=x.apresentacao.slice(0,7);m[k]=(m[k]||0)+1}});
-    var ini=Math.min.apply(null,DADOS.anos)+'-01'; var ks=Object.keys(m).filter(function(k){return k>=ini}).sort(); if(!ks.length)return;
+    var ks=Object.keys(m).sort(); if(!ks.length)return;
     var a=ks[0].split('-').map(Number), b=ks[ks.length-1].split('-').map(Number), all=[];
     var y=a[0],mo=a[1]; while(y<b[0]||(y===b[0]&&mo<=b[1])){all.push(y+'-'+(mo<10?'0':'')+mo); mo++; if(mo>12){mo=1;y++}}
     var mx=Math.max.apply(null,all.map(function(k){return m[k]||0}));
