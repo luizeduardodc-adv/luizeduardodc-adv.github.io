@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Régua das Penas · Luiz Eduardo Dias Cardoso</title>
+<meta name="description" content="Régua das penas cominadas dos crimes contra a pessoa e contra o patrimônio no Código Penal, com cabimento de JECrim, suspensão condicional do processo e ANPP.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232E5B88'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%23F4F6F8' text-anchor='middle'%3ELE%3C/text%3E%3C/svg%3E">
+<script src="../assets/js/tema.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: régua horizontal em anos (0 a 40), uma linha por tipo penal, agrupada por Título e Capítulo; marcos legais (1, 2 e 4 anos) atravessam a régua */
+:root{
+  --bg:#F4F6F8; --surface:#FFFFFF; --fg:#18202C; --muted:#5A6476; --rule:#D8DDE4;
+  --accent:#2E5B88; --accent-soft:#D6E2EE; --mark:#9A6510; --mark-soft:#F3E4C8;
+  --display:"Newsreader",Georgia,"Times New Roman",serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11151B; --surface:#181D25; --fg:#E5E9EF; --muted:#9AA4B4; --rule:#2B323D;
+  --accent:#7FA7D3; --accent-soft:#25344A; --mark:#E2AE57; --mark-soft:#3A2F1C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11151B; --surface:#181D25; --fg:#E5E9EF; --muted:#9AA4B4; --rule:#2B323D;
+  --accent:#7FA7D3; --accent-soft:#25344A; --mark:#E2AE57; --mark-soft:#3A2F1C; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:16px;padding-block:28px 56px}
+header h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,4.5vw,40px);line-height:1.1;margin:0 0 8px;text-wrap:balance}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.lede{max-width:65ch;color:var(--muted);margin:0}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 6px;align-items:center}
+.controls .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.chip{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.chip:focus-visible,.row:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#busca{font:14px var(--body);padding:7px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--fg);min-width:0;flex:1 1 200px;max-width:280px}
+.count{font-size:13px;color:var(--muted);margin:4px 0 14px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;align-items:start}
+@media (max-width:860px){.layout{grid-template-columns:minmax(0,1fr)}}
+.chart{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px 14px 18px;min-width:0}
+.axis,.row{display:grid;grid-template-columns:200px minmax(0,1fr);gap:12px;align-items:center}
+@media (max-width:560px){.axis,.row{grid-template-columns:minmax(0,1fr)}.axis .nm{display:none}.row{gap:2px}}
+.axis{position:sticky;top:env(safe-area-inset-top,0px);background:var(--surface);z-index:2;padding:4px 0 6px;border-bottom:1px solid var(--rule)}
+.scale{position:relative;height:30px;font:11px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.scale span{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap}
+.scale{height:20px}.scale span.th{color:var(--mark);font-weight:600}
+.grp{font-family:var(--display);font-weight:600;font-size:19px;margin:20px 0 2px}
+.sub{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:12px 0 4px}
+.row{padding:5px 4px;border-radius:6px;cursor:pointer}
+.row:hover{background:var(--accent-soft)}
+.row.sel{background:var(--accent-soft)}
+.row .nm{font-size:13.5px;min-width:0}
+.row .nm b{font:500 12px var(--mono);color:var(--muted);margin-right:6px}
+.track{position:relative;height:18px}
+.track .th,.scale .ln{position:absolute;top:0;bottom:0;width:0;border-left:1px dashed var(--mark);opacity:.55}
+.track .tick{position:absolute;top:0;bottom:0;width:0;border-left:1px solid var(--rule)}
+.bar{position:absolute;top:5px;height:8px;border-radius:4px;background:var(--accent);min-width:4px}
+.bar.cul{background:transparent;border:2px solid var(--accent);top:4px;height:10px}
+.row.dim{opacity:.28}
+.row[hidden]{display:none}
+aside.ficha{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px;min-width:0}
+.ficha h2{font-family:var(--display);font-weight:600;font-size:23px;line-height:1.2;margin:2px 0 4px;text-wrap:balance}
+.ficha .art{font:500 13px var(--mono);color:var(--muted)}
+.ficha dl{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;margin:14px 0;font-size:14px}.ficha dd+dt{margin-top:8px}
+.ficha dt{color:var(--muted);font-size:12px;letter-spacing:.05em;text-transform:uppercase}
+.ficha dd{margin:0;font-variant-numeric:tabular-nums}
+.pills{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+.pill{display:flex;gap:8px;align-items:baseline;font-size:13.5px}
+.pill i{font-style:normal;font:600 11px var(--mono);padding:2px 7px;border-radius:999px;flex:none;min-width:58px;text-align:center}
+.ok i{background:var(--accent);color:var(--surface)}
+.no i{background:var(--rule);color:var(--muted)}
+.ca i{background:var(--mark-soft);color:var(--mark)}
+.ficha .nota{font-size:12.5px;color:var(--muted);margin:12px 0 0}
+.ficha a{color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:12.5px;color:var(--muted);margin:10px 0 0}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{display:inline-block;width:22px;height:8px;border-radius:4px;background:var(--accent)}
+.sw.c{background:transparent;border:2px solid var(--accent);height:10px}
+.sw.t{width:0;height:14px;border-left:1px dashed var(--mark);border-radius:0}
+footer{margin-top:32px;font-size:12.5px;color:var(--muted);max-width:75ch}
+footer p{margin:0 0 8px}
+@media (prefers-reduced-motion:no-preference){.bar{transition:opacity .2s}}
+</style>
+</head>
+<body>
+<style>
+.gtop{background:var(--surface);border-bottom:1px solid var(--rule);font-family:var(--body)}
+.gtop .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;font-size:14px}
+.gtop a{color:var(--fg);text-decoration:none}.gtop a:hover{color:var(--accent)}
+.gtop .home{font-family:var(--display);font-weight:600;font-size:17px;margin-right:auto}
+.gtop button{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--muted);border-radius:999px;padding:4px 10px;cursor:pointer}
+body{margin:0}
+</style>
+<nav class="gtop" aria-label="Site"><div class="in"><a class="home" href="../index.html">Luiz Eduardo Dias Cardoso</a><a href="index.html">Ferramentas</a><a href="../aulas.html">Aulas</a><button class="theme-btn" id="tema" type="button">Tema escuro</button></div></nav>
+<div class="wrap">
+<header>
+  <p class="eyebrow">Código Penal · Parte Especial · Títulos I e II</p>
+  <h1>Régua das Penas</h1>
+  <p class="lede">Cada linha mostra a pena cominada em abstrato, do mínimo ao máximo, na mesma régua. As linhas tracejadas marcam os limites legais que abrem as soluções consensuais: 1 ano (suspensão condicional do processo), 2 anos (Juizado Especial Criminal) e 4 anos (acordo de não persecução penal).</p>
+</header>
+
+<div class="controls" role="group" aria-label="Filtros">
+  <span class="lbl">Destacar</span>
+  <button class="chip" id="f-todos" data-f="todos" aria-pressed="true">Todos</button>
+  <button class="chip" id="f-jecrim" data-f="jecrim" aria-pressed="false">Menor potencial ofensivo</button>
+  <button class="chip" id="f-sursis" data-f="sursis" aria-pressed="false">Admite sursis processual</button>
+  <button class="chip" id="f-anpp" data-f="anpp" aria-pressed="false">ANPP pela pena</button>
+  <input id="busca" type="search" placeholder="Buscar crime ou artigo" aria-label="Buscar crime ou artigo">
+</div>
+<p class="count" id="count"></p>
+
+<div class="layout">
+  <div class="chart" id="chart">
+    <div class="axis" aria-hidden="true"><div class="nm"></div><div class="scale" id="scale"></div></div>
+    <div id="rows"></div>
+    <div class="legend">
+      <span><i class="sw"></i>Reclusão</span>
+      <span><i class="sw c"></i>Detenção</span>
+      <span><i class="sw t"></i>Marco legal (1, 2 e 4 anos)</span>
+      <span>Escala em raiz quadrada, para dar leitura às penas curtas</span>
+    </div>
+  </div>
+  <aside class="ficha" id="ficha" aria-live="polite"></aside>
+</div>
+
+<footer>
+  <p><strong>Base preliminar, em conferência.</strong> As penas foram lançadas a partir do texto do Código Penal e estão sendo conferidas, dispositivo por dispositivo, no <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm" rel="noopener" style="color:var(--accent)">texto compilado do Planalto</a>. Consulte sempre a lei. Majorantes e minorantes (como o § 2º do art. 157) não alteram a régua, que mostra só a pena cominada no preceito secundário.</p>
+  <p>Critérios: Juizado Especial Criminal quando a pena máxima não supera 2 anos (art. 61 da Lei 9.099/1995); suspensão condicional do processo quando a pena mínima não supera 1 ano (art. 89 da Lei 9.099/1995); acordo de não persecução penal quando a pena mínima é inferior a 4 anos e o crime é cometido sem violência ou grave ameaça (art. 28-A do Código de Processo Penal), sem considerar as demais vedações do § 2º.</p>
+  <p>Luiz Eduardo Dias Cardoso · Direito Penal</p>
+</footer>
+</div>
+
+<script>
+// m = meses. pr: R reclusão, D detenção. mu: multa "e" (cumulativa) | "ou" (alternativa) | "". v: violência ou grave ameaça como elementar: s (sim), n (não), c (conforme o caso)
+const D=[
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121, caput",n:"Homicídio simples",pr:"R",mn:72,mx:240,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121, § 2º",n:"Homicídio qualificado",pr:"R",mn:144,mx:360,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121, § 3º",n:"Homicídio culposo",pr:"D",mn:12,mx:36,mu:"",v:"n",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121-A",n:"Feminicídio",pr:"R",mn:240,mx:480,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"122",n:"Induzimento, instigação ou auxílio a suicídio ou a automutilação",pr:"R",mn:6,mx:24,mu:"",v:"n",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"123",n:"Infanticídio",pr:"D",mn:24,mx:72,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"124",n:"Aborto provocado pela gestante ou com seu consentimento",pr:"D",mn:12,mx:36,mu:"",v:"n",ac:"Pública incondicionada; competência do Tribunal do Júri"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"125",n:"Aborto provocado por terceiro sem consentimento",pr:"R",mn:36,mx:120,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"126",n:"Aborto provocado por terceiro com consentimento",pr:"R",mn:12,mx:48,mu:"",v:"n",ac:"Pública incondicionada; competência do Tribunal do Júri"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, caput",n:"Lesão corporal",pr:"D",mn:3,mx:12,mu:"",v:"s",ac:"Pública condicionada à representação (art. 88 da Lei 9.099/1995)"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 1º",n:"Lesão corporal grave",pr:"R",mn:12,mx:60,mu:"",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 2º",n:"Lesão corporal gravíssima",pr:"R",mn:24,mx:96,mu:"",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 3º",n:"Lesão corporal seguida de morte",pr:"R",mn:48,mx:144,mu:"",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 6º",n:"Lesão corporal culposa",pr:"D",mn:2,mx:12,mu:"",v:"n",ac:"Pública condicionada à representação (art. 88 da Lei 9.099/1995)"},
+ {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"132",n:"Perigo para a vida ou saúde de outrem",pr:"D",mn:3,mx:12,mu:"",v:"n",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"133",n:"Abandono de incapaz",pr:"D",mn:6,mx:36,mu:"",v:"n",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"135",n:"Omissão de socorro",pr:"D",mn:1,mx:6,mu:"ou",v:"n",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"136",n:"Maus-tratos",pr:"D",mn:2,mx:12,mu:"ou",v:"c",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Rixa",a:"137",n:"Rixa",pr:"D",mn:0.5,mx:2,mu:"ou",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a honra",a:"138",n:"Calúnia",pr:"D",mn:6,mx:24,mu:"e",v:"n",ac:"Privada, em regra (art. 145)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a honra",a:"139",n:"Difamação",pr:"D",mn:3,mx:12,mu:"e",v:"n",ac:"Privada, em regra (art. 145)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a honra",a:"140",n:"Injúria",pr:"D",mn:1,mx:6,mu:"ou",v:"n",ac:"Privada, em regra (art. 145)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"146",n:"Constrangimento ilegal",pr:"D",mn:3,mx:12,mu:"ou",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"147",n:"Ameaça",pr:"D",mn:1,mx:6,mu:"ou",v:"s",ac:"Pública condicionada à representação, em regra"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"147-A",n:"Perseguição",pr:"R",mn:6,mx:24,mu:"e",v:"c",ac:"Pública condicionada à representação"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"147-B",n:"Violência psicológica contra a mulher",pr:"R",mn:6,mx:24,mu:"e",v:"c",ac:"A conferir"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"148",n:"Sequestro e cárcere privado",pr:"R",mn:12,mx:36,mu:"",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"149",n:"Redução a condição análoga à de escravo",pr:"R",mn:24,mx:96,mu:"e",v:"c",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"149-A",n:"Tráfico de pessoas",pr:"R",mn:48,mx:96,mu:"e",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"150",n:"Violação de domicílio",pr:"D",mn:1,mx:3,mu:"ou",v:"n",ac:"Pública incondicionada"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"154-A",n:"Invasão de dispositivo informático",pr:"R",mn:12,mx:48,mu:"e",v:"n",ac:"Pública condicionada à representação, em regra (art. 154-B)"},
+ {t:"Crimes contra o patrimônio",c:"Furto",a:"155, caput",n:"Furto",pr:"R",mn:12,mx:48,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)"},
+ {t:"Crimes contra o patrimônio",c:"Furto",a:"155, § 4º",n:"Furto qualificado",pr:"R",mn:24,mx:96,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)"},
+ {t:"Crimes contra o patrimônio",c:"Furto",a:"155, § 4º-A",n:"Furto com emprego de explosivo",pr:"R",mn:48,mx:120,mu:"e",v:"n",ac:"Pública incondicionada"},
+ {t:"Crimes contra o patrimônio",c:"Furto",a:"155, § 4º-B",n:"Furto mediante fraude por dispositivo eletrônico",pr:"R",mn:48,mx:96,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)"},
+ {t:"Crimes contra o patrimônio",c:"Furto",a:"156",n:"Furto de coisa comum",pr:"D",mn:6,mx:24,mu:"ou",v:"n",ac:"Pública condicionada à representação"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"157, caput",n:"Roubo",pr:"R",mn:48,mx:120,mu:"e",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"157, § 3º, I",n:"Roubo com lesão corporal grave",pr:"R",mn:84,mx:216,mu:"e",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"157, § 3º, II",n:"Latrocínio",pr:"R",mn:240,mx:360,mu:"e",v:"s",ac:"Pública incondicionada; competência do juízo singular (Súmula 603 do STF)"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"158, caput",n:"Extorsão",pr:"R",mn:48,mx:120,mu:"e",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"158, § 3º",n:"Extorsão com restrição da liberdade da vítima",pr:"R",mn:72,mx:144,mu:"e",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"159, caput",n:"Extorsão mediante sequestro",pr:"R",mn:96,mx:180,mu:"",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"159, § 3º",n:"Extorsão mediante sequestro com resultado morte",pr:"R",mn:288,mx:360,mu:"",v:"s",ac:"Pública incondicionada"},
+ {t:"Crimes contra o patrimônio",c:"Usurpação",a:"161",n:"Alteração de limites",pr:"D",mn:1,mx:6,mu:"e",v:"n",ac:"Privada, se a propriedade é particular e não há violência (§ 3º)"},
+ {t:"Crimes contra o patrimônio",c:"Dano",a:"163, caput",n:"Dano",pr:"D",mn:1,mx:6,mu:"ou",v:"n",ac:"Privada (art. 167)"},
+ {t:"Crimes contra o patrimônio",c:"Dano",a:"163, parágrafo único",n:"Dano qualificado",pr:"D",mn:6,mx:36,mu:"e",v:"c",ac:"Pública incondicionada, salvo o inciso IV (art. 167)"},
+ {t:"Crimes contra o patrimônio",c:"Apropriação indébita",a:"168",n:"Apropriação indébita",pr:"R",mn:12,mx:48,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)"},
+ {t:"Crimes contra o patrimônio",c:"Apropriação indébita",a:"168-A",n:"Apropriação indébita previdenciária",pr:"R",mn:24,mx:60,mu:"e",v:"n",ac:"Pública incondicionada"},
+ {t:"Crimes contra o patrimônio",c:"Estelionato e outras fraudes",a:"171, caput",n:"Estelionato",pr:"R",mn:12,mx:60,mu:"e",v:"n",ac:"Pública condicionada à representação, com as exceções do § 5º"},
+ {t:"Crimes contra o patrimônio",c:"Estelionato e outras fraudes",a:"171, § 2º-A",n:"Fraude eletrônica",pr:"R",mn:48,mx:96,mu:"e",v:"n",ac:"Pública condicionada à representação, com as exceções do § 5º"},
+ {t:"Crimes contra o patrimônio",c:"Receptação",a:"180, caput",n:"Receptação",pr:"R",mn:12,mx:48,mu:"e",v:"n",ac:"Pública incondicionada"},
+ {t:"Crimes contra o patrimônio",c:"Receptação",a:"180, § 1º",n:"Receptação qualificada",pr:"R",mn:36,mx:96,mu:"e",v:"n",ac:"Pública incondicionada"},
+ {t:"Crimes contra o patrimônio",c:"Receptação",a:"180, § 3º",n:"Receptação culposa",pr:"D",mn:1,mx:12,mu:"ou",v:"n",ac:"Pública incondicionada"}
+];
+const MAX=480; // 40 anos
+const X=m=>Math.sqrt(m)/Math.sqrt(MAX)*100; const pct=m=>X(m).toFixed(3)+'%';
+const fmt=m=>{ if(m<1) return "15 dias"; if(m<12) return m+(m===1?" mês":" meses"); const a=Math.floor(m/12), r=m%12; return a+(a===1?" ano":" anos")+(r?" e "+r+(r===1?" mês":" meses"):""); };
+const jecrim=d=>d.mx<=24, sursis=d=>d.mn<=12, anpp=d=>d.mn<48 && d.v==="n";
+// régua
+const sc=document.getElementById('scale');
+let sh='';[[0,'0'],[6,'6m'],[12,'1'],[24,'2'],[48,'4'],[96,'8'],[144,'12'],[240,'20'],[360,'30'],[480,'40 anos']].forEach(([m,l])=>sh+=`<span class="${[12,24,48].includes(m)?'th':''}" style="left:${pct(m)}${m===480?';transform:translateX(-100%)':''}">${l}</span>`);
+sc.innerHTML=sh;
+// linhas
+const rows=document.getElementById('rows');
+let h='',lt='',lc='';
+const grid=[6,96,144,240,360].map(m=>`<i class="tick" style="left:${pct(m)}"></i>`).join('')+[12,24,48].map(m=>`<i class="th" style="left:${pct(m)}"></i>`).join('');
+D.forEach((d,i)=>{
+  if(d.t!==lt){h+=`<h2 class="grp">${d.t}</h2>`;lt=d.t;lc='';}
+  if(d.c!==lc){h+=`<h3 class="sub">${d.c}</h3>`;lc=d.c;}
+  h+=`<div class="row" tabindex="0" role="button" data-i="${i}" aria-label="${d.n}, art. ${d.a}, ${fmt(d.mn)} a ${fmt(d.mx)}">
+   <div class="nm"><b>${d.a}</b>${d.n}</div>
+   <div class="track">${grid}<i class="bar ${d.pr==='D'?'cul':''}" style="left:${pct(d.mn)};width:${(X(d.mx)-X(d.mn)).toFixed(3)}%" title="${fmt(d.mn)} a ${fmt(d.mx)}"></i></div></div>`;
+});
+rows.innerHTML=h;
+// ficha
+const fi=document.getElementById('ficha');
+function pill(ok,label,txt){const c=ok===true?'ok':ok===false?'no':'ca';const w=ok===true?'cabe':ok===false?'não cabe':'depende';return `<div class="pill ${c}"><i>${w}</i><span><strong>${label}</strong>. ${txt}</span></div>`;}
+function show(i){
+  const d=D[i];
+  document.querySelectorAll('.row.sel').forEach(r=>r.classList.remove('sel'));
+  const r=document.querySelector(`.row[data-i="${i}"]`); if(r) r.classList.add('sel');
+  const multa=d.mu==='e'?' e multa':d.mu==='ou'?', ou multa':'';
+  const an=d.mn>=48?false:(d.v==='s'?false:(d.v==='c'?null:true));
+  fi.innerHTML=`<p class="eyebrow">${d.t} · ${d.c}</p>
+  <h2>${d.n}</h2><div class="art">art. ${d.a}, do Código Penal</div>
+  <dl><dt>Pena</dt><dd>${d.pr==='R'?'Reclusão':'Detenção'}, de ${fmt(d.mn)} a ${fmt(d.mx)}${multa}</dd>
+  <dt>Ação penal</dt><dd>${d.ac}</dd>
+  <dt>Violência ou grave ameaça</dt><dd>${d.v==='s'?'Elementar do tipo':d.v==='n'?'Não é elementar':'Conforme o caso concreto'}</dd></dl>
+  <div class="pills">
+   ${pill(jecrim(d),'Juizado Especial Criminal','Pena máxima '+(jecrim(d)?'de até':'acima de')+' 2 anos.')}
+   ${pill(sursis(d),'Suspensão condicional do processo','Pena mínima '+(sursis(d)?'de até':'acima de')+' 1 ano.')}
+   ${pill(an,'Acordo de não persecução penal',d.mn>=48?'Pena mínima de 4 anos ou mais.':d.v==='s'?'Pena mínima abaixo de 4 anos, mas há violência ou grave ameaça.':d.v==='c'?'Pena mínima abaixo de 4 anos; depende do modo de execução.':'Pena mínima abaixo de 4 anos, sem violência ou grave ameaça.')}
+  </div>
+  <p class="nota">A análise considera só a pena em abstrato do preceito. Causas de aumento e diminuição, concurso de crimes e as vedações do art. 28-A, § 2º, do Código de Processo Penal podem mudar o resultado.</p>`;
+}
+rows.addEventListener('click',e=>{const r=e.target.closest('.row');if(r)show(+r.dataset.i)});
+rows.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.classList.contains('row')){e.preventDefault();show(+e.target.dataset.i)}});
+// filtros
+let F='todos';
+const tests={todos:()=>true,jecrim,sursis,anpp};
+const cnt=document.getElementById('count'), busca=document.getElementById('busca');
+function norm(s){return s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase()}
+function apply(){
+  const q=norm(busca.value.trim());let n=0,v=0;
+  document.querySelectorAll('.row').forEach(r=>{const d=D[+r.dataset.i];
+    const m=!q||norm(d.n+' '+d.a).includes(q); r.hidden=!m; if(!m) return; v++;
+    const ok=tests[F](d); r.classList.toggle('dim',!ok); if(ok) n++;});
+  document.querySelectorAll('.sub').forEach(g=>{let s=g.nextElementSibling,any=false;while(s&&s.classList.contains('row')){if(!s.hidden)any=true;s=s.nextElementSibling}g.hidden=!any});
+  document.querySelectorAll('.grp').forEach(g=>{let s=g.nextElementSibling,any=false;while(s&&!s.classList.contains('grp')){if(s.classList.contains('sub')&&!s.hidden)any=true;s=s.nextElementSibling}g.hidden=!any});
+  const labels={todos:'tipos penais na régua',jecrim:'são de menor potencial ofensivo',sursis:'admitem suspensão condicional do processo',anpp:'admitem ANPP pela pena, sem violência ou grave ameaça como elementar'};
+  cnt.textContent=F==='todos'?`${v} ${labels.todos}`:`${n} de ${v} ${labels[F]}`;
+}
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{F=b.dataset.f;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));apply()}));
+busca.addEventListener('input',apply);
+apply(); show(0);
+</script>
+</body>
+</html>
