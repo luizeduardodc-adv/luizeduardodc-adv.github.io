@@ -62,7 +62,12 @@ def ident(s):
 
 def situacao_legivel(s):
     s = (s or "").strip()
-    return s[:1].upper() + s[1:].lower() if s.isupper() else s
+    if not s.isupper():
+        return s
+    s = s[:1].upper() + s[1:].lower()
+    for nome in ("Câmara dos Deputados", "Senado Federal", "Congresso Nacional", "Plenário", "Presidente da República", "Mesa", "Ordem do Dia", "Constituição"):
+        s = re.sub(re.escape(nome.lower()), nome, s)
+    return s
 
 
 def main():
