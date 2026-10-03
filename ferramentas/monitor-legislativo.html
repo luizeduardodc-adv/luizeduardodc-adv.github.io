@@ -148,7 +148,7 @@
   var D=null, PASSO=30, mostrados=PASSO, F={ano:null,dip:null,nat:null,uf:null,par:null,aut:null}, LIM={par:15,aut:20};
   var NOMES={ano:'Ano',dip:'Diploma',nat:'Natureza',uf:'Estado',par:'Partido',aut:'Legislador'};
   var $=function(id){return document.getElementById(id)}, nf=new Intl.NumberFormat('pt-BR');
-  var SEM_UF='Sem UF (outros autores)', SEM_PAR='Sem partido (outros autores)', SEM_ROT='Sem rótulo';
+  var LAB={}, SEM_UF='Sem UF (outros autores)', SEM_PAR='Sem partido (outros autores)', SEM_ROT='Sem rótulo';
   function dt(s){if(!s)return '';var p=s.split('-');return p[2]+'/'+p[1]+'/'+p[0]}
   function norm(s){return (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase()}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
@@ -158,6 +158,9 @@
 
   function init(d){
     D=d;
+    var ult={};
+    d.itens.forEach(function(x){(x.aut||[]).forEach(function(a){if(a[1]&&(!ult[a[0]]||x.apresentacao>ult[a[0]].d))ult[a[0]]={d:x.apresentacao,p:a[1],u:a[2]}})});
+    for(var nm in ult)LAB[nm]=nm+' ('+ult[nm].p+'/'+ult[nm].u+')';
     d.itens.forEach(function(x){
       x.aut=x.aut||[];
       x._q=norm(x.sigla+' '+x.numero+'/'+x.ano+' '+x.ementa+' '+x.aut.map(function(a){return a[0]}).join(' '));
@@ -180,7 +183,7 @@
     var A=autoresContados(x); if(!A.length)A=[['Autoria não informada','','']];
     if(dim==='uf')return uniq(A.map(function(a){return a[2]||SEM_UF}));
     if(dim==='par')return uniq(A.map(function(a){return a[1]||SEM_PAR}));
-    if(dim==='aut')return uniq(A.map(rotAut));
+    if(dim==='aut')return uniq(A.map(function(a){return a[0]}));
   }
   function uniq(a){var s={},o=[];a.forEach(function(v){if(!s[v]){s[v]=1;o.push(v)}});return o}
   function filtrar(exceto){
@@ -200,7 +203,7 @@
     kpis(L); ativos(); anos(); meses(L);
     hbar('dip','g-dip',0); hbar('nat','g-nat',0); hbar('uf','g-uf',0); hbar('par','g-par',LIM.par); hbar('aut','g-aut',LIM.aut);
     var m=$('f-modo').value==='p'?'Contagem pelo autor principal (primeiro signatário).':'Contagem por todos os coautores: cada proposição conta para cada autor.';
-    $('s-uf').textContent=m; $('s-par').textContent=m; $('s-aut').textContent=m;
+    $('s-uf').textContent=m+' Estado e partido registrados na data de cada proposição.'; $('s-par').textContent=m+' Partido registrado na data de cada proposição.'; $('s-aut').textContent=m+' Ao lado do nome, o partido e o estado da proposição mais recente.';
     lista(L);
   }
   function kpis(L){
@@ -238,7 +241,8 @@
     var box=$(id), aberto=box.dataset.aberto==='1', mostra=(lim&&!aberto)?ks.slice(0,lim):ks;
     if(F[dim]!=null && mostra.indexOf(F[dim])<0 && c[F[dim]]) mostra.push(F[dim]);
     var mx=Math.max.apply(null,mostra.map(function(k){return c[k]}).concat([1]));
-    var h=mostra.map(function(k){var v=c[k],s=F[dim]===k;return '<button type="button" data-v="'+esc(k)+'" class="'+(s?'sel':'')+'" aria-pressed="'+s+'" aria-label="'+esc(k)+': '+v+' proposições" data-tip="'+esc(k)+': '+nf.format(v)+' proposições"><span class="l">'+esc(k)+'</span><span class="t"><i style="width:'+(v/mx*100).toFixed(1)+'%"></i></span><span class="v">'+nf.format(v)+'</span></button>'}).join('');
+    var lab=function(k){return dim==='aut'?(LAB[k]||k):k};
+    var h=mostra.map(function(k){var v=c[k],s=F[dim]===k;return '<button type="button" data-v="'+esc(k)+'" class="'+(s?'sel':'')+'" aria-pressed="'+s+'" aria-label="'+esc(lab(k))+': '+v+' proposições" data-tip="'+esc(lab(k))+': '+nf.format(v)+' proposições"><span class="l">'+esc(lab(k))+'</span><span class="t"><i style="width:'+(v/mx*100).toFixed(1)+'%"></i></span><span class="v">'+nf.format(v)+'</span></button>'}).join('');
     if(!ks.length)h='<div class="vazio">Nenhuma proposição com os filtros atuais.</div>';
     if(lim && ks.length>lim) h+='<button type="button" class="mais-b" data-mais="1">'+(aberto?'Mostrar só os '+lim+' primeiros':'Mostrar todos ('+ks.length+')')+'</button>';
     box.innerHTML=h; bind(id,dim);
