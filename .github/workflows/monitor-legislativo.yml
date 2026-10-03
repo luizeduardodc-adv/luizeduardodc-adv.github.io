@@ -15,7 +15,7 @@ concurrency:
 jobs:
   atualizar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,11 +23,16 @@ jobs:
           python-version: "3.12"
       - name: Coletar proposições penais (Câmara)
         run: python3 scripts/monitor_camara.py
+      - name: Coletar proposições penais (Senado)
+        continue-on-error: true
+        run: python3 scripts/monitor_senado.py
+      - name: Unificar Câmara e Senado
+        run: python3 scripts/monitor_unificar.py
       - name: Gravar dados atualizados
         run: |
           git config user.name "monitor-legislativo[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/monitor/camara.json
+          git add data/monitor/*.json
           if git diff --cached --quiet; then
             echo "Sem mudanças nos dados."
           else

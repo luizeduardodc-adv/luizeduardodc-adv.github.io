@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Monitor Legislativo Penal · Luiz Eduardo Dias Cardoso</title>
-<meta name="description" content="Painel interativo das proposições penais apresentadas na Câmara dos Deputados na 57ª legislatura, com filtros por ano, estado, partido, legislador e diploma, atualizado diariamente.">
+<meta name="description" content="Painel interativo das proposições penais apresentadas na Câmara dos Deputados e no Senado Federal na 57ª legislatura, com filtros por Casa, ano, estado, partido, legislador e diploma, atualizado diariamente.">
 <meta property="og:title" content="Monitor Legislativo Penal · Luiz Eduardo Dias Cardoso">
-<meta property="og:description" content="Painel interativo das proposições penais apresentadas na Câmara dos Deputados na 57ª legislatura, com filtros por ano, estado, partido, legislador e diploma, atualizado diariamente.">
+<meta property="og:description" content="Painel interativo das proposições penais apresentadas na Câmara dos Deputados e no Senado Federal na 57ª legislatura, com filtros por Casa, ano, estado, partido, legislador e diploma, atualizado diariamente.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232E5B88'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%23F4F6F8' text-anchor='middle'%3ELE%3C/text%3E%3C/svg%3E">
@@ -102,10 +102,11 @@
 <div class="mon">
 <p class="eyebrow">Ferramentas · Legislação penal</p>
 <h1>Monitor Legislativo Penal <span class="badge">protótipo</span></h1>
-<p class="lede">Painel das proposições de natureza penal apresentadas na Câmara dos Deputados na 57ª legislatura (desde 1º de fevereiro de 2023): projetos de lei (PL), projetos de lei complementar (PLP) e propostas de emenda à Constituição (PEC), atualizados automaticamente todos os dias a partir dos dados abertos da Casa. Clique nas barras dos gráficos para filtrar.</p>
+<p class="lede">Painel das proposições de natureza penal apresentadas na Câmara dos Deputados e no Senado Federal na 57ª legislatura (desde 1º de fevereiro de 2023): projetos de lei (PL), projetos de lei complementar (PLP) e propostas de emenda à Constituição (PEC), atualizados automaticamente todos os dias a partir dos dados abertos das duas Casas. Clique nas barras dos gráficos para filtrar.</p>
 
 <div class="filtros" role="search">
   <input id="q" type="search" placeholder="Buscar na ementa, número ou autor" aria-label="Buscar">
+  <select id="f-casa" aria-label="Casa de origem"><option value="">Câmara e Senado</option><option>Câmara</option><option>Senado</option></select>
   <select id="f-sit" aria-label="Situação"><option value="">Todas as situações</option><option value="tram">Em tramitação</option><option value="enc">Encerradas</option></select>
   <select id="f-tipo" aria-label="Tipo"><option value="">PL, PLP e PEC</option><option>PL</option><option>PLP</option><option>PEC</option></select>
   <select id="f-modo" aria-label="Autoria considerada nos gráficos"><option value="p">Autor principal</option><option value="t">Todos os coautores</option></select>
@@ -117,8 +118,9 @@
 <div class="kpis" id="kpis"></div>
 
 <div class="grade">
+  <section class="painel" aria-labelledby="t-casa"><h2 id="t-casa">Por casa de origem</h2><p class="sub">Casa em que a proposição foi apresentada.</p><div class="hb" id="g-casa"></div></section>
   <section class="painel" aria-labelledby="t-ano"><h2 id="t-ano">Por ano de apresentação</h2><p class="sub">Clique em um ano para filtrar.</p><div class="vb" id="g-ano"></div></section>
-  <section class="painel" aria-labelledby="t-mes"><h2 id="t-mes">Por mês</h2><p class="sub">Proposições apresentadas por mês, com os filtros ativos.</p><div class="mes" id="g-mes" role="img"></div><div class="mes-x" id="g-mes-x"></div></section>
+  <section class="painel largo" aria-labelledby="t-mes"><h2 id="t-mes">Por mês</h2><p class="sub">Proposições apresentadas por mês, com os filtros ativos.</p><div class="mes" id="g-mes" role="img"></div><div class="mes-x" id="g-mes-x"></div></section>
   <section class="painel" aria-labelledby="t-dip"><h2 id="t-dip">Por diploma alterado</h2><p class="sub">Uma proposição pode alterar mais de um diploma.</p><div class="hb" id="g-dip"></div></section>
   <section class="painel" aria-labelledby="t-nat"><h2 id="t-nat">Por natureza da alteração</h2><p class="sub">Classificação automática pela ementa.</p><div class="hb" id="g-nat"></div></section>
   <section class="painel" aria-labelledby="t-uf"><h2 id="t-uf">Por estado</h2><p class="sub" id="s-uf"></p><div class="hb" id="g-uf"></div></section>
@@ -133,10 +135,11 @@
 <div class="prose">
 <h2>Como funciona</h2>
 <ol>
-  <li>Todos os dias, uma rotina automática baixa os arquivos de dados abertos da Câmara dos Deputados (proposições, temas e autores) e seleciona PL, PLP e PEC apresentados desde 1º de fevereiro de 2023, início da 57ª legislatura.</li>
-  <li>Entram as proposições classificadas pela Câmara no tema "Direito Penal e Processual Penal" e as que trazem, na ementa, termos de natureza penal (Código Penal, Código de Processo Penal, Lei de Execução Penal, crime, pena, tipificação, entre outros).</li>
+  <li>Todos os dias, uma rotina automática baixa os dados abertos da Câmara dos Deputados (arquivos de proposições, temas e autores) e do Senado Federal (API de processos legislativos) e seleciona PL, PLP e PEC apresentados desde 1º de fevereiro de 2023, início da 57ª legislatura.</li>
+  <li>Entram as proposições classificadas pelas Casas como de matéria penal (na Câmara, tema "Direito Penal e Processual Penal"; no Senado, classes "Direito Penal e Penitenciário" e "Processo Penal") e as que trazem, na ementa, termos de natureza penal (Código Penal, Código de Processo Penal, Lei de Execução Penal, crime, pena, tipificação, entre outros).</li>
+  <li>As duas bases são unificadas pela identificação da proposição (sigla, número e ano, numeração comum ao Congresso). Cada proposição aparece uma vez, pela Casa em que foi apresentada; quando já tramita na outra Casa, a situação e o link da outra Casa aparecem no item.</li>
   <li>Os rótulos de diploma e de natureza são atribuídos por palavras-chave na ementa. É uma classificação automática, sujeita a erros: confira sempre a tramitação e o texto na página da Câmara.</li>
-  <li>Estado e partido são os do autor registrados pela Câmara na proposição. No modo "Autor principal", conta-se só o primeiro signatário; em "Todos os coautores", cada proposição conta uma vez para cada autor. Autorias de órgãos (Poder Executivo, Senado, comissões) aparecem como "Sem UF" e "Sem partido".</li>
+  <li>Estado e partido são os do autor registrados pela Câmara na proposição. No modo "Autor principal", conta-se só o primeiro signatário; em "Todos os coautores", cada proposição conta uma vez para cada autor. Autorias de órgãos (Poder Executivo, comissões, CPIs, a outra Casa) aparecem como "Sem UF" e "Sem partido".</li>
 </ol>
 <p class="note" id="nota-fonte"></p>
 </div>
@@ -145,15 +148,15 @@
 
 <script>
 (function(){
-  var D=null, PASSO=30, mostrados=PASSO, F={ano:null,dip:null,nat:null,uf:null,par:null,aut:null}, LIM={par:15,aut:20};
-  var NOMES={ano:'Ano',dip:'Diploma',nat:'Natureza',uf:'Estado',par:'Partido',aut:'Legislador'};
+  var D=null, PASSO=30, mostrados=PASSO, F={casa:null,ano:null,dip:null,nat:null,uf:null,par:null,aut:null}, LIM={par:15,aut:20};
+  var NOMES={casa:'Casa',ano:'Ano',dip:'Diploma',nat:'Natureza',uf:'Estado',par:'Partido',aut:'Legislador'};
   var $=function(id){return document.getElementById(id)}, nf=new Intl.NumberFormat('pt-BR');
   var LAB={}, SEM_UF='Sem UF (outros autores)', SEM_PAR='Sem partido (outros autores)', SEM_ROT='Sem rótulo';
   function dt(s){if(!s)return '';var p=s.split('-');return p[2]+'/'+p[1]+'/'+p[0]}
   function norm(s){return (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase()}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function rotAut(a){return a[0]+(a[1]&&a[2]?' ('+a[1]+'/'+a[2]+')':'')}
-  fetch('../data/monitor/camara.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).then(init)
+  fetch('../data/monitor/proposicoes.json',{cache:'no-store'}).then(function(r){if(!r.ok)return fetch('../data/monitor/camara.json',{cache:'no-store'});return r}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).then(init)
     .catch(function(e){$('count').textContent='Os dados não puderam ser carregados ('+e.message+').'});
 
   function init(d){
@@ -167,16 +170,19 @@
       x._ano=String((x.apresentacao||'').slice(0,4)||x.ano);
       x._dip=x.diplomas.length?x.diplomas:[SEM_ROT];
       x._nat=x.natureza.length?x.natureza:[SEM_ROT];
+      x.casa=x.casa||'Câmara';
     });
-    $('nota-fonte').innerHTML='<strong>Fonte:</strong> '+esc(d.fonte)+', <a href="https://dadosabertos.camara.leg.br/" rel="noopener">dadosabertos.camara.leg.br</a>. Última coleta: '+esc(d.atualizado_em)+' (horário de Brasília). Período: '+esc(d.legislatura||'desde 2023')+'. Foram analisadas '+nf.format(d.analisadas)+' proposições dos tipos '+d.tipos.join(', ')+'.';
-    ['q','f-sit','f-tipo','f-modo'].forEach(function(id){$(id).addEventListener(id==='q'?'input':'change',function(){mostrados=PASSO;tudo()})});
-    $('limpar').addEventListener('click',function(){for(var k in F)F[k]=null;$('q').value='';$('f-sit').value='';$('f-tipo').value='';mostrados=PASSO;tudo()});
+    var cs=d.casas||{}, an=Object.keys(cs).map(function(k){return k+': '+nf.format(cs[k].analisadas||0)+' analisadas, '+nf.format(cs[k].selecionadas||0)+' selecionadas'}).join('; ');
+    $('nota-fonte').innerHTML='<strong>Fontes:</strong> Câmara dos Deputados (<a href="https://dadosabertos.camara.leg.br/" rel="noopener">dadosabertos.camara.leg.br</a>) e Senado Federal (<a href="https://www12.senado.leg.br/dados-abertos" rel="noopener">dados abertos do Senado</a>). Última coleta: '+esc(d.atualizado_em)+' (horário de Brasília). Período: '+esc(d.legislatura||'desde 2023')+'. '+(an?an+'.':'Foram analisadas '+nf.format(d.analisadas)+' proposições.');
+    ['q','f-casa','f-sit','f-tipo','f-modo'].forEach(function(id){$(id).addEventListener(id==='q'?'input':'change',function(){mostrados=PASSO;tudo()})});
+    $('limpar').addEventListener('click',function(){for(var k in F)F[k]=null;$('q').value='';$('f-casa').value='';$('f-sit').value='';$('f-tipo').value='';mostrados=PASSO;tudo()});
     $('mais').addEventListener('click',function(){mostrados+=PASSO;lista(filtrar(null))});
     $('csv').addEventListener('click',csv);
     tudo();
   }
   function autoresContados(x){return $('f-modo').value==='p'?x.aut.slice(0,1):x.aut}
   function chaves(x,dim){
+    if(dim==='casa')return [x.casa];
     if(dim==='ano')return [x._ano];
     if(dim==='dip')return x._dip;
     if(dim==='nat')return x._nat;
@@ -187,12 +193,13 @@
   }
   function uniq(a){var s={},o=[];a.forEach(function(v){if(!s[v]){s[v]=1;o.push(v)}});return o}
   function filtrar(exceto){
-    var q=norm($('q').value.trim()), sit=$('f-sit').value, tipo=$('f-tipo').value;
+    var q=norm($('q').value.trim()), sit=$('f-sit').value, tipo=$('f-tipo').value, casa=$('f-casa').value;
     return D.itens.filter(function(x){
       if(q && x._q.indexOf(q)<0)return false;
       if(sit==='tram' && !x.em_tramitacao)return false;
       if(sit==='enc' && x.em_tramitacao)return false;
       if(tipo && x.sigla!==tipo)return false;
+      if(casa && x.casa!==casa)return false;
       for(var k in F){ if(k===exceto||F[k]==null)continue; if(chaves(x,k).indexOf(F[k])<0)return false; }
       return true;
     });
@@ -201,7 +208,7 @@
   function tudo(){
     var L=filtrar(null);
     kpis(L); ativos(); anos(); meses(L);
-    hbar('dip','g-dip',0); hbar('nat','g-nat',0); hbar('uf','g-uf',0); hbar('par','g-par',LIM.par); hbar('aut','g-aut',LIM.aut);
+    hbar('casa','g-casa',0); hbar('dip','g-dip',0); hbar('nat','g-nat',0); hbar('uf','g-uf',0); hbar('par','g-par',LIM.par); hbar('aut','g-aut',LIM.aut);
     var m=$('f-modo').value==='p'?'Contagem pelo autor principal (primeiro signatário).':'Contagem por todos os coautores: cada proposição conta para cada autor.';
     $('s-uf').textContent=m+' Estado e partido registrados na data de cada proposição.'; $('s-par').textContent=m+' Partido registrado na data de cada proposição.'; $('s-aut').textContent=m+' Ao lado do nome, o partido e o estado da proposição mais recente.';
     lista(L);
@@ -210,7 +217,7 @@
     var tram=L.filter(function(x){return x.em_tramitacao}).length, a={};
     L.forEach(function(x){x.aut.forEach(function(y){if(y[1])a[y[0]]=1})});
     var ult=D.atualizado_em.split(' ')[0].split('-').reverse().join('/');
-    $('kpis').innerHTML=[['Proposições',nf.format(L.length),'de '+nf.format(D.total)+' no período'],['Em tramitação',nf.format(tram),L.length?Math.round(tram/L.length*100)+'% das filtradas':''],['Deputados autores',nf.format(Object.keys(a).length),'entre os coautores'],['Atualizado em',ult,'coleta diária automática']]
+    $('kpis').innerHTML=[['Proposições',nf.format(L.length),'de '+nf.format(D.total)+' no período'],['Em tramitação',nf.format(tram),L.length?Math.round(tram/L.length*100)+'% das filtradas':''],['Parlamentares autores',nf.format(Object.keys(a).length),'deputados e senadores'],['Atualizado em',ult,'coleta diária automática']]
       .map(function(k){return '<div class="kpi"><div class="k">'+k[0]+'</div><div class="v">'+k[1]+'</div><div class="d">'+k[2]+'</div></div>'}).join('');
   }
   function ativos(){
@@ -259,20 +266,22 @@
     $('lista').innerHTML=L.slice(0,mostrados).map(function(x){
       var n=x.aut.length, aut=n?x.aut.slice(0,5).map(rotAut).join('; ')+(n>5?' e outros ('+n+' autores)':''):'Autoria não informada';
       var tags=x.diplomas.map(function(t){return '<span class="tag">'+esc(t)+'</span>'}).join('')+x.natureza.map(function(t){return '<span class="tag n">'+esc(t)+'</span>'}).join('')+(x.em_tramitacao?'':'<span class="tag enc">Encerrada</span>');
-      var tram=x.tramitacao||('https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao='+x.id);
-      return '<li class="item"><div class="h"><span class="id"><a href="'+esc(tram)+'" rel="noopener" title="Ficha de tramitação na Câmara">'+x.sigla+' '+x.numero+'/'+x.ano+'</a></span><span class="d">apresentada em '+dt(x.apresentacao)+'</span></div>'+
+      var tram=x.tramitacao||x.url;
+      var outra=x.outra?'<div class="meta"><strong>'+(x.outra.casa==='Senado'?'No Senado':'Na Câmara')+':</strong> '+esc(x.outra.situacao||'situação não informada')+(x.outra.data?' · desde '+dt(x.outra.data):'')+(x.outra.url?' · <a href="'+esc(x.outra.url)+'" rel="noopener">tramitação '+(x.outra.casa==='Senado'?'no Senado':'na Câmara')+'</a>':'')+'</div>':'';
+      var ondeTram=x.casa==='Senado'?'no Senado':'na Câmara';
+      return '<li class="item"><div class="h"><span class="id"><a href="'+esc(tram)+'" rel="noopener" title="Tramitação '+ondeTram+'">'+x.sigla+' '+x.numero+'/'+x.ano+'</a></span><span class="tag'+(x.casa==='Senado'?' n':'')+'">'+esc(x.casa)+'</span><span class="d">apresentada em '+dt(x.apresentacao)+'</span></div>'+
         '<p>'+esc(x.ementa)+'</p>'+
         '<div class="meta"><strong>Autoria:</strong> '+esc(aut)+'</div>'+
-        '<div class="meta"><strong>Situação:</strong> '+esc(x.situacao||'não informada')+(x.orgao?' ('+esc(x.orgao)+')':'')+(x.ultima_tramitacao?' · última movimentação em '+dt(x.ultima_tramitacao):'')+'</div>'+
-        '<div class="lk"><a href="'+esc(tram)+'" rel="noopener">Ficha de tramitação</a><a href="'+esc(x.url)+'" rel="noopener">Página da proposição</a>'+(x.inteiro_teor?'<a href="'+esc(x.inteiro_teor)+'" rel="noopener">Texto original (PDF)</a>':'')+'</div>'+
+        '<div class="meta"><strong>Situação '+ondeTram+':</strong> '+esc(x.situacao||'não informada')+(x.orgao?' ('+esc(x.orgao)+')':'')+(x.ultima_tramitacao?' · última movimentação em '+dt(x.ultima_tramitacao):'')+'</div>'+outra+
+        '<div class="lk"><a href="'+esc(tram)+'" rel="noopener">Tramitação '+ondeTram+'</a>'+(x.url&&x.url!==tram?'<a href="'+esc(x.url)+'" rel="noopener">Página da proposição</a>':'')+(x.inteiro_teor?'<a href="'+esc(x.inteiro_teor)+'" rel="noopener">Texto original (PDF)</a>':'')+'</div>'+
         (tags?'<div class="tags">'+tags+'</div>':'')+'</li>';
     }).join('');
     $('mais').hidden=L.length<=mostrados;
   }
   function csv(){
     var L=filtrar(null), q=function(s){return '"'+String(s==null?'':s).replace(/"/g,'""')+'"'};
-    var rows=[['Proposição','Apresentação','Ementa','Autores','Situação','Órgão','Última movimentação','Diplomas','Natureza','Ficha de tramitação']].concat(L.map(function(x){
-      return [x.sigla+' '+x.numero+'/'+x.ano,x.apresentacao,x.ementa,x.aut.map(rotAut).join('; '),x.situacao,x.orgao,x.ultima_tramitacao,x.diplomas.join('; '),x.natureza.join('; '),x.tramitacao||''];
+    var rows=[['Casa','Proposição','Apresentação','Ementa','Autores','Situação','Órgão','Última movimentação','Diplomas','Natureza','Tramitação','Outra Casa: situação','Outra Casa: link']].concat(L.map(function(x){
+      return [x.casa,x.sigla+' '+x.numero+'/'+x.ano,x.apresentacao,x.ementa,x.aut.map(rotAut).join('; '),x.situacao,x.orgao,x.ultima_tramitacao,x.diplomas.join('; '),x.natureza.join('; '),x.tramitacao||x.url||'',x.outra?x.outra.casa+': '+(x.outra.situacao||''):'',x.outra?x.outra.url:''];
     }));
     var blob=new Blob(['﻿'+rows.map(function(r){return r.map(q).join(';')}).join('\n')],{type:'text/csv;charset=utf-8'});
     var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='monitor-legislativo-penal.csv'; document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},500);
