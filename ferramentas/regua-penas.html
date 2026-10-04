@@ -126,7 +126,7 @@ body{margin:0}
 </div>
 
 <footer>
-  <p><strong>Penas conferidas em 03/10/2026</strong>, dispositivo por dispositivo, no <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm" rel="noopener" style="color:var(--accent)">texto compilado do Planalto</a>, já com as alterações das Leis 15.163/2025 e 15.397/2026. Consulte sempre a lei. Majorantes e minorantes (como o § 2º do art. 157) não alteram a régua, que mostra só a pena cominada no preceito secundário.</p>
+  <p><strong>Penas conferidas em 03/10/2026</strong>, dispositivo por dispositivo, no <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm" rel="noopener" style="color:var(--accent)">texto compilado do Planalto</a>, já com as alterações das Leis 15.163/2025 e 15.397/2026. A ficha de cada crime indica a redação vigente, segundo as anotações do texto compilado; "redação original" significa que o dispositivo não traz anotação de alteração. Consulte sempre a lei. Majorantes e minorantes (como o § 2º do art. 157) não alteram a régua, que mostra só a pena cominada no preceito secundário.</p>
   <p>Critérios: Juizado Especial Criminal quando a pena máxima não supera 2 anos (art. 61 da Lei 9.099/1995); suspensão condicional do processo quando a pena mínima não supera 1 ano (art. 89 da Lei 9.099/1995); acordo de não persecução penal quando a pena mínima é inferior a 4 anos e o crime é cometido sem violência ou grave ameaça (art. 28-A do Código de Processo Penal), sem considerar as demais vedações do § 2º.</p>
   <p>Luiz Eduardo Dias Cardoso · Direito Penal</p>
 </footer>
@@ -135,61 +135,61 @@ body{margin:0}
 <script>
 // m = meses. pr: R reclusão, D detenção. mu: multa "e" (cumulativa) | "ou" (alternativa) | "". v: violência ou grave ameaça como elementar: s (sim), n (não), c (conforme o caso)
 const D=[
- {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121, caput",n:"Homicídio simples",pr:"R",mn:72,mx:240,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121, § 2º",n:"Homicídio qualificado",pr:"R",mn:144,mx:360,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121, § 3º",n:"Homicídio culposo",pr:"D",mn:12,mx:36,mu:"",v:"n",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121-A",n:"Feminicídio",pr:"R",mn:240,mx:480,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"122",n:"Induzimento, instigação ou auxílio a suicídio ou a automutilação",pr:"R",mn:6,mx:24,mu:"",v:"n",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"123",n:"Infanticídio",pr:"D",mn:24,mx:72,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"124",n:"Aborto provocado pela gestante ou com seu consentimento",pr:"D",mn:12,mx:36,mu:"",v:"n",ac:"Pública incondicionada; competência do Tribunal do Júri"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"125",n:"Aborto provocado por terceiro sem consentimento",pr:"R",mn:36,mx:120,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"126",n:"Aborto provocado por terceiro com consentimento",pr:"R",mn:12,mx:48,mu:"",v:"n",ac:"Pública incondicionada; competência do Tribunal do Júri"},
- {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, caput",n:"Lesão corporal",pr:"D",mn:3,mx:12,mu:"",v:"s",ac:"Pública condicionada à representação (art. 88 da Lei 9.099/1995)"},
- {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 1º",n:"Lesão corporal grave",pr:"R",mn:12,mx:60,mu:"",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 2º",n:"Lesão corporal gravíssima",pr:"R",mn:24,mx:96,mu:"",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 3º",n:"Lesão corporal seguida de morte",pr:"R",mn:48,mx:144,mu:"",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 6º",n:"Lesão corporal culposa",pr:"D",mn:2,mx:12,mu:"",v:"n",ac:"Pública condicionada à representação (art. 88 da Lei 9.099/1995)"},
- {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 9º",n:"Lesão corporal em contexto doméstico",pr:"R",mn:24,mx:60,mu:"",v:"s",ac:"Pública condicionada à representação, salvo violência doméstica contra a mulher (art. 41 da Lei 11.340/2006)"},
- {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 13",n:"Lesão corporal contra a mulher por razões da condição do sexo feminino",pr:"R",mn:24,mx:60,mu:"",v:"s",ac:"Pública incondicionada (art. 41 da Lei 11.340/2006)"},
- {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"132",n:"Perigo para a vida ou saúde de outrem",pr:"D",mn:3,mx:12,mu:"",v:"n",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"133",n:"Abandono de incapaz",pr:"R",mn:24,mx:60,mu:"",v:"n",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"135",n:"Omissão de socorro",pr:"D",mn:1,mx:6,mu:"ou",v:"n",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"136",n:"Maus-tratos",pr:"R",mn:24,mx:60,mu:"",v:"c",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Rixa",a:"137",n:"Rixa",pr:"D",mn:0.5,mx:2,mu:"ou",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a honra",a:"138",n:"Calúnia",pr:"D",mn:6,mx:24,mu:"e",v:"n",ac:"Privada, em regra (art. 145)"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a honra",a:"139",n:"Difamação",pr:"D",mn:3,mx:12,mu:"e",v:"n",ac:"Privada, em regra (art. 145)"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a honra",a:"140",n:"Injúria",pr:"D",mn:1,mx:6,mu:"ou",v:"n",ac:"Privada, em regra (art. 145)"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"146",n:"Constrangimento ilegal",pr:"D",mn:3,mx:12,mu:"ou",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"147",n:"Ameaça",pr:"D",mn:1,mx:6,mu:"ou",v:"s",ac:"Pública condicionada à representação, em regra"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"147-A",n:"Perseguição",pr:"R",mn:6,mx:24,mu:"e",v:"c",ac:"Pública condicionada à representação"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"147-B",n:"Violência psicológica contra a mulher",pr:"R",mn:6,mx:24,mu:"e",v:"c",ac:"Pública incondicionada (o tipo não exige representação)"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"148",n:"Sequestro e cárcere privado",pr:"R",mn:12,mx:36,mu:"",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"149",n:"Redução a condição análoga à de escravo",pr:"R",mn:24,mx:96,mu:"e",v:"c",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"149-A",n:"Tráfico de pessoas",pr:"R",mn:48,mx:96,mu:"e",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"150",n:"Violação de domicílio",pr:"D",mn:1,mx:3,mu:"ou",v:"n",ac:"Pública incondicionada"},
- {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"154-A",n:"Invasão de dispositivo informático",pr:"R",mn:12,mx:48,mu:"e",v:"n",ac:"Pública condicionada à representação, em regra (art. 154-B)"},
- {t:"Crimes contra o patrimônio",c:"Furto",a:"155, caput",n:"Furto",pr:"R",mn:12,mx:72,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)"},
- {t:"Crimes contra o patrimônio",c:"Furto",a:"155, § 4º",n:"Furto qualificado",pr:"R",mn:24,mx:96,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)"},
- {t:"Crimes contra o patrimônio",c:"Furto",a:"155, § 4º-A",n:"Furto com emprego de explosivo",pr:"R",mn:48,mx:120,mu:"e",v:"n",ac:"Pública incondicionada"},
- {t:"Crimes contra o patrimônio",c:"Furto",a:"155, § 4º-B",n:"Furto mediante fraude por dispositivo eletrônico",pr:"R",mn:48,mx:120,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)"},
- {t:"Crimes contra o patrimônio",c:"Furto",a:"156",n:"Furto de coisa comum",pr:"D",mn:6,mx:24,mu:"ou",v:"n",ac:"Pública condicionada à representação"},
- {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"157, caput",n:"Roubo",pr:"R",mn:72,mx:120,mu:"e",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"157, § 3º, I",n:"Roubo com lesão corporal grave",pr:"R",mn:84,mx:216,mu:"e",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"157, § 3º, II",n:"Latrocínio",pr:"R",mn:288,mx:360,mu:"e",v:"s",ac:"Pública incondicionada; competência do juízo singular (Súmula 603 do STF)"},
- {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"158, caput",n:"Extorsão",pr:"R",mn:48,mx:120,mu:"e",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"158, § 3º",n:"Extorsão com restrição da liberdade da vítima",pr:"R",mn:72,mx:144,mu:"e",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"159, caput",n:"Extorsão mediante sequestro",pr:"R",mn:96,mx:180,mu:"",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"159, § 3º",n:"Extorsão mediante sequestro com resultado morte",pr:"R",mn:288,mx:360,mu:"",v:"s",ac:"Pública incondicionada"},
- {t:"Crimes contra o patrimônio",c:"Usurpação",a:"161",n:"Alteração de limites",pr:"D",mn:1,mx:6,mu:"e",v:"n",ac:"Privada, se a propriedade é particular e não há violência (§ 3º)"},
- {t:"Crimes contra o patrimônio",c:"Dano",a:"163, caput",n:"Dano",pr:"D",mn:1,mx:6,mu:"ou",v:"n",ac:"Privada (art. 167)"},
- {t:"Crimes contra o patrimônio",c:"Dano",a:"163, parágrafo único",n:"Dano qualificado",pr:"D",mn:6,mx:36,mu:"e",v:"c",ac:"Pública incondicionada, salvo o inciso IV (art. 167)"},
- {t:"Crimes contra o patrimônio",c:"Apropriação indébita",a:"168",n:"Apropriação indébita",pr:"R",mn:12,mx:48,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)"},
- {t:"Crimes contra o patrimônio",c:"Apropriação indébita",a:"168-A",n:"Apropriação indébita previdenciária",pr:"R",mn:24,mx:60,mu:"e",v:"n",ac:"Pública incondicionada"},
- {t:"Crimes contra o patrimônio",c:"Estelionato e outras fraudes",a:"171, caput",n:"Estelionato",pr:"R",mn:12,mx:60,mu:"e",v:"n",ac:"Pública condicionada à representação, com as exceções do § 5º"},
- {t:"Crimes contra o patrimônio",c:"Estelionato e outras fraudes",a:"171, § 2º-A",n:"Fraude eletrônica",pr:"R",mn:48,mx:96,mu:"e",v:"n",ac:"Pública condicionada à representação, com as exceções do § 5º"},
- {t:"Crimes contra o patrimônio",c:"Receptação",a:"180, caput",n:"Receptação",pr:"R",mn:24,mx:72,mu:"e",v:"n",ac:"Pública incondicionada"},
- {t:"Crimes contra o patrimônio",c:"Receptação",a:"180, § 1º",n:"Receptação qualificada",pr:"R",mn:36,mx:96,mu:"e",v:"n",ac:"Pública incondicionada"},
- {t:"Crimes contra o patrimônio",c:"Receptação",a:"180, § 3º",n:"Receptação culposa",pr:"D",mn:1,mx:12,mu:"ou",v:"n",ac:"Pública incondicionada"}
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121, caput",n:"Homicídio simples",pr:"R",mn:72,mx:240,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121, § 2º",n:"Homicídio qualificado",pr:"R",mn:144,mx:360,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121, § 3º",n:"Homicídio culposo",pr:"D",mn:12,mx:36,mu:"",v:"n",ac:"Pública incondicionada",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"121-A",n:"Feminicídio",pr:"R",mn:240,mx:480,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri",rd:"Incluído pela Lei 14.994/2024"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"122",n:"Induzimento, instigação ou auxílio a suicídio ou a automutilação",pr:"R",mn:6,mx:24,mu:"",v:"n",ac:"Pública incondicionada",rd:"Redação da Lei 13.968/2019"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"123",n:"Infanticídio",pr:"D",mn:24,mx:72,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"124",n:"Aborto provocado pela gestante ou com seu consentimento",pr:"D",mn:12,mx:36,mu:"",v:"n",ac:"Pública incondicionada; competência do Tribunal do Júri",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"125",n:"Aborto provocado por terceiro sem consentimento",pr:"R",mn:36,mx:120,mu:"",v:"s",ac:"Pública incondicionada; competência do Tribunal do Júri",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a vida",a:"126",n:"Aborto provocado por terceiro com consentimento",pr:"R",mn:12,mx:48,mu:"",v:"n",ac:"Pública incondicionada; competência do Tribunal do Júri",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, caput",n:"Lesão corporal",pr:"D",mn:3,mx:12,mu:"",v:"s",ac:"Pública condicionada à representação (art. 88 da Lei 9.099/1995)",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 1º",n:"Lesão corporal grave",pr:"R",mn:12,mx:60,mu:"",v:"s",ac:"Pública incondicionada",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 2º",n:"Lesão corporal gravíssima",pr:"R",mn:24,mx:96,mu:"",v:"s",ac:"Pública incondicionada",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 3º",n:"Lesão corporal seguida de morte",pr:"R",mn:48,mx:144,mu:"",v:"s",ac:"Pública incondicionada",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 6º",n:"Lesão corporal culposa",pr:"D",mn:2,mx:12,mu:"",v:"n",ac:"Pública condicionada à representação (art. 88 da Lei 9.099/1995)",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 9º",n:"Lesão corporal em contexto doméstico",pr:"R",mn:24,mx:60,mu:"",v:"s",ac:"Pública condicionada à representação, salvo violência doméstica contra a mulher (art. 41 da Lei 11.340/2006)",rd:"Tipo: redação da Lei 15.455/2026. Pena: redação da Lei 14.994/2024"},
+ {t:"Crimes contra a pessoa",c:"Lesões corporais",a:"129, § 13",n:"Lesão corporal contra a mulher por razões da condição do sexo feminino",pr:"R",mn:24,mx:60,mu:"",v:"s",ac:"Pública incondicionada (art. 41 da Lei 11.340/2006)",rd:"Redação da Lei 14.994/2024"},
+ {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"132",n:"Perigo para a vida ou saúde de outrem",pr:"D",mn:3,mx:12,mu:"",v:"n",ac:"Pública incondicionada",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"133",n:"Abandono de incapaz",pr:"R",mn:24,mx:60,mu:"",v:"n",ac:"Pública incondicionada",rd:"Tipo: redação original (1940). Pena: redação da Lei 15.163/2025"},
+ {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"135",n:"Omissão de socorro",pr:"D",mn:1,mx:6,mu:"ou",v:"n",ac:"Pública incondicionada",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Periclitação da vida e da saúde",a:"136",n:"Maus-tratos",pr:"R",mn:24,mx:60,mu:"",v:"c",ac:"Pública incondicionada",rd:"Tipo: redação original (1940). Pena: redação da Lei 15.163/2025"},
+ {t:"Crimes contra a pessoa",c:"Rixa",a:"137",n:"Rixa",pr:"D",mn:0.5,mx:2,mu:"ou",v:"s",ac:"Pública incondicionada",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a honra",a:"138",n:"Calúnia",pr:"D",mn:6,mx:24,mu:"e",v:"n",ac:"Privada, em regra (art. 145)",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a honra",a:"139",n:"Difamação",pr:"D",mn:3,mx:12,mu:"e",v:"n",ac:"Privada, em regra (art. 145)",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a honra",a:"140",n:"Injúria",pr:"D",mn:1,mx:6,mu:"ou",v:"n",ac:"Privada, em regra (art. 145)",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"146",n:"Constrangimento ilegal",pr:"D",mn:3,mx:12,mu:"ou",v:"s",ac:"Pública incondicionada",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"147",n:"Ameaça",pr:"D",mn:1,mx:6,mu:"ou",v:"s",ac:"Pública condicionada à representação, em regra",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"147-A",n:"Perseguição",pr:"R",mn:6,mx:24,mu:"e",v:"c",ac:"Pública condicionada à representação",rd:"Incluído pela Lei 14.132/2021"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"147-B",n:"Violência psicológica contra a mulher",pr:"R",mn:6,mx:24,mu:"e",v:"c",ac:"Pública incondicionada (o tipo não exige representação)",rd:"Incluído pela Lei 14.188/2021"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"148",n:"Sequestro e cárcere privado",pr:"R",mn:12,mx:36,mu:"",v:"s",ac:"Pública incondicionada",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"149",n:"Redução a condição análoga à de escravo",pr:"R",mn:24,mx:96,mu:"e",v:"c",ac:"Pública incondicionada",rd:"Redação da Lei 10.803/2003"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"149-A",n:"Tráfico de pessoas",pr:"R",mn:48,mx:96,mu:"e",v:"s",ac:"Pública incondicionada",rd:"Incluído pela Lei 13.344/2016"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"150",n:"Violação de domicílio",pr:"D",mn:1,mx:3,mu:"ou",v:"n",ac:"Pública incondicionada",rd:"Redação original (1940)"},
+ {t:"Crimes contra a pessoa",c:"Crimes contra a liberdade individual",a:"154-A",n:"Invasão de dispositivo informático",pr:"R",mn:12,mx:48,mu:"e",v:"n",ac:"Pública condicionada à representação, em regra (art. 154-B)",rd:"Redação da Lei 14.155/2021"},
+ {t:"Crimes contra o patrimônio",c:"Furto",a:"155, caput",n:"Furto",pr:"R",mn:12,mx:72,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)",rd:"Tipo: redação original (1940). Pena: redação da Lei 15.397/2026"},
+ {t:"Crimes contra o patrimônio",c:"Furto",a:"155, § 4º",n:"Furto qualificado",pr:"R",mn:24,mx:96,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)",rd:"Redação da Lei 15.397/2026"},
+ {t:"Crimes contra o patrimônio",c:"Furto",a:"155, § 4º-A",n:"Furto com emprego de explosivo",pr:"R",mn:48,mx:120,mu:"e",v:"n",ac:"Pública incondicionada",rd:"Incluído pela Lei 13.654/2018"},
+ {t:"Crimes contra o patrimônio",c:"Furto",a:"155, § 4º-B",n:"Furto mediante fraude por dispositivo eletrônico",pr:"R",mn:48,mx:120,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)",rd:"Redação da Lei 15.397/2026"},
+ {t:"Crimes contra o patrimônio",c:"Furto",a:"156",n:"Furto de coisa comum",pr:"D",mn:6,mx:24,mu:"ou",v:"n",ac:"Pública condicionada à representação",rd:"Redação original (1940)"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"157, caput",n:"Roubo",pr:"R",mn:72,mx:120,mu:"e",v:"s",ac:"Pública incondicionada",rd:"Tipo: redação original (1940). Pena: redação da Lei 15.397/2026"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"157, § 3º, I",n:"Roubo com lesão corporal grave",pr:"R",mn:84,mx:216,mu:"e",v:"s",ac:"Pública incondicionada",rd:"Incluído pela Lei 13.654/2018"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"157, § 3º, II",n:"Latrocínio",pr:"R",mn:288,mx:360,mu:"e",v:"s",ac:"Pública incondicionada; competência do juízo singular (Súmula 603 do STF)",rd:"Redação da Lei 15.397/2026"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"158, caput",n:"Extorsão",pr:"R",mn:48,mx:120,mu:"e",v:"s",ac:"Pública incondicionada",rd:"Redação original (1940)"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"158, § 3º",n:"Extorsão com restrição da liberdade da vítima",pr:"R",mn:72,mx:144,mu:"e",v:"s",ac:"Pública incondicionada",rd:"Incluído pela Lei 11.923/2009"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"159, caput",n:"Extorsão mediante sequestro",pr:"R",mn:96,mx:180,mu:"",v:"s",ac:"Pública incondicionada",rd:"Tipo: redação original (1940). Pena: redação da Lei 8.072/1990"},
+ {t:"Crimes contra o patrimônio",c:"Roubo e extorsão",a:"159, § 3º",n:"Extorsão mediante sequestro com resultado morte",pr:"R",mn:288,mx:360,mu:"",v:"s",ac:"Pública incondicionada",rd:"Tipo: redação original (1940). Pena: redação da Lei 8.072/1990"},
+ {t:"Crimes contra o patrimônio",c:"Usurpação",a:"161",n:"Alteração de limites",pr:"D",mn:1,mx:6,mu:"e",v:"n",ac:"Privada, se a propriedade é particular e não há violência (§ 3º)",rd:"Redação original (1940)"},
+ {t:"Crimes contra o patrimônio",c:"Dano",a:"163, caput",n:"Dano",pr:"D",mn:1,mx:6,mu:"ou",v:"n",ac:"Privada (art. 167)",rd:"Redação original (1940)"},
+ {t:"Crimes contra o patrimônio",c:"Dano",a:"163, parágrafo único",n:"Dano qualificado",pr:"D",mn:6,mx:36,mu:"e",v:"c",ac:"Pública incondicionada, salvo o inciso IV (art. 167)",rd:"Redação original (1940)"},
+ {t:"Crimes contra o patrimônio",c:"Apropriação indébita",a:"168",n:"Apropriação indébita",pr:"R",mn:12,mx:48,mu:"e",v:"n",ac:"Pública incondicionada (ressalvados os arts. 181 a 183)",rd:"Redação original (1940)"},
+ {t:"Crimes contra o patrimônio",c:"Apropriação indébita",a:"168-A",n:"Apropriação indébita previdenciária",pr:"R",mn:24,mx:60,mu:"e",v:"n",ac:"Pública incondicionada",rd:"Incluído pela Lei 9.983/2000"},
+ {t:"Crimes contra o patrimônio",c:"Estelionato e outras fraudes",a:"171, caput",n:"Estelionato",pr:"R",mn:12,mx:60,mu:"e",v:"n",ac:"Pública condicionada à representação, com as exceções do § 5º",rd:"Tipo: redação original (1940). Pena: redação da Lei 15.397/2026"},
+ {t:"Crimes contra o patrimônio",c:"Estelionato e outras fraudes",a:"171, § 2º-A",n:"Fraude eletrônica",pr:"R",mn:48,mx:96,mu:"e",v:"n",ac:"Pública condicionada à representação, com as exceções do § 5º",rd:"Redação da Lei 15.397/2026"},
+ {t:"Crimes contra o patrimônio",c:"Receptação",a:"180, caput",n:"Receptação",pr:"R",mn:24,mx:72,mu:"e",v:"n",ac:"Pública incondicionada",rd:"Tipo: redação da Lei 9.426/1996. Pena: redação da Lei 15.397/2026"},
+ {t:"Crimes contra o patrimônio",c:"Receptação",a:"180, § 1º",n:"Receptação qualificada",pr:"R",mn:36,mx:96,mu:"e",v:"n",ac:"Pública incondicionada",rd:"Redação da Lei 9.426/1996"},
+ {t:"Crimes contra o patrimônio",c:"Receptação",a:"180, § 3º",n:"Receptação culposa",pr:"D",mn:1,mx:12,mu:"ou",v:"n",ac:"Pública incondicionada",rd:"Redação da Lei 9.426/1996"}
 ];
 const MAX=480; // 40 anos
 const X=m=>Math.sqrt(m)/Math.sqrt(MAX)*100; const pct=m=>X(m).toFixed(3)+'%';
@@ -223,6 +223,7 @@ function show(i){
   fi.innerHTML=`<p class="eyebrow">${d.t} · ${d.c}</p>
   <h2>${d.n}</h2><div class="art">art. ${d.a}, do Código Penal</div>
   <dl><dt>Pena</dt><dd>${d.pr==='R'?'Reclusão':'Detenção'}, de ${fmt(d.mn)} a ${fmt(d.mx)}${multa}</dd>
+  <dt>Redação vigente</dt><dd>${d.rd}</dd>
   <dt>Ação penal</dt><dd>${d.ac}</dd>
   <dt>Violência ou grave ameaça</dt><dd>${d.v==='s'?'Elementar do tipo':d.v==='n'?'Não é elementar':'Conforme o caso concreto'}</dd></dl>
   <div class="pills">
