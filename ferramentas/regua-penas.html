@@ -44,7 +44,7 @@ header h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,4.5vw,
 @media (max-width:560px){.axis,.row{grid-template-columns:minmax(0,1fr)}.axis .nm{display:none}.row{gap:2px}}
 .axis{position:sticky;top:env(safe-area-inset-top,0px);background:var(--surface);z-index:2;padding:4px 0 6px;border-bottom:1px solid var(--rule)}
 .scale{position:relative;height:30px;font:11px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
-.scale span{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap}
+.scale>span{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap}
 .scale{height:20px}@media (max-width:560px){.scale .u{display:none}}.scale span.th{color:var(--mark);font-weight:600}
 .grp{font-family:var(--display);font-weight:600;font-size:19px;margin:20px 0 2px}
 .sub{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:12px 0 4px}
