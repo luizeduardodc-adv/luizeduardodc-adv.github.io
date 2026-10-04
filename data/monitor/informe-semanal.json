@@ -1,0 +1,149 @@
+{
+ "gerado_em": "2026-10-03 21:08",
+ "periodo": {
+  "inicio": "2026-09-26",
+  "fim": "2026-10-02"
+ },
+ "total": 5,
+ "por_casa": {
+  "Câmara": 4,
+  "Senado": 1
+ },
+ "por_tipo": {
+  "PL": 5
+ },
+ "apresentadas_na_semana": 5,
+ "natureza": {
+  "Cria ou altera tipo penal": 4,
+  "Aumenta pena": 2,
+  "Hediondez": 1
+ },
+ "diplomas": {
+  "Código Penal": 3,
+  "Estatuto do Desarmamento": 1,
+  "Organizações criminosas": 1,
+  "Crimes hediondos": 1
+ },
+ "partidos": {
+  "PRD": 1,
+  "PL": 3,
+  "PSB": 1
+ },
+ "itens": [
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5484,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 8.429, de 2 de junho de 1992, para tipificar como ato de improbidade administrativa a conduta dolosa do agente público que, sem justificativa legal, descumprir regras essenciais previstas no edital de concurso público relativas à homologação, ao prazo de validade, à convocação ou à nomeação de candidatos aprovados, quando a conduta causar lesividade relevante aos direitos dos candidatos ou à regularidade do concurso.",
+   "apresentacao": "2026-09-28",
+   "aut": [
+    [
+     "Fernando Rodolfo",
+     "PRD",
+     "PE"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647191",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5494,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e a Lei nº 10.826, de 22 de dezembro de 2003 (Estatuto do Desarmamento), para tornar crime o uso de veículos aéreos não tripulados (drones) para lançamento de artefatos perigosos, cria majorante para organização criminosa ultraviolenta e dispõe sobre o perdimento de bens.",
+   "apresentacao": "2026-09-29",
+   "aut": [
+    [
+     "General Pazuello",
+     "PL",
+     "RJ"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647207",
+   "natureza": [
+    "Aumenta pena",
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": [
+    "Código Penal",
+    "Estatuto do Desarmamento",
+    "Organizações criminosas"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5495,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e a Lei nº 7210, de 11 de julho de 1984, para reprimir a utilização de telefone celular por preso e evitar sua comunicação com mundo externo e dá outras providências",
+   "apresentacao": "2026-09-29",
+   "aut": [
+    [
+     "General Pazuello",
+     "PL",
+     "RJ"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647208",
+   "natureza": [],
+   "diplomas": [
+    "Código Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5496,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 1.079, de 10 de abril de 1950, para tipificar como crime de responsabilidade dos Ministros do Supremo Tribunal Federal a interferência indevida no exercício das competências de outro Poder, tribunal ou órgão jurisdicional.",
+   "apresentacao": "2026-09-29",
+   "aut": [
+    [
+     "Bia Kicis",
+     "PL",
+     "DF"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647212",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": []
+  },
+  {
+   "casa": "Senado",
+   "sigla": "PL",
+   "numero": 5481,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), o Decreto-Lei nº 3.688, de 3 de outubro de 1941 (Lei das Contravenções Penais), a Lei nº 8.072, de 25 de julho de 1990 (Lei dos Crimes Hediondos) e a Lei nº 7.716, de 5 de janeiro de 1989 (Lei Antirracismo), para tipificar como crime autônomo o LGBTIcídio, assim entendido o homicídio praticado por motivação discriminatória relacionada à orientação sexual, à identidade ou expressão de gênero ou às características sexuais da vítima, reais ou presumidas; tipificar os crimes de racismo e de injúria racial quando praticados pela mesma motivação; agravar a pena de outros delitos praticados pela mesma motivação; e estabelecer outras medidas de proteção penal à população LGBTQIAPN+.",
+   "apresentacao": "2026-09-28",
+   "aut": [
+    [
+     "Soraya Thronicke",
+     "PSB",
+     "MS"
+    ]
+   ],
+   "situacao": "Aguardando despacho",
+   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/175873",
+   "natureza": [
+    "Aumenta pena",
+    "Cria ou altera tipo penal",
+    "Hediondez"
+   ],
+   "diplomas": [
+    "Código Penal",
+    "Crimes hediondos"
+   ]
+  }
+ ]
+}
