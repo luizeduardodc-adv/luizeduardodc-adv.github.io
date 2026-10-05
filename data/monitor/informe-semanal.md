@@ -1,6 +1,6 @@
-Proposições penais da semana | 27/09/2026 a 03/10/2026
+Proposições penais da semana | 28/09/2026 a 04/10/2026
 
-Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 04/10/2026. Painel: https://luizeduardodc-adv.github.io/ferramentas/monitor-legislativo.html
+Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 05/10/2026. Painel: https://luizeduardodc-adv.github.io/ferramentas/monitor-legislativo.html
 
 Em números
 
