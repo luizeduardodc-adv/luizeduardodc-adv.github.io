@@ -98,3 +98,14 @@ a.card:hover{border-color:var(--accent)}
 .site-footer .in{max-width:var(--maxw);margin:0 auto;padding:24px 16px 32px;font-size:13.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
 .site-footer p{margin:0}
 .site-footer a{color:var(--muted)}
+/* Publicações: filtro e etiquetas por tema */
+.filtro{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0 4px}
+.filtro .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.filtro .chip{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:5px 12px;cursor:pointer}
+.filtro .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.filtro .cnt{font-size:13px;color:var(--muted);margin-left:4px}
+.refs .ttags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.ttag{font:500 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:2px 8px;color:var(--accent);background:var(--accent-soft)}
+.ttag-aed{color:var(--mark);background:var(--mark-soft)}
+.ttag-outros{color:var(--muted);background:transparent;border:1px solid var(--rule)}
+.ttag-processo{background:transparent;border:1px solid var(--accent)}
