@@ -1,15 +1,41 @@
 {
- "gerado_em": "2026-10-08 13:31",
+ "gerado_em": "2026-10-09 13:15",
  "periodo": {
-  "inicio": "2026-10-01",
-  "fim": "2026-10-07"
+  "inicio": "2026-10-02",
+  "fim": "2026-10-08"
  },
- "total": 0,
- "por_casa": {},
- "por_tipo": {},
- "apresentadas_na_semana": 0,
+ "total": 1,
+ "por_casa": {
+  "Câmara": 1
+ },
+ "por_tipo": {
+  "PL": 1
+ },
+ "apresentadas_na_semana": 1,
  "natureza": {},
  "diplomas": {},
- "partidos": {},
- "itens": []
+ "partidos": {
+  "PDT": 1
+ },
+ "itens": [
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5531,
+   "ano": 2026,
+   "ementa": "Institui a Lei da Origem Responsável Animal, destinada a prevenir o financiamento da criação clandestina e da exploração reprodutiva abusiva de cães e gatos; estabelece deveres de identificação, diligência, transparência e rastreabilidade nas operações de transferência onerosa; disciplina a oferta e a intermediação por plataformas digitais; dispõe sobre a responsabilização administrativa, civil e penal dos agentes envolvidos; altera as Leis nº 9.605, de 12 de fevereiro de 1998, e nº 15.046, de 17 de dezembro de 2024; e dá outras providências.",
+   "apresentacao": "2026-10-07",
+   "aut": [
+    [
+     "Marcos Tavares",
+     "PDT",
+     "RJ"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647319",
+   "natureza": [],
+   "diplomas": []
+  }
+ ]
 }
