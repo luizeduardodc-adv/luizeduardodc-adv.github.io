@@ -109,3 +109,4 @@ a.card:hover{border-color:var(--accent)}
 .ttag-aed{color:var(--mark);background:var(--mark-soft)}
 .ttag-outros{color:var(--muted);background:transparent;border:1px solid var(--rule)}
 .ttag-processo{background:transparent;border:1px solid var(--accent)}
+.filtro .chip:disabled{opacity:.45;cursor:default}
