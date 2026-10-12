@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Justiça Criminal em SC · Luiz Eduardo Dias Cardoso</title>
+<meta name="description" content="Entradas de ações penais, inquéritos, termos circunstanciados, execuções e recursos criminais no TJSC, por ano, mês, assunto e comarca (API Pública do DataJud, CNJ). Protótipo.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232E5B88'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%23F4F6F8' text-anchor='middle'%3ELE%3C/text%3E%3C/svg%3E">
+<script src="../assets/js/tema.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: indicadores do ano escolhido, série anual, série mensal, assuntos, comarcas e classes; um único matiz (azul-aço), ano parcial em tom claro */
+:root{
+  --bg:#F4F6F8; --surface:#FFFFFF; --fg:#18202C; --muted:#5A6476; --rule:#D8DDE4;
+  --accent:#2E5B88; --accent-soft:#D6E2EE; --mark:#9A6510; --mark-soft:#F3E4C8;
+  --display:"Newsreader",Georgia,"Times New Roman",serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11151B; --surface:#181D25; --fg:#E5E9EF; --muted:#9AA4B4; --rule:#2B323D;
+  --accent:#7FA7D3; --accent-soft:#25344A; --mark:#E2AE57; --mark-soft:#3A2F1C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11151B; --surface:#181D25; --fg:#E5E9EF; --muted:#9AA4B4; --rule:#2B323D;
+  --accent:#7FA7D3; --accent-soft:#25344A; --mark:#E2AE57; --mark-soft:#3A2F1C; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5}
+.gtop{background:var(--surface);border-bottom:1px solid var(--rule)}
+.gtop .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;font-size:14px}
+.gtop a{color:var(--fg);text-decoration:none}.gtop a:hover{color:var(--accent)}
+.gtop .home{font-family:var(--display);font-weight:600;font-size:17px;margin-right:auto}
+.gtop button{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--muted);border-radius:999px;padding:4px 10px;cursor:pointer}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:16px;padding-block:28px 56px}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,4.5vw,40px);line-height:1.1;margin:0 0 8px;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:22px;margin:0 0 4px;text-wrap:balance}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.selo{display:inline-block;font:500 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--mark);background:var(--mark-soft);border-radius:999px;padding:2px 8px;vertical-align:middle;margin-left:8px}
+.lede{max-width:68ch;color:var(--muted);margin:0}
+.aviso{max-width:75ch;font-size:13.5px;background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--mark);border-radius:6px;padding:10px 14px;margin:16px 0 0}
+.bar-anos{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:22px 0 0}
+.lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.chip{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:14px 0 6px}
+@media (max-width:820px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px;min-width:0}
+.kpi .k{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.kpi .v{font:500 26px var(--mono);font-variant-numeric:tabular-nums;margin:4px 0 2px;letter-spacing:-.01em}
+.kpi .d{font-size:12.5px;color:var(--muted)}
+.note{font-size:12.5px;color:var(--muted);margin:0}
+section.panel{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px;margin-top:20px;min-width:0}
+.ph{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:12px}
+.ph p{margin:0;color:var(--muted);font-size:13.5px;max-width:62ch}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.cols{display:flex;align-items:flex-end;gap:10px;height:200px;padding:0 4px;border-bottom:1px solid var(--rule)}
+.col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;min-width:0;cursor:default}
+.col .b{width:100%;max-width:56px;background:var(--accent);border-radius:4px 4px 0 0}
+.col.parcial .b{background:var(--accent-soft);border:1px dashed var(--accent);border-bottom:0}
+.col .n{font:12px var(--mono);color:var(--muted);margin-bottom:4px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.col:hover .b{opacity:.85}
+.xlab{display:flex;gap:10px;padding:6px 4px 0}
+.xlab span{flex:1;text-align:center;font:12px var(--mono);color:var(--muted);min-width:0}
+svg.linha{width:100%;height:220px;display:block;overflow:visible}
+svg.linha .grid{stroke:var(--rule);stroke-width:1}
+svg.linha .eixo{fill:var(--muted);font:11px var(--mono)}
+svg.linha .serie{fill:none;stroke:var(--accent);stroke-width:2;stroke-linejoin:round}
+svg.linha .ponto{fill:var(--accent);stroke:var(--surface);stroke-width:2}
+svg.linha .cross{stroke:var(--fg);stroke-width:1;opacity:.35}
+.hbars{display:flex;flex-direction:column;gap:4px}
+.hrow{display:grid;grid-template-columns:minmax(0,230px) minmax(0,1fr) 64px;gap:10px;align-items:center;font-size:13px}
+@media (max-width:520px){.hrow{grid-template-columns:minmax(0,140px) minmax(0,1fr) 54px}.hrow .nm{white-space:normal;line-height:1.25}}
+.hrow .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hrow .tk{height:10px;background:var(--accent);border-radius:0 4px 4px 0}
+.hrow .val{font:12.5px var(--mono);text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.hrow:hover .tk{opacity:.85}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+@media (max-width:860px){.two{grid-template-columns:minmax(0,1fr)}}
+.cmp{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+.cmp th,.cmp td{padding:6px 8px;border-bottom:1px solid var(--rule);text-align:right}
+.cmp th:first-child,.cmp td:first-child{text-align:left}
+.cmp th{font-weight:500;color:var(--muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.tblwrap{overflow-x:auto;margin-top:10px;max-height:420px;overflow-y:auto}
+details summary{cursor:pointer;color:var(--accent);font-size:13.5px;margin-top:12px}
+.tip{position:fixed;pointer-events:none;background:var(--fg);color:var(--bg);font-size:12.5px;line-height:1.4;padding:8px 10px;border-radius:6px;max-width:260px;z-index:10;font-variant-numeric:tabular-nums;display:none}
+.acoes{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.acoes a,.acoes button{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--accent);border-radius:999px;padding:5px 12px;cursor:pointer;text-decoration:none}
+footer{margin-top:32px;font-size:13px;color:var(--muted);max-width:78ch}
+footer h2{font-size:18px;color:var(--fg);margin-top:18px}
+footer p,footer li{margin:0 0 8px}
+footer a{color:var(--accent)}
+.cite{font-size:13px;background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:10px 14px}
+</style>
+</head>
+<body>
+<nav class="gtop" aria-label="Site"><div class="in"><a class="home" href="../index.html">Luiz Eduardo Dias Cardoso</a><a href="index.html">Ferramentas</a><a href="../aulas.html">Aulas</a><button class="theme-btn" id="tema" type="button">Tema escuro</button></div></nav>
+<div class="wrap">
+<p class="eyebrow">Tribunal de Justiça de Santa Catarina · API Pública do DataJud (CNJ) · <span id="base">carregando</span></p>
+<h1>Justiça Criminal em SC <span class="selo">protótipo</span></h1>
+<p class="lede">Quantos procedimentos criminais entram no TJSC a cada ano e mês, com os assuntos das ações penais e a distribuição por comarca. Os números são contagens agregadas dos metadados que o tribunal envia ao Conselho Nacional de Justiça; não há dado de partes.</p>
+<p class="aviso"><strong>Leitura com cautela.</strong> A contagem é feita pela data de ajuizamento e pela classe atual do processo. Quando a denúncia é oferecida no mesmo processo do inquérito, a classe passa a ser de ação penal, mas a data continua sendo a do inquérito. Por isso os meses e o ano mais recentes subestimam as ações penais, que vão aparecendo nos períodos anteriores à medida que as denúncias são recebidas. Processos sigilosos ficam fora da base.</p>
+
+<div class="bar-anos" role="group" aria-label="Ano" id="anos"><span class="lbl">Ano</span></div>
+<div class="kpis" id="kpis"></div>
+<p class="note" id="kpinote"></p>
+
+<section class="panel" aria-labelledby="t-ano">
+  <div class="ph"><div><h2 id="t-ano">Entradas por ano</h2><p id="d-ano"></p></div>
+    <div class="seg" role="group" aria-label="Grupo de classes" id="g-ano"></div></div>
+  <div class="cols" id="cols"></div><div class="xlab" id="xlab"></div>
+</section>
+
+<section class="panel" aria-labelledby="t-mes">
+  <div class="ph"><div><h2 id="t-mes">Série mensal</h2><p>Últimos meses completos da base. O mês da data-base, ainda parcial, fica fora.</p></div>
+    <div class="seg" role="group" aria-label="Grupo de classes" id="g-mes"></div></div>
+  <svg class="linha" id="linha" role="img" aria-label="Série mensal"></svg>
+  <details><summary>Ver a tabela mensal</summary><div class="tblwrap"><table class="cmp" id="tmes"></table></div></details>
+</section>
+
+<div class="two">
+<section class="panel" aria-labelledby="t-ass">
+  <div class="ph"><div><h2 id="t-ass">Assuntos das ações penais</h2><p id="d-ass"></p></div></div>
+  <div class="hbars" id="ass"></div>
+</section>
+<section class="panel" aria-labelledby="t-com">
+  <div class="ph"><div><h2 id="t-com">Comarcas</h2><p id="d-com"></p></div></div>
+  <div class="hbars" id="com"></div>
+  <details><summary>Ver todas as comarcas</summary><div class="tblwrap"><table class="cmp" id="tcom"></table></div></details>
+</section>
+</div>
+
+<section class="panel" aria-labelledby="t-cls">
+  <div class="ph"><div><h2 id="t-cls">Classes criminais</h2><p id="d-cls"></p></div></div>
+  <div class="tblwrap" style="max-height:none"><table class="cmp" id="tcls"></table></div>
+  <div class="acoes"><a href="../data/datajud/sc.json" download>Baixar os dados (JSON)</a><button type="button" id="csv">Baixar classes por ano (CSV)</button></div>
+</section>
+
+<footer>
+  <h2>Nota de método</h2>
+  <p><strong>Fonte.</strong> <a href="https://datajud-wiki.cnj.jus.br/api-publica/" rel="noopener">API Pública do DataJud</a>, do Conselho Nacional de Justiça (Resolução CNJ 331/2020 e Portaria CNJ 160/2020), índice do TJSC. A API reúne os metadados de capa e os movimentos dos processos enviados pelo tribunal. Dados coletados em <span id="gerado"></span>; a base do CNJ chegava a <span id="base2"></span>. A coleta é refeita semanalmente por rotina automática.</p>
+  <p><strong>Contagem.</strong> Processos por data de ajuizamento e classe processual da Tabela Processual Unificada. "Ações penais" reúne os procedimentos ordinário, sumário e sumaríssimo, a ação penal de competência do Júri, o procedimento especial da Lei de Drogas e os crimes contra a honra de competência do juiz singular. "Execuções penais" reúne a execução da pena, a execução de pena de multa e a execução de medidas alternativas. "Recursos e HC" reúne apelação criminal, habeas corpus, agravo de execução penal, recurso em sentido estrito e revisão criminal, julgados no segundo grau. Assuntos e comarcas referem-se só às ações penais; a comarca é lida no nome do órgão julgador, e órgãos sem comarca no nome (varas estaduais e regionais) aparecem à parte.</p>
+  <p><strong>Limitações.</strong> (1) Classe atual e data de ajuizamento: denúncias oferecidas nos autos do inquérito entram com a data do inquérito, o que subestima as ações penais recentes; pelo mesmo motivo, os inquéritos de anos anteriores que já viraram ação penal deixam de ser contados como inquéritos, e os anos recentes concentram mais inquéritos. Esse efeito provavelmente explica boa parte da alta de inquéritos em 2025 e 2026. (2) Processos sigilosos ficam fora da base, o que afeta sobretudo violência doméstica e crimes sexuais. (3) A classificação e os assuntos são cadastrados pelos cartórios e podem conter erros; um processo pode ter mais de um assunto. (4) Mudanças de sistema ou de cadastro no tribunal também podem produzir saltos que não correspondem à realidade; variações de um ano para outro devem ser lidas com essas ressalvas. (5) Os números não equivalem às estatísticas oficiais do Justiça em Números, que usam outra metodologia. (6) A base do CNJ chega com cerca de um mês de atraso. Contagens por comarca não estão ajustadas pela população.</p>
+  <p class="cite"><strong>Como citar.</strong> CARDOSO, Luiz Eduardo Dias. <em>Justiça Criminal em SC</em>: dados da API Pública do DataJud (CNJ). Florianópolis, <span id="ano-cit"></span>. Disponível em: https://luizeduardodc-adv.github.io/ferramentas/justica-criminal-sc.html. Acesso em: dia mês ano.</p>
+  <p>Luiz Eduardo Dias Cardoso · Direito Penal e Processo Penal</p>
+</footer>
+</div>
+<div class="tip" id="tip" role="tooltip"></div>
+<script>
+(function(){
+const G={acoes:'Ações penais',inq:'Inquéritos',tc:'Termos circunstanciados',exec:'Execuções penais',rec:'Recursos e HC'};
+const GD={acoes:'Procedimentos de ação penal ajuizados',inq:'Inquéritos policiais distribuídos ao Judiciário',tc:'Termos circunstanciados (infrações de menor potencial ofensivo)',exec:'Execuções de pena, de multa e de medidas alternativas',rec:'Apelações, HC, agravos em execução, RESE e revisões (2º grau)'};
+const nf=new Intl.NumberFormat('pt-BR');
+const tip=document.getElementById('tip');
+function showTip(e,html){tip.innerHTML=html;tip.style.display='block';const x=Math.min(e.clientX+14,innerWidth-tip.offsetWidth-8);tip.style.left=x+'px';tip.style.top=(e.clientY+14)+'px';}
+function hideTip(){tip.style.display='none';}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+const MES=['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+function mesLab(m){const [y,mm]=m.split('-');return MES[+mm-1]+'/'+y.slice(2);}
+fetch('../data/datajud/sc.json').then(r=>r.json()).then(D=>{
+  const anos=Object.keys(D.anos).sort();
+  const anoBase=D.base_ate?D.base_ate.slice(-4):anos[anos.length-1];
+  const parcial=a=>a===anoBase;
+  let ano=anos.filter(a=>!parcial(a)).pop()||anos[anos.length-1], gA='acoes', gM='acoes';
+  document.getElementById('base').textContent='base até '+D.base_ate;
+  document.getElementById('base2').textContent=D.base_ate;
+  const g=new Date(D.gerado_em);document.getElementById('gerado').textContent=g.toLocaleDateString('pt-BR');
+  document.getElementById('ano-cit').textContent=g.getFullYear();
+  // seletor de ano
+  const ba=document.getElementById('anos');
+  anos.forEach(a=>{const b=document.createElement('button');b.className='chip';b.type='button';b.dataset.a=a;b.textContent=a+(parcial(a)?' (parcial)':'');b.addEventListener('click',()=>{ano=a;render();});ba.appendChild(b);});
+  function segs(id,get,set){const el=document.getElementById(id);Object.keys(G).forEach(k=>{if(id==='g-mes'&&!['acoes','inq','tc'].includes(k))return;const b=document.createElement('button');b.className='chip';b.type='button';b.dataset.g=k;b.textContent=G[k];b.addEventListener('click',()=>{set(k);render();});el.appendChild(b);});}
+  segs('g-ano',()=>gA,k=>gA=k); segs('g-mes',()=>gM,k=>gM=k);
+  function hbars(id,rows,max,lab){const el=document.getElementById(id);el.innerHTML='';rows.forEach(([nm,n])=>{const r=document.createElement('div');r.className='hrow';r.innerHTML=`<span class="nm" title="${esc(nm)}">${esc(nm)}</span><span><i class="tk" style="display:block;width:${(n/max*100).toFixed(2)}%"></i></span><span class="val">${nf.format(n)}</span>`;r.addEventListener('mousemove',e=>showTip(e,`<strong>${esc(nm)}</strong><br>${nf.format(n)} ${lab}`));r.addEventListener('mouseleave',hideTip);el.appendChild(r);});}
+  function render(){
+    const A=D.anos[ano];
+    document.querySelectorAll('#anos .chip').forEach(b=>b.setAttribute('aria-pressed',b.dataset.a===ano));
+    document.querySelectorAll('#g-ano .chip').forEach(b=>b.setAttribute('aria-pressed',b.dataset.g===gA));
+    document.querySelectorAll('#g-mes .chip').forEach(b=>b.setAttribute('aria-pressed',b.dataset.g===gM));
+    // indicadores
+    const prev=D.anos[String(+ano-1)];
+    document.getElementById('kpis').innerHTML=Object.keys(G).map(k=>{let d='';if(prev&&!parcial(ano)){const v=(A.grupos[k]/prev.grupos[k]-1)*100;d=(v>=0?'+':'')+v.toFixed(1).replace('.',',')+'% sobre '+(+ano-1);}else if(parcial(ano)){d='ano parcial, até '+D.base_ate.slice(0,5);}return `<div class="kpi"><div class="k">${G[k]}</div><div class="v">${nf.format(A.grupos[k])}</div><div class="d">${d}</div></div>`;}).join('');
+    document.getElementById('kpinote').textContent='Entradas com ajuizamento em '+ano+'. '+(parcial(ano)?'Ano em curso: comparações com anos completos não são válidas.':'Variação contra o ano anterior, sujeita às limitações da nota de método.');
+    // anual
+    document.getElementById('d-ano').textContent=GD[gA]+'. Ano em curso em tom claro (parcial).';
+    const vals=anos.map(a=>D.anos[a].grupos[gA]);const mx=Math.max(...vals);
+    document.getElementById('cols').innerHTML=anos.map((a,i)=>`<div class="col${parcial(a)?' parcial':''}" data-i="${i}"><span class="n">${nf.format(vals[i])}</span><i class="b" style="height:${(vals[i]/mx*85).toFixed(1)}%"></i></div>`).join('');
+    document.getElementById('xlab').innerHTML=anos.map(a=>`<span>${a}${parcial(a)?'*':''}</span>`).join('');
+    document.querySelectorAll('#cols .col').forEach(c=>{const i=+c.dataset.i;c.addEventListener('mousemove',e=>showTip(e,`<strong>${anos[i]}${parcial(anos[i])?' (parcial)':''}</strong><br>${nf.format(vals[i])} · ${G[gA].toLowerCase()}`));c.addEventListener('mouseleave',hideTip);});
+    // mensal
+    linha();
+    // assuntos
+    const ass=A.assuntos.slice(0,15);document.getElementById('d-ass').textContent='Os 15 assuntos mais frequentes nas ações penais de '+ano+'. Um processo pode ter mais de um assunto.';
+    hbars('ass',ass,ass[0]?ass[0][1]:1,'ações penais');
+    // comarcas
+    const com=A.comarcas.slice(0,15);document.getElementById('d-com').textContent='As 15 comarcas com mais ações penais em '+ano+' (valores absolutos, sem ajuste pela população).';
+    hbars('com',com,com[0]?com[0][1]:1,'ações penais');
+    document.getElementById('tcom').innerHTML='<tr><th>Comarca</th><th>Ações penais</th></tr>'+A.comarcas.map(([c,n])=>`<tr><td>${esc(c)}</td><td>${nf.format(n)}</td></tr>`).join('')+(A.sem_comarca?`<tr><td>Órgãos sem comarca no nome</td><td>${nf.format(A.sem_comarca)}</td></tr>`:'');
+    // classes
+    document.getElementById('d-cls').textContent='Classes de natureza criminal com ajuizamento em '+ano+', em ordem decrescente.';
+    document.getElementById('tcls').innerHTML='<tr><th>Classe</th><th>Processos</th></tr>'+Object.entries(A.classes).map(([c,n])=>`<tr><td>${esc(c)}</td><td>${nf.format(n)}</td></tr>`).join('');
+  }
+  function linha(){
+    const svg=document.getElementById('linha');const S=D.meses;const W=svg.clientWidth||700,H=220,pl=46,pr=10,pt=10,pb=26;
+    const v=S.map(x=>x[gM]);const mx=Math.max(...v)*1.1||1;
+    const X=i=>pl+(W-pl-pr)*(S.length===1?0.5:i/(S.length-1)),Y=n=>pt+(H-pt-pb)*(1-n/mx);
+    let h='';for(let k=0;k<=4;k++){const n=mx*k/4;h+=`<line class="grid" x1="${pl}" x2="${W-pr}" y1="${Y(n)}" y2="${Y(n)}"/><text class="eixo" x="${pl-6}" y="${Y(n)+4}" text-anchor="end">${nf.format(Math.round(n/100)*100)}</text>`;}
+    const step=Math.ceil(S.length/(W<520?4:8));S.forEach((x,i)=>{if(i%step===0||i===S.length-1)h+=`<text class="eixo" x="${X(i)}" y="${H-6}" text-anchor="middle">${mesLab(x.mes)}</text>`;});
+    h+=`<polyline class="serie" points="${S.map((x,i)=>X(i)+','+Y(v[i])).join(' ')}"/>`;
+    h+=`<line class="cross" id="cr" y1="${pt}" y2="${H-pb}" style="display:none"/><circle class="ponto" id="pt" r="4" style="display:none"/><rect id="hit" x="${pl}" y="0" width="${W-pl-pr}" height="${H}" fill="transparent"/>`;
+    svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.innerHTML=h;svg.setAttribute('aria-label','Série mensal: '+G[gM].toLowerCase());
+    const hit=svg.querySelector('#hit'),cr=svg.querySelector('#cr'),pt_=svg.querySelector('#pt');
+    hit.addEventListener('mousemove',e=>{const r=svg.getBoundingClientRect();const x=(e.clientX-r.left)*W/r.width;const i=Math.max(0,Math.min(S.length-1,Math.round((x-pl)/((W-pl-pr)/(S.length-1)))));cr.setAttribute('x1',X(i));cr.setAttribute('x2',X(i));cr.style.display='';pt_.setAttribute('cx',X(i));pt_.setAttribute('cy',Y(v[i]));pt_.style.display='';showTip(e,`<strong>${mesLab(S[i].mes)}</strong><br>${nf.format(v[i])} · ${G[gM].toLowerCase()}`);});
+    hit.addEventListener('mouseleave',()=>{cr.style.display='none';pt_.style.display='none';hideTip();});
+    document.getElementById('tmes').innerHTML='<tr><th>Mês</th><th>Ações penais</th><th>Inquéritos</th><th>Termos circ.</th></tr>'+S.slice().reverse().map(x=>`<tr><td>${mesLab(x.mes)}</td><td>${nf.format(x.acoes)}</td><td>${nf.format(x.inq)}</td><td>${nf.format(x.tc)}</td></tr>`).join('');
+  }
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(linha,150);});
+  document.getElementById('csv').addEventListener('click',()=>{const cls=new Set();anos.forEach(a=>Object.keys(D.anos[a].classes).forEach(c=>cls.add(c)));let s='classe;'+anos.join(';')+'\n';[...cls].sort().forEach(c=>{s+='"'+c.replace(/"/g,'""')+'";'+anos.map(a=>D.anos[a].classes[c]||0).join(';')+'\n';});const b=new Blob(['﻿'+s],{type:'text/csv;charset=utf-8'});const u=URL.createObjectURL(b);const l=document.createElement('a');l.href=u;l.download='justica-criminal-sc-classes.csv';l.click();setTimeout(()=>URL.revokeObjectURL(u),1000);});
+  render();
+}).catch(()=>{document.getElementById('base').textContent='dados indisponíveis';});
+})();
+</script>
+</body>
+</html>
