@@ -63,6 +63,22 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
 .res .final dd{font-size:26px;color:var(--accent)}
 .res .aviso{font-size:12.5px;color:var(--muted);margin:12px 0 0}
 .res .vazio{font-size:14px;color:var(--muted)}
+.escala{margin:4px 0 16px}
+.escala .trk{position:relative;height:14px;border-radius:7px;background:linear-gradient(to right,transparent 0 14%,var(--bg) 14% 86%,transparent 86% 100%);border:1px solid var(--rule)}
+.escala .zona{position:absolute;top:0;bottom:0;background:repeating-linear-gradient(135deg,transparent 0 4px,color-mix(in srgb,var(--mark) 22%,transparent) 4px 5px)}
+.escala .zona.l{left:0;width:14%;border-radius:7px 0 0 7px}.escala .zona.r{right:0;width:14%;border-radius:0 7px 7px 0}
+.escala .fill{position:absolute;top:2px;bottom:2px;border-radius:5px;background:var(--accent);transition:left .35s ease,width .35s ease}
+.escala .fill.fora{background:var(--mark)}
+.escala .lim{position:absolute;top:-4px;bottom:-4px;width:0;border-left:2px solid var(--fg)}
+.escala .pt{position:absolute;top:50%;width:11px;height:11px;margin:-5.5px 0 0 -5.5px;border-radius:50%;background:var(--surface);border:2px solid var(--fg);transition:left .35s ease}
+.escala .pt.atual{width:15px;height:15px;margin:-7.5px 0 0 -7.5px;background:var(--fg)}
+.escala .zl{display:flex;justify-content:space-between;font:10px var(--body);letter-spacing:.05em;text-transform:uppercase;color:var(--mark);margin-top:2px}
+.escala .lbl{position:relative;height:22px;font:11px var(--mono);color:var(--muted)}
+.escala .lbl span{position:absolute;top:6px;transform:translateX(-50%);white-space:nowrap;text-align:center;line-height:1.25}
+.escala .lbl .z{font:10px var(--body);letter-spacing:.04em;text-transform:uppercase;color:var(--mark);opacity:.85}
+.escala .fases{position:relative;height:16px;font:500 10.5px var(--mono);color:var(--muted)}
+.escala .fases span{position:absolute;transform:translateX(-50%);transition:left .35s ease}
+@media (prefers-reduced-motion:reduce){.escala .fill,.escala .pt,.escala .fases span{transition:none}}
 .metodo{max-width:var(--textw);font-size:15px;color:var(--muted);margin-top:28px}
 .metodo p{margin:0 0 10px}
 @media (max-width:860px){.dz{grid-template-columns:minmax(0,1fr)}.res{position:static}}
@@ -194,11 +210,23 @@ function calc(){
   else if(v==='formal'){const o=parseFloat($('outro2').value)||0,f=fr($('frForm').value);if(o>0&&f>0){const m=Math.max(pd,o);pf=m+m*f;cd='Exasperação da maior pena em '+$('frForm').value.trim()}}
   else if(v==='continuidade'){const n=parseInt($('nInf').value)||0;if(n>=2){const T=[[2,1/6,'1/6'],[3,1/5,'1/5'],[4,1/4,'1/4'],[5,1/3,'1/3'],[6,1/2,'1/2']];const r=T.find(x=>x[0]===n)||[7,2/3,'2/3'];pf=pd+pd*r[1];cd=n+' infrações: aumento de '+r[2]+' (Súmula 659 do STJ)'}}
   const fmt=m=>`${txt(m)}<small>${m.toFixed(2).replace('.',',')} meses</small>`;
+
+  const pts=[['1ª',pb],['2ª',pp],['3ª',pd]];if(pf!=null)pts.push(['C',pf]);
+  const atual=pts[pts.length-1][1];const vals=pts.map(x=>x[1]);const lo=Math.min(mn,...vals),hi=Math.max(mx,...vals);
+  const pos=x=>{if(x<mn)return lo<mn?14*(x-lo)/(mn-lo):14;if(x>mx)return hi>mx?86+14*(x-mx)/(hi-mx):86;return mx===mn?50:14+72*(x-mn)/(mx-mn)};
+  const fora=atual<mn||atual>mx;
+  const geo=p=>p>=14?`left:14%;width:${(p-14).toFixed(2)}%`:`left:${p.toFixed(2)}%;width:${(14-p).toFixed(2)}%`;
+  const esc=`<div class="escala" aria-label="Posição da pena entre o mínimo e o máximo cominados">
+    <div class="fases">${pts.map(([l,v])=>`<span style="left:${pos(v).toFixed(2)}%">${l}</span>`).join('')}</div>
+    <div class="trk"><i class="zona l"></i><i class="zona r"></i><i class="fill${fora?' fora':''}" style="${geo(window.__ultima??pos(atual))}"></i><i class="lim" style="left:14%"></i><i class="lim" style="left:86%"></i>${pts.map(([l,v],i)=>`<i class="pt${i===pts.length-1?' atual':''}" style="left:${pos(v).toFixed(2)}%" title="${l}: ${txt(v)}"></i>`).join('')}</div>
+    <div class="lbl"><span style="left:14%">mín. ${txt(mn)}</span><span style="left:86%">máx. ${txt(mx)}</span></div><div class="zl"><span>abaixo do mínimo</span><span>acima do máximo</span></div>
+  </div>`;
   const nota=(ppBruta!==pp)?'<p class="aviso">Na segunda fase, o resultado foi limitado aos limites cominados.</p>':'';
   R.innerHTML=`<h2>Resultado</h2><p class="crime">${crime?`Art. ${crime[0]}, ${crime[1]}`:'Penas informadas à mão'} · ${$('esp').value||'espécie não informada'}, de ${txt(mn)} a ${txt(mx)}</p>
-  <dl><div><dt>Pena-base (1ª fase)</dt><dd>${fmt(pb)}</dd></div><div><dt>Pena provisória (2ª fase)</dt><dd>${fmt(pp)}</dd></div><div><dt>Pena definitiva (3ª fase)</dt><dd>${fmt(pd)}${cs.length?`<small>Frações: ${cs.join(' ')}</small>`:''}</dd></div>
+  ${esc}<dl><div><dt>Pena-base (1ª fase)</dt><dd>${fmt(pb)}</dd></div><div><dt>Pena provisória (2ª fase)</dt><dd>${fmt(pp)}</dd></div><div><dt>Pena definitiva (3ª fase)</dt><dd>${fmt(pd)}${cs.length?`<small>Frações: ${cs.join(' ')}</small>`:''}</dd></div>
   ${pf!=null?`<div class="final"><dt>Com o concurso de crimes</dt><dd>${fmt(pf)}<small>${cd}</small></dd></div>`:`<div class="final"><dt>Pena final</dt><dd>${fmt(pd)}</dd></div>`}</dl>${nota}
   <p class="aviso">Simulação para estudo; não substitui a análise do caso concreto.</p>`;
+  const alvo=pos(atual);requestAnimationFrame(()=>requestAnimationFrame(()=>{const f=R.querySelector('.escala .fill');if(f)f.setAttribute('style',geo(alvo));window.__ultima=alvo}));
 }
 $('limpar').onclick=()=>{document.querySelectorAll('main input[type=text],main input[type=number]').forEach(i=>i.value='');document.querySelectorAll('.item input[type=checkbox]').forEach(c=>{c.checked=false;c.dispatchEvent(new Event('change'))});document.querySelectorAll('.item select').forEach(s=>s.value='aumento');$('esp').value='';$('f3').innerHTML='';document.querySelector('input[name=conc][value=nao]').checked=true;document.querySelector('input[name=conc][value=nao]').dispatchEvent(new Event('change'));crime=null;calc()};
 // exemplo inicial: roubo simples, para a calculadora abrir em estado de uso
