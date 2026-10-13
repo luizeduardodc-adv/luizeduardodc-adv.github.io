@@ -219,3 +219,10 @@ h1,h2,h3{font-weight:500}
 .brand small{font-size:13.5px}
 .vitrine .esc .marcas span:last-child{transform:translateX(-100%)}
 @media (max-width:760px){.site-header{position:static}.brand small{display:none}.brand{font-size:20px}}
+/* 13/10/2026: gravura na largura do menu; quadros em tom de papel */
+:root{--surface:#F3EEE4; --rule:#E3DCCD}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--surface:#181D25; --rule:#2B323D}}
+:root[data-theme="dark"]{--surface:#181D25; --rule:#2B323D}
+.abertura{max-width:none;width:100%;margin:4px auto 32px}
+.abertura img{width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}
+.abertura figcaption{max-width:var(--textw);margin-left:auto;margin-right:auto}
