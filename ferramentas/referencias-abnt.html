@@ -76,7 +76,7 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-
 <main id="conteudo">
 <p class="eyebrow">Ferramenta · Pesquisa · ABNT NBR 6023:2018 e NBR 10520:2023</p>
 <h1>Gerador de Referências ABNT <span class="selo">Protótipo</span></h1>
-<p class="lede">Preencha os campos do tipo de documento e copie a referência pronta, com o destaque em negrito, e a chamada correspondente no texto. As referências adicionadas à lista ficam só neste navegador, em ordem alfabética.</p>
+<p class="lede">Preencha os campos do tipo de documento e copie a referência pronta, com o destaque em negrito, e a chamada correspondente no texto. Para gerar só a citação no texto, use a aba "Só citação no texto", que também aceita uma referência já montada. As referências adicionadas à lista ficam só neste navegador, em ordem alfabética.</p>
 
 <div class="ab">
 <section class="quadro" aria-labelledby="t-form">
@@ -108,7 +108,7 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--accent);outline-
 <div class="metodo">
   <h2 style="font-size:20px;color:var(--fg)">Nota de método</h2>
   <p>Os modelos seguem a estrutura da ABNT NBR 6023:2018 (Informação e documentação: referências), com elementos essenciais e alguns complementares, e a chamada no texto segue o sistema autor-data da ABNT NBR 10520:2023 (citações), em que o sobrenome aparece com inicial maiúscula dentro dos parênteses. O destaque tipográfico é o negrito, aplicado ao título do livro, ao nome do periódico, à epígrafe da legislação e à identificação da decisão judicial.</p>
-  <p>Limitações: a ferramenta não cobre todos os casos da norma (por exemplo, autoria com indicação de responsabilidade diversa, documentos em suporte físico especial, eventos e patentes) e não confere os dados informados. Nomes com partículas e sufixos (Júnior, Filho, Neto, Sobrinho) são tratados automaticamente; para formas não usuais, digite o nome já invertido ("SOBRENOME, Prenome"). Confira sempre o resultado com a norma e com as regras da instituição ou da revista, que podem adotar variações.</p>
+  <p>Limitações: a ferramenta não cobre todos os casos da norma (por exemplo, autoria com indicação de responsabilidade diversa, documentos em suporte físico especial, eventos e patentes) e não confere os dados informados. No modo "Só citação no texto", aplicam-se as regras da NBR 10520:2023: sobrenome com inicial maiúscula; até três autores separados por ponto e vírgula e, a partir de quatro, o primeiro seguido de et al.; entidade com as iniciais maiúsculas; vários anos do mesmo autor separados por vírgula; iniciais do prenome quando houver autores com o mesmo sobrenome; e "[s. d.]" quando não houver data. A extração a partir de referência pronta pressupõe referência no padrão ABNT e deve ser conferida. Nomes com partículas e sufixos (Júnior, Filho, Neto, Sobrinho) são tratados automaticamente; para formas não usuais, digite o nome já invertido ("SOBRENOME, Prenome"). Confira sempre o resultado com a norma e com as regras da instituição ou da revista, que podem adotar variações.</p>
   <p>Os dados digitados não saem do navegador; a lista fica guardada só neste dispositivo.</p>
 </div>
 </main>
@@ -129,6 +129,7 @@ const T={
  tese:{nome:'Tese, dissertação ou TCC',campos:[['autores','Autor','','','area'],['titulo','Título',''],['subtitulo','Subtítulo','m'],['orientador','Orientador','m','Nome completo'],['ano','Ano de depósito','p'],['folhas','Número de folhas','p'],['grau','Tipo de trabalho','p','','sel'],['area','Área','p','Ex.: Direito'],['inst','Instituição (e unidade)','','Ex.: Centro de Ciências Jurídicas, Universidade Federal de Santa Catarina'],['local','Local','m'],['ano2','Ano da defesa','p'],['url','Endereço eletrônico','m'],['acesso','Data de acesso','m','','date']]},
  lei:{nome:'Legislação',campos:[['jur','Jurisdição','m','Ex.: BRASIL; SANTA CATARINA'],['especie','Espécie e número','m','Ex.: Lei nº 9.099'],['data','Data do ato','m','','date'],['ementa','Ementa','','Texto da ementa, como no Diário Oficial','area'],['publicacao','Publicação','','Opcional. Ex.: Diário Oficial da União: seção 1, Brasília, DF, p. 1, 27 set. 1995'],['url','Endereço eletrônico','m'],['acesso','Data de acesso','m','','date']]},
  juris:{nome:'Jurisprudência',campos:[['jur','Jurisdição','p','Ex.: BRASIL'],['tribunal','Tribunal','m','Ex.: Superior Tribunal de Justiça'],['orgao','Órgão julgador','m','Opcional. Ex.: Sexta Turma'],['decisao','Tipo e número da decisão','m','Ex.: Habeas Corpus 123.456/SC; Súmula 542'],['partes','Partes','','Opcional. Ex.: Impetrante: X. Paciente: Y'],['relator','Relator','m','Ex.: Min. Rogerio Schietti Cruz'],['data','Data do julgamento','m','','date'],['ementa','Ementa','','Opcional; pode ser abreviada','area'],['publicacao','Publicação','','Opcional. Ex.: Diário da Justiça Eletrônico, Brasília, DF, 1 fev. 2016'],['url','Endereço eletrônico','m'],['acesso','Data de acesso','m','','date']]},
+ cit:{nome:'Só citação no texto',campos:[['colar','Referência pronta (opcional)','','Cole uma referência ABNT já montada: autores e ano são extraídos dela. Ou preencha os campos abaixo.','area'],['autores','Autores (um por linha)','','Nome e sobrenome, ou SOBRENOME, Prenome; entidade em maiúsculas (ex.: BRASIL)','area'],['anos','Ano ou anos','m','Vários anos do mesmo autor: 2010, 2015. Vazio: sem data'],['pagina','Página (citação direta)','m','Ex.: 15 ou 15-17'],['iniciais','Há outro autor citado com o mesmo sobrenome (acrescenta as iniciais do prenome)','','','chk']]},
  online:{nome:'Documento on-line',campos:[['autores','Autores (um por linha)','','Pessoa ou entidade','area'],['titulo','Título',''],['subtitulo','Subtítulo','m'],['local','Local','p','Opcional'],['data','Data de publicação','p','Ex.: 5 out. 2026 ou 2026'],['url','Endereço eletrônico','m'],['acesso','Data de acesso','m','','date']]}
 };
 const SEL={papel:[['org','Organizador (org.)'],['coord','Coordenador (coord.)'],['ed','Editor (ed.)']],grau:[['Tese (Doutorado em','Tese (doutorado)'],['Dissertação (Mestrado em','Dissertação (mestrado)'],['Trabalho de Conclusão de Curso (Graduação em','TCC (graduação)'],['Monografia (Especialização em','Monografia (especialização)']]};
@@ -163,6 +164,36 @@ function cit(txt,ano){
   const s=l.map(sobrenomeCit);
   const a=s.length>3?s[0]+' et al.':s.length===3?s[0]+'; '+s[1]+'; '+s[2]:s.join('; ');
   return '('+a+', '+ano+')';
+}
+const MIN=/^(de|da|do|das|dos|e|em|para|a|o|na|no)$/i;
+function capEnt(s){return s.toLocaleLowerCase('pt-BR').split(/\s+/).map((w,i)=>i>0&&MIN.test(w)?w:w.charAt(0).toLocaleUpperCase('pt-BR')+w.slice(1)).join(' ');}
+function iniciais(pren){return (pren||'').split(/\s+/).filter(w=>w&&!MIN.test(w)).map(w=>w.charAt(0).toLocaleUpperCase('pt-BR')+'.').join(' ');}
+function autorCit(nomeInv,comIni){ // nomeInv: 'SOBRENOME, Prenome' ou entidade
+  if(!nomeInv.includes(',')) return capEnt(nomeInv);
+  const [s,pr]=nomeInv.split(/,(.*)/s);const sob=capEnt(s.trim());
+  return comIni&&iniciais(pr.trim())?sob+', '+iniciais(pr.trim()):sob;
+}
+function extrai(ref){ // autores e ano de uma referência ABNT pronta
+  const r=(ref||'').replace(/\s+/g,' ').trim(); if(!r) return null;
+  let fimAut=-1; const re=/\.\s/g; let m;
+  while((m=re.exec(r))){const antes=r.slice(0,m.index);if(!/(^|[\s.])[A-ZÀ-Ý]$/.test(antes)){fimAut=m.index;break;}}
+  const seg=fimAut>0?r.slice(0,fimAut):r.split('.')[0];
+  const corte=r.search(/Dispon[ií]vel em|Acesso em/i); const base=corte>0?r.slice(0,corte):r;
+  const anos=base.match(/\b(1[5-9]\d\d|20\d\d)\b/g)||[];
+  return {autores:seg.split(/\s*;\s*/).map(x=>x.trim()).filter(Boolean),ano:anos.length?anos[anos.length-1]:''};
+}
+function citacao(v){
+  let lst=[],ano=(v.anos||'').trim();
+  const ex=extrai(v.colar);
+  if((v.autores||'').trim()) lst=v.autores.split('\n').map(x=>x.trim()).filter(Boolean).map(nomeABNT);
+  else if(ex) lst=ex.autores.map(a=>a.includes(',')?a:up(a));
+  if(!ano&&ex&&!(v.autores||'').trim()) ano=ex.ano;
+  if(!lst.length) return null;
+  const ini=!!v.iniciais; const nomes=lst.map(n=>autorCit(n,ini));
+  const aut=nomes.length>3?nomes[0]+' et al.':nomes.join('; ');
+  const a=ano?ano.split(/\s*[,;]\s*/).filter(Boolean).join(', '):'[s. d.]';
+  const pg=(v.pagina||'').trim().replace(/\s*[-–]\s*/,'-');
+  return {ind:'('+aut+', '+a+')',dir:'('+aut+', '+a+', p. '+(pg||'00')+')',semPg:!pg};
 }
 function dataAcesso(v){if(!v)return '';const [y,m,d]=v.split('-');return (+d)+' '+MESES[+m-1]+' '+y;}
 function dataExt(v){if(!v)return '';const [y,m,d]=v.split('-');return (+d===1?'1º':+d)+' de '+MESES_EXT[+m-1]+' de '+y;}
@@ -232,7 +263,14 @@ function monta(){
   return [h.replace(/\s+/g,' ').replace(/\.\./g,'.').trim(),c];
 }
 function render(){
-  const [h,c]=monta();const r=$('ref');
+  const r=$('ref');
+  $('adicionar').hidden=(tipo==='cit');
+  if(tipo==='cit'){const v={};T.cit.campos.forEach(([id])=>{if(vals[id])v[id]=vals[id];});const c=citacao(v);$('ok').textContent='';
+    if(!c){r.textContent='Cole uma referência pronta ou informe os autores.';r.classList.add('vazio');$('cit').innerHTML='';return;}
+    r.classList.remove('vazio');r.innerHTML='<span class="lang" style="display:block;font:500 12px var(--body);letter-spacing:.04em;text-transform:uppercase;color:var(--muted)">Citação indireta</span>'+esc(c.ind)+'<span style="display:block;margin-top:10px;font:500 12px var(--body);letter-spacing:.04em;text-transform:uppercase;color:var(--muted)">Citação direta</span>'+esc(c.dir);
+    $('cit').innerHTML=c.semPg?'<b>Página</b>Informe a página da citação direta no campo próprio; "p. 00" é só marcador.':'';
+    return;}
+  const [h,c]=monta();
   if(h){r.innerHTML=h;r.classList.remove('vazio');}else{r.textContent='Preencha os campos obrigatórios (autor ou responsável e título).';r.classList.add('vazio');}
   $('cit').innerHTML=c?'<b>Chamada no texto (NBR 10520:2023)</b><code>'+esc(c)+'</code>, ou com página: <code>'+esc(c.replace(/\)$/,', p. 00)'))+'</code>':'';
   $('ok').textContent='';
@@ -244,8 +282,11 @@ function form(){
     let inp;
     if(tp==='area'){inp=document.createElement('textarea');}
     else if(tp==='sel'){inp=document.createElement('select');SEL[id].forEach(([v,t])=>{const o=document.createElement('option');o.value=v;o.textContent=t;inp.appendChild(o);});}
+    else if(tp==='chk'){inp=document.createElement('input');inp.type='checkbox';d.className='chk';}
     else{inp=document.createElement('input');inp.type=tp==='date'?'date':'text';}
-    inp.id='f-'+id;inp.value=vals[id]||(tp==='sel'?inp.value:'');if(tp==='sel'&&!vals[id])vals[id]=inp.value;
+    inp.id='f-'+id;
+    if(tp==='chk'){inp.checked=!!vals[id];inp.addEventListener('change',()=>{vals[id]=inp.checked?'1':'';render();});d.appendChild(inp);const s=document.createElement('span');s.textContent=lab;s.style.cssText='font:14px var(--body);letter-spacing:0;text-transform:none;color:var(--fg)';d.appendChild(s);c.appendChild(d);return;}
+    inp.value=vals[id]||(tp==='sel'?inp.value:'');if(tp==='sel'&&!vals[id])vals[id]=inp.value;
     inp.addEventListener('input',()=>{vals[id]=inp.value;render();});
     d.innerHTML='<span>'+esc(lab)+'</span>';d.appendChild(inp);if(dica){const s=document.createElement('small');s.textContent=dica;d.appendChild(s);}
     c.appendChild(d);
@@ -258,7 +299,7 @@ Object.keys(T).forEach(k=>{const b=document.createElement('button');b.type='butt
 function copiar(html){const txt=new DOMParser().parseFromString(html,'text/html').body.textContent;
   if(window.ClipboardItem&&navigator.clipboard&&navigator.clipboard.write){return navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([html],{type:'text/html'}),'text/plain':new Blob([txt],{type:'text/plain'})})]);}
   return navigator.clipboard.writeText(txt);}
-$('copiar').addEventListener('click',()=>{const [h]=monta();if(!h)return;copiar(h).then(()=>$('ok').textContent='Referência copiada, com o negrito.').catch(()=>$('ok').textContent='Não foi possível copiar; selecione o texto e copie manualmente.');});
+$('copiar').addEventListener('click',()=>{if(tipo==='cit'){const v={};T.cit.campos.forEach(([id])=>{if(vals[id])v[id]=vals[id];});const c=citacao(v);if(!c)return;navigator.clipboard.writeText(c.ind+'\n'+c.dir).then(()=>$('ok').textContent='Citações copiadas (indireta e direta).');return;}const [h]=monta();if(!h)return;copiar(h).then(()=>$('ok').textContent='Referência copiada, com o negrito.').catch(()=>$('ok').textContent='Não foi possível copiar; selecione o texto e copie manualmente.');});
 $('limpar').addEventListener('click',()=>{T[tipo].campos.forEach(([id])=>delete vals[id]);form();});
 // lista
 let L=[];try{L=JSON.parse(localStorage.getItem('abnt-lista')||'[]');}catch(e){}
