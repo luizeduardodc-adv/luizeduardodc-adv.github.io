@@ -128,7 +128,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
   <section class="fase" aria-labelledby="t1">
     <h2 id="t1"><span class="num">1ª fase</span>Pena-base</h2>
     <p class="reg">Circunstâncias judiciais do art. 59. O resultado fica entre o mínimo e o máximo cominados.</p>
-    <div class="opc" role="radiogroup" aria-label="Base de cálculo da fração"><span class="grupo-t" style="margin:0 6px 0 0;align-self:center">A fração incide sobre</span><label><input type="radio" name="base1" value="min" checked>a pena mínima (padrão 1/6)</label><label><input type="radio" name="base1" value="int">a diferença entre máximo e mínimo (padrão 1/8)</label></div>
+    <div class="opc" role="radiogroup" aria-label="Base de cálculo da fração"><span class="grupo-t" style="margin:0 6px 0 0;align-self:center">A fração incide sobre</span><label><input type="radio" name="base1" value="min" checked>Pena mínima</label><label><input type="radio" name="base1" value="int">Diferença entre máximo e mínimo</label></div>
     <div class="itens" id="f1"></div>
   </section>
 
@@ -141,7 +141,8 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
 
   <section class="fase" aria-labelledby="t3">
     <h2 id="t3"><span class="num">3ª fase</span>Pena definitiva</h2>
-    <p class="reg">Causas de aumento e de diminuição (art. 68). Cada fração incide sobre a pena provisória e pode levar a pena para fora dos limites cominados.</p>
+    <p class="reg">Causas de aumento e de diminuição (art. 68). Podem levar a pena para fora dos limites cominados. No concurso de causas da Parte Especial, o juiz pode aplicar só a que mais aumente ou diminua (art. 68, parágrafo único).</p>
+    <div class="opc" role="radiogroup" aria-label="Forma de aplicação das frações"><span class="grupo-t" style="margin:0 6px 0 0;align-self:center">As frações incidem</span><label><input type="radio" name="modo3" value="cascata" checked>Em cascata</label><label><input type="radio" name="modo3" value="provisoria">Sobre a pena provisória</label></div>
     <div id="f3"></div>
     <button class="bt" type="button" id="addC">Adicionar causa</button>
   </section>
@@ -168,7 +169,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
 <div class="metodo">
   <h2 style="color:var(--fg)">Nota de método</h2>
   <p><strong>Penas.</strong> As penas cominadas vêm da planilha de classificação dos tipos penais da Parte Especial, conferida dispositivo por dispositivo no <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm" rel="noopener">texto compilado do Planalto</a> em 04/10/2026, com as alterações conferidas em 08/10/2026 (as mesmas da <a href="regua-penas.html">Régua das Penas</a>). Ficaram de fora o art. 146-A, caput (só multa), e o art. 304 (pena remetida a outro tipo).</p>
-  <p><strong>Cálculo.</strong> Segue o método trifásico do art. 68 do Código Penal. Na primeira e na segunda fases, a pena não sai dos limites cominados; na segunda, a redução abaixo do mínimo é vedada pela Súmula 231 do STJ ("A incidência da circunstância atenuante não pode conduzir à redução da pena abaixo do mínimo legal."). Na primeira fase, a fração incide, à escolha de quem usa, sobre a pena mínima (padrão 1/6 por circunstância) ou sobre a diferença entre máximo e mínimo (padrão 1/8), critérios admitidos pela jurisprudência; na segunda, sobre a pena-base (padrão 1/6); na terceira, sobre a pena provisória (padrão 1/3, a ajustar conforme a causa). As frações padrão são só ponto de partida e podem ser alteradas.</p>
+  <p><strong>Cálculo.</strong> Segue o método trifásico do art. 68 do Código Penal. Na primeira e na segunda fases, a pena não sai dos limites cominados; na segunda, a redução abaixo do mínimo é vedada pela Súmula 231 do STJ ("A incidência da circunstância atenuante não pode conduzir à redução da pena abaixo do mínimo legal."). Na primeira fase, a fração incide, à escolha de quem usa, sobre a pena mínima (padrão 1/6 por circunstância) ou sobre a diferença entre máximo e mínimo (padrão 1/8), critérios admitidos pela jurisprudência; na segunda, sobre a pena-base (padrão 1/6); na terceira (padrão 1/3, a ajustar conforme a causa), as frações se aplicam, por padrão, em cascata, cada uma sobre o resultado da anterior, ou, à escolha de quem usa, todas sobre a pena provisória; em cascata, a ordem das frações não altera o resultado. As frações padrão são só ponto de partida e podem ser alteradas.</p>
   <p><strong>Limites.</strong> Ferramenta de estudo. Não calcula regime inicial, substituição da pena, suspensão condicional nem detração, e não substitui a leitura da sentença nem a análise do caso concreto.</p>
   <p>Versão de 13/10/2026, a partir da calculadora publicada anteriormente em claude.ai.</p>
 </div>
@@ -192,6 +193,7 @@ let crime=null;
 function itens(el,lista,comTipo,ph){lista.forEach(([id,nome])=>{const d=document.createElement('div');d.className='item';d.dataset.off='';d.innerHTML=`<label><input type="checkbox" id="${id}">${nome}</label>${comTipo?`<select id="${id}_t" aria-label="Sentido"><option value="aumento">Desfavorável</option><option value="diminuicao">Favorável</option></select>`:'<span></span>'}<input type="text" class="fr" id="${id}_f" value="${ph}" data-auto="1" aria-label="Fração">`;el.appendChild(d);const cb=d.querySelector('input[type=checkbox]');cb.addEventListener('change',()=>{if(cb.checked){delete d.dataset.off;d.classList.add('on');const f=$(id+'_f');if(!f.value)f.focus()}else{d.dataset.off='';d.classList.remove('on')}calc()})})}
 itens($('f1'),CJ,true,'1/6');itens($('f2a'),AG,false,'1/6');itens($('f2b'),AT,false,'1/6');
 document.querySelectorAll('.item input.fr,.item select').forEach(e=>e.addEventListener('input',()=>{delete e.dataset.auto;calc()}));
+document.querySelectorAll('input[name=modo3]').forEach(r=>r.addEventListener('change',calc));
 document.querySelectorAll('input[name=base1]').forEach(r=>r.addEventListener('change',()=>{const d=r.value==='int'?'1/8':'1/6';CJ.forEach(([id])=>{const f=$(id+'_f');if(f.dataset.auto)f.value=d});calc()}));
 // causas da 3ª fase
 let nC=0;
@@ -211,7 +213,7 @@ function calc(){
   if(mn<=0||mx<=0||mx<mn){R.innerHTML='<h2>Resultado</h2><p class="vazio">Escolha um crime ou informe as penas mínima e máxima (em meses) para iniciar o cálculo.</p>';return}
   const b1=document.querySelector('input[name=base1]:checked').value==='int'?(mx-mn):mn;let pb=mn;CJ.forEach(([id])=>{if($(id).checked){const f=fr($(id+'_f').value);if(f)pb+=($(id+'_t').value==='diminuicao'?-1:1)*b1*f}});pb=Math.max(mn,Math.min(mx,pb));
   let pp=pb;AG.forEach(([id])=>{if($(id).checked){const f=fr($(id+'_f').value);if(f)pp+=pb*f}});AT.forEach(([id])=>{if($(id).checked){const f=fr($(id+'_f').value);if(f)pp-=pb*f}});const ppBruta=pp;pp=Math.max(mn,Math.min(mx,pp));
-  let pd=pp;const cs=[];document.querySelectorAll('#f3 .causa').forEach(d=>{const t=d.querySelector('select').value,f=fr(d.querySelector('input.fr').value);if(f){pd+=(t==='diminuicao'?-1:1)*pp*f;cs.push((t==='diminuicao'?'−':'+')+d.querySelector('input.fr').value.trim())}});if(pd<0)pd=0;
+  const cascata=document.querySelector('input[name=modo3]:checked').value==='cascata';let pd=pp;const cs=[];document.querySelectorAll('#f3 .causa').forEach(d=>{const t=d.querySelector('select').value,f=fr(d.querySelector('input.fr').value);if(f){pd+=(t==='diminuicao'?-1:1)*(cascata?pd:pp)*f;cs.push((t==='diminuicao'?'−':'+')+d.querySelector('input.fr').value.trim())}});if(pd<0)pd=0;
   const v=document.querySelector('input[name=conc]:checked').value;let pf=null,cd='';
   if(v==='material'){const o=parseFloat($('outro1').value)||0;if(o>0){pf=pd+o;cd='Cúmulo material: soma das penas'}}
   else if(v==='formal'){const o=parseFloat($('outro2').value)||0,f=fr($('frForm').value);if(o>0&&f>0){const m=Math.max(pd,o);pf=m+m*f;cd='Exasperação da maior pena em '+$('frForm').value.trim()}}
