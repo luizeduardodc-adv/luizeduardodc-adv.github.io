@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from monitor_camara import HOJE  # noqa: E402
 
 PASTA = os.path.join(os.path.dirname(__file__), "..", "data", "monitor")
-PAINEL = "https://luizeduardodc-adv.github.io/ferramentas/monitor-legislativo.html"
+PAINEL = "https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html"
 CASAS = (("Câmara", "Câmara dos Deputados"), ("Senado", "Senado Federal"))
 
 
