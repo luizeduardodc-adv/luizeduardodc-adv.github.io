@@ -101,6 +101,7 @@
 <p class="eyebrow">Ferramentas · Legislação penal</p>
 <h1>Monitor Legislativo Penal <span class="badge">protótipo</span></h1>
 <p class="lede">Painel das proposições de natureza penal apresentadas na Câmara dos Deputados e no Senado Federal na 57ª legislatura (desde 1º de fevereiro de 2023): projetos de lei (PL), projetos de lei complementar (PLP) e propostas de emenda à Constituição (PEC), atualizados automaticamente todos os dias a partir dos dados abertos das duas Casas. Clique nas barras dos gráficos para filtrar.</p>
+<p class="note"><strong>Protótipo.</strong> Os meses mais recentes aparecem com menos proposições do que de fato existem, porque a Câmara costuma atribuir o tema da proposição algum tempo depois da apresentação; o gráfico mensal não indica, por isso, queda da produção legislativa. Parte das proposições entra só por termos penais na ementa e pode não ter natureza penal. Detalhes na nota de método, ao fim da página.</p>
 
 <div class="filtros" role="search">
   <input id="q" type="search" placeholder="Buscar na ementa, número ou autor" aria-label="Buscar">
@@ -138,6 +139,7 @@
   <li>As duas bases são unificadas pela identificação da proposição (sigla, número e ano, numeração comum ao Congresso). Cada proposição aparece uma vez, pela Casa em que foi apresentada; quando já tramita na outra Casa, a situação e o link da outra Casa aparecem no item.</li>
   <li>Os rótulos de diploma e de natureza são atribuídos por palavras-chave na ementa. É uma classificação automática, sujeita a erros: confira sempre a tramitação e o texto na página da Câmara.</li>
   <li>Estado e partido são os do autor registrados pela Câmara na proposição. No modo "Autor principal", conta-se só o primeiro signatário; em "Todos os coautores", cada proposição conta uma vez para cada autor. Autorias de órgãos (Poder Executivo, comissões, CPIs, a outra Casa) aparecem como "Sem UF" e "Sem partido".</li>
+  <li>Limitações conhecidas: (a) os meses mais recentes estão sub-representados, porque a Câmara atribui os temas depois da apresentação, e a contagem desses meses tende a crescer nas coletas seguintes; (b) a seleção por termos na ementa traz ruído (campanhas, cadastros, temas administrativos), e o painel ainda não indica quais itens entraram por esse critério; (c) parte das proposições vem sem situação informada nos dados abertos.</li>
 </ol>
 <p class="note" id="nota-fonte"></p>
 </div>
