@@ -1,21 +1,23 @@
 {
- "gerado_em": "2026-10-14 11:33",
+ "gerado_em": "2026-10-15 11:23",
  "periodo": {
-  "inicio": "2026-10-07",
-  "fim": "2026-10-13"
+  "inicio": "2026-10-08",
+  "fim": "2026-10-14"
  },
- "total": 1,
+ "total": 2,
  "por_casa": {
-  "Câmara": 1
+  "Câmara": 2
  },
  "por_tipo": {
-  "PL": 1
+  "PL": 2
  },
  "apresentadas_na_semana": 1,
  "natureza": {},
- "diplomas": {},
+ "diplomas": {
+  "Lei de Drogas": 1
+ },
  "partidos": {
-  "PDT": 1
+  "PDT": 2
  },
  "itens": [
   {
@@ -36,6 +38,27 @@
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647319",
    "natureza": [],
    "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5545,
+   "ano": 2026,
+   "ementa": "Institui a Política Nacional de Responsabilização Administrativa pelo Consumo de Drogas Ilícitas em Espaços Públicos, estabelece multa administrativa para a prática de consumo ostensivo de substâncias ilícitas em locais de uso comum do povo, disciplina a destinação vinculada dos valores arrecadados para ações de prevenção ao uso de drogas nas escolas, segurança pública e saúde, e altera a Lei nº 11.343, de 23 de agosto de 2006, para fortalecer medidas educativas, preventivas e de proteção à coletividade.",
+   "apresentacao": "2026-10-13",
+   "aut": [
+    [
+     "Marcos Tavares",
+     "PDT",
+     "RJ"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647445",
+   "natureza": [],
+   "diplomas": [
+    "Lei de Drogas"
+   ]
   }
  ]
 }
