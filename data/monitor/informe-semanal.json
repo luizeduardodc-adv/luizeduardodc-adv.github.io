@@ -1,26 +1,55 @@
 {
- "gerado_em": "2026-10-16 11:01",
+ "gerado_em": "2026-10-17 10:04",
  "periodo": {
-  "inicio": "2026-10-09",
-  "fim": "2026-10-15"
+  "inicio": "2026-10-10",
+  "fim": "2026-10-16"
  },
- "total": 2,
+ "total": 5,
  "por_casa": {
-  "Câmara": 2
+  "Câmara": 5
  },
  "por_tipo": {
-  "PL": 2
+  "PL": 5
  },
- "apresentadas_na_semana": 2,
- "natureza": {},
+ "apresentadas_na_semana": 4,
+ "natureza": {
+  "Aumenta pena": 1
+ },
  "diplomas": {
-  "Lei de Drogas": 1
+  "Maria da Penha": 1,
+  "Lei de Drogas": 1,
+  "Código Penal": 1,
+  "Organizações criminosas": 1,
+  "ECA (crimes)": 1
  },
  "partidos": {
+  "PL": 2,
   "PDT": 1,
-  "PCdoB": 1
+  "PCdoB": 1,
+  "PSD": 1
  },
  "itens": [
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5534,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), para prever a notificação de atos processuais ao cônjuge, companheiro, ascendente, descendente ou irmão da ofendida na impossibilidade de sua notificação pessoal.",
+   "apresentacao": "2026-10-07",
+   "aut": [
+    [
+     "Capitão Alberto Neto",
+     "PL",
+     "AM"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647323",
+   "natureza": [],
+   "diplomas": [
+    "Maria da Penha"
+   ]
+  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -58,6 +87,50 @@
    ],
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647627",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5581,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), e a Lei nº 13.344, de 6 de outubro de 2016, para agravar a pena do tráfico de pessoas praticado no contexto de organização criminosa, milícia privada ou grupo paramilitar, instituir prestação patrimonial especial destinada à desarticulação econômica da atividade criminosa quando a vítima for criança ou adolescente, estabelecer protocolo de resposta rápida para casos com indícios de transnacionalidade e dispor sobre o monitoramento do embarque de crianças e adolescentes.",
+   "apresentacao": "2026-10-15",
+   "aut": [
+    [
+     "Dr. Frederico",
+     "PL",
+     "MG"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647787",
+   "natureza": [
+    "Aumenta pena"
+   ],
+   "diplomas": [
+    "Código Penal",
+    "Organizações criminosas",
+    "ECA (crimes)"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5584,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 13.675, de 11 de junho de 2018, para instituir o Programa Brasil contra o Crime Organizado no âmbito da Política Nacional de Segurança Pública e Defesa Social",
+   "apresentacao": "2026-10-15",
+   "aut": [
+    [
+     "Laura Carneiro",
+     "PSD",
+     "RJ"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648292",
    "natureza": [],
    "diplomas": []
   }
