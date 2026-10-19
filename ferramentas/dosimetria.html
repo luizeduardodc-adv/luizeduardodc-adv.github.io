@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Calculadora de Dosimetria da Pena · Luiz Eduardo Dias Cardoso</title>
 <meta name="description" content="Simulação do método trifásico de aplicação da pena (art. 68 do Código Penal), com as penas da Parte Especial conferidas no texto compilado do Planalto.">
@@ -9,7 +10,7 @@
 <meta property="og:description" content="Simulação do método trifásico de aplicação da pena (art. 68 do Código Penal), com as penas da Parte Especial conferidas no texto compilado do Planalto.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232E5B88'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%23F4F6F8' text-anchor='middle'%3ELE%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232E5B88'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%23FAF7F0' text-anchor='middle'%3ELE%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -148,7 +149,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
   </section>
 
   <section class="fase" aria-labelledby="t4">
-    <h2 id="t4"><span class="num">Concurso</span>Concurso de crimes</h2>
+    <h2 id="t4"><span class="num">Arts. 69 a 71</span>Concurso de crimes</h2>
     <p class="reg">Arts. 69, 70 e 71. Aplica-se sobre a pena definitiva calculada acima.</p>
     <div class="opc" role="radiogroup" aria-label="Concurso">
       <label><input type="radio" name="conc" value="nao" checked>Sem concurso</label>
@@ -168,7 +169,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
 
 <div class="metodo">
   <h2 style="color:var(--fg)">Nota de método</h2>
-  <p><strong>Penas.</strong> As penas cominadas vêm da planilha de classificação dos tipos penais da Parte Especial, conferida dispositivo por dispositivo no <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm" rel="noopener">texto compilado do Planalto</a> em 04/10/2026, com as alterações conferidas em 08/10/2026 (as mesmas da <a href="regua-penas.html">Régua das Penas</a>). Ficaram de fora o art. 146-A, caput (só multa), e o art. 304 (pena remetida a outro tipo).</p>
+  <p><strong>Penas.</strong> As penas cominadas vêm da planilha de classificação dos tipos penais da Parte Especial, conferida dispositivo por dispositivo no <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm" rel="noopener">texto compilado do Planalto</a> em 04/10/2026, com as alterações conferidas em 08/10/2026 (as mesmas da <a href="regua-penas.html">Régua das Penas</a>); em 13/10/2026 confirmou-se no Planalto que nenhuma lei posterior alterou a Parte Especial. Ficaram de fora o art. 146-A, caput (só multa), e o art. 304 (pena remetida a outro tipo).</p>
   <p><strong>Cálculo.</strong> Segue o método trifásico do art. 68 do Código Penal. Na primeira e na segunda fases, a pena não sai dos limites cominados; na segunda, a redução abaixo do mínimo é vedada pela Súmula 231 do STJ ("A incidência da circunstância atenuante não pode conduzir à redução da pena abaixo do mínimo legal."). Na primeira fase, a fração incide, à escolha de quem usa, sobre a pena mínima (padrão 1/6 por circunstância) ou sobre a diferença entre máximo e mínimo (padrão 1/8), critérios admitidos pela jurisprudência; na segunda, sobre a pena-base (padrão 1/6); na terceira (padrão 1/3, a ajustar conforme a causa), as frações se aplicam, por padrão, em cascata, cada uma sobre o resultado da anterior, ou, à escolha de quem usa, todas sobre a pena provisória; em cascata, a ordem das frações não altera o resultado. As frações padrão são só ponto de partida e podem ser alteradas.</p>
   <p><strong>Limites.</strong> Ferramenta de estudo. Não calcula regime inicial, substituição da pena, suspensão condicional nem detração, e não substitui a leitura da sentença nem a análise do caso concreto.</p>
   <p>Versão de 13/10/2026, a partir da calculadora publicada anteriormente em claude.ai.</p>

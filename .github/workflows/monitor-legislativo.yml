@@ -39,5 +39,6 @@ jobs:
             echo "Sem mudanças nos dados."
           else
             git commit -m "Monitor legislativo: atualização automática dos dados"
+            git pull --rebase
             git push
           fi
