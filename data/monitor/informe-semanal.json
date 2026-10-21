@@ -1,22 +1,24 @@
 {
- "gerado_em": "2026-10-20 11:21",
+ "gerado_em": "2026-10-21 11:33",
  "periodo": {
-  "inicio": "2026-10-13",
-  "fim": "2026-10-19"
+  "inicio": "2026-10-14",
+  "fim": "2026-10-20"
  },
- "total": 5,
+ "total": 7,
  "por_casa": {
-  "Câmara": 5
+  "Câmara": 6,
+  "Senado": 1
  },
  "por_tipo": {
-  "PL": 5
+  "PL": 7
  },
  "apresentadas_na_semana": 4,
  "natureza": {
-  "Aumenta pena": 1
+  "Aumenta pena": 1,
+  "Cria ou altera tipo penal": 1
  },
  "diplomas": {
-  "Maria da Penha": 1,
+  "Maria da Penha": 2,
   "Lei de Drogas": 1,
   "Código Penal": 1,
   "Organizações criminosas": 1,
@@ -24,9 +26,11 @@
  },
  "partidos": {
   "PL": 2,
+  "MDB": 1,
   "PDT": 1,
   "PCdoB": 1,
-  "PSD": 1
+  "PSD": 1,
+  "REPUBLICANOS": 1
  },
  "itens": [
   {
@@ -45,6 +49,27 @@
    ],
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647323",
+   "natureza": [],
+   "diplomas": [
+    "Maria da Penha"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5542,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 – Lei Maria da Penha, a fim de estabelecer garantias mínimas para a execução da monitoração eletrônica como medida protetiva de urgência, inclusive quanto à emissão de alertas sonoros e luminosos, à utilização excepcional de mecanismo de contenção física remota e à proteção da vítima.",
+   "apresentacao": "2026-10-13",
+   "aut": [
+    [
+     "Yury Bruno",
+     "MDB",
+     "CE"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647427",
    "natureza": [],
    "diplomas": [
     "Maria da Penha"
@@ -132,6 +157,27 @@
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648292",
    "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Senado",
+   "sigla": "PL",
+   "numero": 5607,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), e a Lei nº 9.504, de 30 de setembro de 1997 (Lei das Eleições), para estabelecer restrições à concessão extraordinária de benefícios econômicos, fiscais, financeiros e sociais durante o ano eleitoral e tipificar o crime de concessão dolosa de benefícios públicos em violação às restrições eleitorais.",
+   "apresentacao": "2026-10-19",
+   "aut": [
+    [
+     "Damares Alves",
+     "REPUBLICANOS",
+     "DF"
+    ]
+   ],
+   "situacao": "Aguardando despacho",
+   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/175989",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
    "diplomas": []
   }
  ]
