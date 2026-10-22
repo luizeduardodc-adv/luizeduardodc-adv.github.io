@@ -1,8 +1,8 @@
 {
- "gerado_em": "2026-10-21 11:33",
+ "gerado_em": "2026-10-22 11:39",
  "periodo": {
-  "inicio": "2026-10-14",
-  "fim": "2026-10-20"
+  "inicio": "2026-10-15",
+  "fim": "2026-10-21"
  },
  "total": 7,
  "por_casa": {
@@ -14,22 +14,21 @@
  },
  "apresentadas_na_semana": 4,
  "natureza": {
-  "Aumenta pena": 1,
+  "Aumenta pena": 2,
   "Cria ou altera tipo penal": 1
  },
  "diplomas": {
   "Maria da Penha": 2,
-  "Lei de Drogas": 1,
-  "Código Penal": 1,
+  "Código Penal": 2,
   "Organizações criminosas": 1,
   "ECA (crimes)": 1
  },
  "partidos": {
   "PL": 2,
   "MDB": 1,
-  "PDT": 1,
   "PCdoB": 1,
   "PSD": 1,
+  "PODE": 1,
   "REPUBLICANOS": 1
  },
  "itens": [
@@ -73,27 +72,6 @@
    "natureza": [],
    "diplomas": [
     "Maria da Penha"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5545,
-   "ano": 2026,
-   "ementa": "Institui a Política Nacional de Responsabilização Administrativa pelo Consumo de Drogas Ilícitas em Espaços Públicos, estabelece multa administrativa para a prática de consumo ostensivo de substâncias ilícitas em locais de uso comum do povo, disciplina a destinação vinculada dos valores arrecadados para ações de prevenção ao uso de drogas nas escolas, segurança pública e saúde, e altera a Lei nº 11.343, de 23 de agosto de 2006, para fortalecer medidas educativas, preventivas e de proteção à coletividade.",
-   "apresentacao": "2026-10-13",
-   "aut": [
-    [
-     "Marcos Tavares",
-     "PDT",
-     "RJ"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647445",
-   "natureza": [],
-   "diplomas": [
-    "Lei de Drogas"
    ]
   },
   {
@@ -158,6 +136,29 @@
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648292",
    "natureza": [],
    "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5612,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 2.848 para aumentar a pena do crime de resistência.",
+   "apresentacao": "2026-10-20",
+   "aut": [
+    [
+     "Sargento Portugal",
+     "PODE",
+     "RJ"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648414",
+   "natureza": [
+    "Aumenta pena"
+   ],
+   "diplomas": [
+    "Código Penal"
+   ]
   },
   {
    "casa": "Senado",
