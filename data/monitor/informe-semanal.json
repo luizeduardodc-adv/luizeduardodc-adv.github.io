@@ -1,33 +1,33 @@
 {
- "gerado_em": "2026-10-22 11:39",
+ "gerado_em": "2026-10-23 11:18",
  "periodo": {
-  "inicio": "2026-10-15",
-  "fim": "2026-10-21"
+  "inicio": "2026-10-16",
+  "fim": "2026-10-22"
  },
- "total": 7,
+ "total": 8,
  "por_casa": {
-  "Câmara": 6,
+  "Câmara": 7,
   "Senado": 1
  },
  "por_tipo": {
-  "PL": 7
+  "PL": 8
  },
  "apresentadas_na_semana": 4,
  "natureza": {
   "Aumenta pena": 2,
-  "Cria ou altera tipo penal": 1
+  "Cria ou altera tipo penal": 2
  },
  "diplomas": {
   "Maria da Penha": 2,
-  "Código Penal": 2,
-  "Organizações criminosas": 1,
-  "ECA (crimes)": 1
+  "Código Penal": 3,
+  "Organizações criminosas": 2,
+  "ECA (crimes)": 1,
+  "Lavagem de dinheiro": 1
  },
  "partidos": {
-  "PL": 2,
+  "PL": 3,
   "MDB": 1,
-  "PCdoB": 1,
-  "PSD": 1,
+  "PSD": 2,
   "PODE": 1,
   "REPUBLICANOS": 1
  },
@@ -73,25 +73,6 @@
    "diplomas": [
     "Maria da Penha"
    ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5560,
-   "ano": 2026,
-   "ementa": "Institui o Código Unificado dos Direitos dos Animais, dispõe sobre a natureza jurídica dos animais, seus direitos fundamentais, medidas de proteção, sanções administrativas e crimes, e dá outras providências.",
-   "apresentacao": "2026-10-14",
-   "aut": [
-    [
-     "Professora Marcivania",
-     "PCdoB",
-     "AP"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647627",
-   "natureza": [],
-   "diplomas": []
   },
   {
    "casa": "Câmara",
@@ -158,6 +139,51 @@
    ],
    "diplomas": [
     "Código Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5640,
+   "ano": 2026,
+   "ementa": "Acrescenta o art. 242-A ao Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o crime de manipulação fraudulenta da opinião pública mediante ocultação de patrocínio ou financiamento por agentes econômicos ou organizações criminosas, e dá outras providências.",
+   "apresentacao": "2026-10-21",
+   "aut": [
+    [
+     "Marcelo Álvaro Antônio",
+     "PL",
+     "MG"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648690",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": [
+    "Código Penal",
+    "Organizações criminosas"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5645,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 8.383, de 30 de dezembro de 1991, para assegurar às instituições autorizadas a funcionar pelo Banco Central do Brasil e às demais pessoas jurídicas sujeitas a deveres legais de prevenção à lavagem de dinheiro, ao financiamento do terrorismo e à fraude o acesso isonômico, mediante convênio, às informações cadastrais não protegidas por sigilo fiscal mantidas pela Secretaria Especial da Receita Federal do Brasil.",
+   "apresentacao": "2026-10-21",
+   "aut": [
+    [
+     "Fernando Monteiro",
+     "PSD",
+     "PE"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648703",
+   "natureza": [],
+   "diplomas": [
+    "Lavagem de dinheiro"
    ]
   },
   {

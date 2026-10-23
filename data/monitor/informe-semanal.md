@@ -1,15 +1,15 @@
-Proposições penais da semana | 15/10/2026 a 21/10/2026
+Proposições penais da semana | 16/10/2026 a 22/10/2026
 
-Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 22/10/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
+Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 23/10/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
 
 Em números
 
-1. 7 proposições novas na base (Câmara 6; Senado 1).
-2. Por tipo: PL 7.
-3. Apresentadas na própria semana: 4; apresentadas antes e incorporadas agora: 3 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
-4. Natureza (classificação automática pela ementa): Aumenta pena 2; Cria ou altera tipo penal 1.
-5. Diplomas alterados (classificação automática pela ementa): Maria da Penha 2; Código Penal 2; Organizações criminosas 1; ECA (crimes) 1.
-6. Partido do autor principal: PL 2; MDB 1; PCdoB 1; PSD 1; PODE 1; REPUBLICANOS 1.
+1. 8 proposições novas na base (Câmara 7; Senado 1).
+2. Por tipo: PL 8.
+3. Apresentadas na própria semana: 4; apresentadas antes e incorporadas agora: 4 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
+4. Natureza (classificação automática pela ementa): Aumenta pena 2; Cria ou altera tipo penal 2.
+5. Diplomas alterados (classificação automática pela ementa): Código Penal 3; Maria da Penha 2; Organizações criminosas 2; ECA (crimes) 1; Lavagem de dinheiro 1.
+6. Partido do autor principal: PL 3; PSD 2; MDB 1; PODE 1; REPUBLICANOS 1.
 
 Iniciadas na Câmara dos Deputados
 
@@ -21,20 +21,25 @@ Iniciadas na Câmara dos Deputados
    Altera a Lei nº 11.340, de 7 de agosto de 2006 – Lei Maria da Penha, a fim de estabelecer garantias mínimas para a execução da monitoração eletrônica como medida protetiva de urgência, inclusive quanto à emissão de alertas sonoros e luminosos, à utilização excepcional de mecanismo de contenção física remota e à proteção da vítima.
    Altera: Maria da Penha.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647427
-3. PL 5560/2026 – Professora Marcivania (PCdoB/AP) – apresentada em 14/10/2026
-   Institui o Código Unificado dos Direitos dos Animais, dispõe sobre a natureza jurídica dos animais, seus direitos fundamentais, medidas de proteção, sanções administrativas e crimes, e dá outras providências.
-   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647627
-4. PL 5581/2026 – Dr. Frederico (PL/MG) – apresentada em 15/10/2026
+3. PL 5581/2026 – Dr. Frederico (PL/MG) – apresentada em 15/10/2026
    Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), e a Lei nº 13.344, de 6 de outubro de 2016, para agravar a pena do tráfico de pessoas praticado no contexto de organização criminosa, milícia privada ou grupo paramilitar, instituir prestação patrimonial especial destinada à desarticulação econômica da atividade criminosa quando a vítima for criança ou adolescente, estabelecer protocolo de resposta rápida para casos com indícios de transnacionalidade e dispor sobre o monitoramento do embarque de crianças e adolescentes.
    Natureza: aumenta pena. Altera: Código Penal, Organizações criminosas, ECA (crimes).
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647787
-5. PL 5584/2026 – Laura Carneiro (PSD/RJ) – apresentada em 15/10/2026
+4. PL 5584/2026 – Laura Carneiro (PSD/RJ) – apresentada em 15/10/2026
    Altera a Lei nº 13.675, de 11 de junho de 2018, para instituir o Programa Brasil contra o Crime Organizado no âmbito da Política Nacional de Segurança Pública e Defesa Social
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648292
-6. PL 5612/2026 – Sargento Portugal (PODE/RJ) – apresentada em 20/10/2026
+5. PL 5612/2026 – Sargento Portugal (PODE/RJ) – apresentada em 20/10/2026
    Altera o Decreto-Lei nº 2.848 para aumentar a pena do crime de resistência.
    Natureza: aumenta pena. Altera: Código Penal.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648414
+6. PL 5640/2026 – Marcelo Álvaro Antônio (PL/MG) – apresentada em 21/10/2026
+   Acrescenta o art. 242-A ao Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o crime de manipulação fraudulenta da opinião pública mediante ocultação de patrocínio ou financiamento por agentes econômicos ou organizações criminosas, e dá outras providências.
+   Natureza: cria ou altera tipo penal. Altera: Código Penal, Organizações criminosas.
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648690
+7. PL 5645/2026 – Fernando Monteiro (PSD/PE) – apresentada em 21/10/2026
+   Altera a Lei nº 8.383, de 30 de dezembro de 1991, para assegurar às instituições autorizadas a funcionar pelo Banco Central do Brasil e às demais pessoas jurídicas sujeitas a deveres legais de prevenção à lavagem de dinheiro, ao financiamento do terrorismo e à fraude o acesso isonômico, mediante convênio, às informações cadastrais não protegidas por sigilo fiscal mantidas pela Secretaria Especial da Receita Federal do Brasil.
+   Altera: Lavagem de dinheiro.
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648703
 
 Iniciadas no Senado Federal
 
