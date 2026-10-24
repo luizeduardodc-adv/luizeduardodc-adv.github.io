@@ -1,58 +1,37 @@
 {
- "gerado_em": "2026-10-23 11:18",
+ "gerado_em": "2026-10-24 10:23",
  "periodo": {
-  "inicio": "2026-10-16",
-  "fim": "2026-10-22"
+  "inicio": "2026-10-17",
+  "fim": "2026-10-23"
  },
- "total": 8,
+ "total": 6,
  "por_casa": {
-  "Câmara": 7,
-  "Senado": 1
+  "Câmara": 4,
+  "Senado": 2
  },
  "por_tipo": {
-  "PL": 8
+  "PL": 6
  },
- "apresentadas_na_semana": 4,
+ "apresentadas_na_semana": 5,
  "natureza": {
-  "Aumenta pena": 2,
+  "Aumenta pena": 1,
   "Cria ou altera tipo penal": 2
  },
  "diplomas": {
-  "Maria da Penha": 2,
-  "Código Penal": 3,
-  "Organizações criminosas": 2,
-  "ECA (crimes)": 1,
+  "Maria da Penha": 1,
+  "Código Penal": 2,
+  "Organizações criminosas": 1,
   "Lavagem de dinheiro": 1
  },
  "partidos": {
-  "PL": 3,
   "MDB": 1,
-  "PSD": 2,
   "PODE": 1,
-  "REPUBLICANOS": 1
+  "PL": 1,
+  "PSD": 1,
+  "REPUBLICANOS": 1,
+  "PT": 1
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5534,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), para prever a notificação de atos processuais ao cônjuge, companheiro, ascendente, descendente ou irmão da ofendida na impossibilidade de sua notificação pessoal.",
-   "apresentacao": "2026-10-07",
-   "aut": [
-    [
-     "Capitão Alberto Neto",
-     "PL",
-     "AM"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647323",
-   "natureza": [],
-   "diplomas": [
-    "Maria da Penha"
-   ]
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -73,50 +52,6 @@
    "diplomas": [
     "Maria da Penha"
    ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5581,
-   "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), e a Lei nº 13.344, de 6 de outubro de 2016, para agravar a pena do tráfico de pessoas praticado no contexto de organização criminosa, milícia privada ou grupo paramilitar, instituir prestação patrimonial especial destinada à desarticulação econômica da atividade criminosa quando a vítima for criança ou adolescente, estabelecer protocolo de resposta rápida para casos com indícios de transnacionalidade e dispor sobre o monitoramento do embarque de crianças e adolescentes.",
-   "apresentacao": "2026-10-15",
-   "aut": [
-    [
-     "Dr. Frederico",
-     "PL",
-     "MG"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2647787",
-   "natureza": [
-    "Aumenta pena"
-   ],
-   "diplomas": [
-    "Código Penal",
-    "Organizações criminosas",
-    "ECA (crimes)"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5584,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 13.675, de 11 de junho de 2018, para instituir o Programa Brasil contra o Crime Organizado no âmbito da Política Nacional de Segurança Pública e Defesa Social",
-   "apresentacao": "2026-10-15",
-   "aut": [
-    [
-     "Laura Carneiro",
-     "PSD",
-     "RJ"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648292",
-   "natureza": [],
-   "diplomas": []
   },
   {
    "casa": "Câmara",
@@ -205,6 +140,25 @@
    "natureza": [
     "Cria ou altera tipo penal"
    ],
+   "diplomas": []
+  },
+  {
+   "casa": "Senado",
+   "sigla": "PL",
+   "numero": 5638,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 8.906, de 4 de julho de 1994, para impedir o exercício da advocacia por membros do Poder Legislativo, em seus diferentes níveis, em processos judiciais ou procedimentos relacionados a crimes contra a vida (Lei Ana Clara).",
+   "apresentacao": "2026-10-21",
+   "aut": [
+    [
+     "Camilo Santana",
+     "PT",
+     "CE"
+    ]
+   ],
+   "situacao": "Aguardando despacho",
+   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176028",
+   "natureza": [],
    "diplomas": []
   }
  ]
