@@ -126,6 +126,8 @@ a.card:hover{border-color:var(--accent)}
 /* ===== Prévia visual de 11/10/2026 (protótipos A, C, D, F e H aprovados) ===== */
 /* A. Papel, serifada no corpo, cabeçalho em versalete */
 :root{--bg:#FAF7F0; --rule:#E6E0D4; --textw:43rem; --accent-deep:#1F4266}
+/* 25/10/2026: cartões de ferramenta no azul da vitrine da Régua (azul-aço misturado ao azul-noite), sombra no azul-noite */
+:root{--ferr-bg:#203F5E; --ferr-sombra:#0F1722}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#11151B; --rule:#2B323D; --accent-deep:#0B1622}}
 :root[data-theme="dark"]{--bg:#11151B; --rule:#2B323D; --accent-deep:#0B1622}
 body{font-family:var(--display);font-size:17px;line-height:1.66}
@@ -170,8 +172,8 @@ h1,h2,h3{font-weight:500}
 
 /* D. Cartões de ferramenta (ícone em círculo e sombra deslocada) */
 .grid.ferr{gap:40px 22px;padding-top:22px}
-.ferr .card{position:relative;background:var(--accent);border:0;border-radius:8px;padding:38px 20px 20px;box-shadow:5px 5px 0 var(--accent-deep);color:#fff;transition:transform .15s,box-shadow .15s}
-.ferr a.card:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--accent-deep)}
+.ferr .card{position:relative;background:var(--ferr-bg);border:0;border-radius:8px;padding:38px 20px 20px;box-shadow:5px 5px 0 var(--ferr-sombra);color:#fff;transition:transform .15s,box-shadow .15s}
+.ferr a.card:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ferr-sombra)}
 .ferr .card h3{color:inherit}
 .ferr .card p{color:rgba(255,255,255,.88)}
 .ferr .card .tag{background:transparent;color:inherit;border:1px solid rgba(255,255,255,.55)}
