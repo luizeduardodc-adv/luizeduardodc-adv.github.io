@@ -78,6 +78,41 @@ details summary{cursor:pointer;color:var(--accent);font-size:13.5px;margin-top:1
 .sw{display:inline-block;width:18px;height:8px;border-radius:0 4px 4px 0;background:var(--accent)}
 .sw.sc{background:var(--mark)}
 .sw.ref{width:0;height:12px;border-left:1px dashed var(--fg);border-radius:0;opacity:.6}
+/* Gráfico de unidades: prisão hipotética de 100 vagas, um ponto por pessoa presa na proporção real */
+.units-ends{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin:4px 0 14px}
+.units-ends .n{font:500 34px var(--mono);font-variant-numeric:tabular-nums;line-height:1;letter-spacing:-.02em}
+.units-ends .l{font-size:12.5px;color:var(--muted);margin-top:4px}
+.units-ends .r{text-align:right}
+.units-ends .r .n{color:var(--crit)}
+.units-ends .gap{align-self:center;font:12.5px var(--mono);color:var(--muted);border:1px solid var(--rule);background:var(--bg);border-radius:999px;padding:4px 10px;text-align:center}
+.units{display:grid;grid-template-columns:repeat(25,minmax(0,1fr));gap:8px 6px;padding:14px;border-radius:8px;background-color:var(--bg);background-image:radial-gradient(var(--rule) 1px,transparent 1.2px);background-size:10px 10px}
+.units i{display:block;aspect-ratio:1;border-radius:50%;max-width:22px;width:100%;justify-self:center}
+.units .cap{grid-column:1/-1;display:flex;align-items:center;gap:8px;font:11px var(--mono);color:var(--muted);margin:2px 0}
+.units .cap::before,.units .cap::after{content:"";flex:1;border-top:1px dashed var(--fg);opacity:.45}
+.units i.in{background:var(--accent)}
+.units.sc i.in{background:var(--mark)}
+.units i.out{background:var(--crit)}
+.units i{transition:background-color .25s,transform .25s,box-shadow .25s}
+.units i.empty{background:transparent;box-shadow:inset 0 0 0 1.5px var(--rule);transform:scale(.75)}
+.units i.off{visibility:hidden}
+/* Narrativa por rolagem: o painel fica parado na tela enquanto a rolagem avança os passos; sem movimento reduzido nem impressão */
+.u-scrolly{margin-top:20px;position:relative}
+.u-scrolly .panel{position:sticky;top:var(--stk,12px);margin-top:0}
+.u-story{display:flex;align-items:flex-start;gap:12px;margin:0 0 12px;padding:10px 12px;border-left:2px solid var(--accent);background:var(--bg);border-radius:0 6px 6px 0}
+#u-panel.sc .u-story{border-left-color:var(--mark)}
+.u-cap{margin:0;flex:1;font-family:var(--display);font-size:17px;line-height:1.35;min-height:2.7em}
+.u-dots{display:flex;gap:5px;margin:7px 0 0;padding:0;list-style:none}
+.u-dots li{width:7px;height:7px;border-radius:50%;background:var(--rule)}
+.u-dots li.on{background:var(--fg)}
+.u-skip{font-size:12.5px;color:var(--accent);white-space:nowrap;margin-top:3px}
+@media print{.u-scrolly{height:auto!important}.u-scrolly .panel{position:static}.u-story{display:none}}
+.units-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;margin-top:10px;font-size:12.5px;color:var(--muted)}
+.units-foot .legend{margin:0}
+.sw.dot{width:10px;height:10px;border-radius:50%}
+.sw.out{background:var(--crit)}
+#u-panel.sc .sw.in{background:var(--mark)}
+@media (max-width:640px){.units{grid-template-columns:repeat(20,minmax(0,1fr))}}
+@media (max-width:480px){.units{gap:5px 3px;padding:10px}.units-ends .n{font-size:28px}}
 footer{margin-top:32px;font-size:12.5px;color:var(--muted);max-width:75ch}
 footer p{margin:0 0 8px}
 footer a{color:var(--accent)}
@@ -128,6 +163,27 @@ body{margin:0}
 
 <div class="kpis" id="kpis"></div>
 <p class="note">Variação calculada contra o 17º ciclo (posição em 31/12/2024), um ano antes.</p>
+
+<section class="panel" id="u-panel" aria-labelledby="t-units">
+  <div class="ph">
+    <div><h2 id="t-units">Se o sistema tivesse 100 vagas</h2><p>Cada ponto é uma pessoa presa, na proporção real entre presos em cela física e vagas.</p></div>
+    <div class="seg">
+      <div class="seg" role="group" aria-label="Recorte"><button class="chip" data-u="br" aria-pressed="true">Brasil</button><button class="chip" data-u="sc" aria-pressed="false">Santa Catarina</button></div>
+      <div class="seg" role="group" aria-label="Ano"><button class="chip" data-y="c24" aria-pressed="false">2024</button><button class="chip" data-y="c25" aria-pressed="true">2025</button></div>
+    </div>
+  </div>
+  <div class="u-story" id="u-story" hidden><ol class="u-dots" id="u-dots" aria-hidden="true"></ol><p class="u-cap" id="u-cap" aria-live="polite"></p><a class="u-skip" href="#t-uf">Pular</a></div>
+  <div class="units-ends" aria-hidden="true">
+    <div><div class="n">100</div><div class="l">vagas</div></div>
+    <div class="gap" id="u-gap"></div>
+    <div class="r"><div class="n" id="u-n"></div><div class="l">pessoas presas</div></div>
+  </div>
+  <div class="units" id="units" role="img"></div>
+  <div class="units-foot">
+    <div class="legend"><span><i class="sw dot in"></i>Pessoa com vaga</span><span><i class="sw dot out"></i>Pessoa além da capacidade</span></div>
+    <span id="u-base"></span>
+  </div>
+</section>
 
 <section class="panel" aria-labelledby="t-uf">
   <div class="ph">
@@ -183,6 +239,58 @@ const K=[
  {k:"Taxa de ocupação",v:n1(b.pop/b.cap*100)+"%",d:"era "+n1(a.pop/a.cap*100)+"% em 2024",c:1},
  {k:"Presos provisórios",v:n1(b.prov/b.pop*100)+"%",d:nf.format(b.prov)+" pessoas"}];
 document.getElementById('kpis').innerHTML=K.map(x=>`<div class="kpi ${x.c?'crit':''}"><div class="k">${x.k}</div><div class="v">${x.v}</div><div class="d">${x.d}</div></div>`).join('');
+// gráfico de unidades
+let U='br',Y='c25';
+const uel=document.getElementById('units'), upanel=document.getElementById('u-panel');
+uel.innerHTML=Array.from({length:150},(_,i)=>(i===100?'<span class="cap">capacidade: 100 vagas</span>':'')+'<i></i>').join('');
+const slots=[...uel.querySelectorAll('i')];
+const perU=(u,y)=>{const d=(u==='br'?BR:SC)[y];return Math.round(d.pop/d.cap*100)};
+// show: pessoas visíveis durante a narrativa; sem ele, o total do recorte
+function drawUnits(show){
+  const d=(U==='br'?BR:SC)[Y], per=perU(U,Y), n=show==null?per:Math.round(show), ano=Y==='c25'?'2025':'2024', onde=U==='br'?'Brasil':'Santa Catarina';
+  uel.classList.toggle('sc',U==='sc'); upanel.classList.toggle('sc',U==='sc');
+  slots.forEach((e,i)=>{e.className=i<100?(i<n?'in':'empty'):(i<n?'out':'off')});
+  uel.setAttribute('aria-label',`${onde}, ${ano}: para cada 100 vagas, ${per} pessoas presas; ${per-100} além da capacidade.`);
+  document.getElementById('u-n').textContent=n;
+  document.getElementById('u-gap').textContent=`${Math.max(0,n-100)} sem vaga`;
+  document.getElementById('u-base').textContent=`Base: ${nf.format(d.pop)} presos ÷ ${nf.format(d.cap)} vagas = ${n1(d.pop/d.cap*100)} por 100 vagas (${onde}, dez. ${ano}), arredondado.`;
+  document.querySelectorAll('[data-u]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.u===U));
+  document.querySelectorAll('[data-y]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.y===Y));
+}
+let manual=false;
+document.querySelectorAll('[data-u]').forEach(bt=>bt.addEventListener('click',()=>{U=bt.dataset.u;manual=true;drawUnits()}));
+document.querySelectorAll('[data-y]').forEach(bt=>bt.addEventListener('click',()=>{Y=bt.dataset.y;manual=true;drawUnits()}));
+drawUnits();
+// narrativa por rolagem (desligada com movimento reduzido)
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const B24=perU('br','c24'),B25=perU('br','c25'),S24=perU('sc','c24'),S25=perU('sc','c25');
+  const ST=[
+    {u:'br',y:'c24',a:0,b:0,t:'Imagine o sistema prisional brasileiro reduzido a 100 vagas.'},
+    {u:'br',y:'c24',a:0,b:100,t:'Em dezembro de 2024, todas as vagas estavam ocupadas.'},
+    {u:'br',y:'c24',a:100,b:B24,t:`E havia mais ${B24-100} pessoas sem vaga: ${B24} presos para cada 100 vagas.`},
+    {u:'br',y:'c25',a:B24,b:B25,t:`Um ano depois, eram ${B25}. A população presa cresceu ${n1(varp(BR.c25.pop,BR.c24.pop))}%; as vagas, ${n1(varp(BR.c25.cap,BR.c24.cap))}%.`},
+    {u:'sc',y:'c25',a:B25,b:S25,t:`Em Santa Catarina, ${S25} por 100 vagas em 2025 (${S24} em 2024), abaixo da proporção nacional.`}];
+  const wrap=document.createElement('div'); wrap.className='u-scrolly';
+  upanel.before(wrap); wrap.append(upanel);
+  const story=document.getElementById('u-story'), cap=document.getElementById('u-cap'), dots=document.getElementById('u-dots');
+  story.hidden=false; dots.innerHTML=ST.map(()=>'<li></li>').join('');
+  const hdr=document.querySelector('.site-header'), ease=t=>1-Math.pow(1-t,3), clamp=v=>Math.min(1,Math.max(0,v));
+  let stk=12,run=1,last=-1;
+  function layout(){
+    stk=(getComputedStyle(hdr).position==='sticky'?hdr.offsetHeight:0)+12;
+    wrap.style.setProperty('--stk',stk+'px');
+    run=Math.round(innerHeight*.55*ST.length);
+    wrap.style.height=(upanel.offsetHeight+run)+'px';
+  }
+  function frame(){
+    const p=clamp((stk-wrap.getBoundingClientRect().top)/run), f=p*ST.length, idx=Math.min(ST.length-1,Math.floor(f)), k=ease(clamp((f-idx)/.7)), st=ST[idx];
+    if(idx!==last){last=idx;manual=false;cap.textContent=st.t;[...dots.children].forEach((e,i)=>e.classList.toggle('on',i===idx))}
+    if(!manual){U=st.u;Y=st.y;drawUnits(st.a+(st.b-st.a)*k)}
+  }
+  layout(); frame();
+  addEventListener('resize',()=>{layout();frame()});
+  addEventListener('scroll',()=>requestAnimationFrame(frame),{passive:true});
+}
 // UF ranking
 let M='ocup';
 const DESC={ocup:"Presos por vaga disponível, em percentual. Acima de 100%, há mais presos do que vagas.",pop:"Número de pessoas presas em celas físicas.",def:"Diferença entre presos e vagas."};
