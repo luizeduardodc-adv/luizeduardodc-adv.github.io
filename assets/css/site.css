@@ -236,3 +236,9 @@ h1,h2,h3{font-weight:500}
 /* Contraste AA das etiquetas ocre (auditoria de 19/10/2026) */
 :root{--mark-ink:#7A4F0C}
 .card .tag{color:var(--mark-ink)}
+/* 25/10/2026: paralaxe discreta na gravura de abertura; a imagem desliza dentro da moldura mais devagar que a página (só com animação ligada a rolagem e sem movimento reduzido) */
+@supports (animation-timeline: scroll()){
+@media (prefers-reduced-motion: no-preference){
+.abertura img{aspect-ratio:2.3/1;object-position:50% 100%;animation:abertura-paralaxe linear both;animation-timeline:scroll(root block);animation-range:0px 90vh}
+@keyframes abertura-paralaxe{to{object-position:50% 0%}}
+}}
