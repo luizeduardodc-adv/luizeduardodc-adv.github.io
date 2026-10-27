@@ -1,12 +1,12 @@
-Proposições penais da semana | 19/10/2026 a 25/10/2026
+Proposições penais da semana | 20/10/2026 a 26/10/2026
 
-Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 26/10/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
+Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 27/10/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
 
 Em números
 
 1. 7 proposições novas na base (Câmara 5; Senado 2).
 2. Por tipo: PL 7.
-3. Apresentadas na própria semana: 5; apresentadas antes e incorporadas agora: 2 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
+3. Apresentadas na própria semana: 4; apresentadas antes e incorporadas agora: 3 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
 4. Natureza (classificação automática pela ementa): Cria ou altera tipo penal 2; Hediondez 1; Aumenta pena 1.
 5. Diplomas alterados (classificação automática pela ementa): Código Penal 3; Maria da Penha 1; Crimes hediondos 1; ECA (crimes) 1; Organizações criminosas 1; Lavagem de dinheiro 1.
 6. Partido do autor principal: MDB 1; AVANTE 1; PODE 1; PL 1; PSD 1; REPUBLICANOS 1; PT 1.

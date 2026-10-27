@@ -1,8 +1,8 @@
 {
- "gerado_em": "2026-10-26 13:13",
+ "gerado_em": "2026-10-27 12:23",
  "periodo": {
-  "inicio": "2026-10-19",
-  "fim": "2026-10-25"
+  "inicio": "2026-10-20",
+  "fim": "2026-10-26"
  },
  "total": 7,
  "por_casa": {
@@ -12,7 +12,7 @@
  "por_tipo": {
   "PL": 7
  },
- "apresentadas_na_semana": 5,
+ "apresentadas_na_semana": 4,
  "natureza": {
   "Hediondez": 1,
   "Aumenta pena": 1,
