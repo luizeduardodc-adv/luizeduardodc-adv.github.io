@@ -1,36 +1,37 @@
 {
- "gerado_em": "2026-10-28 13:10",
+ "gerado_em": "2026-10-29 13:11",
  "periodo": {
-  "inicio": "2026-10-21",
-  "fim": "2026-10-27"
+  "inicio": "2026-10-22",
+  "fim": "2026-10-28"
  },
- "total": 5,
+ "total": 6,
  "por_casa": {
   "Câmara": 4,
-  "Senado": 1
+  "Senado": 2
  },
  "por_tipo": {
-  "PL": 5
+  "PL": 6
  },
- "apresentadas_na_semana": 3,
+ "apresentadas_na_semana": 1,
  "natureza": {
   "Hediondez": 1,
-  "Aumenta pena": 1,
-  "Cria ou altera tipo penal": 1
+  "Cria ou altera tipo penal": 1,
+  "Processo penal": 1
  },
  "diplomas": {
   "Código Penal": 3,
   "Crimes hediondos": 1,
   "ECA (crimes)": 1,
   "Organizações criminosas": 1,
-  "Lavagem de dinheiro": 1
+  "Lavagem de dinheiro": 1,
+  "Código de Processo Penal": 1
  },
  "partidos": {
   "AVANTE": 1,
   "PODE": 1,
   "PL": 1,
   "PSD": 1,
-  "PT": 1
+  "PT": 2
  },
  "itens": [
   {
@@ -61,25 +62,21 @@
   {
    "casa": "Câmara",
    "sigla": "PL",
-   "numero": 5612,
+   "numero": 5636,
    "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 2.848 para aumentar a pena do crime de resistência.",
-   "apresentacao": "2026-10-20",
+   "ementa": "Altera a Lei nº 9.605, de 12 de fevereiro de 1998, para proibir, em todo o território nacional, a fabricação, a importação, a comercialização e o uso de fantasias, alegorias, adereços e ornamentos confeccionados com partes de origem animal, estabelecer mecanismos de fiscalização e responsabilização administrativa e dá outras providências.",
+   "apresentacao": "2026-10-21",
    "aut": [
     [
-     "Sargento Portugal",
+     "Delegado Bruno Lima",
      "PODE",
-     "RJ"
+     "SP"
     ]
    ],
    "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648414",
-   "natureza": [
-    "Aumenta pena"
-   ],
-   "diplomas": [
-    "Código Penal"
-   ]
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648636",
+   "natureza": [],
+   "diplomas": []
   },
   {
    "casa": "Câmara",
@@ -144,6 +141,30 @@
    "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176028",
    "natureza": [],
    "diplomas": []
+  },
+  {
+   "casa": "Senado",
+   "sigla": "PL",
+   "numero": 5673,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), e a Lei nº 13.431, de 4 de abril de 2017, para proteger a mãe ou o responsável não ofensor que exerça o cuidado de criança ou adolescente vítima de violência e para determinar a consideração, na individualização da pena do estupro de vulnerável, do dano psicológico ou emocional grave que lhe seja causado (Lei Dupla Proteção).",
+   "apresentacao": "2026-10-27",
+   "aut": [
+    [
+     "Rogério Carvalho",
+     "PT",
+     "SE"
+    ]
+   ],
+   "situacao": "Aguardando despacho",
+   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176107",
+   "natureza": [
+    "Processo penal"
+   ],
+   "diplomas": [
+    "Código Penal",
+    "Código de Processo Penal"
+   ]
   }
  ]
 }
