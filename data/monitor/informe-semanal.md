@@ -1,15 +1,15 @@
-Proposições penais da semana | 22/10/2026 a 28/10/2026
+Proposições penais da semana | 23/10/2026 a 29/10/2026
 
-Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 29/10/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
+Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 30/10/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
 
 Em números
 
-1. 6 proposições novas na base (Câmara 4; Senado 2).
-2. Por tipo: PL 6.
-3. Apresentadas na própria semana: 1; apresentadas antes e incorporadas agora: 5 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
+1. 5 proposições novas na base (Câmara 3; Senado 2).
+2. Por tipo: PL 5.
+3. Apresentadas na própria semana: 2; apresentadas antes e incorporadas agora: 3 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
 4. Natureza (classificação automática pela ementa): Hediondez 1; Cria ou altera tipo penal 1; Processo penal 1.
-5. Diplomas alterados (classificação automática pela ementa): Código Penal 3; Crimes hediondos 1; ECA (crimes) 1; Organizações criminosas 1; Lavagem de dinheiro 1; Código de Processo Penal 1.
-6. Partido do autor principal: PT 2; AVANTE 1; PODE 1; PL 1; PSD 1.
+5. Diplomas alterados (classificação automática pela ementa): Código Penal 2; Crimes hediondos 1; ECA (crimes) 1; Código de Processo Penal 1.
+6. Partido do autor principal: PT 2; AVANTE 1; PODE 1; PV 1.
 
 Iniciadas na Câmara dos Deputados
 
@@ -20,14 +20,10 @@ Iniciadas na Câmara dos Deputados
 2. PL 5636/2026 – Delegado Bruno Lima (PODE/SP) – apresentada em 21/10/2026
    Altera a Lei nº 9.605, de 12 de fevereiro de 1998, para proibir, em todo o território nacional, a fabricação, a importação, a comercialização e o uso de fantasias, alegorias, adereços e ornamentos confeccionados com partes de origem animal, estabelecer mecanismos de fiscalização e responsabilização administrativa e dá outras providências.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648636
-3. PL 5640/2026 – Marcelo Álvaro Antônio (PL/MG) – apresentada em 21/10/2026
-   Acrescenta o art. 242-A ao Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o crime de manipulação fraudulenta da opinião pública mediante ocultação de patrocínio ou financiamento por agentes econômicos ou organizações criminosas, e dá outras providências.
-   Natureza: cria ou altera tipo penal. Altera: Código Penal, Organizações criminosas.
-   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648690
-4. PL 5645/2026 – Fernando Monteiro (PSD/PE) – apresentada em 21/10/2026
-   Altera a Lei nº 8.383, de 30 de dezembro de 1991, para assegurar às instituições autorizadas a funcionar pelo Banco Central do Brasil e às demais pessoas jurídicas sujeitas a deveres legais de prevenção à lavagem de dinheiro, ao financiamento do terrorismo e à fraude o acesso isonômico, mediante convênio, às informações cadastrais não protegidas por sigilo fiscal mantidas pela Secretaria Especial da Receita Federal do Brasil.
-   Altera: Lavagem de dinheiro.
-   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2648703
+3. PL 5679/2026 – Prof. Reginaldo Veras (PV/DF) – apresentada em 28/10/2026
+   Altera a Lei nº 9.029, de 13 de abril de 1995, para tipificar o crime de assédio eleitoral nas relações de trabalho e estabelecer medidas de proteção às vítimas.
+   Natureza: cria ou altera tipo penal.
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649214
 
 Iniciadas no Senado Federal
 
