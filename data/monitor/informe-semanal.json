@@ -1,34 +1,38 @@
 {
- "gerado_em": "2026-10-30 12:58",
+ "gerado_em": "2026-10-31 12:22",
  "periodo": {
-  "inicio": "2026-10-23",
-  "fim": "2026-10-29"
+  "inicio": "2026-10-24",
+  "fim": "2026-10-30"
  },
- "total": 5,
+ "total": 10,
  "por_casa": {
-  "Câmara": 3,
+  "Câmara": 8,
   "Senado": 2
  },
  "por_tipo": {
-  "PL": 5
+  "PL": 10
  },
- "apresentadas_na_semana": 2,
+ "apresentadas_na_semana": 8,
  "natureza": {
   "Hediondez": 1,
-  "Cria ou altera tipo penal": 1,
-  "Processo penal": 1
+  "Cria ou altera tipo penal": 4,
+  "Aumenta pena": 1,
+  "Execução penal": 2,
+  "Processo penal": 2
  },
  "diplomas": {
-  "Código Penal": 2,
+  "Código Penal": 5,
   "Crimes hediondos": 1,
   "ECA (crimes)": 1,
-  "Código de Processo Penal": 1
+  "Código de Processo Penal": 2,
+  "Lei de Execução Penal": 1
  },
  "partidos": {
   "AVANTE": 1,
   "PODE": 1,
   "PV": 1,
-  "PT": 2
+  "PT": 5,
+  "PL": 2
  },
  "itens": [
   {
@@ -97,23 +101,439 @@
    "diplomas": []
   },
   {
-   "casa": "Senado",
+   "casa": "Câmara",
    "sigla": "PL",
-   "numero": 5638,
+   "numero": 5687,
    "ano": 2026,
-   "ementa": "Altera a Lei nº 8.906, de 4 de julho de 1994, para impedir o exercício da advocacia por membros do Poder Legislativo, em seus diferentes níveis, em processos judiciais ou procedimentos relacionados a crimes contra a vida (Lei Ana Clara).",
-   "apresentacao": "2026-10-21",
+   "ementa": "Altera a Lei nº 7.716, de 5 de janeiro de 1989, para incluir a discriminação ou o preconceito em razão de origem regional entre os crimes nela definidos, agravar a pena quando motivados por resultado eleitoral e prever a preservação de dados para a identificação da autoria dos crimes cometidos pela internet.",
+   "apresentacao": "2026-10-29",
    "aut": [
     [
-     "Camilo Santana",
+     "Rubens Pereira Júnior",
      "PT",
-     "CE"
+     "MA"
     ]
    ],
-   "situacao": "Aguardando despacho",
-   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176028",
-   "natureza": [],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649484",
+   "natureza": [
+    "Aumenta pena"
+   ],
    "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5689,
+   "ano": 2026,
+   "ementa": "Acrescenta o art. 203-A ao Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar a discriminação por voto ou convicção política no trabalho e na atividade econômica, e altera o art. 1º da Lei nº 9.029, de 13 de abril de 1995, para incluir o voto e a convicção política entre os motivos de discriminação vedados nas relações de trabalho.",
+   "apresentacao": "2026-10-29",
+   "aut": [
+    [
+     "Pedro Uczai",
+     "PT",
+     "SC"
+    ],
+    [
+     "Nilto Tatto",
+     "PT",
+     "SP"
+    ],
+    [
+     "Rui Falcão",
+     "PT",
+     "SP"
+    ],
+    [
+     "Dimas Gadelha",
+     "PT",
+     "RJ"
+    ],
+    [
+     "Paulo Lemos",
+     "PT",
+     "AP"
+    ],
+    [
+     "Carlos Zarattini",
+     "PT",
+     "SP"
+    ],
+    [
+     "Alfredinho",
+     "PT",
+     "SP"
+    ],
+    [
+     "Rubens Otoni",
+     "PT",
+     "GO"
+    ],
+    [
+     "Carlos Veras",
+     "PT",
+     "PE"
+    ],
+    [
+     "Natália Bonavides",
+     "PT",
+     "RN"
+    ],
+    [
+     "Valmir Assunção",
+     "PT",
+     "BA"
+    ],
+    [
+     "Maria do Rosário",
+     "PT",
+     "RS"
+    ],
+    [
+     "Jack Rocha",
+     "PT",
+     "ES"
+    ],
+    [
+     "Merlong Solano",
+     "PT",
+     "PI"
+    ],
+    [
+     "Jorge Solla",
+     "PT",
+     "BA"
+    ],
+    [
+     "Reimont",
+     "PT",
+     "RJ"
+    ],
+    [
+     "Patrus Ananias",
+     "PT",
+     "MG"
+    ],
+    [
+     "Alencar Santana",
+     "PT",
+     "SP"
+    ],
+    [
+     "Paulo Teixeira",
+     "PT",
+     "SP"
+    ],
+    [
+     "Jilmar Tatto",
+     "PT",
+     "SP"
+    ],
+    [
+     "Welter",
+     "PT",
+     "PR"
+    ],
+    [
+     "Kiko Celeguim",
+     "PT",
+     "SP"
+    ],
+    [
+     "Padre João",
+     "PT",
+     "MG"
+    ],
+    [
+     "Dilvanda Faro",
+     "PT",
+     "PA"
+    ],
+    [
+     "Bohn Gass",
+     "PT",
+     "RS"
+    ],
+    [
+     "Luiz Couto",
+     "PT",
+     "PB"
+    ],
+    [
+     "Florentino Neto",
+     "PT",
+     "PI"
+    ],
+    [
+     "Ivoneide Caetano",
+     "PT",
+     "BA"
+    ],
+    [
+     "Rogério Correia",
+     "PT",
+     "MG"
+    ],
+    [
+     "Denise Pessôa",
+     "PT",
+     "RS"
+    ],
+    [
+     "Afonso Florence",
+     "PT",
+     "BA"
+    ],
+    [
+     "Waldenor Pereira",
+     "PT",
+     "BA"
+    ],
+    [
+     "Leonardo Monteiro",
+     "PT",
+     "MG"
+    ],
+    [
+     "Marcon",
+     "PT",
+     "RS"
+    ],
+    [
+     "Reginaldo Lopes",
+     "PT",
+     "MG"
+    ],
+    [
+     "Fernando Mineiro",
+     "PT",
+     "RN"
+    ],
+    [
+     "João Daniel",
+     "PT",
+     "SE"
+    ],
+    [
+     "José Airton Félix Cirilo",
+     "PT",
+     "CE"
+    ],
+    [
+     "Miguel Ângelo",
+     "PT",
+     "MG"
+    ],
+    [
+     "Carol Dartora",
+     "PT",
+     "PR"
+    ],
+    [
+     "Vander Loubet",
+     "PT",
+     "MS"
+    ],
+    [
+     "Ana Paula Lima",
+     "PT",
+     "SC"
+    ],
+    [
+     "Airton Faleiro",
+     "PT",
+     "PA"
+    ],
+    [
+     "Ana Pimentel",
+     "PT",
+     "MG"
+    ],
+    [
+     "Camila Jara",
+     "PT",
+     "MS"
+    ],
+    [
+     "Lindbergh Farias",
+     "PT",
+     "RJ"
+    ],
+    [
+     "Helder Salomão",
+     "PT",
+     "ES"
+    ],
+    [
+     "Delegada Adriana Accorsi",
+     "PT",
+     "GO"
+    ],
+    [
+     "Juliana Cardoso",
+     "PT",
+     "SP"
+    ],
+    [
+     "Flávio Nogueira",
+     "PT",
+     "PI"
+    ],
+    [
+     "Gleisi Hoffmann",
+     "PT",
+     "PR"
+    ],
+    [
+     "Dr. Francisco",
+     "PT",
+     "PI"
+    ],
+    [
+     "Paulão",
+     "PT",
+     "AL"
+    ],
+    [
+     "Dandara",
+     "PT",
+     "MG"
+    ],
+    [
+     "Benedita da Silva",
+     "PT",
+     "RJ"
+    ],
+    [
+     "Joseildo Ramos",
+     "PT",
+     "BA"
+    ],
+    [
+     "Erika Kokay",
+     "PT",
+     "DF"
+    ],
+    [
+     "Arlindo Chinaglia",
+     "PT",
+     "SP"
+    ],
+    [
+     "Zé Neto",
+     "PT",
+     "BA"
+    ],
+    [
+     "Paulo Pimenta",
+     "PT",
+     "RS"
+    ],
+    [
+     "Zeca Dirceu",
+     "PT",
+     "PR"
+    ],
+    [
+     "Gilmar Machado",
+     "PT",
+     "MG"
+    ],
+    [
+     "Tadeu Veneri",
+     "PT",
+     "PR"
+    ],
+    [
+     "Paulo Guedes",
+     "PT",
+     "MG"
+    ],
+    [
+     "Alexandre Lindenmeyer",
+     "PT",
+     "RS"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649499",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": [
+    "Código Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5692,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para vedar a concessão de livramento condicional aos condenados pela prática de crimes contra a dignidade sexual.",
+   "apresentacao": "2026-10-29",
+   "aut": [
+    [
+     "Dani Cunha",
+     "PL",
+     "RJ"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649521",
+   "natureza": [
+    "Execução penal"
+   ],
+   "diplomas": [
+    "Código Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5693,
+   "ano": 2026,
+   "ementa": "Acrescenta o art. 359-N-A ao Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar a supressão do transporte de eleitores com o fim de impedir ou perturbar a eleição.",
+   "apresentacao": "2026-10-29",
+   "aut": [
+    [
+     "Arlindo Chinaglia",
+     "PT",
+     "SP"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649522",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": [
+    "Código Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5702,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), e a Lei nº 8.036, de 11 de maio de 1990, para aperfeiçoar a reparação dos danos materiais causados por crimes contra o patrimônio e disciplinar sua execução.",
+   "apresentacao": "2026-10-29",
+   "aut": [
+    [
+     "Eros Biondini",
+     "PL",
+     "MG"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649558",
+   "natureza": [
+    "Processo penal",
+    "Execução penal"
+   ],
+   "diplomas": [
+    "Código de Processo Penal",
+    "Lei de Execução Penal"
+   ]
   },
   {
    "casa": "Senado",
@@ -138,6 +558,27 @@
     "Código Penal",
     "Código de Processo Penal"
    ]
+  },
+  {
+   "casa": "Senado",
+   "sigla": "PL",
+   "numero": 5701,
+   "ano": 2026,
+   "ementa": "Disciplina o assédio eleitoral nas relações de trabalho e contratuais com dependência econômica e social, tipifica o crime de retaliação e abuso por motivação ideológico-eleitoral, e estabelece vedações a acesso a contratos, fundos e incentivos públicos como sanções administrativas.",
+   "apresentacao": "2026-10-29",
+   "aut": [
+    [
+     "Randolfe Rodrigues",
+     "PT",
+     "AP"
+    ]
+   ],
+   "situacao": "Aguardando despacho",
+   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176148",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": []
   }
  ]
 }
