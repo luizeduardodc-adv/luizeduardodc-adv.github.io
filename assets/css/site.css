@@ -172,6 +172,8 @@ h1,h2,h3{font-weight:500}
 
 /* D. Cartões de ferramenta (ícone em círculo e sombra deslocada) */
 .grid.ferr{gap:40px 22px;padding-top:22px}
+/* página inicial com cinco cartões de ferramenta numa fileira (02/11/2026) */
+.grid.ferr.cinco{grid-template-columns:repeat(auto-fill,minmax(176px,1fr))}
 .ferr .card{position:relative;background:var(--ferr-bg);border:0;border-radius:8px;padding:38px 20px 20px;box-shadow:5px 5px 0 var(--ferr-sombra);color:#fff;transition:transform .15s,box-shadow .15s}
 .ferr a.card:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ferr-sombra)}
 .ferr .card h3{color:inherit}
