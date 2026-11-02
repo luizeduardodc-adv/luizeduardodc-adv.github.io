@@ -347,7 +347,7 @@ function render(){
     [fmt(ex),'excluídas por não serem tipo penal em sentido estrito'],
     [fmt(v.filter(r=>r[C.revisao]).length),'no recorte com decisão em revisão ou pena não lida'],
     [fmt(CE.length),'com complemento extinto, contadas à parte']
-  ].map(([b,s])=>`<div class="fact"><b>${b}</b><span>${s}</span></div>`).join('');
+  ].map(([b,s])=>`<div class="tp-fact"><b>${b}</b><span>${s}</span></div>`).join('');
   hbars(document.getElementById('ch-comp'),[{label:'Unidades em vigor',parts:partsOf(v)}],{labelW:140,h:30});
   const by={}; v.forEach(r=>{(by[r[C.lei]]=by[r[C.lei]]||[]).push(r)});
   const arr=Object.entries(by).sort((a,b)=>b[1].length-a[1].length);
