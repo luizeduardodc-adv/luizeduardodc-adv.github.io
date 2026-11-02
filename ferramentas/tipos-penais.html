@@ -339,7 +339,7 @@ function render(){
   const partes=[state.cpm?'com o Código Penal Militar':'sem o Código Penal Militar']; if(TEM_TAC) partes.push(state.tac?'contadas as normas com suspeita de revogação tácita':'sem as normas com suspeita de revogação tácita');
   document.getElementById('big-label').textContent=`tipos penais em vigor, ${partes.join(' e ')}, em ${fmt(new Set(v.map(r=>r[C.lei])).size)} normas.`;
   document.getElementById('tg-cpm').setAttribute('aria-pressed',state.cpm);
-  document.getElementById('tg-tac').setAttribute('aria-pressed',state.tac);
+  if(TEM_TAC) document.getElementById('tg-tac').setAttribute('aria-pressed',state.tac);
   const m=document.getElementById('matrix'); m.innerHTML='<div class="h"></div><div class="h">Com o CPM</div><div class="h">Sem o CPM</div>';
   (TEM_TAC?[[true,'Com as suspeitas de revogação tácita'],[false,'Sem as suspeitas']]:[[true,'Unidades em vigor']]).forEach(([tac,lab])=>{
     m.insertAdjacentHTML('beforeend',`<div class="h">${lab}</div>`);
@@ -399,9 +399,10 @@ document.getElementById('tb-tit').innerHTML=D.meta.sispenas_titulo.map(o=>`<tr><
 document.getElementById('ce-n').textContent=fmt(CE.length);
 const ceBy={}; CE.forEach(r=>{(ceBy[r[C.lei]]=ceBy[r[C.lei]]||{n:0,nota:r[C.nota]}).n++});
 document.getElementById('ce-list').innerHTML=Object.entries(ceBy).map(([k,o])=>`<li><b>${esc(k)}</b> (${o.n} ${o.n>1?'unidades':'unidade'}): ${esc((o.nota||'').split(' · ').find(s=>/complemento|remissão a dispositivo/.test(s))||o.nota)}</li>`).join('');
-document.getElementById('tg-tac').hidden=!TEM_TAC; document.querySelector('#f-flag option[value="tacita"]').hidden=!TEM_TAC;
+// sem suspeitas de revogação tácita pendentes, o botão e a opção do filtro saem da página
+if(!TEM_TAC){document.getElementById('tg-tac').remove(); document.querySelector('#f-flag option[value="tacita"]').remove();}
 document.getElementById('tg-cpm').onclick=()=>{state.cpm=!state.cpm;state.shown=60;render()};
-document.getElementById('tg-tac').onclick=()=>{state.tac=!state.tac;state.shown=60;render()};
+if(TEM_TAC) document.getElementById('tg-tac').onclick=()=>{state.tac=!state.tac;state.shown=60;render()};
 document.getElementById('q').oninput=e=>{state.q=e.target.value;state.shown=60;table()};
 document.getElementById('f-comp').onchange=e=>{state.comp=e.target.value;state.shown=60;table()};
 document.getElementById('f-flag').onchange=e=>{state.flag=e.target.value;state.shown=60;table()};
