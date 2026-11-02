@@ -110,8 +110,16 @@
 .tp .tp-chip.w{border-color:var(--mark);color:var(--mark-ink)}
 .tp .tp-chip.ce{background:var(--mark-soft);border-color:var(--mark-soft);color:var(--mark-ink)}
 .tp .tp-btn{font:inherit;font-size:14px;background:var(--bg);color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:8px 14px;cursor:pointer}
-.tp .ctab{overflow-x:auto;border:1px solid var(--rule);background:#FFFDF8}
-.tp .ctab table{min-width:560px}
+.tp .ctab{border:1px solid var(--rule);background:#FFFDF8;min-width:0}
+.tp .ctab table{min-width:0;width:100%;table-layout:fixed}
+.tp .ctab th,.tp .ctab td{padding:7px 8px;overflow-wrap:break-word}
+.tp .ctab th:first-child,.tp .ctab td:first-child{width:46%}
+.tp .ctab th:not(:first-child),.tp .ctab td:not(:first-child){text-align:right}
+.tp .ctab th{white-space:normal;line-height:1.3}
+@media (max-width:480px){.tp .ctab th,.tp .ctab td{padding:6px 5px;font-size:12px}
+.tp .ctab th{font-size:11px}
+.tp .ctab th:first-child,.tp .ctab td:first-child{width:34%}
+}
 .tp .ctab td.cd{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tp .ctab td.neg{color:var(--mark-ink)}
 .tp .nota-metodo{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--mark)}
@@ -207,8 +215,8 @@
     <div class="sec-head" style="margin-top:14px"><h2 style="font-size:21px">Lei a lei, diante do SISPENAS <span class="rev">em investigação</span></h2>
     <p class="obs">Contagens do relatório do SISPENAS (legislação vigente em 7/8/2009), item 3.1 e tabela 1, ao lado das desta base. Desde 01/11/2026 esta base adota as regras do SISPENAS que explicavam a diferença: desdobramento de incisos e alíneas com conduta própria, causas de aumento de outros artigos pelo escopo declarado e concurso de causas em cascata. Com elas, genocídio, drogas, Código Eleitoral, contravenções e incolumidade pública ficam próximos dos números de 2009. Os arts. 226 e 234-A, na dignidade sexual, aplicam-se como no SISPENAS (nota 10): só aos tipos em que o próprio agente pratica conjunção carnal ou ato libidinoso. As diferenças que restam vêm sobretudo de leis posteriores a 2009, como o art. 183-A do Código Penal, de 2024, que alcança todos os crimes contra o patrimônio; esses pontos seguem em investigação.</p></div>
     <div class="two">
-      <div class="ctab"><table><thead><tr><th>Lei</th><th>SISPENAS (2009)</th><th>Esta base</th><th>Diferença</th></tr></thead><tbody id="tb-lei"></tbody></table></div>
-      <div class="ctab"><table><thead><tr><th>Código Penal, por título</th><th>SISPENAS (2009)</th><th>Esta base</th><th>Diferença</th></tr></thead><tbody id="tb-tit"></tbody></table></div>
+      <div class="ctab"><table><thead><tr><th>Lei</th><th>SISPENAS<br>2009</th><th>Esta<br>base</th><th>Dif.</th></tr></thead><tbody id="tb-lei"></tbody></table></div>
+      <div class="ctab"><table><thead><tr><th>Código Penal, por título</th><th>SISPENAS<br>2009</th><th>Esta<br>base</th><th>Dif.</th></tr></thead><tbody id="tb-tit"></tbody></table></div>
     </div>
   </section>
 
