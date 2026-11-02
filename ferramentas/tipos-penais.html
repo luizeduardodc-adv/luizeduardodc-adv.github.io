@@ -234,14 +234,14 @@
 
   <section aria-labelledby="h-tab">
     <div class="sec-head"><div class="sob">Consulta</div><h2 id="h-tab">Todas as unidades</h2>
-    <p class="obs">A tabela segue os dois recortes do topo e inclui, marcadas, as unidades contadas à parte. Busca por lei, dispositivo, rubrica ou nota.</p></div>
+    <p class="obs">A tabela segue os dois recortes do topo e inclui, marcadas, as unidades contadas à parte. Busca por lei, dispositivo, rubrica ou nota. O nome de cada norma, na primeira coluna, é um link para o texto da lei na fonte usada na contagem: o texto compilado do Planalto ou, quando ele falta, o texto do Senado.</p></div>
     <div class="tools">
       <input type="search" id="q" placeholder="Ex.: 2.848, art. 155, estelionato, Lei 9.605" aria-label="Buscar">
       <select id="f-comp" aria-label="Composição"><option value="">Toda composição</option><option value="simples">Simples</option><option value="misto">Mistos</option><option value="perdão">Perdão judicial</option></select>
       <select id="f-flag" aria-label="Situação"><option value="">Toda situação</option><option value="firme">Só o núcleo firme</option><option value="revisao">Só em revisão ou com pena não lida</option><option value="tacita">Só suspeitas de revogação tácita</option><option value="ce">Só complemento extinto</option></select>
       <span class="obs" id="count"></span>
     </div>
-    <div class="tbl"><table><thead><tr><th>Norma</th><th>Dispositivo</th><th>Rubrica</th><th>Sanção</th><th>Mín. (anos)</th><th>Máx. (anos)</th><th>Situação</th></tr></thead><tbody id="tb"></tbody></table></div>
+    <div class="tbl"><table><thead><tr><th>Norma (link para a lei)</th><th>Dispositivo</th><th>Rubrica</th><th>Sanção</th><th>Mín. (anos)</th><th>Máx. (anos)</th><th>Situação</th></tr></thead><tbody id="tb"></tbody></table></div>
     <div><button class="tp-btn" id="more">Mostrar mais</button></div>
   </section>
 
