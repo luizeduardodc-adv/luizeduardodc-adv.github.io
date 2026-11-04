@@ -1,15 +1,15 @@
-Proposições penais da semana | 27/10/2026 a 02/11/2026
+Proposições penais da semana | 28/10/2026 a 03/11/2026
 
-Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 03/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
+Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 04/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
 
 Em números
 
-1. 9 proposições novas na base (Câmara 7; Senado 2).
-2. Por tipo: PL 9.
-3. Apresentadas na própria semana: 8; apresentadas antes e incorporadas agora: 1 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
-4. Natureza (classificação automática pela ementa): Cria ou altera tipo penal 4; Execução penal 2; Processo penal 2; Aumenta pena 1.
+1. 10 proposições novas na base (Câmara 7; Senado 3).
+2. Por tipo: PL 10.
+3. Apresentadas na própria semana: 8; apresentadas antes e incorporadas agora: 2 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
+4. Natureza (classificação automática pela ementa): Cria ou altera tipo penal 5; Execução penal 2; Processo penal 2; Aumenta pena 1.
 5. Diplomas alterados (classificação automática pela ementa): Código Penal 4; Código de Processo Penal 2; Lei de Execução Penal 1.
-6. Partido do autor principal: PT 5; PL 2; PODE 1; PV 1.
+6. Partido do autor principal: PT 5; PL 2; PODE 1; PV 1; REPUBLICANOS 1.
 
 Iniciadas na Câmara dos Deputados
 
@@ -51,3 +51,7 @@ Iniciadas no Senado Federal
    Disciplina o assédio eleitoral nas relações de trabalho e contratuais com dependência econômica e social, tipifica o crime de retaliação e abuso por motivação ideológico-eleitoral, e estabelece vedações a acesso a contratos, fundos e incentivos públicos como sanções administrativas.
    Natureza: cria ou altera tipo penal.
    Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176148
+3. PL 5726/2026 – Damares Alves (REPUBLICANOS/DF) – apresentada em 03/11/2026
+   Acrescenta o art. 88-A à Lei nº 13.146, de 6 de julho de 2015 (Lei Brasileira de Inclusão da Pessoa com Deficiência – Estatuto da Pessoa com Deficiência), para tipificar a produção, a divulgação e a manutenção de conteúdo sexual degradante, gerado ou alterado por inteligência artificial ou outro meio de simulação, que retrate pessoa com deficiência.
+   Natureza: cria ou altera tipo penal.
+   Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176161
