@@ -1,64 +1,47 @@
 {
- "gerado_em": "2026-11-05 14:28",
+ "gerado_em": "2026-11-06 13:48",
  "periodo": {
-  "inicio": "2026-10-29",
-  "fim": "2026-11-04"
+  "inicio": "2026-10-30",
+  "fim": "2026-11-05"
  },
- "total": 25,
+ "total": 29,
  "por_casa": {
-  "Câmara": 19,
+  "Câmara": 23,
   "Senado": 6
  },
  "por_tipo": {
-  "PL": 22,
+  "PL": 25,
+  "PLP": 1,
   "PEC": 3
  },
- "apresentadas_na_semana": 24,
+ "apresentadas_na_semana": 23,
  "natureza": {
-  "Cria ou altera tipo penal": 8,
-  "Aumenta pena": 9,
-  "Execução penal": 2,
-  "Processo penal": 1
+  "Aumenta pena": 10,
+  "Cria ou altera tipo penal": 9,
+  "Execução penal": 3,
+  "Processo penal": 2,
+  "Hediondez": 1
  },
  "diplomas": {
-  "Código Penal": 11,
-  "Código de Processo Penal": 1,
-  "Lei de Execução Penal": 1,
-  "Organizações criminosas": 1,
+  "Código Penal": 13,
+  "Código de Processo Penal": 2,
+  "Lei de Execução Penal": 2,
+  "Organizações criminosas": 3,
   "Maria da Penha": 1,
-  "Código de Trânsito (crimes)": 1
+  "Código de Trânsito (crimes)": 1,
+  "Lavagem de dinheiro": 2,
+  "Crimes hediondos": 1
  },
  "partidos": {
-  "PV": 1,
-  "PT": 15,
-  "PL": 4,
+  "PT": 17,
+  "PL": 5,
   "MISSÃO": 1,
   "PDT": 1,
+  "MDB": 2,
   "REPUBLICANOS": 1,
   "PP": 2
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5679,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 9.029, de 13 de abril de 1995, para tipificar o crime de assédio eleitoral nas relações de trabalho e estabelecer medidas de proteção às vítimas.",
-   "apresentacao": "2026-10-28",
-   "aut": [
-    [
-     "Prof. Reginaldo Veras",
-     "PV",
-     "DF"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649214",
-   "natureza": [
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": []
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -567,6 +550,25 @@
   {
    "casa": "Câmara",
    "sigla": "PL",
+   "numero": 5711,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 12.845, de 1º de agosto de 2013, para dispor sobre a padronização, a preservação, o prazo de processamento e a inserção em bancos de perfis genéticos dos vestígios biológicos coletados no atendimento às pessoas em situação de violência sexual.",
+   "apresentacao": "2026-10-30",
+   "aut": [
+    [
+     "Rubens Pereira Júnior",
+     "PT",
+     "MA"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649652",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
    "numero": 5712,
    "ano": 2026,
    "ementa": "Altera a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para aumentar a pena dos crimes de coação e intimidação de eleitores praticados por agentes de segurança pública, tipificar a incitação, por esses agentes, de atos de constrangimento contra eleitores em razão de sua preferência política e dispor sobre efeitos da condenação e medidas cautelares.",
@@ -716,7 +718,11 @@
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649761",
    "natureza": [],
-   "diplomas": []
+   "diplomas": [
+    "Código Penal",
+    "Organizações criminosas",
+    "Lavagem de dinheiro"
+   ]
   },
   {
    "casa": "Câmara",
@@ -775,6 +781,109 @@
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650114",
    "natureza": [
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": [
+    "Código Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PLP",
+   "numero": 283,
+   "ano": 2026,
+   "ementa": "Altera a Lei Complementar nº 64, de 18 de maio de 1990, para incluir entre as causas de inelegibilidade a condenação por crime praticado mediante violência contra a mulher.",
+   "apresentacao": "2026-11-04",
+   "aut": [
+    [
+     "Yury Bruno",
+     "MDB",
+     "CE"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650684",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5749,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 9.605, de 12 de fevereiro de 1998, para tipificar o incêndio criminoso em biomas florestais; disciplina a perda e a desapropriação de imóveis rurais utilizados para incêndios criminosos, por descumprimento da função socioambiental da propriedade; e dá outras providências.",
+   "apresentacao": "2026-11-04",
+   "aut": [
+    [
+     "Saullo Vianna",
+     "MDB",
+     "AM"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650471",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5750,
+   "ano": 2026,
+   "ementa": "Regulamenta o inciso XLVI-A do art. 5º da Constituição Federal, que dispõe sobre o regime legal especial aplicável a integrantes e líderes de organizações criminosas de alta periculosidade ou lesividade, bem como a autores de crimes de alta lesividade cometidos mediante violência ou grave ameaça, alterando o Decreto-Lei nº 3.689, de 3 de outubro de 1941 – Código de Processo Penal; a Lei nº 7.210, de 11 de julho de 1984; a Lei nº 8.072, de 25 de julho de 1990; a Lei nº 9.807, de 13 de julho de 1999; e a Lei nº 15.358, de 24 de março de 2026.",
+   "apresentacao": "2026-11-04",
+   "aut": [
+    [
+     "Capitão Alden",
+     "PL",
+     "BA"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650486",
+   "natureza": [
+    "Hediondez",
+    "Processo penal",
+    "Execução penal"
+   ],
+   "diplomas": [
+    "Código de Processo Penal",
+    "Lei de Execução Penal",
+    "Crimes hediondos",
+    "Organizações criminosas",
+    "Lavagem de dinheiro"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5757,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 – Código Penal, para tipificar o crime de boicote discriminatório e perseguição econômica.",
+   "apresentacao": "2026-11-04",
+   "aut": [
+    [
+     "Alexandre Lindenmeyer",
+     "PT",
+     "RS"
+    ],
+    [
+     "Luiz Couto",
+     "PT",
+     "PB"
+    ],
+    [
+     "Jorge Solla",
+     "PT",
+     "BA"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650685",
+   "natureza": [
+    "Aumenta pena",
     "Cria ou altera tipo penal"
    ],
    "diplomas": [

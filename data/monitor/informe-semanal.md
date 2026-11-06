@@ -1,54 +1,53 @@
-Proposições penais da semana | 29/10/2026 a 04/11/2026
+Proposições penais da semana | 30/10/2026 a 05/11/2026
 
-Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 05/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
+Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 06/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
 
 Em números
 
-1. 25 proposições novas na base (Câmara 19; Senado 6).
-2. Por tipo: PL 22; PEC 3.
-3. Apresentadas na própria semana: 24; apresentadas antes e incorporadas agora: 1 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
-4. Natureza (classificação automática pela ementa): Aumenta pena 9; Cria ou altera tipo penal 8; Execução penal 2; Processo penal 1.
-5. Diplomas alterados (classificação automática pela ementa): Código Penal 11; Código de Processo Penal 1; Lei de Execução Penal 1; Organizações criminosas 1; Maria da Penha 1; Código de Trânsito (crimes) 1.
-6. Partido do autor principal: PT 15; PL 4; PP 2; PV 1; MISSÃO 1; PDT 1; REPUBLICANOS 1.
+1. 29 proposições novas na base (Câmara 23; Senado 6).
+2. Por tipo: PL 25; PEC 3; PLP 1.
+3. Apresentadas na própria semana: 23; apresentadas antes e incorporadas agora: 6 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
+4. Natureza (classificação automática pela ementa): Aumenta pena 10; Cria ou altera tipo penal 9; Execução penal 3; Processo penal 2; Hediondez 1.
+5. Diplomas alterados (classificação automática pela ementa): Código Penal 13; Organizações criminosas 3; Código de Processo Penal 2; Lei de Execução Penal 2; Lavagem de dinheiro 2; Maria da Penha 1; Código de Trânsito (crimes) 1; Crimes hediondos 1.
+6. Partido do autor principal: PT 17; PL 5; MDB 2; PP 2; MISSÃO 1; PDT 1; REPUBLICANOS 1.
 
 Iniciadas na Câmara dos Deputados
 
-1. PL 5679/2026 – Prof. Reginaldo Veras (PV/DF) – apresentada em 28/10/2026
-   Altera a Lei nº 9.029, de 13 de abril de 1995, para tipificar o crime de assédio eleitoral nas relações de trabalho e estabelecer medidas de proteção às vítimas.
-   Natureza: cria ou altera tipo penal.
-   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649214
-2. PL 5687/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 29/10/2026
+1. PL 5687/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 29/10/2026
    Altera a Lei nº 7.716, de 5 de janeiro de 1989, para incluir a discriminação ou o preconceito em razão de origem regional entre os crimes nela definidos, agravar a pena quando motivados por resultado eleitoral e prever a preservação de dados para a identificação da autoria dos crimes cometidos pela internet.
    Natureza: aumenta pena.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649484
-3. PL 5689/2026 – Pedro Uczai (PT/SC) e mais 64 – apresentada em 29/10/2026
+2. PL 5689/2026 – Pedro Uczai (PT/SC) e mais 64 – apresentada em 29/10/2026
    Acrescenta o art. 203-A ao Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar a discriminação por voto ou convicção política no trabalho e na atividade econômica, e altera o art. 1º da Lei nº 9.029, de 13 de abril de 1995, para incluir o voto e a convicção política entre os motivos de discriminação vedados nas relações de trabalho.
    Natureza: cria ou altera tipo penal. Altera: Código Penal.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649499
-4. PL 5692/2026 – Dani Cunha (PL/RJ) – apresentada em 29/10/2026
+3. PL 5692/2026 – Dani Cunha (PL/RJ) – apresentada em 29/10/2026
    Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para vedar a concessão de livramento condicional aos condenados pela prática de crimes contra a dignidade sexual.
    Natureza: execução penal. Altera: Código Penal.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649521
-5. PL 5693/2026 – Arlindo Chinaglia (PT/SP) – apresentada em 29/10/2026
+4. PL 5693/2026 – Arlindo Chinaglia (PT/SP) – apresentada em 29/10/2026
    Acrescenta o art. 359-N-A ao Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar a supressão do transporte de eleitores com o fim de impedir ou perturbar a eleição.
    Natureza: cria ou altera tipo penal. Altera: Código Penal.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649522
-6. PL 5702/2026 – Eros Biondini (PL/MG) – apresentada em 29/10/2026
+5. PL 5702/2026 – Eros Biondini (PL/MG) – apresentada em 29/10/2026
    Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), e a Lei nº 8.036, de 11 de maio de 1990, para aperfeiçoar a reparação dos danos materiais causados por crimes contra o patrimônio e disciplinar sua execução.
    Natureza: processo penal, execução penal. Altera: Código de Processo Penal, Lei de Execução Penal.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649558
-7. PL 5708/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 30/10/2026
+6. PL 5708/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 30/10/2026
    Dispõe sobre o dever de provedores de aplicações de internet de tornar indisponíveis e preservar conteúdos de apologia a organizações criminosas, de exibição de armas de fogo com fins de intimidação e de ameaças, e altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para qualificar a ameaça, a incitação ao crime e a apologia de crime praticadas por meio da internet em nome ou em proveito de organização criminosa e para aumentar a pena da ameaça praticada no contexto de atuação de facção criminosa quando divulgada pela internet ou acompanhada da exibição de arma de fogo.
    Natureza: aumenta pena. Altera: Código Penal, Organizações criminosas.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649649
-8. PL 5709/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 30/10/2026
+7. PL 5709/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 30/10/2026
    Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), para determinar a busca e apreensão de armas do agressor, inclusive as de fabricação artesanal, na concessão de medidas protetivas de urgência, dispor sobre a comunicação imediata da decisão aos órgãos de segurança pública e aumentar a pena do descumprimento de medida protetiva praticado com emprego de arma.
    Natureza: aumenta pena. Altera: Maria da Penha.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649650
-9. PL 5710/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 30/10/2026
+8. PL 5710/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 30/10/2026
    Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para aumentar a pena dos crimes de roubo e de extorsão cometidos por agente que se apresenta como integrante de órgão de segurança pública, e dispõe sobre o controle da fabricação e do comércio de uniformes, distintivos e insígnias de uso privativo das forças de segurança.
    Natureza: aumenta pena. Altera: Código Penal.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649651
+9. PL 5711/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 30/10/2026
+   Altera a Lei nº 12.845, de 1º de agosto de 2013, para dispor sobre a padronização, a preservação, o prazo de processamento e a inserção em bancos de perfis genéticos dos vestígios biológicos coletados no atendimento às pessoas em situação de violência sexual.
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649652
 10. PL 5712/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 30/10/2026
    Altera a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para aumentar a pena dos crimes de coação e intimidação de eleitores praticados por agentes de segurança pública, tipificar a incitação, por esses agentes, de atos de constrangimento contra eleitores em razão de sua preferência política e dispor sobre efeitos da condenação e medidas cautelares.
    Natureza: aumenta pena, cria ou altera tipo penal.
@@ -75,6 +74,7 @@ Iniciadas na Câmara dos Deputados
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649668
 16. PL 5729/2026 – José Medeiros (PL/MT) – apresentada em 03/11/2026
    Institui a Lei Anticrime Deepfake, estabelece medidas penais, processuais e de investigação destinadas à repressão de fraudes, extorsões e organizações criminosas que utilizem inteligência artificial, deepfakes, clonagem de voz ou manipulação artificial de identidade, dispõe sobre mecanismos de preservação e rastreabilidade de evidências digitais, cria protocolo nacional de resposta emergencial a fraudes tecnológicas e estabelece medidas de bloqueio, recuperação e perda de ativos relacionados a esses crimes.
+   Altera: Código Penal, Organizações criminosas, Lavagem de dinheiro.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649761
 17. PL 5737/2026 – Rogério Correia (PT/MG) – apresentada em 03/11/2026
    Altera a Lei nº 4.737, de 15 de julho de 1965, para agravar as penas dos crimes contra a liberdade do sufrágio e estabelecer causas de aumento de pena para condutas praticadas mediante abuso de poder econômico, hierárquico ou de relações familiares e de cuidado, especialmente contra pessoas idosas.
@@ -87,6 +87,21 @@ Iniciadas na Câmara dos Deputados
    Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o crime de criação, produção e disseminação deliberada de desinformação (notícias falsas) que atente contra a saúde pública, a ordem econômica e a paz social, e dá outras providências.
    Natureza: cria ou altera tipo penal. Altera: Código Penal.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650114
+20. PLP 283/2026 – Yury Bruno (MDB/CE) – apresentada em 04/11/2026
+   Altera a Lei Complementar nº 64, de 18 de maio de 1990, para incluir entre as causas de inelegibilidade a condenação por crime praticado mediante violência contra a mulher.
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650684
+21. PL 5749/2026 – Saullo Vianna (MDB/AM) – apresentada em 04/11/2026
+   Altera a Lei nº 9.605, de 12 de fevereiro de 1998, para tipificar o incêndio criminoso em biomas florestais; disciplina a perda e a desapropriação de imóveis rurais utilizados para incêndios criminosos, por descumprimento da função socioambiental da propriedade; e dá outras providências.
+   Natureza: cria ou altera tipo penal.
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650471
+22. PL 5750/2026 – Capitão Alden (PL/BA) – apresentada em 04/11/2026
+   Regulamenta o inciso XLVI-A do art. 5º da Constituição Federal, que dispõe sobre o regime legal especial aplicável a integrantes e líderes de organizações criminosas de alta periculosidade ou lesividade, bem como a autores de crimes de alta lesividade cometidos mediante violência ou grave ameaça, alterando o Decreto-Lei nº 3.689, de 3 de outubro de 1941 – Código de Processo Penal; a Lei nº 7.210, de 11 de julho de 1984; a Lei nº 8.072, de 25 de julho de 1990; a Lei nº 9.807, de 13 de julho de 1999; e a Lei nº 15.358, de 24 de março de 2026.
+   Natureza: hediondez, processo penal, execução penal. Altera: Código de Processo Penal, Lei de Execução Penal, Crimes hediondos, Organizações criminosas, Lavagem de dinheiro.
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650486
+23. PL 5757/2026 – Alexandre Lindenmeyer (PT/RS) e mais 2 – apresentada em 04/11/2026
+   Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 – Código Penal, para tipificar o crime de boicote discriminatório e perseguição econômica.
+   Natureza: aumenta pena, cria ou altera tipo penal. Altera: Código Penal.
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650685
 
 Iniciadas no Senado Federal
 
