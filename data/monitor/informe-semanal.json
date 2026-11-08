@@ -1,20 +1,20 @@
 {
- "gerado_em": "2026-11-07 12:42",
+ "gerado_em": "2026-11-08 13:01",
  "periodo": {
-  "inicio": "2026-10-31",
-  "fim": "2026-11-06"
+  "inicio": "2026-11-01",
+  "fim": "2026-11-07"
  },
- "total": 27,
+ "total": 29,
  "por_casa": {
-  "Câmara": 21,
+  "Câmara": 23,
   "Senado": 6
  },
  "por_tipo": {
   "PLP": 2,
-  "PL": 22,
+  "PL": 24,
   "PEC": 3
  },
- "apresentadas_na_semana": 16,
+ "apresentadas_na_semana": 18,
  "natureza": {
   "Aumenta pena": 10,
   "Cria ou altera tipo penal": 6,
@@ -37,8 +37,8 @@
   "PT": 14,
   "MISSÃO": 1,
   "PL": 3,
-  "PDT": 1,
-  "MDB": 2,
+  "PDT": 2,
+  "MDB": 3,
   "PODE": 1,
   "REPUBLICANOS": 2,
   "PP": 2
@@ -556,6 +556,44 @@
    ],
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651114",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5784,
+   "ano": 2026,
+   "ementa": "Institui diretrizes nacionais para a prevenção e o combate à fabricação, à comercialização e ao uso de linhas cortantes em pipas e artefatos similares; estabelece medidas de fiscalização, educação e responsabilização administrativa; e dá outras providências.",
+   "apresentacao": "2026-11-05",
+   "aut": [
+    [
+     "Renilce Nicodemos",
+     "MDB",
+     "PA"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651243",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5787,
+   "ano": 2026,
+   "ementa": "Institui a Lei do Silêncio Inclusivo e da Proteção Sensorial Imediata, estabelece medidas protetivas de urgência e mecanismos de intervenção policial destinados à preservação do sossego, da saúde e da integridade física, psíquica e sensorial de pessoas com vulnerabilidade comprovada a estímulos sonoros, especialmente crianças e pessoas idosas, confere ao delegado de polícia competência para determinar medidas emergenciais de cessação de perturbações abusivas, prevê responsabilização pelo descumprimento de determinações protetivas e altera o Decreto-Lei nº 3.688, de 3 de outubro de 1941 (Lei das Contravenções Penais).",
+   "apresentacao": "2026-11-06",
+   "aut": [
+    [
+     "Marcos Tavares",
+     "PDT",
+     "RJ"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651272",
    "natureza": [],
    "diplomas": []
   },

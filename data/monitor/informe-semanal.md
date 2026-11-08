@@ -1,15 +1,15 @@
-Proposições penais da semana | 31/10/2026 a 06/11/2026
+Proposições penais da semana | 01/11/2026 a 07/11/2026
 
-Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 07/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
+Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 08/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
 
 Em números
 
-1. 27 proposições novas na base (Câmara 21; Senado 6).
-2. Por tipo: PL 22; PEC 3; PLP 2.
-3. Apresentadas na própria semana: 16; apresentadas antes e incorporadas agora: 11 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
+1. 29 proposições novas na base (Câmara 23; Senado 6).
+2. Por tipo: PL 24; PEC 3; PLP 2.
+3. Apresentadas na própria semana: 18; apresentadas antes e incorporadas agora: 11 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
 4. Natureza (classificação automática pela ementa): Aumenta pena 10; Cria ou altera tipo penal 6; Hediondez 1; Processo penal 1; Execução penal 1.
 5. Diplomas alterados (classificação automática pela ementa): Código Penal 11; Organizações criminosas 3; Lavagem de dinheiro 2; Maria da Penha 1; Código de Trânsito (crimes) 1; Código de Processo Penal 1; Lei de Execução Penal 1; Crimes hediondos 1.
-6. Partido do autor principal: PT 14; PL 3; MDB 2; REPUBLICANOS 2; PP 2; PSB 1; MISSÃO 1; PDT 1.
+6. Partido do autor principal: PT 14; PL 3; MDB 3; PDT 2; REPUBLICANOS 2; PP 2; PSB 1; MISSÃO 1.
 
 Iniciadas na Câmara dos Deputados
 
@@ -91,6 +91,12 @@ Iniciadas na Câmara dos Deputados
 21. PL 5776/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 05/11/2026
    Altera a Lei nº 13.675, de 11 de junho de 2018, para instituir diretrizes para a proteção de servidores do sistema penal e de segurança pública ameaçados em razão da função.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651114
+22. PL 5784/2026 – Renilce Nicodemos (MDB/PA) – apresentada em 05/11/2026
+   Institui diretrizes nacionais para a prevenção e o combate à fabricação, à comercialização e ao uso de linhas cortantes em pipas e artefatos similares; estabelece medidas de fiscalização, educação e responsabilização administrativa; e dá outras providências.
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651243
+23. PL 5787/2026 – Marcos Tavares (PDT/RJ) – apresentada em 06/11/2026
+   Institui a Lei do Silêncio Inclusivo e da Proteção Sensorial Imediata, estabelece medidas protetivas de urgência e mecanismos de intervenção policial destinados à preservação do sossego, da saúde e da integridade física, psíquica e sensorial de pessoas com vulnerabilidade comprovada a estímulos sonoros, especialmente crianças e pessoas idosas, confere ao delegado de polícia competência para determinar medidas emergenciais de cessação de perturbações abusivas, prevê responsabilização pelo descumprimento de determinações protetivas e altera o Decreto-Lei nº 3.688, de 3 de outubro de 1941 (Lei das Contravenções Penais).
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651272
 
 Iniciadas no Senado Federal
 
