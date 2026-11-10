@@ -1,21 +1,21 @@
-Proposições penais da semana | 02/11/2026 a 08/11/2026
+Proposições penais da semana | 03/11/2026 a 09/11/2026
 
-Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 09/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
+Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 10/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
 
 Em números
 
-1. 29 proposições novas na base (Câmara 23; Senado 6).
-2. Por tipo: PL 24; PEC 3; PLP 2.
-3. Apresentadas na própria semana: 18; apresentadas antes e incorporadas agora: 11 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
-4. Natureza (classificação automática pela ementa): Aumenta pena 10; Cria ou altera tipo penal 6; Hediondez 1; Processo penal 1; Execução penal 1.
+1. 30 proposições novas na base (Câmara 23; Senado 7).
+2. Por tipo: PL 25; PEC 3; PLP 2.
+3. Apresentadas na própria semana: 19; apresentadas antes e incorporadas agora: 11 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
+4. Natureza (classificação automática pela ementa): Aumenta pena 10; Cria ou altera tipo penal 8; Hediondez 1; Processo penal 1; Execução penal 1.
 5. Diplomas alterados (classificação automática pela ementa): Código Penal 11; Organizações criminosas 3; Lavagem de dinheiro 2; Maria da Penha 1; Código de Trânsito (crimes) 1; Código de Processo Penal 1; Lei de Execução Penal 1; Crimes hediondos 1.
-6. Partido do autor principal: PT 14; PL 3; MDB 3; PDT 2; REPUBLICANOS 2; PP 2; PSB 1; MISSÃO 1.
+6. Partido do autor principal: PT 15; PL 3; MDB 3; PDT 2; REPUBLICANOS 2; PP 2; PSB 1; MISSÃO 1.
 
 Iniciadas na Câmara dos Deputados
 
 1. PLP 278/2026 – Jonas Donizette (PSB/SP) e mais 9 – apresentada em 30/10/2026
    Altera a Lei Complementar nº 64, de 18 de maio de 1990 (Lei de Inelegibilidades), para incluir, entre as causas de inelegibilidade decorrentes de condenação criminal, a lesão corporal praticada contra a mulher por razões da condição do sexo feminino.
-   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649648
+   Situação: Aguardando Despacho do Presidente da Câmara dos Deputados. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649648
 2. PL 5708/2026 – Rubens Pereira Júnior (PT/MA) – apresentada em 30/10/2026
    Dispõe sobre o dever de provedores de aplicações de internet de tornar indisponíveis e preservar conteúdos de apologia a organizações criminosas, de exibição de armas de fogo com fins de intimidação e de ameaças, e altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para qualificar a ameaça, a incitação ao crime e a apologia de crime praticadas por meio da internet em nome ou em proveito de organização criminosa e para aumentar a pena da ameaça praticada no contexto de atuação de facção criminosa quando divulgada pela internet ou acompanhada da exibição de arma de fogo.
    Natureza: aumenta pena. Altera: Código Penal, Organizações criminosas.
@@ -57,7 +57,7 @@ Iniciadas na Câmara dos Deputados
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649668
 12. PL 5729/2026 – José Medeiros (PL/MT) – apresentada em 03/11/2026
    Institui a Lei Anticrime Deepfake, estabelece medidas penais, processuais e de investigação destinadas à repressão de fraudes, extorsões e organizações criminosas que utilizem inteligência artificial, deepfakes, clonagem de voz ou manipulação artificial de identidade, dispõe sobre mecanismos de preservação e rastreabilidade de evidências digitais, cria protocolo nacional de resposta emergencial a fraudes tecnológicas e estabelece medidas de bloqueio, recuperação e perda de ativos relacionados a esses crimes.
-   Altera: Código Penal, Organizações criminosas, Lavagem de dinheiro.
+   Natureza: cria ou altera tipo penal. Altera: Código Penal, Organizações criminosas, Lavagem de dinheiro.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649761
 13. PL 5737/2026 – Rogério Correia (PT/MG) – apresentada em 03/11/2026
    Altera a Lei nº 4.737, de 15 de julho de 1965, para agravar as penas dos crimes contra a liberdade do sufrágio e estabelecer causas de aumento de pena para condutas praticadas mediante abuso de poder econômico, hierárquico ou de relações familiares e de cuidado, especialmente contra pessoas idosas.
@@ -72,7 +72,7 @@ Iniciadas na Câmara dos Deputados
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650114
 16. PLP 283/2026 – Yury Bruno (MDB/CE) – apresentada em 04/11/2026
    Altera a Lei Complementar nº 64, de 18 de maio de 1990, para incluir entre as causas de inelegibilidade a condenação por crime praticado mediante violência contra a mulher.
-   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650684
+   Situação: Aguardando Despacho do Presidente da Câmara dos Deputados. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650684
 17. PL 5749/2026 – Saullo Vianna (MDB/AM) – apresentada em 04/11/2026
    Altera a Lei nº 9.605, de 12 de fevereiro de 1998, para tipificar o incêndio criminoso em biomas florestais; disciplina a perda e a desapropriação de imóveis rurais utilizados para incêndios criminosos, por descumprimento da função socioambiental da propriedade; e dá outras providências.
    Natureza: cria ou altera tipo penal.
@@ -96,6 +96,7 @@ Iniciadas na Câmara dos Deputados
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651243
 23. PL 5787/2026 – Marcos Tavares (PDT/RJ) – apresentada em 06/11/2026
    Institui a Lei do Silêncio Inclusivo e da Proteção Sensorial Imediata, estabelece medidas protetivas de urgência e mecanismos de intervenção policial destinados à preservação do sossego, da saúde e da integridade física, psíquica e sensorial de pessoas com vulnerabilidade comprovada a estímulos sonoros, especialmente crianças e pessoas idosas, confere ao delegado de polícia competência para determinar medidas emergenciais de cessação de perturbações abusivas, prevê responsabilização pelo descumprimento de determinações protetivas e altera o Decreto-Lei nº 3.688, de 3 de outubro de 1941 (Lei das Contravenções Penais).
+   Natureza: cria ou altera tipo penal.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651272
 
 Iniciadas no Senado Federal
@@ -121,3 +122,6 @@ Iniciadas no Senado Federal
    Altera o art. 154-A do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para prever causa de aumento de pena no crime de invasão de dispositivo informático praticado contra pessoa com deficiência.
    Natureza: aumenta pena. Altera: Código Penal.
    Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176223
+7. PL 5789/2026 – Teresa Leitão (PT/PE) e mais 4 – apresentada em 06/11/2026
+   Altera a Lei nº 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência, para a inclusão de diretrizes e o aperfeiçoamento dos procedimentos.
+   Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176233

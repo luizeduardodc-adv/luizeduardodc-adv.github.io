@@ -1,23 +1,23 @@
 {
- "gerado_em": "2026-11-09 16:51",
+ "gerado_em": "2026-11-10 14:06",
  "periodo": {
-  "inicio": "2026-11-02",
-  "fim": "2026-11-08"
+  "inicio": "2026-11-03",
+  "fim": "2026-11-09"
  },
- "total": 29,
+ "total": 30,
  "por_casa": {
   "Câmara": 23,
-  "Senado": 6
+  "Senado": 7
  },
  "por_tipo": {
   "PLP": 2,
-  "PL": 24,
+  "PL": 25,
   "PEC": 3
  },
- "apresentadas_na_semana": 18,
+ "apresentadas_na_semana": 19,
  "natureza": {
   "Aumenta pena": 10,
-  "Cria ou altera tipo penal": 6,
+  "Cria ou altera tipo penal": 8,
   "Hediondez": 1,
   "Processo penal": 1,
   "Execução penal": 1
@@ -34,7 +34,7 @@
  },
  "partidos": {
   "PSB": 1,
-  "PT": 14,
+  "PT": 15,
   "MISSÃO": 1,
   "PL": 3,
   "PDT": 2,
@@ -103,7 +103,7 @@
      "SP"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649648",
    "natureza": [],
    "diplomas": []
@@ -348,7 +348,9 @@
    ],
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649761",
-   "natureza": [],
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
    "diplomas": [
     "Código Penal",
     "Organizações criminosas",
@@ -432,7 +434,7 @@
      "CE"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650684",
    "natureza": [],
    "diplomas": []
@@ -594,7 +596,9 @@
    ],
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651272",
-   "natureza": [],
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
    "diplomas": []
   },
   {
@@ -853,6 +857,45 @@
    "diplomas": [
     "Código Penal"
    ]
+  },
+  {
+   "casa": "Senado",
+   "sigla": "PL",
+   "numero": 5789,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência, para a inclusão de diretrizes e o aperfeiçoamento dos procedimentos.",
+   "apresentacao": "2026-11-06",
+   "aut": [
+    [
+     "Teresa Leitão",
+     "PT",
+     "PE"
+    ],
+    [
+     "Jussara Lima",
+     "PSD",
+     "PI"
+    ],
+    [
+     "Leany Lemos",
+     "PSB",
+     "DF"
+    ],
+    [
+     "Damares Alves",
+     "REPUBLICANOS",
+     "DF"
+    ],
+    [
+     "Eliziane Gama",
+     "PSD",
+     "MA"
+    ]
+   ],
+   "situacao": "Aguardando despacho",
+   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176233",
+   "natureza": [],
+   "diplomas": []
   }
  ]
 }
