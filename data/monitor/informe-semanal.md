@@ -1,15 +1,15 @@
-Proposições penais da semana | 03/11/2026 a 09/11/2026
+Proposições penais da semana | 04/11/2026 a 10/11/2026
 
-Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 10/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
+Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 11/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
 
 Em números
 
-1. 30 proposições novas na base (Câmara 23; Senado 7).
-2. Por tipo: PL 25; PEC 3; PLP 2.
-3. Apresentadas na própria semana: 19; apresentadas antes e incorporadas agora: 11 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
-4. Natureza (classificação automática pela ementa): Aumenta pena 10; Cria ou altera tipo penal 8; Hediondez 1; Processo penal 1; Execução penal 1.
-5. Diplomas alterados (classificação automática pela ementa): Código Penal 11; Organizações criminosas 3; Lavagem de dinheiro 2; Maria da Penha 1; Código de Trânsito (crimes) 1; Código de Processo Penal 1; Lei de Execução Penal 1; Crimes hediondos 1.
-6. Partido do autor principal: PT 15; PL 3; MDB 3; PDT 2; REPUBLICANOS 2; PP 2; PSB 1; MISSÃO 1.
+1. 32 proposições novas na base (Câmara 25; Senado 7).
+2. Por tipo: PL 26; PLP 3; PEC 3.
+3. Apresentadas na própria semana: 14; apresentadas antes e incorporadas agora: 18 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
+4. Natureza (classificação automática pela ementa): Aumenta pena 10; Cria ou altera tipo penal 7; Execução penal 2; Hediondez 1; Processo penal 1; Reduz ou descriminaliza 1.
+5. Diplomas alterados (classificação automática pela ementa): Código Penal 11; Organizações criminosas 3; Lavagem de dinheiro 2; Lei de Execução Penal 2; Maria da Penha 1; Código de Trânsito (crimes) 1; Código de Processo Penal 1; Crimes hediondos 1.
+6. Partido do autor principal: PT 15; PL 4; MDB 4; PP 3; PDT 2; PSB 1; MISSÃO 1; PODE 1.
 
 Iniciadas na Câmara dos Deputados
 
@@ -94,10 +94,18 @@ Iniciadas na Câmara dos Deputados
 22. PL 5784/2026 – Renilce Nicodemos (MDB/PA) – apresentada em 05/11/2026
    Institui diretrizes nacionais para a prevenção e o combate à fabricação, à comercialização e ao uso de linhas cortantes em pipas e artefatos similares; estabelece medidas de fiscalização, educação e responsabilização administrativa; e dá outras providências.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651243
-23. PL 5787/2026 – Marcos Tavares (PDT/RJ) – apresentada em 06/11/2026
+23. PL 5786/2026 – Clarissa Tércio (PP/PE) – apresentada em 06/11/2026
+   Altera a Lei nº 12.594, de 18 de janeiro de 2012, para vedar a visita íntima a adolescente privado de liberdade no âmbito do Sistema Nacional de Atendimento Socioeducativo (Sinase), e revoga o art. 68 da mesma Lei.
+   Natureza: reduz ou descriminaliza.
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651263
+24. PL 5787/2026 – Marcos Tavares (PDT/RJ) – apresentada em 06/11/2026
    Institui a Lei do Silêncio Inclusivo e da Proteção Sensorial Imediata, estabelece medidas protetivas de urgência e mecanismos de intervenção policial destinados à preservação do sossego, da saúde e da integridade física, psíquica e sensorial de pessoas com vulnerabilidade comprovada a estímulos sonoros, especialmente crianças e pessoas idosas, confere ao delegado de polícia competência para determinar medidas emergenciais de cessação de perturbações abusivas, prevê responsabilização pelo descumprimento de determinações protetivas e altera o Decreto-Lei nº 3.688, de 3 de outubro de 1941 (Lei das Contravenções Penais).
    Natureza: cria ou altera tipo penal.
    Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651272
+25. PL 5796/2026 – Cezinha de Madureira (PL/SP) – apresentada em 09/11/2026
+   Altera a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), para dispor sobre a remição da pena por meio da doação voluntária de sangue
+   Natureza: execução penal. Altera: Lei de Execução Penal.
+   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651409
 
 Iniciadas no Senado Federal
 
@@ -107,21 +115,20 @@ Iniciadas no Senado Federal
 2. PEC 20/2026 – Camilo Santana (PT/CE) – apresentada em 03/11/2026
    Dá nova redação ao art. 228 da Constituição Federal para alterar a maioridade penal.
    Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176179
-3. PL 5726/2026 – Damares Alves (REPUBLICANOS/DF) – apresentada em 03/11/2026
-   Acrescenta o art. 88-A à Lei nº 13.146, de 6 de julho de 2015 (Lei Brasileira de Inclusão da Pessoa com Deficiência – Estatuto da Pessoa com Deficiência), para tipificar a produção, a divulgação e a manutenção de conteúdo sexual degradante, gerado ou alterado por inteligência artificial ou outro meio de simulação, que retrate pessoa com deficiência.
-   Natureza: cria ou altera tipo penal.
-   Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176161
-4. PL 5736/2026 – Daniella Ribeiro (PP/PB) – apresentada em 03/11/2026
+3. PL 5736/2026 – Daniella Ribeiro (PP/PB) – apresentada em 03/11/2026
    Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para ampliar o prazo e o alcance da vedação de investidura em cargo, emprego ou função pública dos condenados por crimes praticados contra a mulher.
    Altera: Código Penal.
    Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176165
-5. PEC 21/2026 – Daniella Ribeiro (PP/PB) e mais 27 – apresentada em 04/11/2026
+4. PEC 21/2026 – Daniella Ribeiro (PP/PB) e mais 27 – apresentada em 04/11/2026
    Altera os arts. 37, 93, 103-B e 130-A da Constituição Federal para vedar a investidura em cargo, emprego ou função pública, inclusive no Conselho Nacional de Justiça e no Conselho Nacional do Ministério Público, bem como a promoção na magistratura, no Ministério Público e na Defensoria Pública, de condenados por crimes praticados contra a mulher.
    Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176190
-6. PL 5780/2026 – Damares Alves (REPUBLICANOS/DF) – apresentada em 05/11/2026
+5. PL 5780/2026 – Damares Alves (REPUBLICANOS/DF) – apresentada em 05/11/2026
    Altera o art. 154-A do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para prever causa de aumento de pena no crime de invasão de dispositivo informático praticado contra pessoa com deficiência.
    Natureza: aumenta pena. Altera: Código Penal.
    Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176223
-7. PL 5789/2026 – Teresa Leitão (PT/PE) e mais 4 – apresentada em 06/11/2026
+6. PL 5789/2026 – Teresa Leitão (PT/PE) e mais 4 – apresentada em 06/11/2026
    Altera a Lei nº 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência, para a inclusão de diretrizes e o aperfeiçoamento dos procedimentos.
    Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176233
+7. PLP 289/2026 – Renan Calheiros (MDB/AL) – apresentada em 10/11/2026
+   Altera a Lei Complementar nº 64, de 18 de maio de 1990 (Lei das Inelegibilidades), para tornar inelegíveis, desde a condenação por órgão colegiado até o transcurso do prazo de 8 (oito) anos após o cumprimento da pena, os que forem condenados por crimes praticados mediante violência contra a mulher.
+   Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176259

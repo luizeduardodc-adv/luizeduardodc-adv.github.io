@@ -1,26 +1,27 @@
 {
- "gerado_em": "2026-11-10 14:06",
+ "gerado_em": "2026-11-11 14:10",
  "periodo": {
-  "inicio": "2026-11-03",
-  "fim": "2026-11-09"
+  "inicio": "2026-11-04",
+  "fim": "2026-11-10"
  },
- "total": 30,
+ "total": 32,
  "por_casa": {
-  "Câmara": 23,
+  "Câmara": 25,
   "Senado": 7
  },
  "por_tipo": {
-  "PLP": 2,
-  "PL": 25,
+  "PLP": 3,
+  "PL": 26,
   "PEC": 3
  },
- "apresentadas_na_semana": 19,
+ "apresentadas_na_semana": 14,
  "natureza": {
   "Aumenta pena": 10,
-  "Cria ou altera tipo penal": 8,
+  "Cria ou altera tipo penal": 7,
   "Hediondez": 1,
   "Processo penal": 1,
-  "Execução penal": 1
+  "Execução penal": 2,
+  "Reduz ou descriminaliza": 1
  },
  "diplomas": {
   "Código Penal": 11,
@@ -29,19 +30,19 @@
   "Código de Trânsito (crimes)": 1,
   "Lavagem de dinheiro": 2,
   "Código de Processo Penal": 1,
-  "Lei de Execução Penal": 1,
+  "Lei de Execução Penal": 2,
   "Crimes hediondos": 1
  },
  "partidos": {
   "PSB": 1,
   "PT": 15,
   "MISSÃO": 1,
-  "PL": 3,
+  "PL": 4,
   "PDT": 2,
-  "MDB": 3,
+  "MDB": 4,
   "PODE": 1,
-  "REPUBLICANOS": 2,
-  "PP": 2
+  "PP": 3,
+  "REPUBLICANOS": 1
  },
  "itens": [
   {
@@ -583,6 +584,27 @@
   {
    "casa": "Câmara",
    "sigla": "PL",
+   "numero": 5786,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 12.594, de 18 de janeiro de 2012, para vedar a visita íntima a adolescente privado de liberdade no âmbito do Sistema Nacional de Atendimento Socioeducativo (Sinase), e revoga o art. 68 da mesma Lei.",
+   "apresentacao": "2026-11-06",
+   "aut": [
+    [
+     "Clarissa Tércio",
+     "PP",
+     "PE"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651263",
+   "natureza": [
+    "Reduz ou descriminaliza"
+   ],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
    "numero": 5787,
    "ano": 2026,
    "ementa": "Institui a Lei do Silêncio Inclusivo e da Proteção Sensorial Imediata, estabelece medidas protetivas de urgência e mecanismos de intervenção policial destinados à preservação do sossego, da saúde e da integridade física, psíquica e sensorial de pessoas com vulnerabilidade comprovada a estímulos sonoros, especialmente crianças e pessoas idosas, confere ao delegado de polícia competência para determinar medidas emergenciais de cessação de perturbações abusivas, prevê responsabilização pelo descumprimento de determinações protetivas e altera o Decreto-Lei nº 3.688, de 3 de outubro de 1941 (Lei das Contravenções Penais).",
@@ -600,6 +622,29 @@
     "Cria ou altera tipo penal"
    ],
    "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5796,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), para dispor sobre a remição da pena por meio da doação voluntária de sangue",
+   "apresentacao": "2026-11-09",
+   "aut": [
+    [
+     "Cezinha de Madureira",
+     "PL",
+     "SP"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651409",
+   "natureza": [
+    "Execução penal"
+   ],
+   "diplomas": [
+    "Lei de Execução Penal"
+   ]
   },
   {
    "casa": "Senado",
@@ -637,27 +682,6 @@
    "situacao": "Aguardando despacho",
    "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176179",
    "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Senado",
-   "sigla": "PL",
-   "numero": 5726,
-   "ano": 2026,
-   "ementa": "Acrescenta o art. 88-A à Lei nº 13.146, de 6 de julho de 2015 (Lei Brasileira de Inclusão da Pessoa com Deficiência – Estatuto da Pessoa com Deficiência), para tipificar a produção, a divulgação e a manutenção de conteúdo sexual degradante, gerado ou alterado por inteligência artificial ou outro meio de simulação, que retrate pessoa com deficiência.",
-   "apresentacao": "2026-11-03",
-   "aut": [
-    [
-     "Damares Alves",
-     "REPUBLICANOS",
-     "DF"
-    ]
-   ],
-   "situacao": "Aguardando despacho",
-   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176161",
-   "natureza": [
-    "Cria ou altera tipo penal"
-   ],
    "diplomas": []
   },
   {
@@ -894,6 +918,25 @@
    ],
    "situacao": "Aguardando despacho",
    "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176233",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Senado",
+   "sigla": "PLP",
+   "numero": 289,
+   "ano": 2026,
+   "ementa": "Altera a Lei Complementar nº 64, de 18 de maio de 1990 (Lei das Inelegibilidades), para tornar inelegíveis, desde a condenação por órgão colegiado até o transcurso do prazo de 8 (oito) anos após o cumprimento da pena, os que forem condenados por crimes praticados mediante violência contra a mulher.",
+   "apresentacao": "2026-11-10",
+   "aut": [
+    [
+     "Renan Calheiros",
+     "MDB",
+     "AL"
+    ]
+   ],
+   "situacao": "Aguardando despacho",
+   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176259",
    "natureza": [],
    "diplomas": []
   }
