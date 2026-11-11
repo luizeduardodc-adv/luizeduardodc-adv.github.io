@@ -13,7 +13,7 @@
 /* Layout: indicadores do ano escolhido, série anual, série mensal, assuntos, comarcas e classes; um único matiz (azul-aço), ano parcial em tom claro */
 :root{
   --bg:#FAF7F0; --surface:#F3EEE4; --fg:#18202C; --muted:#5A6476; --rule:#E3DCCD;
-  --accent:#2E5B88; --accent-soft:#D6E2EE; --mark:#9A6510; --mark-soft:#F3E4C8;
+  --accent:#2E5B88; --accent-soft:#D6E2EE; --mark:#9A6510; --mark-soft:#F3E4C8; --mark-ink:#7A4F0C; --rule-ctrl:#8A8272;
   --display:"Newsreader",Georgia,"Times New Roman",serif;
   --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
@@ -30,17 +30,17 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-
 .gtop .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;font-size:14px}
 .gtop a{color:var(--fg);text-decoration:none}.gtop a:hover{color:var(--accent)}
 .gtop .home{font-family:var(--display);font-weight:600;font-size:17px;margin-right:auto}
-.gtop button{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--muted);border-radius:999px;padding:4px 10px;cursor:pointer}
+.gtop button{font:500 13px var(--body);border:1px solid var(--rule-ctrl);background:var(--surface);color:var(--muted);border-radius:999px;padding:4px 10px;cursor:pointer}
 .wrap{max-width:1080px;margin:0 auto;padding-inline:16px;padding-block:28px 56px}
 h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,4.5vw,40px);line-height:1.1;margin:0 0 8px;text-wrap:balance}
 h2{font-family:var(--display);font-weight:600;font-size:22px;margin:0 0 4px;text-wrap:balance}
 .eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
-.selo{display:inline-block;font:500 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--mark);background:var(--mark-soft);border-radius:999px;padding:2px 8px;vertical-align:middle;margin-left:8px}
+.selo{display:inline-block;font:500 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--mark-ink);background:var(--mark-soft);border-radius:999px;padding:2px 8px;vertical-align:middle;margin-left:8px}
 .lede{max-width:68ch;color:var(--muted);margin:0}
 .aviso{max-width:75ch;font-size:13.5px;background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--mark);border-radius:6px;padding:10px 14px;margin:16px 0 0}
 .bar-anos{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:22px 0 0}
 .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
-.chip{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
+.chip{font:500 13px var(--body);border:1px solid var(--rule-ctrl);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
 .chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:14px 0 6px}
@@ -85,7 +85,7 @@ svg.linha .cross{stroke:var(--fg);stroke-width:1;opacity:.35}
 details summary{cursor:pointer;color:var(--accent);font-size:13.5px;margin-top:12px}
 .tip{position:fixed;pointer-events:none;background:var(--fg);color:var(--bg);font-size:12.5px;line-height:1.4;padding:8px 10px;border-radius:6px;max-width:260px;z-index:10;font-variant-numeric:tabular-nums;display:none}
 .acoes{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.acoes a,.acoes button{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--accent);border-radius:999px;padding:5px 12px;cursor:pointer;text-decoration:none}
+.acoes a,.acoes button{font:500 13px var(--body);border:1px solid var(--rule-ctrl);background:var(--surface);color:var(--accent);border-radius:999px;padding:5px 12px;cursor:pointer;text-decoration:none}
 footer{margin-top:32px;font-size:13px;color:var(--muted);max-width:78ch}
 footer h2{font-size:18px;color:var(--fg);margin-top:18px}
 footer p,footer li{margin:0 0 8px}

@@ -13,7 +13,7 @@
 /* Layout: resumo nacional em linha de indicadores, depois o ranking das 27 UFs e a composição por regime; Santa Catarina sempre destacada em ocre */
 :root{
   --bg:#FAF7F0; --surface:#F3EEE4; --fg:#18202C; --muted:#5A6476; --rule:#E3DCCD;
-  --accent:#2E5B88; --accent-soft:#D6E2EE; --mark:#9A6510; --mark-soft:#F3E4C8; --crit:#A63A2B;
+  --accent:#2E5B88; --accent-soft:#D6E2EE; --mark:#9A6510; --mark-soft:#F3E4C8; --mark-ink:#7A4F0C; --rule-ctrl:#8A8272; --crit:#A63A2B;
   --display:"Newsreader",Georgia,"Times New Roman",serif;
   --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
@@ -43,7 +43,7 @@ section.panel{background:var(--surface);border:1px solid var(--rule);border-radi
 .ph{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:12px}
 .ph p{margin:0;color:var(--muted);font-size:13.5px;max-width:60ch}
 .seg{display:flex;flex-wrap:wrap;gap:6px}
-.chip{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
+.chip{font:500 13px var(--body);border:1px solid var(--rule-ctrl);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
 .chip:focus-visible,.ufrow:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .uf{display:flex;flex-direction:column;gap:3px}
@@ -140,7 +140,7 @@ footer a{color:var(--accent)}
 .gtop .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;font-size:14px}
 .gtop a{color:var(--fg);text-decoration:none}.gtop a:hover{color:var(--accent)}
 .gtop .home{font-family:var(--display);font-weight:600;font-size:17px;margin-right:auto}
-.gtop button{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--muted);border-radius:999px;padding:4px 10px;cursor:pointer}
+.gtop button{font:500 13px var(--body);border:1px solid var(--rule-ctrl);background:var(--surface);color:var(--muted);border-radius:999px;padding:4px 10px;cursor:pointer}
 body{margin:0}
 </style>
 <header class="site-header"><div class="in">

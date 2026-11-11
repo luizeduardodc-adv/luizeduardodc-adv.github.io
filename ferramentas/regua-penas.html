@@ -13,7 +13,7 @@
 /* Layout: régua horizontal em anos (0 a 40), uma linha por tipo penal, agrupada por Título e Capítulo; marcos legais (1, 2 e 4 anos) atravessam a régua */
 :root{
   --bg:#FAF7F0; --surface:#F3EEE4; --fg:#18202C; --muted:#5A6476; --rule:#E3DCCD;
-  --accent:#2E5B88; --accent-soft:#D6E2EE; --mark:#9A6510; --mark-soft:#F3E4C8;
+  --accent:#2E5B88; --accent-soft:#D6E2EE; --mark:#9A6510; --mark-soft:#F3E4C8; --mark-ink:#7A4F0C; --rule-ctrl:#8A8272;
   --display:"Newsreader",Georgia,"Times New Roman",serif;
   --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
@@ -32,11 +32,11 @@ header h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,4.5vw,
 .lede{max-width:65ch;color:var(--muted);margin:0}
 .controls{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 6px;align-items:center}
 .controls .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px}
-.chip{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
+.chip{font:500 13px var(--body);border:1px solid var(--rule-ctrl);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
 .chip:focus-visible,.row:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-#tit{font:14px var(--body);padding:7px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--fg);max-width:100%}
-#busca{font:14px var(--body);padding:7px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--fg);min-width:0;flex:1 1 200px;max-width:280px}
+#tit{font:14px var(--body);padding:7px 10px;border:1px solid var(--rule-ctrl);border-radius:8px;background:var(--surface);color:var(--fg);max-width:100%}
+#busca{font:14px var(--body);padding:7px 12px;border:1px solid var(--rule-ctrl);border-radius:8px;background:var(--surface);color:var(--fg);min-width:0;flex:1 1 200px;max-width:280px}
 .count{font-size:13px;color:var(--muted);margin:4px 0 14px}
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;align-items:start}
 @media (max-width:860px){.layout{grid-template-columns:minmax(0,1fr)}}
@@ -72,7 +72,7 @@ aside.ficha{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);backgr
 .pill i{font-style:normal;font:600 11px var(--mono);padding:2px 7px;border-radius:999px;flex:none;min-width:58px;text-align:center}
 .ok i{background:var(--accent);color:var(--surface)}
 .no i{background:var(--rule);color:var(--muted)}
-.ca i{background:var(--mark-soft);color:var(--mark)}
+.ca i{background:var(--mark-soft);color:var(--mark-ink)}
 .ficha .nota{font-size:12.5px;color:var(--muted);margin:12px 0 0}
 .ficha a{color:var(--accent)}
 .legend{display:flex;flex-wrap:wrap;gap:16px;font-size:12.5px;color:var(--muted);margin:10px 0 0}
@@ -108,7 +108,7 @@ footer p{margin:0 0 8px}
 .gtop .in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;font-size:14px}
 .gtop a{color:var(--fg);text-decoration:none}.gtop a:hover{color:var(--accent)}
 .gtop .home{font-family:var(--display);font-weight:600;font-size:17px;margin-right:auto}
-.gtop button{font:500 13px var(--body);border:1px solid var(--rule);background:var(--surface);color:var(--muted);border-radius:999px;padding:4px 10px;cursor:pointer}
+.gtop button{font:500 13px var(--body);border:1px solid var(--rule-ctrl);background:var(--surface);color:var(--muted);border-radius:999px;padding:4px 10px;cursor:pointer}
 body{margin:0}
 </style>
 <header class="site-header"><div class="in">

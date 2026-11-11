@@ -246,3 +246,7 @@ h1,h2,h3{font-weight:500}
 .abertura img{aspect-ratio:2.3/1;object-position:50% 100%;animation:abertura-paralaxe linear both;animation-timeline:scroll(root block);animation-range:0px 90vh}
 @keyframes abertura-paralaxe{to{object-position:50% 0%}}
 }}
+/* 10/11/2026: contraste AA. Etiqueta AED em ocre escuro (5,67:1) e borda de controle (campos, botões e pílulas clicáveis) com 3:1 ou mais sobre papel e superfície */
+:root{--rule-ctrl:#8A8272}
+.ttag-aed{color:var(--mark-ink)}
+.filtro .chip,.refs .copiar,.toc a{border-color:var(--rule-ctrl)}
