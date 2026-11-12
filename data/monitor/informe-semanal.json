@@ -1,47 +1,43 @@
 {
- "gerado_em": "2026-11-11 14:10",
+ "gerado_em": "2026-11-12 14:37",
  "periodo": {
-  "inicio": "2026-11-04",
-  "fim": "2026-11-10"
+  "inicio": "2026-11-05",
+  "fim": "2026-11-11"
  },
- "total": 32,
+ "total": 21,
  "por_casa": {
-  "Câmara": 25,
-  "Senado": 7
+  "Câmara": 18,
+  "Senado": 3
  },
  "por_tipo": {
   "PLP": 3,
-  "PL": 26,
-  "PEC": 3
+  "PL": 18
  },
- "apresentadas_na_semana": 14,
+ "apresentadas_na_semana": 15,
  "natureza": {
-  "Aumenta pena": 10,
-  "Cria ou altera tipo penal": 7,
+  "Cria ou altera tipo penal": 4,
   "Hediondez": 1,
-  "Processo penal": 1,
-  "Execução penal": 2,
+  "Processo penal": 2,
+  "Execução penal": 4,
+  "Aumenta pena": 2,
   "Reduz ou descriminaliza": 1
  },
  "diplomas": {
-  "Código Penal": 11,
-  "Organizações criminosas": 3,
-  "Maria da Penha": 1,
-  "Código de Trânsito (crimes)": 1,
-  "Lavagem de dinheiro": 2,
-  "Código de Processo Penal": 1,
-  "Lei de Execução Penal": 2,
-  "Crimes hediondos": 1
+  "Código de Processo Penal": 2,
+  "Lei de Execução Penal": 4,
+  "Crimes hediondos": 1,
+  "Organizações criminosas": 1,
+  "Lavagem de dinheiro": 1,
+  "Código Penal": 3
  },
  "partidos": {
   "PSB": 1,
-  "PT": 15,
-  "MISSÃO": 1,
-  "PL": 4,
-  "PDT": 2,
+  "PT": 5,
   "MDB": 4,
+  "PL": 6,
   "PODE": 1,
-  "PP": 3,
+  "PP": 1,
+  "PDT": 2,
   "REPUBLICANOS": 1
  },
  "itens": [
@@ -112,76 +108,6 @@
   {
    "casa": "Câmara",
    "sigla": "PL",
-   "numero": 5708,
-   "ano": 2026,
-   "ementa": "Dispõe sobre o dever de provedores de aplicações de internet de tornar indisponíveis e preservar conteúdos de apologia a organizações criminosas, de exibição de armas de fogo com fins de intimidação e de ameaças, e altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para qualificar a ameaça, a incitação ao crime e a apologia de crime praticadas por meio da internet em nome ou em proveito de organização criminosa e para aumentar a pena da ameaça praticada no contexto de atuação de facção criminosa quando divulgada pela internet ou acompanhada da exibição de arma de fogo.",
-   "apresentacao": "2026-10-30",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649649",
-   "natureza": [
-    "Aumenta pena"
-   ],
-   "diplomas": [
-    "Código Penal",
-    "Organizações criminosas"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5709,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), para determinar a busca e apreensão de armas do agressor, inclusive as de fabricação artesanal, na concessão de medidas protetivas de urgência, dispor sobre a comunicação imediata da decisão aos órgãos de segurança pública e aumentar a pena do descumprimento de medida protetiva praticado com emprego de arma.",
-   "apresentacao": "2026-10-30",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649650",
-   "natureza": [
-    "Aumenta pena"
-   ],
-   "diplomas": [
-    "Maria da Penha"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5710,
-   "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para aumentar a pena dos crimes de roubo e de extorsão cometidos por agente que se apresenta como integrante de órgão de segurança pública, e dispõe sobre o controle da fabricação e do comércio de uniformes, distintivos e insígnias de uso privativo das forças de segurança.",
-   "apresentacao": "2026-10-30",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649651",
-   "natureza": [
-    "Aumenta pena"
-   ],
-   "diplomas": [
-    "Código Penal"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
    "numero": 5711,
    "ano": 2026,
    "ementa": "Altera a Lei nº 12.845, de 1º de agosto de 2013, para dispor sobre a padronização, a preservação, o prazo de processamento e a inserção em bancos de perfis genéticos dos vestígios biológicos coletados no atendimento às pessoas em situação de violência sexual.",
@@ -197,229 +123,6 @@
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649652",
    "natureza": [],
    "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5712,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para aumentar a pena dos crimes de coação e intimidação de eleitores praticados por agentes de segurança pública, tipificar a incitação, por esses agentes, de atos de constrangimento contra eleitores em razão de sua preferência política e dispor sobre efeitos da condenação e medidas cautelares.",
-   "apresentacao": "2026-10-30",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649653",
-   "natureza": [
-    "Aumenta pena",
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5715,
-   "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para qualificar o crime de fraude em certame de interesse público praticado com uso de dispositivo eletrônico ou de ferramenta de inteligência artificial e aumentar a pena de quem fornece o equipamento ou o serviço, e estabelece medidas de prevenção a serem adotadas pelos organizadores de certames.",
-   "apresentacao": "2026-10-30",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649656",
-   "natureza": [
-    "Aumenta pena"
-   ],
-   "diplomas": [
-    "Código Penal"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5716,
-   "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para aumentar a pena do estelionato e dos crimes de falsidade documental praticados com o uso de inteligência artificial ou de conteúdo sintético.",
-   "apresentacao": "2026-10-30",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649657",
-   "natureza": [
-    "Aumenta pena"
-   ],
-   "diplomas": [
-    "Código Penal"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5717,
-   "ano": 2026,
-   "ementa": "Dispõe sobre a emissão de atestados médicos e odontológicos com mecanismo de verificação de autenticidade e altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar a comercialização de atestados falsos.",
-   "apresentacao": "2026-10-30",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649658",
-   "natureza": [
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": [
-    "Código Penal"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5723,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 9.503, de 23 de setembro de 1997 (Código de Trânsito Brasileiro), para qualificar o crime de permitir, confiar ou entregar a direção de veículo automotor a pessoa não habilitada quando resultar lesão corporal grave ou morte, aumentar a pena quando o condutor for criança ou adolescente e agravar as sanções administrativas correspondentes.",
-   "apresentacao": "2026-10-30",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649664",
-   "natureza": [
-    "Aumenta pena"
-   ],
-   "diplomas": [
-    "Código de Trânsito (crimes)"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5724,
-   "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 2.848, de 1940 (Código Penal) para instituir como agravante de pena o uso de máscara ou adereço que impeça ou dificulte a identificação",
-   "apresentacao": "2026-10-30",
-   "aut": [
-    [
-     "Kim Kataguiri",
-     "MISSÃO",
-     "SP"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649668",
-   "natureza": [],
-   "diplomas": [
-    "Código Penal"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5729,
-   "ano": 2026,
-   "ementa": "Institui a Lei Anticrime Deepfake, estabelece medidas penais, processuais e de investigação destinadas à repressão de fraudes, extorsões e organizações criminosas que utilizem inteligência artificial, deepfakes, clonagem de voz ou manipulação artificial de identidade, dispõe sobre mecanismos de preservação e rastreabilidade de evidências digitais, cria protocolo nacional de resposta emergencial a fraudes tecnológicas e estabelece medidas de bloqueio, recuperação e perda de ativos relacionados a esses crimes.",
-   "apresentacao": "2026-11-03",
-   "aut": [
-    [
-     "José Medeiros",
-     "PL",
-     "MT"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649761",
-   "natureza": [
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": [
-    "Código Penal",
-    "Organizações criminosas",
-    "Lavagem de dinheiro"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5737,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 4.737, de 15 de julho de 1965, para agravar as penas dos crimes contra a liberdade do sufrágio e estabelecer causas de aumento de pena para condutas praticadas mediante abuso de poder econômico, hierárquico ou de relações familiares e de cuidado, especialmente contra pessoas idosas.",
-   "apresentacao": "2026-11-03",
-   "aut": [
-    [
-     "Rogério Correia",
-     "PT",
-     "MG"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649934",
-   "natureza": [
-    "Aumenta pena"
-   ],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5739,
-   "ano": 2026,
-   "ementa": "Dispõe sobre a proteção do sossego e da integridade sensorial de pessoas especialmente vulneráveis a estímulos sonoros no ambiente residencial, estabelece critérios para a comunicação prévia e a responsabilização por perturbações deliberadas, protege dados de saúde e acrescenta o art. 42-A ao Decreto-Lei nº 3.688, de 3 de outubro de 1941 (Lei das Contravenções Penais).",
-   "apresentacao": "2026-11-03",
-   "aut": [
-    [
-     "Marcos Tavares",
-     "PDT",
-     "RJ"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649984",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5745,
-   "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o crime de criação, produção e disseminação deliberada de desinformação (notícias falsas) que atente contra a saúde pública, a ordem econômica e a paz social, e dá outras providências.",
-   "apresentacao": "2026-11-03",
-   "aut": [
-    [
-     "Jorge Solla",
-     "PT",
-     "BA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650114",
-   "natureza": [
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": [
-    "Código Penal"
-   ]
   },
   {
    "casa": "Câmara",
@@ -647,217 +350,132 @@
    ]
   },
   {
-   "casa": "Senado",
-   "sigla": "PEC",
-   "numero": 19,
-   "ano": 2026,
-   "ementa": "Dá nova redação ao art. 228 da Constituição Federal para alterar a maioridade penal.",
-   "apresentacao": "2026-11-03",
-   "aut": [
-    [
-     "Rogerio Marinho",
-     "PL",
-     "RN"
-    ]
-   ],
-   "situacao": "Aguardando despacho",
-   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176178",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Senado",
-   "sigla": "PEC",
-   "numero": 20,
-   "ano": 2026,
-   "ementa": "Dá nova redação ao art. 228 da Constituição Federal para alterar a maioridade penal.",
-   "apresentacao": "2026-11-03",
-   "aut": [
-    [
-     "Camilo Santana",
-     "PT",
-     "CE"
-    ]
-   ],
-   "situacao": "Aguardando despacho",
-   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176179",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Senado",
+   "casa": "Câmara",
    "sigla": "PL",
-   "numero": 5736,
+   "numero": 5799,
    "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para ampliar o prazo e o alcance da vedação de investidura em cargo, emprego ou função pública dos condenados por crimes praticados contra a mulher.",
-   "apresentacao": "2026-11-03",
+   "ementa": "Altera a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), para instituir a remição de pena pelo cadastramento voluntário como doador de medula óssea e pela efetiva doação.",
+   "apresentacao": "2026-11-10",
    "aut": [
     [
-     "Daniella Ribeiro",
-     "PP",
-     "PB"
+     "Cezinha de Madureira",
+     "PL",
+     "SP"
     ]
    ],
-   "situacao": "Aguardando despacho",
-   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176165",
-   "natureza": [],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651907",
+   "natureza": [
+    "Execução penal"
+   ],
    "diplomas": [
-    "Código Penal"
+    "Lei de Execução Penal"
    ]
   },
   {
-   "casa": "Senado",
-   "sigla": "PEC",
-   "numero": 21,
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5800,
    "ano": 2026,
-   "ementa": "Altera os arts. 37, 93, 103-B e 130-A da Constituição Federal para vedar a investidura em cargo, emprego ou função pública, inclusive no Conselho Nacional de Justiça e no Conselho Nacional do Ministério Público, bem como a promoção na magistratura, no Ministério Público e na Defensoria Pública, de condenados por crimes praticados contra a mulher.",
-   "apresentacao": "2026-11-04",
+   "ementa": "Altera a Lei nº 12.965, de 23 de abril de 2014 (Marco Civil da Internet), para criar a “Lei Anti-Oruam 3.0”, autorizando o bloqueio judicial de contas em redes sociais de pessoas foragidas da justiça.",
+   "apresentacao": "2026-11-10",
    "aut": [
     [
-     "Daniella Ribeiro",
-     "PP",
-     "PB"
-    ],
-    [
-     "Professora Dorinha Seabra",
-     "UNIÃO",
-     "TO"
-    ],
-    [
-     "Jorge Kajuru",
-     "PSB",
-     "GO"
-    ],
-    [
-     "Alessandro Vieira",
-     "MDB",
-     "SE"
-    ],
-    [
-     "Lucas Barreto",
-     "PSD",
-     "AP"
-    ],
-    [
-     "Ciro Nogueira",
-     "PP",
-     "PI"
-    ],
-    [
-     "Tereza Cristina",
-     "PP",
-     "MS"
-    ],
-    [
-     "Sérgio Petecão",
-     "PSD",
-     "AC"
-    ],
-    [
-     "Leany Lemos",
-     "PSB",
-     "DF"
-    ],
-    [
-     "Eduardo Braga",
-     "MDB",
-     "AM"
-    ],
-    [
-     "Flávio Arns",
-     "PSB",
-     "PR"
-    ],
-    [
-     "Alan Rick",
-     "REPUBLICANOS",
-     "AC"
-    ],
-    [
-     "Humberto Costa",
-     "PT",
-     "PE"
-    ],
-    [
-     "Angelo Coronel",
-     "REPUBLICANOS",
-     "BA"
-    ],
-    [
-     "Paulo Paim",
-     "PT",
-     "RS"
-    ],
-    [
-     "Laércio Oliveira",
-     "PP",
-     "SE"
-    ],
-    [
-     "Dr. Hiran",
-     "PP",
-     "RR"
-    ],
-    [
-     "Teresa Leitão",
-     "PT",
-     "PE"
-    ],
-    [
-     "Jaques Wagner",
-     "PT",
-     "BA"
-    ],
-    [
-     "Rogério Carvalho",
-     "PT",
-     "SE"
-    ],
-    [
-     "Eliziane Gama",
-     "PSD",
-     "MA"
-    ],
-    [
-     "Confúcio Moura",
-     "MDB",
-     "RO"
-    ],
-    [
-     "Soraya Thronicke",
-     "PSB",
-     "MS"
-    ],
-    [
-     "Jussara Lima",
-     "PSD",
-     "PI"
-    ],
-    [
-     "Izalci Lucas",
+     "Cezinha de Madureira",
      "PL",
-     "DF"
-    ],
-    [
-     "Nelsinho Trad",
-     "PSD",
-     "MS"
-    ],
-    [
-     "Plínio Valério",
-     "PSDB",
-     "AM"
-    ],
-    [
-     "Otto Alencar",
-     "PSD",
-     "BA"
+     "SP"
     ]
    ],
-   "situacao": "Aguardando despacho",
-   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176190",
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651915",
    "natureza": [],
    "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5803,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para estabelecer a imediata execução de pena imposta pelo Conselho de Sentença.",
+   "apresentacao": "2026-11-10",
+   "aut": [
+    [
+     "Cezinha de Madureira",
+     "PL",
+     "SP"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651934",
+   "natureza": [
+    "Processo penal",
+    "Execução penal"
+   ],
+   "diplomas": [
+    "Código de Processo Penal",
+    "Lei de Execução Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5804,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), e a Lei nº 9.504, de 30 de setembro de 1997 (Lei das Eleições), para vedar a propaganda eleitoral que contenha apologia à prática de qualquer crime ou a seus autores.",
+   "apresentacao": "2026-11-10",
+   "aut": [
+    [
+     "Cezinha de Madureira",
+     "PL",
+     "SP"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651938",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5806,
+   "ano": 2026,
+   "ementa": "Institui o Cadastro Nacional de Condenados Foragidos por Crimes Sexuais e dispõe sobre o alerta imediato às polícias dos estados.",
+   "apresentacao": "2026-11-10",
+   "aut": [
+    [
+     "Rubens Pereira Júnior",
+     "PT",
+     "MA"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2652027",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5810,
+   "ano": 2026,
+   "ementa": "Institui a Lei Acesso Íntegro e altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o abuso de acesso profissional ou funcional a dados pessoais, estabelecer forma qualificada para sua comercialização, transferência, divulgação ou fornecimento ilícitos, responsabilizar terceiros envolvidos na exploração criminosa dessas informações, prever causas de aumento de pena e dispor sobre a persecução penal.",
+   "apresentacao": "2026-11-10",
+   "aut": [
+    [
+     "Marcos Tavares",
+     "PDT",
+     "RJ"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2652509",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": [
+    "Código Penal"
+   ]
   },
   {
    "casa": "Senado",
