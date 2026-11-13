@@ -1,43 +1,39 @@
 {
- "gerado_em": "2026-11-12 14:37",
+ "gerado_em": "2026-11-13 14:14",
  "periodo": {
-  "inicio": "2026-11-05",
-  "fim": "2026-11-11"
+  "inicio": "2026-11-06",
+  "fim": "2026-11-12"
  },
- "total": 21,
+ "total": 17,
  "por_casa": {
-  "Câmara": 18,
+  "Câmara": 14,
   "Senado": 3
  },
  "por_tipo": {
-  "PLP": 3,
-  "PL": 18
+  "PLP": 2,
+  "PL": 15
  },
- "apresentadas_na_semana": 15,
+ "apresentadas_na_semana": 12,
  "natureza": {
-  "Cria ou altera tipo penal": 4,
-  "Hediondez": 1,
-  "Processo penal": 2,
-  "Execução penal": 4,
-  "Aumenta pena": 2,
-  "Reduz ou descriminaliza": 1
+  "Reduz ou descriminaliza": 1,
+  "Cria ou altera tipo penal": 3,
+  "Execução penal": 3,
+  "Processo penal": 1,
+  "Aumenta pena": 1
  },
  "diplomas": {
-  "Código de Processo Penal": 2,
-  "Lei de Execução Penal": 4,
-  "Crimes hediondos": 1,
-  "Organizações criminosas": 1,
-  "Lavagem de dinheiro": 1,
+  "Lei de Execução Penal": 3,
+  "Código de Processo Penal": 1,
   "Código Penal": 3
  },
  "partidos": {
   "PSB": 1,
-  "PT": 5,
-  "MDB": 4,
-  "PL": 6,
   "PODE": 1,
+  "PT": 3,
+  "MDB": 2,
   "PP": 1,
-  "PDT": 2,
+  "PDT": 3,
+  "PL": 5,
   "REPUBLICANOS": 1
  },
  "itens": [
@@ -104,128 +100,6 @@
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649648",
    "natureza": [],
    "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5711,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 12.845, de 1º de agosto de 2013, para dispor sobre a padronização, a preservação, o prazo de processamento e a inserção em bancos de perfis genéticos dos vestígios biológicos coletados no atendimento às pessoas em situação de violência sexual.",
-   "apresentacao": "2026-10-30",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649652",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PLP",
-   "numero": 283,
-   "ano": 2026,
-   "ementa": "Altera a Lei Complementar nº 64, de 18 de maio de 1990, para incluir entre as causas de inelegibilidade a condenação por crime praticado mediante violência contra a mulher.",
-   "apresentacao": "2026-11-04",
-   "aut": [
-    [
-     "Yury Bruno",
-     "MDB",
-     "CE"
-    ]
-   ],
-   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650684",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5749,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 9.605, de 12 de fevereiro de 1998, para tipificar o incêndio criminoso em biomas florestais; disciplina a perda e a desapropriação de imóveis rurais utilizados para incêndios criminosos, por descumprimento da função socioambiental da propriedade; e dá outras providências.",
-   "apresentacao": "2026-11-04",
-   "aut": [
-    [
-     "Saullo Vianna",
-     "MDB",
-     "AM"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650471",
-   "natureza": [
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5750,
-   "ano": 2026,
-   "ementa": "Regulamenta o inciso XLVI-A do art. 5º da Constituição Federal, que dispõe sobre o regime legal especial aplicável a integrantes e líderes de organizações criminosas de alta periculosidade ou lesividade, bem como a autores de crimes de alta lesividade cometidos mediante violência ou grave ameaça, alterando o Decreto-Lei nº 3.689, de 3 de outubro de 1941 – Código de Processo Penal; a Lei nº 7.210, de 11 de julho de 1984; a Lei nº 8.072, de 25 de julho de 1990; a Lei nº 9.807, de 13 de julho de 1999; e a Lei nº 15.358, de 24 de março de 2026.",
-   "apresentacao": "2026-11-04",
-   "aut": [
-    [
-     "Capitão Alden",
-     "PL",
-     "BA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650486",
-   "natureza": [
-    "Hediondez",
-    "Processo penal",
-    "Execução penal"
-   ],
-   "diplomas": [
-    "Código de Processo Penal",
-    "Lei de Execução Penal",
-    "Crimes hediondos",
-    "Organizações criminosas",
-    "Lavagem de dinheiro"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5757,
-   "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 – Código Penal, para tipificar o crime de boicote discriminatório e perseguição econômica.",
-   "apresentacao": "2026-11-04",
-   "aut": [
-    [
-     "Alexandre Lindenmeyer",
-     "PT",
-     "RS"
-    ],
-    [
-     "Luiz Couto",
-     "PT",
-     "PB"
-    ],
-    [
-     "Jorge Solla",
-     "PT",
-     "BA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2650685",
-   "natureza": [
-    "Aumenta pena",
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": [
-    "Código Penal"
-   ]
   },
   {
    "casa": "Câmara",
@@ -470,6 +344,29 @@
    ],
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2652509",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": [
+    "Código Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5819,
+   "ano": 2026,
+   "ementa": "Dispõe sobre a proteção da integridade física, da segurança pessoal e do exercício do direito à moradia em condomínios edilícios; altera a Lei nº 10.406, de 10 de janeiro de 2002 (Código Civil), e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para disciplinar o afastamento judicial de ocupantes responsáveis por violência grave, estabelecer medidas protetivas de urgência, tipificar a coação violenta ao exercício da moradia e assegurar a reparação patrimonial das vítimas, inclusive mediante adjudicação judicial de bens do responsável.",
+   "apresentacao": "2026-11-11",
+   "aut": [
+    [
+     "Marcos Tavares",
+     "PDT",
+     "RJ"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2652736",
    "natureza": [
     "Cria ou altera tipo penal"
    ],
