@@ -250,3 +250,7 @@ h1,h2,h3{font-weight:500}
 :root{--rule-ctrl:#8A8272}
 .ttag-aed{color:var(--mark-ink)}
 .filtro .chip,.refs .copiar,.toc a{border-color:var(--rule-ctrl)}
+/* Retrato na página Sobre (14/11/2026) */
+.apresentacao{display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px;align-items:start;max-width:var(--textw)}
+.retrato{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:4px}
+@media (max-width:620px){.apresentacao{grid-template-columns:minmax(0,1fr);gap:16px}.retrato{width:140px}}
