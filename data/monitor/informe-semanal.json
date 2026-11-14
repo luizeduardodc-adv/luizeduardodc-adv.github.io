@@ -1,144 +1,38 @@
 {
- "gerado_em": "2026-11-13 14:14",
+ "gerado_em": "2026-11-14 12:52",
  "periodo": {
-  "inicio": "2026-11-06",
-  "fim": "2026-11-12"
+  "inicio": "2026-11-07",
+  "fim": "2026-11-13"
  },
- "total": 17,
+ "total": 14,
  "por_casa": {
-  "Câmara": 14,
-  "Senado": 3
+  "Câmara": 12,
+  "Senado": 2
  },
  "por_tipo": {
-  "PLP": 2,
-  "PL": 15
+  "PL": 13,
+  "PLP": 1
  },
- "apresentadas_na_semana": 12,
+ "apresentadas_na_semana": 10,
  "natureza": {
   "Reduz ou descriminaliza": 1,
-  "Cria ou altera tipo penal": 3,
+  "Cria ou altera tipo penal": 4,
   "Execução penal": 3,
-  "Processo penal": 1,
-  "Aumenta pena": 1
+  "Processo penal": 2
  },
  "diplomas": {
   "Lei de Execução Penal": 3,
-  "Código de Processo Penal": 1,
+  "Código de Processo Penal": 2,
   "Código Penal": 3
  },
  "partidos": {
-  "PSB": 1,
-  "PODE": 1,
-  "PT": 3,
-  "MDB": 2,
+  "MDB": 3,
   "PP": 1,
   "PDT": 3,
   "PL": 5,
-  "REPUBLICANOS": 1
+  "PT": 2
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PLP",
-   "numero": 278,
-   "ano": 2026,
-   "ementa": "Altera a Lei Complementar nº 64, de 18 de maio de 1990 (Lei de Inelegibilidades), para incluir, entre as causas de inelegibilidade decorrentes de condenação criminal, a lesão corporal praticada contra a mulher por razões da condição do sexo feminino.",
-   "apresentacao": "2026-10-30",
-   "aut": [
-    [
-     "Jonas Donizette",
-     "PSB",
-     "SP"
-    ],
-    [
-     "Maria Arraes",
-     "PSB",
-     "PE"
-    ],
-    [
-     "Lucas Ramos",
-     "PSB",
-     "PE"
-    ],
-    [
-     "Andreia Siqueira",
-     "PSB",
-     "PA"
-    ],
-    [
-     "Paulo Folletto",
-     "PSB",
-     "ES"
-    ],
-    [
-     "Pedro Campos",
-     "PSB",
-     "PE"
-    ],
-    [
-     "Dr. Victor Linhalis",
-     "PSB",
-     "ES"
-    ],
-    [
-     "Lídice da Mata",
-     "PSB",
-     "BA"
-    ],
-    [
-     "Rodrigo Rollemberg",
-     "PSB",
-     "DF"
-    ],
-    [
-     "Tabata Amaral",
-     "PSB",
-     "SP"
-    ]
-   ],
-   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2649648",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5774,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 15.409, de 20 de maio de 2026, para assegurar à mulher o direito de consultar o Cadastro Nacional de Pessoas Condenadas por Violência contra a Mulher (CNVM).",
-   "apresentacao": "2026-11-05",
-   "aut": [
-    [
-     "Delegado Palumbo",
-     "PODE",
-     "SP"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651096",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5776,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 13.675, de 11 de junho de 2018, para instituir diretrizes para a proteção de servidores do sistema penal e de segurança pública ameaçados em razão da função.",
-   "apresentacao": "2026-11-05",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651114",
-   "natureza": [],
-   "diplomas": []
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -375,26 +269,28 @@
    ]
   },
   {
-   "casa": "Senado",
+   "casa": "Câmara",
    "sigla": "PL",
-   "numero": 5780,
+   "numero": 5840,
    "ano": 2026,
-   "ementa": "Altera o art. 154-A do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para prever causa de aumento de pena no crime de invasão de dispositivo informático praticado contra pessoa com deficiência.",
-   "apresentacao": "2026-11-05",
+   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), a Lei nº 10.741, de 1º de outubro de 2003 (Estatuto da Pessoa Idosa), e a Lei nº 13.146, de 6 de julho de 2015 (Estatuto da Pessoa com Deficiência), para tipificar a divulgação indevida da intimidade de pessoa idosa, com deficiência ou dependente de cuidados e agravar a punição dos crimes praticados com abuso de relação de cuidado ou confiança.",
+   "apresentacao": "2026-11-12",
    "aut": [
     [
-     "Damares Alves",
-     "REPUBLICANOS",
-     "DF"
+     "Fábio Teruel",
+     "MDB",
+     "SP"
     ]
    ],
-   "situacao": "Aguardando despacho",
-   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176223",
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2653227",
    "natureza": [
-    "Aumenta pena"
+    "Cria ou altera tipo penal",
+    "Processo penal"
    ],
    "diplomas": [
-    "Código Penal"
+    "Código Penal",
+    "Código de Processo Penal"
    ]
   },
   {
