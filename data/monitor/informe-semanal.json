@@ -1,24 +1,24 @@
 {
- "gerado_em": "2026-11-14 12:52",
+ "gerado_em": "2026-11-15 13:23",
  "periodo": {
-  "inicio": "2026-11-07",
-  "fim": "2026-11-13"
+  "inicio": "2026-11-08",
+  "fim": "2026-11-14"
  },
- "total": 14,
+ "total": 13,
  "por_casa": {
-  "Câmara": 12,
+  "Câmara": 11,
   "Senado": 2
  },
  "por_tipo": {
-  "PL": 13,
+  "PL": 12,
   "PLP": 1
  },
- "apresentadas_na_semana": 10,
+ "apresentadas_na_semana": 11,
  "natureza": {
   "Reduz ou descriminaliza": 1,
-  "Cria ou altera tipo penal": 4,
   "Execução penal": 3,
-  "Processo penal": 2
+  "Processo penal": 2,
+  "Cria ou altera tipo penal": 3
  },
  "diplomas": {
   "Lei de Execução Penal": 3,
@@ -26,32 +26,13 @@
   "Código Penal": 3
  },
  "partidos": {
-  "MDB": 3,
   "PP": 1,
-  "PDT": 3,
-  "PL": 5,
-  "PT": 2
+  "PL": 6,
+  "PT": 2,
+  "PDT": 2,
+  "MDB": 2
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5784,
-   "ano": 2026,
-   "ementa": "Institui diretrizes nacionais para a prevenção e o combate à fabricação, à comercialização e ao uso de linhas cortantes em pipas e artefatos similares; estabelece medidas de fiscalização, educação e responsabilização administrativa; e dá outras providências.",
-   "apresentacao": "2026-11-05",
-   "aut": [
-    [
-     "Renilce Nicodemos",
-     "MDB",
-     "PA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651243",
-   "natureza": [],
-   "diplomas": []
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -70,27 +51,6 @@
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651263",
    "natureza": [
     "Reduz ou descriminaliza"
-   ],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5787,
-   "ano": 2026,
-   "ementa": "Institui a Lei do Silêncio Inclusivo e da Proteção Sensorial Imediata, estabelece medidas protetivas de urgência e mecanismos de intervenção policial destinados à preservação do sossego, da saúde e da integridade física, psíquica e sensorial de pessoas com vulnerabilidade comprovada a estímulos sonoros, especialmente crianças e pessoas idosas, confere ao delegado de polícia competência para determinar medidas emergenciais de cessação de perturbações abusivas, prevê responsabilização pelo descumprimento de determinações protetivas e altera o Decreto-Lei nº 3.688, de 3 de outubro de 1941 (Lei das Contravenções Penais).",
-   "apresentacao": "2026-11-06",
-   "aut": [
-    [
-     "Marcos Tavares",
-     "PDT",
-     "RJ"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651272",
-   "natureza": [
-    "Cria ou altera tipo penal"
    ],
    "diplomas": []
   },
@@ -292,6 +252,25 @@
     "Código Penal",
     "Código de Processo Penal"
    ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5848,
+   "ano": 2026,
+   "ementa": "Dispõe sobre a responsabilização penal e civil por crimes contra o patrimônio praticados entre familiares, revoga imunidades penais, estabelece medidas de reparação patrimonial e altera o Código Civil para prever novas hipóteses de indignidade sucessória e deserdação.",
+   "apresentacao": "2026-11-13",
+   "aut": [
+    [
+     "Marcelo Álvaro Antônio",
+     "PL",
+     "MG"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2653818",
+   "natureza": [],
+   "diplomas": []
   },
   {
    "casa": "Senado",
