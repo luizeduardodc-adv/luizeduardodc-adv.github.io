@@ -1,19 +1,19 @@
 {
- "gerado_em": "2026-11-16 16:38",
+ "gerado_em": "2026-11-17 15:36",
  "periodo": {
-  "inicio": "2026-11-09",
-  "fim": "2026-11-15"
+  "inicio": "2026-11-10",
+  "fim": "2026-11-16"
  },
- "total": 13,
+ "total": 12,
  "por_casa": {
   "Câmara": 11,
-  "Senado": 2
+  "Senado": 1
  },
  "por_tipo": {
-  "PL": 12,
+  "PL": 11,
   "PLP": 1
  },
- "apresentadas_na_semana": 11,
+ "apresentadas_na_semana": 10,
  "natureza": {
   "Reduz ou descriminaliza": 1,
   "Execução penal": 3,
@@ -28,7 +28,7 @@
  "partidos": {
   "PP": 1,
   "PL": 6,
-  "PT": 2,
+  "PT": 1,
   "PDT": 2,
   "MDB": 2
  },
@@ -47,7 +47,7 @@
      "PE"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651263",
    "natureza": [
     "Reduz ou descriminaliza"
@@ -68,7 +68,7 @@
      "SP"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651409",
    "natureza": [
     "Execução penal"
@@ -269,45 +269,6 @@
    ],
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2653818",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Senado",
-   "sigla": "PL",
-   "numero": 5789,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência, para a inclusão de diretrizes e o aperfeiçoamento dos procedimentos.",
-   "apresentacao": "2026-11-06",
-   "aut": [
-    [
-     "Teresa Leitão",
-     "PT",
-     "PE"
-    ],
-    [
-     "Jussara Lima",
-     "PSD",
-     "PI"
-    ],
-    [
-     "Leany Lemos",
-     "PSB",
-     "DF"
-    ],
-    [
-     "Damares Alves",
-     "REPUBLICANOS",
-     "DF"
-    ],
-    [
-     "Eliziane Gama",
-     "PSD",
-     "MA"
-    ]
-   ],
-   "situacao": "Aguardando despacho",
-   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176233",
    "natureza": [],
    "diplomas": []
   },

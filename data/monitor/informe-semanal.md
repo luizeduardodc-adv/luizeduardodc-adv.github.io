@@ -1,26 +1,26 @@
-Proposições penais da semana | 09/11/2026 a 15/11/2026
+Proposições penais da semana | 10/11/2026 a 16/11/2026
 
-Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 16/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
+Fonte: Monitor Legislativo Penal, a partir dos dados abertos da Câmara dos Deputados e do Senado Federal, 57ª legislatura (desde 1º/02/2023). Base atualizada em 17/11/2026. Painel: https://luizeduardodc.com.br/ferramentas/monitor-legislativo.html
 
 Em números
 
-1. 13 proposições novas na base (Câmara 11; Senado 2).
-2. Por tipo: PL 12; PLP 1.
-3. Apresentadas na própria semana: 11; apresentadas antes e incorporadas agora: 2 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
+1. 12 proposições novas na base (Câmara 11; Senado 1).
+2. Por tipo: PL 11; PLP 1.
+3. Apresentadas na própria semana: 10; apresentadas antes e incorporadas agora: 2 (as Casas atribuem o tema com alguns dias ou semanas de atraso).
 4. Natureza (classificação automática pela ementa): Execução penal 3; Cria ou altera tipo penal 3; Processo penal 2; Reduz ou descriminaliza 1.
 5. Diplomas alterados (classificação automática pela ementa): Lei de Execução Penal 3; Código Penal 3; Código de Processo Penal 2.
-6. Partido do autor principal: PL 6; PT 2; PDT 2; MDB 2; PP 1.
+6. Partido do autor principal: PL 6; PDT 2; MDB 2; PP 1; PT 1.
 
 Iniciadas na Câmara dos Deputados
 
 1. PL 5786/2026 – Clarissa Tércio (PP/PE) – apresentada em 06/11/2026
    Altera a Lei nº 12.594, de 18 de janeiro de 2012, para vedar a visita íntima a adolescente privado de liberdade no âmbito do Sistema Nacional de Atendimento Socioeducativo (Sinase), e revoga o art. 68 da mesma Lei.
    Natureza: reduz ou descriminaliza.
-   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651263
+   Situação: Aguardando Despacho do Presidente da Câmara dos Deputados. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651263
 2. PL 5796/2026 – Cezinha de Madureira (PL/SP) – apresentada em 09/11/2026
    Altera a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), para dispor sobre a remição da pena por meio da doação voluntária de sangue
    Natureza: execução penal. Altera: Lei de Execução Penal.
-   Situação: não informada. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651409
+   Situação: Aguardando Despacho do Presidente da Câmara dos Deputados. Tramitação: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651409
 3. PL 5799/2026 – Cezinha de Madureira (PL/SP) – apresentada em 10/11/2026
    Altera a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), para instituir a remição de pena pelo cadastramento voluntário como doador de medula óssea e pela efetiva doação.
    Natureza: execução penal. Altera: Lei de Execução Penal.
@@ -56,9 +56,6 @@ Iniciadas na Câmara dos Deputados
 
 Iniciadas no Senado Federal
 
-1. PL 5789/2026 – Teresa Leitão (PT/PE) e mais 4 – apresentada em 06/11/2026
-   Altera a Lei nº 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência, para a inclusão de diretrizes e o aperfeiçoamento dos procedimentos.
-   Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176233
-2. PLP 289/2026 – Renan Calheiros (MDB/AL) – apresentada em 10/11/2026
+1. PLP 289/2026 – Renan Calheiros (MDB/AL) – apresentada em 10/11/2026
    Altera a Lei Complementar nº 64, de 18 de maio de 1990 (Lei das Inelegibilidades), para tornar inelegíveis, desde a condenação por órgão colegiado até o transcurso do prazo de 8 (oito) anos após o cumprimento da pena, os que forem condenados por crimes praticados mediante violência contra a mulher.
    Situação: Aguardando despacho. Tramitação: https://www25.senado.leg.br/web/atividade/materias/-/materia/176259
