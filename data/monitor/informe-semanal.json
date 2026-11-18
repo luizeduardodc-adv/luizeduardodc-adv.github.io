@@ -1,82 +1,37 @@
 {
- "gerado_em": "2026-11-17 15:36",
+ "gerado_em": "2026-11-18 15:06",
  "periodo": {
-  "inicio": "2026-11-10",
-  "fim": "2026-11-16"
+  "inicio": "2026-11-11",
+  "fim": "2026-11-17"
  },
- "total": 12,
+ "total": 11,
  "por_casa": {
-  "Câmara": 11,
+  "Câmara": 10,
   "Senado": 1
  },
  "por_tipo": {
-  "PL": 11,
-  "PLP": 1
+  "PL": 11
  },
- "apresentadas_na_semana": 10,
+ "apresentadas_na_semana": 5,
  "natureza": {
-  "Reduz ou descriminaliza": 1,
-  "Execução penal": 3,
+  "Execução penal": 2,
   "Processo penal": 2,
-  "Cria ou altera tipo penal": 3
+  "Cria ou altera tipo penal": 4,
+  "Aumenta pena": 1
  },
  "diplomas": {
-  "Lei de Execução Penal": 3,
+  "Lei de Execução Penal": 2,
   "Código de Processo Penal": 2,
-  "Código Penal": 3
+  "Código Penal": 4,
+  "Juizados Especiais (Lei 9.099)": 1
  },
  "partidos": {
-  "PP": 1,
   "PL": 6,
   "PT": 1,
   "PDT": 2,
   "MDB": 2
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5786,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 12.594, de 18 de janeiro de 2012, para vedar a visita íntima a adolescente privado de liberdade no âmbito do Sistema Nacional de Atendimento Socioeducativo (Sinase), e revoga o art. 68 da mesma Lei.",
-   "apresentacao": "2026-11-06",
-   "aut": [
-    [
-     "Clarissa Tércio",
-     "PP",
-     "PE"
-    ]
-   ],
-   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651263",
-   "natureza": [
-    "Reduz ou descriminaliza"
-   ],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5796,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), para dispor sobre a remição da pena por meio da doação voluntária de sangue",
-   "apresentacao": "2026-11-09",
-   "aut": [
-    [
-     "Cezinha de Madureira",
-     "PL",
-     "SP"
-    ]
-   ],
-   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651409",
-   "natureza": [
-    "Execução penal"
-   ],
-   "diplomas": [
-    "Lei de Execução Penal"
-   ]
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -245,6 +200,7 @@
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2653227",
    "natureza": [
+    "Aumenta pena",
     "Cria ou altera tipo penal",
     "Processo penal"
    ],
@@ -270,26 +226,51 @@
    "situacao": "",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2653818",
    "natureza": [],
+   "diplomas": [
+    "Código Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5861,
+   "ano": 2026,
+   "ementa": "Institui a Lei Manfred e Marisia von Richthofen, que proíbe e criminaliza a obtenção de vantagem econômica, direta ou indireta, por pessoa condenada pela prática de infração penal, mediante exploração comercial, promoção ou monetização do próprio delito, estabelece mecanismos de perda de valores, reparação das vítimas e responsabilização de terceiros que atuem para fraudar a proibição, e dá outras providências.",
+   "apresentacao": "2026-11-16",
+   "aut": [
+    [
+     "Sanderson",
+     "PL",
+     "RS"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654163",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
    "diplomas": []
   },
   {
    "casa": "Senado",
-   "sigla": "PLP",
-   "numero": 289,
+   "sigla": "PL",
+   "numero": 5877,
    "ano": 2026,
-   "ementa": "Altera a Lei Complementar nº 64, de 18 de maio de 1990 (Lei das Inelegibilidades), para tornar inelegíveis, desde a condenação por órgão colegiado até o transcurso do prazo de 8 (oito) anos após o cumprimento da pena, os que forem condenados por crimes praticados mediante violência contra a mulher.",
-   "apresentacao": "2026-11-10",
+   "ementa": "Altera a Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil), a Lei nº 8.906, de 4 de julho de 1994 (Estatuto da Advocacia), e a Lei nº 9.099, de 26 de setembro de 1995, para conceituar a litigância abusiva e a litigância predatória, dispor sobre a transparência da cessão e do financiamento de direitos litigiosos e estabelecer as consequências processuais e disciplinares do uso abusivo do processo.",
+   "apresentacao": "2026-11-17",
    "aut": [
     [
-     "Renan Calheiros",
+     "Alessandro Vieira",
      "MDB",
-     "AL"
+     "SE"
     ]
    ],
    "situacao": "Aguardando despacho",
-   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176259",
+   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176437",
    "natureza": [],
-   "diplomas": []
+   "diplomas": [
+    "Juizados Especiais (Lei 9.099)"
+   ]
   }
  ]
 }
