@@ -1,165 +1,38 @@
 {
- "gerado_em": "2026-11-18 15:06",
+ "gerado_em": "2026-11-19 15:19",
  "periodo": {
-  "inicio": "2026-11-11",
-  "fim": "2026-11-17"
+  "inicio": "2026-11-12",
+  "fim": "2026-11-18"
  },
- "total": 11,
+ "total": 9,
  "por_casa": {
-  "Câmara": 10,
-  "Senado": 1
+  "Câmara": 7,
+  "Senado": 2
  },
  "por_tipo": {
-  "PL": 11
+  "PL": 8,
+  "PLP": 1
  },
- "apresentadas_na_semana": 5,
+ "apresentadas_na_semana": 8,
  "natureza": {
-  "Execução penal": 2,
-  "Processo penal": 2,
   "Cria ou altera tipo penal": 4,
-  "Aumenta pena": 1
+  "Aumenta pena": 1,
+  "Processo penal": 2
  },
  "diplomas": {
-  "Lei de Execução Penal": 2,
-  "Código de Processo Penal": 2,
   "Código Penal": 4,
+  "Código de Processo Penal": 2,
   "Juizados Especiais (Lei 9.099)": 1
  },
  "partidos": {
-  "PL": 6,
-  "PT": 1,
-  "PDT": 2,
-  "MDB": 2
+  "PDT": 1,
+  "MDB": 2,
+  "PL": 3,
+  "PP": 1,
+  "AVANTE": 1,
+  "PT": 1
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5799,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), para instituir a remição de pena pelo cadastramento voluntário como doador de medula óssea e pela efetiva doação.",
-   "apresentacao": "2026-11-10",
-   "aut": [
-    [
-     "Cezinha de Madureira",
-     "PL",
-     "SP"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651907",
-   "natureza": [
-    "Execução penal"
-   ],
-   "diplomas": [
-    "Lei de Execução Penal"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5800,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 12.965, de 23 de abril de 2014 (Marco Civil da Internet), para criar a “Lei Anti-Oruam 3.0”, autorizando o bloqueio judicial de contas em redes sociais de pessoas foragidas da justiça.",
-   "apresentacao": "2026-11-10",
-   "aut": [
-    [
-     "Cezinha de Madureira",
-     "PL",
-     "SP"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651915",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5803,
-   "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para estabelecer a imediata execução de pena imposta pelo Conselho de Sentença.",
-   "apresentacao": "2026-11-10",
-   "aut": [
-    [
-     "Cezinha de Madureira",
-     "PL",
-     "SP"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651934",
-   "natureza": [
-    "Processo penal",
-    "Execução penal"
-   ],
-   "diplomas": [
-    "Código de Processo Penal",
-    "Lei de Execução Penal"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5804,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), e a Lei nº 9.504, de 30 de setembro de 1997 (Lei das Eleições), para vedar a propaganda eleitoral que contenha apologia à prática de qualquer crime ou a seus autores.",
-   "apresentacao": "2026-11-10",
-   "aut": [
-    [
-     "Cezinha de Madureira",
-     "PL",
-     "SP"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2651938",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5806,
-   "ano": 2026,
-   "ementa": "Institui o Cadastro Nacional de Condenados Foragidos por Crimes Sexuais e dispõe sobre o alerta imediato às polícias dos estados.",
-   "apresentacao": "2026-11-10",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2652027",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5810,
-   "ano": 2026,
-   "ementa": "Institui a Lei Acesso Íntegro e altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o abuso de acesso profissional ou funcional a dados pessoais, estabelecer forma qualificada para sua comercialização, transferência, divulgação ou fornecimento ilícitos, responsabilizar terceiros envolvidos na exploração criminosa dessas informações, prever causas de aumento de pena e dispor sobre a persecução penal.",
-   "apresentacao": "2026-11-10",
-   "aut": [
-    [
-     "Marcos Tavares",
-     "PDT",
-     "RJ"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2652509",
-   "natureza": [
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": [
-    "Código Penal"
-   ]
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -249,6 +122,90 @@
    "natureza": [
     "Cria ou altera tipo penal"
    ],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5868,
+   "ano": 2026,
+   "ementa": "Altera o art. 352 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 – Código Penal, para tipificar a evasão ou tentativa de evasão de pessoa presa ou submetida a medida de segurança detentiva, independentemente do emprego de violência ou grave ameaça, e estabelecer tratamento penal mais rigoroso para essas condutas quando praticadas mediante violência ou grave ameaça à pessoa.",
+   "apresentacao": "2026-11-16",
+   "aut": [
+    [
+     "Delegado Fabio Costa",
+     "PP",
+     "AL"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654320",
+   "natureza": [
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": [
+    "Código Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5883,
+   "ano": 2026,
+   "ementa": "Institui diretrizes para a oferta voluntária de abordagens especializadas destinadas à redução da libido de pessoas condenadas por crimes sexuais contra crianças e adolescentes.",
+   "apresentacao": "2026-11-17",
+   "aut": [
+    [
+     "Giovani Cherini",
+     "PL",
+     "RS"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654744",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5887,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para estabelecer garantias à intimidade, à dignidade e à integridade das mulheres submetidas à abordagem pessoal, disciplinando sua realização por agente do sexo feminino e as hipóteses excepcionais de execução por agente do sexo masculino.",
+   "apresentacao": "2026-11-17",
+   "aut": [
+    [
+     "Pastor Sargento Isidório",
+     "AVANTE",
+     "BA"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654802",
+   "natureza": [
+    "Processo penal"
+   ],
+   "diplomas": [
+    "Código de Processo Penal"
+   ]
+  },
+  {
+   "casa": "Senado",
+   "sigla": "PLP",
+   "numero": 309,
+   "ano": 2026,
+   "ementa": "Altera a Lei Complementar nº 64, de 18 de maio de 1990 (Lei das Inelegibilidades), para tornar inelegíveis, desde a condenação por órgão colegiado até o transcurso do prazo de 8 (oito) anos após o cumprimento da pena, os que forem condenados por crimes praticados contra a mulher por razões da condição do sexo feminino.",
+   "apresentacao": "2026-11-17",
+   "aut": [
+    [
+     "Rogério Carvalho",
+     "PT",
+     "SE"
+    ]
+   ],
+   "situacao": "Aguardando despacho",
+   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176447",
+   "natureza": [],
    "diplomas": []
   },
   {
