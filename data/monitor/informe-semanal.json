@@ -1,22 +1,22 @@
 {
- "gerado_em": "2026-11-19 15:19",
+ "gerado_em": "2026-11-20 14:51",
  "periodo": {
-  "inicio": "2026-11-12",
-  "fim": "2026-11-18"
+  "inicio": "2026-11-13",
+  "fim": "2026-11-19"
  },
- "total": 9,
+ "total": 10,
  "por_casa": {
-  "Câmara": 7,
+  "Câmara": 8,
   "Senado": 2
  },
  "por_tipo": {
-  "PL": 8,
+  "PL": 9,
   "PLP": 1
  },
- "apresentadas_na_semana": 8,
+ "apresentadas_na_semana": 9,
  "natureza": {
-  "Cria ou altera tipo penal": 4,
   "Aumenta pena": 1,
+  "Cria ou altera tipo penal": 3,
   "Processo penal": 2
  },
  "diplomas": {
@@ -25,37 +25,14 @@
   "Juizados Especiais (Lei 9.099)": 1
  },
  "partidos": {
-  "PDT": 1,
   "MDB": 2,
   "PL": 3,
   "PP": 1,
   "AVANTE": 1,
-  "PT": 1
+  "PSOL": 1,
+  "PT": 2
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5819,
-   "ano": 2026,
-   "ementa": "Dispõe sobre a proteção da integridade física, da segurança pessoal e do exercício do direito à moradia em condomínios edilícios; altera a Lei nº 10.406, de 10 de janeiro de 2002 (Código Civil), e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para disciplinar o afastamento judicial de ocupantes responsáveis por violência grave, estabelecer medidas protetivas de urgência, tipificar a coação violenta ao exercício da moradia e assegurar a reparação patrimonial das vítimas, inclusive mediante adjudicação judicial de bens do responsável.",
-   "apresentacao": "2026-11-11",
-   "aut": [
-    [
-     "Marcos Tavares",
-     "PDT",
-     "RJ"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2652736",
-   "natureza": [
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": [
-    "Código Penal"
-   ]
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -187,6 +164,46 @@
    ],
    "diplomas": [
     "Código de Processo Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5891,
+   "ano": 2026,
+   "ementa": "Altera a Lei n° 14.717, de 31 de outubro de 2023, para dispor sobre hipótese de requerimento de benefício de pensão especial aos filhos e aos dependentes de mulher vítima de crime de feminicídio pela autoridade policial, Ministério Público, Defensoria Pública e Conselho Tutelar ou por determinação judicial.",
+   "apresentacao": "2026-11-17",
+   "aut": [
+    [
+     "Erika Hilton",
+     "PSOL",
+     "SP"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655015",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5894,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para agravar, de forma proporcional ao número de agressores, a pena dos crimes de lesão corporal e de homicídio cometidos mediante espancamento coletivo.",
+   "apresentacao": "2026-11-18",
+   "aut": [
+    [
+     "Rubens Pereira Júnior",
+     "PT",
+     "MA"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655134",
+   "natureza": [],
+   "diplomas": [
+    "Código Penal"
    ]
   },
   {
