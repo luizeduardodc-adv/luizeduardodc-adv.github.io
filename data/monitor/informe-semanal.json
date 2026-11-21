@@ -1,64 +1,46 @@
 {
- "gerado_em": "2026-11-20 14:51",
+ "gerado_em": "2026-11-21 13:49",
  "periodo": {
-  "inicio": "2026-11-13",
-  "fim": "2026-11-19"
+  "inicio": "2026-11-14",
+  "fim": "2026-11-20"
  },
- "total": 10,
+ "total": 13,
  "por_casa": {
-  "Câmara": 8,
-  "Senado": 2
+  "Câmara": 10,
+  "Senado": 3
  },
  "por_tipo": {
-  "PL": 9,
-  "PLP": 1
+  "PL": 11,
+  "PLP": 1,
+  "PEC": 1
  },
- "apresentadas_na_semana": 9,
+ "apresentadas_na_semana": 12,
  "natureza": {
+  "Cria ou altera tipo penal": 2,
+  "Processo penal": 3,
   "Aumenta pena": 1,
-  "Cria ou altera tipo penal": 3,
-  "Processo penal": 2
+  "Hediondez": 1,
+  "Execução penal": 1
  },
  "diplomas": {
   "Código Penal": 4,
   "Código de Processo Penal": 2,
+  "Lei de Drogas": 1,
+  "Crimes hediondos": 1,
+  "Código de Trânsito (crimes)": 1,
   "Juizados Especiais (Lei 9.099)": 1
  },
  "partidos": {
-  "MDB": 2,
-  "PL": 3,
+  "PL": 4,
   "PP": 1,
   "AVANTE": 1,
   "PSOL": 1,
-  "PT": 2
+  "PT": 3,
+  "MISSÃO": 1,
+  "UNIÃO": 1,
+  "MDB": 1
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5840,
-   "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), a Lei nº 10.741, de 1º de outubro de 2003 (Estatuto da Pessoa Idosa), e a Lei nº 13.146, de 6 de julho de 2015 (Estatuto da Pessoa com Deficiência), para tipificar a divulgação indevida da intimidade de pessoa idosa, com deficiência ou dependente de cuidados e agravar a punição dos crimes praticados com abuso de relação de cuidado ou confiança.",
-   "apresentacao": "2026-11-12",
-   "aut": [
-    [
-     "Fábio Teruel",
-     "MDB",
-     "SP"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2653227",
-   "natureza": [
-    "Aumenta pena",
-    "Cria ou altera tipo penal",
-    "Processo penal"
-   ],
-   "diplomas": [
-    "Código Penal",
-    "Código de Processo Penal"
-   ]
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -207,6 +189,79 @@
    ]
   },
   {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5907,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para conferir celeridade à expedição de mandados de busca domiciliar e pessoal, e legitimidade para seu requerimento por órgãos de segurança pública e guardas municipais.",
+   "apresentacao": "2026-11-19",
+   "aut": [
+    [
+     "Kim Kataguiri",
+     "MISSÃO",
+     "SP"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655533",
+   "natureza": [
+    "Processo penal"
+   ],
+   "diplomas": [
+    "Código de Processo Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5910,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e a Lei nº 11.350, de 5 de outubro de 2006, para agravar a pena dos crimes praticados contra agentes comunitários de saúde e agentes de combate às endemias em razão do exercício da função e para dispor sobre a proteção desses profissionais.",
+   "apresentacao": "2026-11-19",
+   "aut": [
+    [
+     "Rubens Pereira Júnior",
+     "PT",
+     "MA"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655542",
+   "natureza": [
+    "Aumenta pena"
+   ],
+   "diplomas": [
+    "Código Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5916,
+   "ano": 2026,
+   "ementa": "Altera o parágrafo único do art. 1º da Lei nº 8.072, de 25 de julho de 1990, para considerar hediondo o homicídio praticado na direção de veículo automotor, quando praticado em concurso com a condução de veículo com capacidade psicomotora alterada em razão da influência de álcool ou de outra substância psicoativa que determine dependência (art. 306 do CTB) ou com a participação em corrida, disputa ou competição automobilística não autorizada (art. 308 do CTB), vedando fiança, anistia, graça e indulto e impondo cumprimento inicial da pena em regime fechado.",
+   "apresentacao": "2026-11-19",
+   "aut": [
+    [
+     "Silvye Alves",
+     "UNIÃO",
+     "GO"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655664",
+   "natureza": [
+    "Hediondez",
+    "Processo penal",
+    "Execução penal"
+   ],
+   "diplomas": [
+    "Lei de Drogas",
+    "Crimes hediondos",
+    "Código de Trânsito (crimes)"
+   ]
+  },
+  {
    "casa": "Senado",
    "sigla": "PLP",
    "numero": 309,
@@ -245,6 +300,160 @@
    "diplomas": [
     "Juizados Especiais (Lei 9.099)"
    ]
+  },
+  {
+   "casa": "Senado",
+   "sigla": "PEC",
+   "numero": 24,
+   "ano": 2026,
+   "ementa": "Altera o inciso I, alínea b, do art. 102 e insere a alínea j no inciso I do art. 105 da Constituição Federal de 1988.",
+   "apresentacao": "2026-11-18",
+   "aut": [
+    [
+     "Astronauta Marcos Pontes",
+     "PL",
+     "SP"
+    ],
+    [
+     "Lucas Barreto",
+     "PSD",
+     "AP"
+    ],
+    [
+     "Hamilton Mourão",
+     "REPUBLICANOS",
+     "RS"
+    ],
+    [
+     "Damares Alves",
+     "REPUBLICANOS",
+     "DF"
+    ],
+    [
+     "Izalci Lucas",
+     "PL",
+     "DF"
+    ],
+    [
+     "Plínio Valério",
+     "PSDB",
+     "AM"
+    ],
+    [
+     "Marcos Rogério",
+     "PL",
+     "RO"
+    ],
+    [
+     "Cleitinho",
+     "REPUBLICANOS",
+     "MG"
+    ],
+    [
+     "Jaime Bagattoli",
+     "PL",
+     "RO"
+    ],
+    [
+     "Confúcio Moura",
+     "MDB",
+     "RO"
+    ],
+    [
+     "Wilder Morais",
+     "PL",
+     "GO"
+    ],
+    [
+     "Chico Rodrigues",
+     "PSB",
+     "RR"
+    ],
+    [
+     "Oriovisto Guimarães",
+     "PODE",
+     "PR"
+    ],
+    [
+     "Jorge Seif",
+     "PL",
+     "SC"
+    ],
+    [
+     "Dr. Hiran",
+     "PP",
+     "RR"
+    ],
+    [
+     "Eduardo Gomes",
+     "PL",
+     "TO"
+    ],
+    [
+     "Eduardo Girão",
+     "NOVO",
+     "CE"
+    ],
+    [
+     "Marcio Bittar",
+     "UNIÃO",
+     "AC"
+    ],
+    [
+     "Jayme Campos",
+     "UNIÃO",
+     "MT"
+    ],
+    [
+     "Luis Carlos Heinze",
+     "PP",
+     "RS"
+    ],
+    [
+     "Carlos Portinho",
+     "PL",
+     "RJ"
+    ],
+    [
+     "Tereza Cristina",
+     "PP",
+     "MS"
+    ],
+    [
+     "Magno Malta",
+     "PL",
+     "ES"
+    ],
+    [
+     "Marcos do Val",
+     "AVANTE",
+     "ES"
+    ],
+    [
+     "Zequinha Marinho",
+     "PODE",
+     "PA"
+    ],
+    [
+     "Sargento Reginauro",
+     "PSDB",
+     "CE"
+    ],
+    [
+     "Wellington Fagundes",
+     "PL",
+     "MT"
+    ],
+    [
+     "Esperidião Amin",
+     "PP",
+     "SC"
+    ]
+   ],
+   "situacao": "Aguardando despacho",
+   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176489",
+   "natureza": [],
+   "diplomas": []
   }
  ]
 }
