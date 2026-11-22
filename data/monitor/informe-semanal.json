@@ -1,16 +1,16 @@
 {
- "gerado_em": "2026-11-21 13:49",
+ "gerado_em": "2026-11-22 14:11",
  "periodo": {
-  "inicio": "2026-11-14",
-  "fim": "2026-11-20"
+  "inicio": "2026-11-15",
+  "fim": "2026-11-21"
  },
- "total": 13,
+ "total": 12,
  "por_casa": {
-  "Câmara": 10,
+  "Câmara": 9,
   "Senado": 3
  },
  "por_tipo": {
-  "PL": 11,
+  "PL": 10,
   "PLP": 1,
   "PEC": 1
  },
@@ -23,7 +23,7 @@
   "Execução penal": 1
  },
  "diplomas": {
-  "Código Penal": 4,
+  "Código Penal": 3,
   "Código de Processo Penal": 2,
   "Lei de Drogas": 1,
   "Crimes hediondos": 1,
@@ -31,7 +31,7 @@
   "Juizados Especiais (Lei 9.099)": 1
  },
  "partidos": {
-  "PL": 4,
+  "PL": 3,
   "PP": 1,
   "AVANTE": 1,
   "PSOL": 1,
@@ -41,27 +41,6 @@
   "MDB": 1
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5848,
-   "ano": 2026,
-   "ementa": "Dispõe sobre a responsabilização penal e civil por crimes contra o patrimônio praticados entre familiares, revoga imunidades penais, estabelece medidas de reparação patrimonial e altera o Código Civil para prever novas hipóteses de indignidade sucessória e deserdação.",
-   "apresentacao": "2026-11-13",
-   "aut": [
-    [
-     "Marcelo Álvaro Antônio",
-     "PL",
-     "MG"
-    ]
-   ],
-   "situacao": "",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2653818",
-   "natureza": [],
-   "diplomas": [
-    "Código Penal"
-   ]
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
