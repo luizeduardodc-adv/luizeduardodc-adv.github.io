@@ -197,7 +197,7 @@
   <p>Provas do Exame de Ordem Unificado, do Conselho Federal da OAB, aplicadas pela FGV. Ferramenta acadêmica independente, sem vínculo com a OAB ou a FGV e sem endosso de nenhuma delas; a marca identifica apenas a fonte das provas.</p>
 </div>
 <div class="numeros" id="numeros" aria-live="polite"></div>
-<p class="note">Versão de teste com três exames (45º, 46º e 47º Exames de Ordem Unificados, 1ª e 2ª fase), cuja classificação ainda está em conferência pelo autor. As contagens descrevem provas já aplicadas e não indicam o que será cobrado.</p>
+<p class="note">Versão de teste com <span id="serie"></span> (1ª e 2ª fase), cuja classificação ainda está em conferência pelo autor. As contagens descrevem provas já aplicadas e não indicam o que será cobrado.</p>
 
 <div class="barra-ctl">
   <div class="abas" role="tablist" aria-label="Visões">
@@ -208,6 +208,8 @@
   </div>
   <div class="pilulas" id="f-fase"><span>Fase</span><div>
     <button data-v="todas" aria-pressed="true">Todas</button><button data-v="1" aria-pressed="false">1ª fase</button><button data-v="2" aria-pressed="false">2ª fase</button></div></div>
+  <div class="pilulas" id="f-exame"><span>Exames</span><div>
+    <button data-v="todos" aria-pressed="true">Todos</button><button data-v="3" aria-pressed="false">Últimos 3</button><button data-v="5" aria-pressed="false">Últimos 5</button><button data-v="10" aria-pressed="false">Últimos 10</button></div></div>
   <div class="pilulas" id="f-papel"><span>Contar</span><div>
     <button data-v="principal" aria-pressed="true">Só o principal</button><button data-v="nec" aria-pressed="false">Principal e acessório</button><button data-v="todos" aria-pressed="false">Com distratores</button></div></div>
 </div>
@@ -249,8 +251,9 @@
     <li>Fontes: cadernos de prova, gabaritos definitivos e padrões de resposta definitivos publicados pela FGV em oab.fgv.br. Na 1ª fase, o gabarito indica só a alternativa correta; o dispositivo é atribuído pelo autor. Na 2ª fase, segue-se o fundamento indicado no padrão de respostas.</li>
     <li>Papéis: principal (o dispositivo que decide a resposta; havendo fundamentos alternativos no padrão para a mesma tese, todos), acessório (também necessário à resposta, inclusive o crime imputado sem tese própria) e distrator (presente só nas alternativas incorretas). A contagem padrão considera só o principal.</li>
     <li>Contagem: cada questão (na 2ª fase, cada item) conta uma vez em cada ponto da estrutura, ainda que cobre mais de um parágrafo ou inciso do mesmo artigo.</li>
-    <li>Estrutura e texto legal: texto compilado do Planalto, extraído em <span id="data-planalto"></span>, sem o texto revogado. A classificação considera a redação vigente na data da prova; quando o dispositivo mudou depois dela, a ficha traz o aviso "redação alterada".</li>
-    <li>Súmulas e teses entram como temas próprios, apenas do STF e do STJ. Fundamentos processuais e constitucionais da 2ª fase aparecem na ficha da questão, fora do mapa, até a inclusão do Código de Processo Penal.</li>
+    <li>Estrutura e texto legal: texto compilado do Planalto, extraído em <span id="data-planalto"></span>, sem o texto revogado. A classificação considera a redação vigente na data da prova; quando o dispositivo mudou depois dela, a ficha traz o aviso "redação alterada"; quando foi revogado ou renumerado depois dela, a cobrança fica no dispositivo da época, com o aviso "revogado depois da prova" e a indicação do dispositivo que hoje trata da matéria. A comparação usa o início de vigência da lei alteradora.</li>
+    <li>Súmulas e teses entram como temas próprios, apenas do STF e do STJ. O Código de Processo Penal integra o mapa desde 22/11/2026, com os fundamentos processuais da 2ª fase; fundamentos constitucionais e de leis ainda fora do mapa aparecem na ficha da questão.</li>
+    <li>Questões anuladas ficam nas fichas, marcadas, e fora das contagens. Reaplicações não entram.</li>
     <li>Limitações: a atribuição do dispositivo é interpretação do autor; questões com vários temas admitem leitura diversa do dispositivo principal; os links da FGV podem mudar entre exames.</li>
   </ol>
   <p>Dados abertos: <a href="../data/mapa-oab/mapa-oab-cobrancas.csv" download>cobranças em CSV</a>, <a href="../data/mapa-oab/diplomas.json">estrutura dos diplomas</a>, <a href="../data/mapa-oab/questoes.json">questões</a> e <a href="../data/mapa-oab/cobrancas.json">cobranças</a> em JSON. Atualizado em <span id="data-atual"></span>.</p>
@@ -277,19 +280,23 @@ D.nos.forEach(n=>{if(!filhos.has(n.p))filhos.set(n.p,[]);filhos.get(n.p).push(n)
 const quest=new Map(Q.questoes.map(q=>[q.id,q]));
 $('data-planalto').textContent=D.meta.extracao_planalto.split('-').reverse().join('/');
 $('data-atual').textContent=D.meta.atualizado_em.split('-').reverse().join('/');
-const SIG={CP:'CP',L11343:'Lei 11.343/2006',L8072:'Lei 8.072/1990',L11340:'Lei 11.340/2006',L9503:'CTB',L9613:'Lei 9.613/1998',L7210:'LEP'};
+const SIG={CP:'CP',CPP:'CPP',L11343:'Lei 11.343/2006',L8072:'Lei 8.072/1990',L11340:'Lei 11.340/2006',L9503:'CTB',L9613:'Lei 9.613/1998',L7210:'LEP'};
+const EXAMES=[...new Set(Q.questoes.map(q=>q.exame))].sort((a,b)=>a-b);
+$('serie').textContent=`${EXAMES.length} exames, do ${EXAMES[0]}º ao ${EXAMES[EXAMES.length-1]}º Exame de Ordem Unificado`;
 const ESTR={parte:'',livro:'Livro',titulo:'Título',capitulo:'Capítulo',secao:'Seção',subsecao:'Subseção'};
 const FINO=new Set(['paragrafo','inciso','alinea']);
+const ORD=n=>String(n).replace(/^(\d)(?=$|-)/,'$1º');
 const cap=s=>s?s.charAt(0)+s.slice(1).toLowerCase():'';
-function rot(id){const n=nos.get(id);if(id.startsWith('TEMA.'))return n.n||n.r;const p=[];let x=n;while(x&&x.t!=='diploma'){if(x.t==='artigo')p.push('art. '+x.n);else if(FINO.has(x.t))p.push(x.n);x=nos.get(x.p)}return SIG[id.split('.')[0]]+', '+p.reverse().join(', ')}
+function rot(id){const n=nos.get(id);if(id.startsWith('TEMA.'))return n.n||n.r;const p=[];let x=n;while(x&&x.t!=='diploma'){if(x.t==='artigo')p.push('art. '+ORD(x.n));else if(FINO.has(x.t))p.push(x.n);x=nos.get(x.p)}return SIG[id.split('.')[0]]+', '+p.reverse().join(', ')}
 function artigoDe(id){let x=nos.get(id);while(x&&x.t!=='artigo'&&!x.id.startsWith('TEMA.'))x=nos.get(x.p);return x}
 function qrot(q,i){return q.fase===1?`${q.exame}º Exame, 1ª fase, questão ${q.numero}`:(q.tipo==='peca'?`${q.exame}º Exame, 2ª fase, peça`:`${q.exame}º Exame, 2ª fase, questão ${q.numero}${i?', item '+i:''}`)}
 const PAPEL={principal:'principal',acessorio:'acessório',distrator:'distrator'};
-let fase='todas',papel='principal';
-function filtradas(){return C.cobrancas.filter(c=>{const q=quest.get(c.q);if(fase!=='todas'&&String(q.fase)!==fase)return false;if(papel==='principal')return c.papel==='principal';if(papel==='nec')return c.papel!=='distrator';return true})}
+let fase='todas',papel='principal',janela='todos';
+function exameOk(ex){return janela==='todos'||EXAMES.indexOf(ex)>=EXAMES.length-Number(janela)}
+function filtradas(){return C.cobrancas.filter(c=>{const q=quest.get(c.q);if(!exameOk(q.exame))return false;if(fase!=='todas'&&String(q.fase)!==fase)return false;if(papel==='principal')return c.papel==='principal';if(papel==='nec')return c.papel!=='distrator';return true})}
 function contar(cs){const m=new Map();cs.forEach(c=>{const u=c.q+'|'+(c.i||'');let x=nos.get(c.d);while(x){if(!m.has(x.id))m.set(x.id,new Map());m.get(x.id).set(u,c);x=nos.get(x.p)}});return m}
-function numeros(cs){const qs=new Set(cs.map(c=>c.q));const arts=new Set(cs.map(c=>artigoDe(c.d)?.id).filter(Boolean));const ex=new Set(Q.questoes.map(q=>q.exame));
-  const nq=Q.questoes.filter(q=>fase==='todas'||String(q.fase)===fase).length;
+function numeros(cs){const qs=new Set(cs.map(c=>c.q));const arts=new Set(cs.map(c=>artigoDe(c.d)?.id).filter(Boolean));const ex=new Set(Q.questoes.filter(q=>exameOk(q.exame)).map(q=>q.exame));
+  const nq=Q.questoes.filter(q=>exameOk(q.exame)&&q.situacao!=='anulada'&&(fase==='todas'||String(q.fase)===fase)).length;
   $('numeros').innerHTML=`<div><b>${ex.size}</b><span>${ex.size===1?'exame':'exames'}</span></div><div><b>${nq}</b><span>questões de Penal</span></div><div><b>${arts.size}</b><span>artigos e súmulas cobrados</span></div>`}
 function barra(v,max){return `<div class="trilho" aria-hidden="true"><i style="width:${max?Math.round(100*v/max):0}%"></i></div>`}
 function listaRefs(us){return '<ul class="refs">'+[...us.values()].sort((a,b)=>a.q.localeCompare(b.q,'pt',{numeric:true})).map(c=>{const q=quest.get(c.q);return `<li><a href="#${q.id}" data-ficha>${esc(qrot(q,c.i))}</a><span class="papel ${c.papel}">${PAPEL[c.papel]}</span>${c.d!==artigoDe(c.d)?.id?`<span class="vazio">${esc(rot(c.d))}</span>`:''}</li>`}).join('')+'</ul>'}
@@ -306,7 +313,7 @@ function mapa(){
       const tit=n.t==='parte'?cap(n.r):`${ESTR[n.t]} ${n.n}`;const sub=n.t==='parte'?'':cap(n.r||'');
       return `<details class="estr${k?'':' zero'}" data-id="${n.id}"${op}><summary><span class="nome">${n.t==='parte'?esc(tit):`<small>${esc(tit)}</small>${esc(sub)}`}</span><span></span><span class="qt">${k}</span></summary><div>${fs.map(f=>no(f,nivel+1)).join('')}</div></details>`}
     if(n.t==='artigo'||n.id.startsWith('TEMA.')){
-      const tema=n.id.startsWith('TEMA.');const nome=tema?`<b>${esc(n.n||n.r)}</b>${n.n?' · '+esc(n.r):''}`:`<b>Art. ${esc(n.n)}</b>${n.r?' · '+esc(n.r):''}${n.s?` <span class="vazio">(${n.s})</span>`:''}`;
+      const tema=n.id.startsWith('TEMA.');const nome=tema?`<b>${esc(n.n||n.r)}</b>${n.n?' · '+esc(n.r):''}`:`<b>Art. ${esc(ORD(n.n))}</b>${n.r?' · '+esc(n.r):''}${n.s?` <span class="vazio">(${n.s})</span>`:''}`;
       let corpo='';
       if(k){const txt=n.x?`<p class="lei"><b>${tema?'Enunciado':'Caput'}:</b> ${esc(n.x)}</p>`:'';
         const finos=[...cont.keys()].filter(id=>id!==n.id&&id.startsWith(n.id+'.')).map(id=>nos.get(id)).filter(f=>f.x);
@@ -317,8 +324,8 @@ function mapa(){
   const raizes=D.nos.filter(n=>n.p===null);
   $('arvore').innerHTML=raizes.map(r=>no(r,0)).join('')||'<p class="vazio">Sem cobrança nos filtros escolhidos.</p>';
 }
-const NOME_DIP={CP:'Código Penal',L11343:'Lei de Drogas',L8072:'Lei dos Crimes Hediondos',L11340:'Lei Maria da Penha',L9503:'Código de Trânsito (crimes)',L9613:'Lei de Lavagem de Dinheiro',L7210:'Lei de Execução Penal',TEMA:'Súmulas, teses e princípios'};
-const ORDEM_DIP=['CP','L11343','L8072','L11340','L9503','L9613','L7210','TEMA'];
+const NOME_DIP={CP:'Código Penal',CPP:'Código de Processo Penal',L11343:'Lei de Drogas',L8072:'Lei dos Crimes Hediondos',L11340:'Lei Maria da Penha',L9503:'Código de Trânsito (crimes)',L9613:'Lei de Lavagem de Dinheiro',L7210:'Lei de Execução Penal',TEMA:'Súmulas, teses e princípios'};
+const ORDEM_DIP=['CP','L11343','L8072','L11340','L9503','L9613','L7210','CPP','TEMA'];
 function grupoCap(id){let x=nos.get(id),t=null,c=null,pt=null;while(x){if(x.t==='capitulo'&&!c)c=x;if(x.t==='titulo'&&!t)t=x;if(x.t==='parte')pt=x;x=nos.get(x.p)}
   const g=c||t;if(!g)return null;
   const sobre=[pt?cap(pt.r):'',t&&c?`Título ${t.n}`:'',c?`Capítulo ${c.n}`:`Título ${t.n}`].filter(Boolean).join(' · ');
@@ -331,7 +338,7 @@ function ranking(){
   const refs=new Map();cs.forEach(c=>{const a=artigoDe(c.d);if(!a)return;if(!refs.has(a.id))refs.set(a.id,new Map());refs.get(a.id).set(c.q+'|'+(c.i||''),c)});
   const linha=(id)=>{const n=nos.get(id),us=refs.get(id),tema=id.startsWith('TEMA.');
     const qs=[...us.values()].map(c=>`<a href="#${c.q}" data-ficha>${esc(qrot(quest.get(c.q),c.i).replace(/^\d+º Exame, /,''))}</a>`).join('; ');
-    return `<li><span class="disp"><b>${tema?esc(n.n||n.r):`Art. ${esc(n.n)}`}</b>${tema?(n.n?' · '+esc(n.r):''):(n.r?' · '+esc(n.r):'')}<small>${qs}</small></span>${barra(us.size,max)}<span class="qt">${us.size}</span></li>`};
+    return `<li><span class="disp"><b>${tema?esc(n.n||n.r):`Art. ${esc(ORD(n.n))}`}</b>${tema?(n.n?' · '+esc(n.r):''):(n.r?' · '+esc(n.r):'')}<small>${qs}</small></span>${barra(us.size,max)}<span class="qt">${us.size}</span></li>`};
   const porDip=new Map();[...porArt.keys()].forEach(id=>{const d=id.split('.')[0];if(!porDip.has(d))porDip.set(d,[]);porDip.get(d).push(id)});
   const ord=(a,b)=>porArt.get(b).size-porArt.get(a).size||ordemNo(a)-ordemNo(b);
   $('ranking').innerHTML=ORDEM_DIP.filter(d=>porDip.has(d)).map(d=>{const ids=porDip.get(d);
@@ -366,14 +373,14 @@ function fichas(){
   numeros(filtradas());
   document.querySelectorAll('#fichas details.exame').forEach(x=>{x.open?exAbertos.add(x.dataset.ex):exAbertos.delete(x.dataset.ex)});
   const porEx=new Map();Q.questoes.forEach(q=>{if(!porEx.has(q.exame))porEx.set(q.exame,[]);porEx.get(q.exame).push(q)});
-  $('fichas').innerHTML=[...porEx.entries()].sort((a,b)=>b[0]-a[0]).map(([ex,qs])=>{
+  $('fichas').innerHTML=[...porEx.entries()].filter(([ex])=>exameOk(ex)).sort((a,b)=>b[0]-a[0]).map(([ex,qs])=>{
     const f1=qs.filter(q=>q.fase===1),f2=qs.filter(q=>q.fase===2);
     const d=s=>s.split('-').reverse().join('/');
     const cart=q=>{const cs=C.cobrancas.filter(c=>c.q===q.id);const itens=[...new Set(cs.map(c=>c.i||''))].sort();
-      const lin=c=>`<li><span class="papel ${c.papel}">${PAPEL[c.papel]}</span><span>${esc(rot(c.d))}${nos.get(c.d).r&&nos.get(c.d).t==='artigo'?' · '+esc(nos.get(c.d).r):''}</span>${c.tema!==nos.get(c.d).r?`<span class="vazio">${esc(c.tema)}</span>`:''}${c.alterada?`<a class="rev" href="${esc(nos.get(c.d.split('.')[0])?.f||'#')}" title="${esc((c.nr||'').charAt(0).toUpperCase()+(c.nr||'').slice(1))}" data-dica="${esc((c.nr||'').charAt(0).toUpperCase()+(c.nr||'').slice(1))}">redação alterada</a>`:''}</li>`;
+      const lin=c=>`<li><span class="papel ${c.papel}">${PAPEL[c.papel]}</span><span>${esc(rot(c.d))}${nos.get(c.d).r&&nos.get(c.d).t==='artigo'?' · '+esc(nos.get(c.d).r):''}</span>${c.tema!==nos.get(c.d).r?`<span class="vazio">${esc(c.tema)}</span>`:''}${c.alterada?`<a class="rev" href="${esc(nos.get(c.d.split('.')[0])?.f||'#')}" title="${esc((c.nr||'').charAt(0).toUpperCase()+(c.nr||'').slice(1))}" data-dica="${esc((c.nr||'').charAt(0).toUpperCase()+(c.nr||'').slice(1))}">redação alterada</a>`:''}${c.revogado?`<a class="rev" href="${esc(nos.get(c.d.split('.')[0])?.f||'#')}" title="${esc((c.nr||'').charAt(0).toUpperCase()+(c.nr||'').slice(1))}" data-dica="${esc((c.nr||'').charAt(0).toUpperCase()+(c.nr||'').slice(1))}">revogado depois da prova</a>`:''}${c.rm?`<span class="vazio">hoje: ${esc(rot(c.rm))}</span>`:''}</li>`;
       const ord={principal:0,acessorio:1,distrator:2};
       const blocos=itens.map(i=>`${i?`<p class="item-t">Item ${esc(i)}</p>`:''}<ul class="refs">${cs.filter(c=>(c.i||'')===i).sort((a,b)=>ord[a.papel]-ord[b.papel]).map(lin).join('')}</ul>`).join('');
-      const tit=q.fase===1?`Questão ${q.numero}<span class="gab">gabarito ${esc(q.gabarito)}</span>`:(q.tipo==='peca'?`Peça: ${esc(q.peca)}<span class="gab">${esc(q.fundamento_processual||'')}</span>`:`Questão ${q.numero}`);
+      const tit=q.fase===1?`Questão ${q.numero}<span class="gab">${q.situacao==='anulada'?'anulada':'gabarito '+esc(q.gabarito)}</span>`:(q.tipo==='peca'?`Peça: ${esc(q.peca)}<span class="gab">${esc(q.fundamento_processual||'')}</span>`:`Questão ${q.numero}`);
       return `<article class="q" id="${q.id}"><h3>${tit}</h3><p class="res">${esc(q.resumo)}</p>${blocos}${q.fora_da_arvore?`<p class="fora">Outros fundamentos citados no padrão: ${q.fora_da_arvore.map(esc).join('; ')}.</p>`:''}${q.nota_ficha?`<p class="nota-f">${esc(q.nota_ficha)}</p>`:''}</article>`};
     const n=(fase!=='2'?f1.length:0)+(fase!=='1'?f2.length:0);
     const datas=[fase!=='2'&&f1.length?`1ª fase em ${d(f1[0].data)}`:'',fase!=='1'&&f2.length?`2ª fase em ${d(f2[0].data)}`:''].filter(Boolean).join(' · ');
@@ -386,9 +393,10 @@ const VIS={panorama,mapa,ranking,fichas};let atual='panorama';
 function abrir(v,foco){atual=v;document.querySelectorAll('[role=tab]').forEach(t=>{const s=t.id==='t-'+v;t.setAttribute('aria-selected',s);t.tabIndex=s?0:-1;if(s&&foco)t.focus()});document.querySelectorAll('.visao').forEach(s=>s.hidden=s.id!=='v-'+v);VIS[v]()}
 document.querySelectorAll('[role=tab]').forEach((t,i,all)=>{t.onclick=()=>abrir(t.id.slice(2));t.onkeydown=e=>{const d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(d){abrir(all[(i+d+all.length)%all.length].id.slice(2),true);e.preventDefault()}}});
 function pil(id,set){document.querySelectorAll(`#${id} button`).forEach(b=>b.onclick=()=>{document.querySelectorAll(`#${id} button`).forEach(x=>x.setAttribute('aria-pressed',x===b));set(b.dataset.v);VIS[atual]()})}
-pil('f-fase',v=>fase=v);pil('f-papel',v=>papel=v);
+pil('f-fase',v=>fase=v);pil('f-papel',v=>papel=v);pil('f-exame',v=>janela=v);
 $('mostrar-zero').onchange=mapa;
 document.addEventListener('click',e=>{const a=e.target.closest('a[data-ficha]');if(!a)return;e.preventDefault();const id=a.getAttribute('href').slice(1);
+  if(!exameOk(quest.get(id).exame)){janela='todos';document.querySelectorAll('#f-exame button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.v==='todos'))}
   if(fase!=='todas'&&String(quest.get(id).fase)!==fase){fase='todas';document.querySelectorAll('#f-fase button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.v==='todas'))}
   abrir('fichas');history.replaceState(null,'','#'+id);const el=$(id);el.closest('details.exame').open=true;el.scrollIntoView({block:'start'});el.setAttribute('tabindex','-1');el.focus({preventScroll:true})});
 const h=location.hash.slice(1);if(h&&quest.has(h)){abrir('fichas');const el=$(h);if(el)el.closest('details.exame').open=true;el&&el.scrollIntoView({block:'start'})}else abrir('panorama');

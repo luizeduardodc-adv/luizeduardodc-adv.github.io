@@ -1,8 +1,590 @@
 ﻿exame,fase,data_da_prova,questao,item,gabarito,dispositivo,id_dispositivo,papel,tema,link_caderno
-45,1,2025-12-21,57,,D,"CP, art. 7, II, c",CP.a7.II.c,principal,Extraterritorialidade condicionada (aeronave privada brasileira),http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
-45,1,2025-12-21,57,,D,"CP, art. 7, § 2º",CP.a7.p2,acessorio,Condições da extraterritorialidade,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
-45,1,2025-12-21,57,,D,"CP, art. 5, § 1º",CP.a5.p1,distrator,Território por extensão,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
-45,1,2025-12-21,57,,D,"CP, art. 4",CP.a4,distrator,Tempo do crime,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+35,1,2022-07-03,58,,C,"CP, art. 319",CP.a319,principal,Prevaricação,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,58,,C,"CP, art. 317",CP.a317,distrator,Corrupção passiva,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,58,,C,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,58,,C,"CP, art. 320",CP.a320,distrator,Condescendência criminosa,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,60,,D,"CP, art. 70",CP.a70,distrator,Concurso formal,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,61,,A,"CP, art. 116, IV",CP.a116.IV,principal,Causa impeditiva da prescrição (acordo de não persecução penal),http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,61,,A,"CPP, art. 28-A",CPP.a28A,acessorio,Acordo de não persecução penal,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,61,,A,"CP, art. 168",CP.a168,acessorio,Apropriação indébita,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,61,,A,"CP, art. 115",CP.a115,distrator,Redução dos prazos de prescrição,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,61,,A,Súmula 438 do STJ,TEMA.SUM.STJ.438,distrator,Prescrição pela pena hipotética,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,61,,A,"CP, art. 110, § 1º",CP.a110.p1,distrator,Prescrição retroativa,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,62,,A,"CP, art. 217-A",CP.a217A,principal,Estupro de vulnerável,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,62,,A,"CP, art. 83, V",CP.a83.V,principal,Livramento condicional e reincidência específica em crime hediondo,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,62,,A,"Lei 8.072/1990, art. 1º, VI",L8072.a1.VI,acessorio,Estupro de vulnerável como crime hediondo,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,62,,A,"CP, art. 215-A",CP.a215A,distrator,Importunação sexual,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,63,,C,"CP, art. 64, I",CP.a64.I,principal,Período depurador da reincidência,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,63,,C,"CP, art. 77",CP.a77,acessorio,Suspensão condicional da pena,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,1,2022-07-03,63,,C,"CP, art. 63",CP.a63,distrator,Reincidência,http://oab.fgv.br/arq/638/686848_OAB222%20Advogado%20(EOU)%20Tipo%201.pdf
+35,2,2022-08-28,Peça,,,"CPP, art. 593, I",CPP.a593.I,principal,Apelação contra sentença condenatória,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CPP, art. 593",CPP.a593,acessorio,Prazo da apelação,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,Súmula 455 do STJ,TEMA.SUM.STJ.455,principal,Produção antecipada de provas e mero decurso do tempo,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CPP, art. 225",CPP.a225,principal,Produção antecipada de prova testemunhal,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CPP, art. 564, IV",CPP.a564.IV,principal,Nulidade por omissão de formalidade essencial,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CPP, art. 386, III",CPP.a386.III,principal,Absolvição por atipicidade,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CPP, art. 386, VI",CPP.a386.VI,principal,Absolvição por excludente ou isenção de pena,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CP, art. 250",CP.a250,principal,Incêndio (crime de perigo comum concreto),http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CP, art. 163, parágrafo único, II",CP.a163.pu.II,principal,Dano qualificado pelo emprego de substância inflamável,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CP, art. 28, § 1º",CP.a28.p1,principal,Embriaguez completa por caso fortuito ou força maior,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CP, art. 28, II",CP.a28.II,acessorio,Embriaguez voluntária ou culposa,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CP, art. 59",CP.a59,principal,Fixação da pena-base (antecedentes),http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CP, art. 61, II, d",CP.a61.II.d,principal,Agravante do meio de que podia resultar perigo comum,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CP, art. 61, II, b",CP.a61.II.b,principal,Agravante da conexão com outro crime,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CP, art. 65, III, d",CP.a65.III.d,principal,Atenuante da confissão espontânea,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CP, art. 33, § 2º, c",CP.a33.p2.c,principal,Regime inicial aberto,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,Peça,,,"CP, art. 44",CP.a44,principal,Substituição por penas restritivas de direitos,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,1,A,,"CPP, art. 581, XV",CPP.a581.XV,principal,Recurso em sentido estrito contra a denegação da apelação,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,1,A,,"CPP, art. 593, § 4º",CPP.a593.p4,principal,Prevalência da apelação sobre o recurso em sentido estrito,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,1,A,,"CPP, art. 593, I",CPP.a593.I,acessorio,Apelação contra sentença condenatória,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,1,B,,"CP, art. 77, § 1º",CP.a77.p1,principal,Sursis e condenação anterior a multa,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,1,B,,"CP, art. 77, I",CP.a77.I,acessorio,Sursis e reincidência em crime doloso,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,1,B,,"CP, art. 157",CP.a157,acessorio,Roubo,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,2,A,,"CP, art. 147-A",CP.a147A,principal,Perseguição (crime habitual),http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,2,B,,"CP, art. 64, I",CP.a64.I,principal,Período depurador,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,3,A,,"CPP, art. 38",CPP.a38,principal,Decadência do direito de representação,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,3,A,,"CP, art. 107, IV",CP.a107.IV,principal,Extinção da punibilidade pela decadência,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,3,A,,"CP, art. 129",CP.a129,acessorio,Lesão corporal leve,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,3,B,,"CP, art. 23, II",CP.a23.II,principal,Exclusão da ilicitude (legítima defesa),http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,3,B,,"CP, art. 25",CP.a25,principal,Legítima defesa,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,4,A,,"CPP, art. 564, IV",CPP.a564.IV,principal,Nulidade por omissão de formalidade essencial,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,4,B,,"CP, art. 217-A",CP.a217A,principal,Estupro de vulnerável (idade da vítima),http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+35,2,2022-08-28,4,B,,"CPP, art. 386, III",CPP.a386.III,principal,Absolvição por atipicidade,http://oab.fgv.br/arq/638/1669293_XXXV%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,1,2022-10-23,58,,B,"CP, art. 216-A",CP.a216A,principal,Assédio sexual,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,58,,B,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,58,,B,"CP, art. 215-A",CP.a215A,distrator,Importunação sexual,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,59,,C,"LEP, art. 112",L7210.a112,principal,Progressão de regime,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,59,,C,Princípio da individualização da pena,TEMA.PRINC.individualizacao,principal,Princípio da individualização da pena,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,59,,C,"Lei 8.072/1990, art. 1º, II, c",L8072.a1.II.c,acessorio,Roubo qualificado pelo resultado morte como crime hediondo,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,59,,C,"CP, art. 157, § 3º, II",CP.a157.p3.II,acessorio,Latrocínio,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,60,,D,"CP, art. 24",CP.a24,principal,Estado de necessidade,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,60,,D,"CP, art. 23, I",CP.a23.I,acessorio,Exclusão da ilicitude,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,60,,D,"CP, art. 135",CP.a135,distrator,Omissão de socorro,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,60,,D,"CP, art. 25",CP.a25,distrator,Legítima defesa,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,60,,D,"CP, art. 121",CP.a121,distrator,Homicídio simples,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,61,,C,"CP, art. 157, § 2º, II",CP.a157.p2.II,principal,Roubo majorado pelo concurso de pessoas,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,61,,C,"CP, art. 157, § 2º-A, I",CP.a157.p2A.I,principal,Roubo majorado pelo emprego de arma de fogo,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,61,,C,"CP, art. 29, § 2º",CP.a29.p2,principal,Cooperação dolosamente distinta,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,61,,C,"CP, art. 213",CP.a213,acessorio,Estupro,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,61,,C,"CP, art. 69",CP.a69,acessorio,Concurso material,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,61,,C,"CP, art. 29, § 1º",CP.a29.p1,distrator,Participação de menor importância,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,62,,A,"Lei 11.343/2006, art. 33",L11343.a33,principal,Tráfico de drogas (tipo de ação múltipla),http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,62,,A,"CP, art. 70",CP.a70,distrator,Concurso formal,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,62,,A,"CP, art. 69",CP.a69,distrator,Concurso material,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,62,,A,"Lei 11.343/2006, art. 33, § 4º",L11343.a33.p4,distrator,Tráfico privilegiado,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,63,,C,"CP, art. 171",CP.a171,principal,Estelionato,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,63,,C,"CP, art. 14, II",CP.a14.II,principal,Tentativa,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,63,,C,"CP, art. 297",CP.a297,distrator,Falsificação de documento público,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,1,2022-10-23,63,,C,"CP, art. 304",CP.a304,distrator,Uso de documento falso,http://oab.fgv.br/arq/639/527735_Advogado(EOU)%20Tipo%201.pdf
+36,2,2022-12-11,Peça,,,"CPP, art. 396",CPP.a396,principal,Resposta à acusação,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,Peça,,,"CPP, art. 396-A",CPP.a396A,principal,Resposta à acusação,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,Peça,,,"CPP, art. 395, III",CPP.a395.III,principal,Rejeição da denúncia por falta de justa causa,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,Peça,,,"CPP, art. 564, III, b",CPP.a564.III.b,principal,Nulidade pela falta de exame de corpo de delito,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,Peça,,,"CPP, art. 158",CPP.a158,principal,Exame de corpo de delito,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,Peça,,,"CP, art. 28, § 1º",CP.a28.p1,principal,Embriaguez completa por caso fortuito ou força maior,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,Peça,,,"CPP, art. 397, II",CPP.a397.II,principal,Absolvição sumária por excludente de culpabilidade,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,Peça,,,"CP, art. 28, II",CP.a28.II,acessorio,Embriaguez voluntária ou culposa,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,Peça,,,"CP, art. 129, § 1º, I",CP.a129.p1.I,acessorio,Lesão corporal grave (incapacidade por mais de trinta dias),http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,1,A,,Súmula 17 do STJ,TEMA.SUM.STJ.17,principal,Absorção do falso pelo estelionato,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,1,A,,"CP, art. 298",CP.a298,acessorio,Falsificação de documento particular,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,1,A,,"CP, art. 69",CP.a69,acessorio,Concurso material,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,1,A,,"CP, art. 171",CP.a171,acessorio,Estelionato,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,1,B,,"CP, art. 171, § 5º",CP.a171.p5,principal,Ação penal no estelionato,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,2,A,,Princípio da insignificância,TEMA.PRINC.insignificancia,principal,Princípio da insignificância,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,2,A,,"CP, art. 334",CP.a334,acessorio,Descaminho,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,2,B,,"CP, art. 77, § 1º",CP.a77.p1,principal,Condenação anterior a multa e sursis,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,2,B,,Súmula 696 do STF,TEMA.SUM.STF.696,principal,Recusa do Ministério Público à suspensão condicional do processo,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,3,A,,"CPP, art. 639, I",CPP.a639.I,principal,Carta testemunhável,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,3,B,,"LEP, art. 126",L7210.a126,principal,Remição pelo trabalho,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,3,B,,Vedação da analogia em prejuízo do réu,TEMA.PRINC.analogia,principal,Vedação da analogia em prejuízo do réu,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,4,A,,"CPP, art. 28-A, § 2º, III",CPP.a28A.p2.III,principal,Vedação do ANPP a quem obteve suspensão condicional do processo,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,4,A,,"CPP, art. 28-A, § 2º, II",CPP.a28A.p2.II,principal,Vedação do ANPP ao reincidente,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,4,B,,"CP, art. 63",CP.a63,principal,Reincidência,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,4,B,,"CP, art. 33, § 2º, c",CP.a33.p2.c,principal,Regime aberto para o não reincidente,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+36,2,2022-12-11,4,A,,Súmula 444 do STJ,TEMA.SUM.STJ.444,acessorio,Inquéritos e ações penais em curso e pena-base,http://oab.fgv.br/arq/639/1658493_XXXVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,1,2023-02-26,58,,A,"CP, art. 217-A",CP.a217A,principal,Estupro de vulnerável,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,58,,A,"CP, art. 217-A, § 5º",CP.a217A.p5,principal,Irrelevância do consentimento e da experiência sexual da vítima,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,58,,A,Súmula 593 do STJ,TEMA.SUM.STJ.593,principal,Estupro de vulnerável: consentimento e relacionamento irrelevantes,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,59,,C,"Lei 11.343/2006, art. 40, V",L11343.a40.V,principal,Tráfico entre Estados da Federação,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,59,,C,Súmula 587 do STJ,TEMA.SUM.STJ.587,principal,Majorante do tráfico interestadual sem transposição de fronteiras,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,59,,C,"Lei 11.343/2006, art. 33",L11343.a33,acessorio,Tráfico de drogas,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,60,,D,"CP, art. 157",CP.a157,principal,Roubo,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,60,,D,Súmula 582 do STJ,TEMA.SUM.STJ.582,principal,Consumação do roubo,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,60,,D,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,60,,D,"CP, art. 157, § 1º",CP.a157.p1,distrator,Roubo impróprio,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,60,,D,"CP, art. 158",CP.a158,distrator,Extorsão,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,61,,A,"CP, art. 155, § 4º, II",CP.a155.p4.II,principal,Furto qualificado mediante fraude,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,61,,A,"CP, art. 171",CP.a171,distrator,Estelionato,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,61,,A,"CP, art. 307",CP.a307,distrator,Falsa identidade,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,62,,B,"CP, art. 18, II",CP.a18.II,principal,Crime culposo,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,62,,B,"CP, art. 18, parágrafo único",CP.a18.pu,principal,Excepcionalidade do crime culposo,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,62,,B,"CP, art. 129, § 6º",CP.a129.p6,acessorio,Lesão corporal culposa,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,62,,B,"CP, art. 13, § 2º, b",CP.a13.p2.b,distrator,Dever de agir de quem assumiu a responsabilidade de impedir o resultado,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,62,,B,"CP, art. 135",CP.a135,distrator,Omissão de socorro,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,1,2023-02-26,63,,D,"CP, art. 92, I, a",CP.a92.I.a,distrator,Perda do cargo como efeito da condenação,http://oab.fgv.br/arq/640/641232_Advogado(EOU)%20Tipo%201.pdf
+37,2,2023-04-30,Peça,,,"CPP, art. 403, § 3º",CPP.a403.p3,principal,Memoriais,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CPP, art. 404, parágrafo único",CPP.a404.pu,principal,Alegações finais por memorial após diligência,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CP, art. 17",CP.a17,principal,Crime impossível,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CPP, art. 386, III",CPP.a386.III,principal,Absolvição por não constituir o fato infração penal,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CPP, art. 158",CPP.a158,principal,Exame de corpo de delito,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CP, art. 155, § 4º, I",CP.a155.p4.I,acessorio,Furto qualificado pelo rompimento de obstáculo,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CP, art. 155, § 4º, IV",CP.a155.p4.IV,acessorio,Furto qualificado pelo concurso de pessoas,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CP, art. 65, III, d",CP.a65.III.d,principal,Atenuante da confissão espontânea,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CP, art. 59",CP.a59,principal,Fixação da pena-base,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CP, art. 14, II",CP.a14.II,principal,Tentativa,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CP, art. 14, parágrafo único",CP.a14.pu,principal,Redução da pena na tentativa,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CP, art. 33, § 2º, c",CP.a33.p2.c,principal,Regime aberto,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CP, art. 44",CP.a44,principal,Substituição por penas restritivas de direitos,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CP, art. 33, § 2º, b",CP.a33.p2.b,principal,Regime semiaberto,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,Súmula 269 do STJ,TEMA.SUM.STJ.269,principal,Regime semiaberto ao reincidente,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CP, art. 61, I",CP.a61.I,acessorio,Agravante da reincidência,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,Peça,,,"CPP, art. 387, § 2º",CPP.a387.p2,principal,Detração para fixação do regime,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,1,A,,"CPP, art. 25",CPP.a25,principal,Retratação da representação,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,1,A,,"CPP, art. 395, II",CPP.a395.II,principal,Rejeição da denúncia por falta de condição da ação,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,1,A,,"CP, art. 129",CP.a129,acessorio,Lesão corporal leve,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,1,B,,"CP, art. 20, § 3º",CP.a20.p3,principal,Erro sobre a pessoa,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,1,B,,"CP, art. 73",CP.a73,principal,Erro na execução,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,1,B,,"CP, art. 61, II, e",CP.a61.II.e,acessorio,Agravante do crime contra irmão,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,2,A,,"LEP, art. 197",L7210.a197,principal,Agravo em execução,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,2,B,,"CP, art. 45, § 1º",CP.a45.p1,principal,Limite da prestação pecuniária,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,2,B,,"CP, art. 43, I",CP.a43.I,acessorio,Prestação pecuniária,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,2,B,,"CP, art. 44",CP.a44,acessorio,Substituição por penas restritivas de direitos,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,3,A,,"CPP, art. 157",CPP.a157,principal,Provas ilícitas,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,3,B,,"CP, art. 140",CP.a140,principal,Injúria,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,4,A,,"CP, art. 30",CP.a30,principal,Comunicabilidade das circunstâncias,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,4,A,,"CP, art. 29",CP.a29,acessorio,Concurso de pessoas,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,4,A,,"CP, art. 157, § 2º-A, I",CP.a157.p2A.I,acessorio,Roubo com emprego de arma de fogo,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+37,2,2023-04-30,4,B,,"CPP, art. 580",CPP.a580,principal,Efeito extensivo do recurso,http://oab.fgv.br/arq/640/1661181_XXXVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+38,1,2023-07-09,57,,A,"CTB, art. 304",L9503.a304,principal,Omissão de socorro no trânsito,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,57,,A,"CP, art. 13, § 1º",CP.a13.p1,acessorio,Superveniência de causa relativamente independente,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,57,,A,"CTB, art. 302",L9503.a302,distrator,Homicídio culposo na direção de veículo,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,57,,A,"CTB, art. 302, § 1º, III",L9503.a302.p1.III,distrator,Omissão de socorro como causa de aumento do homicídio culposo,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,57,,A,"CP, art. 69",CP.a69,distrator,Concurso material,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,57,,A,"CP, art. 28, I",CP.a28.I,distrator,Emoção e paixão,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,58,,B,"CP, art. 77",CP.a77,principal,Suspensão condicional da pena,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,58,,B,"CP, art. 129, § 9º",CP.a129.p9,acessorio,Lesão corporal em violência doméstica,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,58,,B,Súmula 588 do STJ,TEMA.SUM.STJ.588,acessorio,Vedação de restritivas de direitos na violência doméstica contra a mulher,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,58,,B,"Lei 11.340/2006, art. 41",L11340.a41,acessorio,Inaplicabilidade da Lei 9.099/1995,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,58,,B,"Lei 11.340/2006, art. 17",L11340.a17,acessorio,Vedação de pena de multa isolada,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,58,,B,"CP, art. 44, I",CP.a44.I,distrator,Requisitos da substituição por restritiva de direitos,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,58,,B,"CP, art. 46",CP.a46,distrator,Prestação de serviços à comunidade,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,58,,B,"CP, art. 60, § 2º",CP.a60.p2,distrator,Multa substitutiva,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,59,,B,"CP, art. 20",CP.a20,principal,Erro de tipo,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,59,,B,"CP, art. 20, § 1º",CP.a20.p1,distrator,Descriminantes putativas,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,59,,B,"CP, art. 23, III",CP.a23.III,distrator,Estrito cumprimento de dever legal,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,59,,B,"CP, art. 21",CP.a21,distrator,Erro sobre a ilicitude do fato,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,61,,B,"CP, art. 312, § 3º",CP.a312.p3,principal,Reparação do dano no peculato culposo,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,61,,B,"CP, art. 312, § 2º",CP.a312.p2,acessorio,Peculato culposo,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,61,,B,"CP, art. 65, III, b",CP.a65.III.b,distrator,Atenuante da reparação do dano,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,1,2023-07-09,61,,B,"CP, art. 16",CP.a16,distrator,Arrependimento posterior,http://oab.fgv.br/arq/641/1180933_OABXXXVIII%20-%20Prova%20Tipo%201.pdf
+38,2,2023-09-10,Peça,,,"LEP, art. 197",L7210.a197,principal,Agravo em execução,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,Súmula 700 do STF,TEMA.SUM.STF.700,acessorio,Prazo do agravo em execução,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CPP, art. 586",CPP.a586,acessorio,Prazo do recurso em sentido estrito,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CPP, art. 589",CPP.a589,principal,Juízo de retratação,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CP, art. 71",CP.a71,principal,Crime continuado,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"LEP, art. 111",L7210.a111,principal,Unificação de penas,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CP, art. 72",CP.a72,principal,Multas no concurso de crimes,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CP, art. 69, § 2º",CP.a69.p2,principal,Cumprimento simultâneo ou sucessivo das restritivas de direitos,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CP, art. 44, § 4º",CP.a44.p4,principal,Conversão da pena restritiva de direitos,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CP, art. 44, § 5º",CP.a44.p5,principal,Conversão por superveniência de condenação,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"LEP, art. 181, § 1º",L7210.a181.p1,principal,Conversão da prestação de serviços à comunidade,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CP, art. 63",CP.a63,principal,Reincidência,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CP, art. 33, § 2º, c",CP.a33.p2.c,principal,Regime inicial aberto,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CP, art. 33, § 2º, b",CP.a33.p2.b,principal,Regime inicial semiaberto,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CP, art. 313-A",CP.a313A,acessorio,Inserção de dados falsos em sistema de informações,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,Peça,,,"CP, art. 69",CP.a69,acessorio,Concurso material,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,1,A,,"CPP, art. 382",CPP.a382,principal,Embargos de declaração da sentença,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,1,B,,Súmula 718 do STF,TEMA.SUM.STF.718,principal,Gravidade abstrata e regime mais severo,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,1,B,,Súmula 719 do STF,TEMA.SUM.STF.719,principal,Motivação idônea para regime mais severo,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,1,B,,Súmula 440 do STJ,TEMA.SUM.STJ.440,principal,Pena-base no mínimo e regime mais gravoso,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,1,B,,"CP, art. 33, § 2º",CP.a33.p2,principal,Critérios do regime inicial,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,1,B,,"CP, art. 33, § 2º, c",CP.a33.p2.c,acessorio,Regime inicial aberto,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,1,B,,"CP, art. 312",CP.a312,acessorio,Peculato,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,2,A,,"CP, art. 147, parágrafo único",CP.a147.pu,principal,Ação penal condicionada na ameaça,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,2,A,,"Lei 11.340/2006, art. 16",L11340.a16,principal,Retratação da representação na violência doméstica,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,2,A,,Súmula 542 do STJ,TEMA.SUM.STJ.542,principal,Ação penal na lesão corporal com violência doméstica contra a mulher,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,2,A,,"Lei 11.340/2006, art. 41",L11340.a41,acessorio,Inaplicabilidade da Lei 9.099/1995,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,2,A,,"Lei 11.340/2006, art. 5º, III",L11340.a5.III,acessorio,Violência em relação íntima de afeto,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,2,A,,"CP, art. 147",CP.a147,acessorio,Ameaça,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,2,B,,"CPP, art. 158",CPP.a158,principal,Exame de corpo de delito,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,2,B,,"Lei 11.340/2006, art. 12, § 3º",L11340.a12.p3,principal,Laudos e prontuários médicos como prova,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,2,B,,"CP, art. 129, § 13º",CP.a129.p13,acessorio,Lesão corporal contra a mulher por razões da condição do sexo feminino,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,3,A,,"CP, art. 17",CP.a17,principal,Crime impossível,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,3,A,,"CP, art. 289",CP.a289,principal,Moeda falsa (elementares),http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,3,A,,"CP, art. 289, § 1º",CP.a289.p1,acessorio,Circulação de moeda falsa,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,3,B,,"CPP, art. 310, I",CPP.a310.I,principal,Relaxamento da prisão ilegal,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,3,B,,"CPP, art. 304",CPP.a304,principal,Formalidades do auto de prisão em flagrante,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,4,A,,Súmula 220 do STJ,TEMA.SUM.STJ.220,principal,Reincidência e prescrição da pretensão punitiva,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,4,A,,"CP, art. 110",CP.a110,principal,Prescrição depois do trânsito em julgado,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,4,A,,"CP, art. 109, VI",CP.a109.VI,acessorio,Prazo prescricional de três anos,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,4,A,,"CP, art. 107, IV",CP.a107.IV,acessorio,Extinção da punibilidade pela prescrição ou perempção,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,4,A,,"CP, art. 163",CP.a163,acessorio,Dano,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,4,B,,"CPP, art. 60, III",CPP.a60.III,principal,Perempção,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+38,2,2023-09-10,4,B,,"CP, art. 167",CP.a167,acessorio,Ação penal no crime de dano,http://oab.fgv.br/arq/641/1227085_CNS25%20-%20DIREITO%20PENAL.pdf
+39,1,2023-11-19,57,,A,"CP, art. 63",CP.a63,principal,Reincidência,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,57,,A,"CP, art. 59",CP.a59,principal,Antecedentes na fixação da pena-base,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,57,,A,"CP, art. 61, I",CP.a61.I,distrator,Agravante da reincidência,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,58,,B,"CP, art. 317, § 2º",CP.a317.p2,distrator,Corrupção passiva privilegiada,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,58,,B,"CP, art. 330",CP.a330,distrator,Desobediência,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,59,,B,"CP, art. 122, § 6º",CP.a122.p6,principal,Instigação a suicídio com lesão gravíssima contra menor de 14 anos,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,59,,B,"CP, art. 122, § 1º",CP.a122.p1,acessorio,Instigação a suicídio com lesão grave ou gravíssima,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,59,,B,"CP, art. 129, § 2º",CP.a129.p2,acessorio,Lesão corporal gravíssima,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,59,,B,"CP, art. 122, § 2º",CP.a122.p2,distrator,Instigação a suicídio com resultado morte,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,59,,B,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,59,,B,"CP, art. 107, IX",CP.a107.IX,distrator,Perdão judicial,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,60,,B,"CP, art. 15",CP.a15,principal,Desistência voluntária,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,60,,B,"CP, art. 16",CP.a16,distrator,Arrependimento posterior,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,60,,B,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,61,,D,"CP, art. 25",CP.a25,principal,Legítima defesa de terceiro,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,61,,D,"CP, art. 23, II",CP.a23.II,principal,Exclusão da ilicitude,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,61,,D,"CP, art. 22",CP.a22,distrator,Coação irresistível,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,61,,D,"CP, art. 23, III",CP.a23.III,distrator,Exercício regular de direito,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,62,,A,"CP, art. 115",CP.a115,principal,Redução dos prazos de prescrição,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,62,,A,"CP, art. 109, I",CP.a109.I,acessorio,Prazo prescricional de vinte anos,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,62,,A,"CP, art. 121",CP.a121,acessorio,Homicídio simples,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,1,2023-11-19,62,,A,"Lei 8.072/1990, art. 1º, I",L8072.a1.I,distrator,Homicídio como crime hediondo,http://oab.fgv.br/arq/642/1108259_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CPP, art. 593, I",CPP.a593.I,principal,Apelação contra sentença condenatória,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CPP, art. 593",CPP.a593,acessorio,Prazo da apelação,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CPP, art. 564, I",CPP.a564.I,principal,Nulidade por incompetência,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CPP, art. 567",CPP.a567,principal,Incompetência e anulação dos atos decisórios,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CP, art. 59",CP.a59,principal,Fixação da pena-base,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CP, art. 61, II, f",CP.a61.II.f,principal,Agravante da violência doméstica,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CP, art. 67",CP.a67,principal,Concurso de agravantes e atenuantes,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CP, art. 65, I",CP.a65.I,principal,Atenuante da menoridade relativa,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CP, art. 65, III, d",CP.a65.III.d,principal,Atenuante da confissão espontânea,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CP, art. 33, § 2º, c",CP.a33.p2.c,principal,Regime inicial aberto,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,Súmula 440 do STJ,TEMA.SUM.STJ.440,principal,Regime e gravidade abstrata do delito,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,Súmula 718 do STF,TEMA.SUM.STF.718,principal,Gravidade abstrata e regime mais severo,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,Súmula 719 do STF,TEMA.SUM.STF.719,principal,Motivação do regime mais severo,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CP, art. 92, I, a",CP.a92.I.a,principal,Perda do cargo: crime com violação de dever para com a Administração,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CP, art. 92, I, b",CP.a92.I.b,principal,Perda do cargo: pena superior a quatro anos,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CP, art. 129, § 1º, I",CP.a129.p1.I,acessorio,Lesão corporal grave por incapacidade superior a trinta dias,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CP, art. 129, § 9º",CP.a129.p9,acessorio,Lesão corporal com violência doméstica,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,Peça,,,"CP, art. 129, § 10º",CP.a129.p10,acessorio,Aumento da lesão grave com violência doméstica,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,1,A,,"CP, art. 251",CP.a251,principal,Explosão,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,1,B,,"CPP, art. 157",CPP.a157,principal,Provas ilícitas,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,2,A,,"CPP, art. 149",CPP.a149,principal,Incidente de insanidade mental,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,2,B,,"CP, art. 97",CP.a97,principal,Medida de segurança,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,2,B,,"CP, art. 26",CP.a26,principal,Inimputabilidade,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,2,B,,"CP, art. 331",CP.a331,acessorio,Desacato,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,2,B,,"CP, art. 163, parágrafo único, III",CP.a163.pu.III,acessorio,Dano qualificado contra patrimônio público,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,2,B,,"CP, art. 129",CP.a129,acessorio,Lesão corporal leve,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,3,A,,Súmula 443 do STJ,TEMA.SUM.STJ.443,principal,Fundamentação do aumento no roubo circunstanciado,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,3,A,,"CP, art. 68, parágrafo único",CP.a68.pu,principal,Concurso de causas de aumento da parte especial,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,3,A,,"CP, art. 157, § 2º, II",CP.a157.p2.II,acessorio,Roubo com concurso de pessoas,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,3,A,,"CP, art. 157, § 2º, VII",CP.a157.p2.VII,acessorio,Roubo com emprego de arma branca,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,3,A,,"CP, art. 157, § 2º-A, I",CP.a157.p2A.I,acessorio,Roubo com emprego de arma de fogo,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,3,B,,Súmula 74 do STJ,TEMA.SUM.STJ.74,principal,Prova documental da menoridade,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,3,B,,"CPP, art. 155, parágrafo único",CPP.a155.pu,principal,Prova do estado das pessoas,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,3,B,,"CP, art. 70",CP.a70,acessorio,Concurso formal,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,4,A,,"CP, art. 13, § 1º",CP.a13.p1,principal,Superveniência de causa relativamente independente,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,4,A,,"CTB, art. 302, § 3º",L9503.a302.p3,acessorio,Homicídio culposo de trânsito sob influência de álcool,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,4,A,,"CTB, art. 303",L9503.a303,acessorio,Lesão corporal culposa de trânsito,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,4,B,,"CPP, art. 362",CPP.a362,principal,Citação com hora certa,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+39,2,2024-01-21,4,B,,"CPP, art. 361",CPP.a361,principal,Citação por edital,http://oab.fgv.br/arq/642/1183887_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201.pdf
+40,1,2024-03-24,57,,A,"CP, art. 14, II",CP.a14.II,principal,Tentativa,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,57,,A,"CP, art. 155",CP.a155,acessorio,Furto,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,57,,A,"CP, art. 16",CP.a16,distrator,Arrependimento posterior,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,57,,A,"CP, art. 17",CP.a17,distrator,Crime impossível,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,57,,A,"CP, art. 107, IX",CP.a107.IX,distrator,Perdão judicial,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,58,,B,"CP, art. 13, § 1º",CP.a13.p1,principal,Superveniência de causa relativamente independente,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,58,,B,"CP, art. 129",CP.a129,acessorio,Lesão corporal,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,58,,B,"CP, art. 13",CP.a13,distrator,Relação de causalidade (equivalência dos antecedentes),http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,58,,B,"CP, art. 129, § 3º",CP.a129.p3,distrator,Lesão corporal seguida de morte,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,58,,B,"CP, art. 121, § 3º",CP.a121.p3,distrator,Homicídio culposo,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,59,,D,"CP, art. 158, § 3º",CP.a158.p3,principal,Extorsão mediante restrição da liberdade da vítima,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,59,,D,"CP, art. 157, § 2º-A, I",CP.a157.p2A.I,distrator,Roubo com emprego de arma de fogo,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,59,,D,"CP, art. 159",CP.a159,distrator,Extorsão mediante sequestro,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,59,,D,"CP, art. 148",CP.a148,distrator,Sequestro e cárcere privado,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,60,,A,"Lei 11.340/2006, art. 24-A",L11340.a24A,principal,Descumprimento de medidas protetivas de urgência,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,60,,A,"CP, art. 100",CP.a100,acessorio,Ação penal pública,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,60,,A,"Lei 11.340/2006, art. 24-A, § 2º",L11340.a24A.p2,distrator,Fiança no descumprimento de medida protetiva,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,60,,A,"Lei 11.340/2006, art. 41",L11340.a41,distrator,Inaplicabilidade da Lei 9.099/1995,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,60,,A,"CPP, art. 313, III",CPP.a313.III,distrator,Prisão preventiva para garantir medidas protetivas,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,61,,D,"CP, art. 333",CP.a333,principal,Corrupção ativa,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,61,,D,"CP, art. 317",CP.a317,distrator,Corrupção passiva,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,61,,D,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,62,,A,"CP, art. 129, § 6º",CP.a129.p6,principal,Lesão corporal culposa,http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,62,,A,"CP, art. 129, § 2º, III",CP.a129.p2.III,distrator,Lesão corporal gravíssima (perda de membro),http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,1,2024-03-24,62,,A,"CP, art. 129, § 1º, III",CP.a129.p1.III,distrator,Lesão corporal grave (debilidade permanente),http://oab.fgv.br/arq/643/341069_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+40,2,2024-05-19,Peça,,,"CPP, art. 593, I",CPP.a593.I,principal,Apelação contra sentença condenatória,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,Peça,,,"CPP, art. 593",CPP.a593,acessorio,Prazo da apelação,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,Peça,,,"CP, art. 155",CP.a155,principal,Furto: furto de uso e desclassificação para furto simples,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,Peça,,,"CPP, art. 386, III",CPP.a386.III,principal,Absolvição por não constituir o fato infração penal,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,Peça,,,"CP, art. 155, § 4º, II",CP.a155.p4.II,acessorio,Furto qualificado pela escalada,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,Peça,,,"CP, art. 16",CP.a16,principal,Arrependimento posterior,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,Peça,,,"CP, art. 71",CP.a71,principal,Crime continuado,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,Peça,,,"CP, art. 69",CP.a69,acessorio,Concurso material,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,Peça,,,"CP, art. 33, § 2º, c",CP.a33.p2.c,principal,Regime inicial aberto,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,Peça,,,"CP, art. 33, § 2º, b",CP.a33.p2.b,principal,Regime inicial semiaberto,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,Peça,,,"CP, art. 44",CP.a44,principal,Substituição por restritivas de direitos,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,1,A,,"CPP, art. 647",CPP.a647,principal,Habeas corpus,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,1,A,,"CPP, art. 648, I",CPP.a648.I,principal,Habeas corpus por falta de justa causa,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,2,A,,"Lei 11.340/2006, art. 24-A, § 2º",L11340.a24A.p2,principal,Fiança no descumprimento de medida protetiva,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,2,A,,"Lei 11.340/2006, art. 24-A",L11340.a24A,acessorio,Descumprimento de medidas protetivas de urgência,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,2,B,,"Lei 11.340/2006, art. 41",L11340.a41,principal,Inaplicabilidade da Lei 9.099/1995,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,2,B,,Súmula 542 do STJ,TEMA.SUM.STJ.542,principal,Ação penal na lesão corporal com violência doméstica,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,2,B,,"CP, art. 129, § 13º",CP.a129.p13,acessorio,Lesão corporal contra a mulher por razões da condição do sexo feminino,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,3,A,,"CPP, art. 28-A, § 14º",CPP.a28A.p14,principal,Remessa ao órgão superior na recusa do ANPP,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,3,A,,"CPP, art. 28-A",CPP.a28A,acessorio,Acordo de não persecução penal,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,3,B,,"LEP, art. 112, § 5º",L7210.a112.p5,principal,Tráfico privilegiado não é hediondo nem equiparado,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,3,B,,"LEP, art. 112, I",L7210.a112.I,principal,"Progressão de regime (16%, primário sem violência)",http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,3,B,,"Lei 11.343/2006, art. 33, § 4º",L11343.a33.p4,acessorio,Tráfico privilegiado,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,3,B,,"Lei 11.343/2006, art. 40, V",L11343.a40.V,acessorio,Tráfico interestadual,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,4,A,,"CP, art. 251",CP.a251,principal,Explosão,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,4,A,,"CP, art. 258",CP.a258,principal,Crime de perigo comum qualificado pelo resultado morte,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,4,A,,"CP, art. 121, § 3º",CP.a121.p3,principal,Homicídio culposo,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,4,A,,"CP, art. 121, § 2º, III",CP.a121.p2.III,acessorio,Homicídio qualificado pelo emprego de explosivo,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,4,B,,"CPP, art. 419",CPP.a419,principal,Desclassificação na primeira fase do Júri,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+40,2,2024-05-19,4,B,,"CPP, art. 418",CPP.a418,principal,Definição jurídica diversa na pronúncia,http://oab.fgv.br/arq/643/513240_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,57,,D,"Lei 11.340/2006, art. 16",L11340.a16,principal,Renúncia à representação na violência doméstica,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,57,,D,"CP, art. 147-A, § 3º",CP.a147A.p3,acessorio,Ação penal na perseguição,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,57,,D,"CP, art. 147-A",CP.a147A,acessorio,Perseguição,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,57,,D,"CP, art. 102",CP.a102,distrator,Irretratabilidade da representação,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,57,,D,"CPP, art. 25",CPP.a25,distrator,Irretratabilidade da representação,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,58,,C,Princípio da culpabilidade (responsabilidade penal individual),TEMA.PRINC.culpabilidade,principal,Princípio da culpabilidade (responsabilidade individual),http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,58,,C,"LEP, art. 45, § 3º",L7210.a45.p3,acessorio,Vedação de sanções coletivas,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,58,,C,"LEP, art. 50, I",L7210.a50.I,acessorio,Falta grave por participação em movimento de subversão da ordem,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,58,,C,"LEP, art. 49, parágrafo único",L7210.a49.pu,distrator,Tentativa de falta disciplinar,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,58,,C,"LEP, art. 45",L7210.a45,distrator,Legalidade das faltas e sanções disciplinares,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,59,,D,"CP, art. 13, § 1º",CP.a13.p1,principal,Superveniência de causa relativamente independente,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,59,,D,"CP, art. 15",CP.a15,principal,Desistência voluntária,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,59,,D,"CP, art. 14, II",CP.a14.II,acessorio,Tentativa,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,59,,D,"CP, art. 121",CP.a121,acessorio,Homicídio,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,59,,D,"CP, art. 13",CP.a13,distrator,Relação de causalidade,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,60,,A,"CP, art. 14, II",CP.a14.II,principal,Tentativa,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,60,,A,"CP, art. 155, § 4º, IV",CP.a155.p4.IV,acessorio,Furto qualificado pelo concurso de pessoas,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,60,,A,Princípio da insignificância,TEMA.PRINC.insignificancia,distrator,Princípio da insignificância,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,60,,A,"CP, art. 17",CP.a17,distrator,Crime impossível,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,60,,A,Súmula 567 do STJ,TEMA.SUM.STJ.567,distrator,Vigilância e crime impossível no furto,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,61,,D,Súmula 269 do STJ,TEMA.SUM.STJ.269,principal,Regime semiaberto para reincidente,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,61,,D,"CP, art. 44, § 3º",CP.a44.p3,principal,Substituição da pena ao reincidente,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,61,,D,"CP, art. 44, § 2º",CP.a44.p2,principal,Substituição da pena superior a um ano,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,61,,D,"CP, art. 61, I",CP.a61.I,acessorio,Reincidência,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,61,,D,"CP, art. 155, § 4º",CP.a155.p4,acessorio,Furto qualificado,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,61,,D,"CP, art. 33, § 2º, c",CP.a33.p2.c,distrator,Regime inicial aberto,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,61,,D,"CP, art. 77",CP.a77,distrator,Suspensão condicional da pena,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,62,,C,"CP, art. 111, V",CP.a111.V,principal,Termo inicial da prescrição nos crimes sexuais contra criança e adolescente,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,62,,C,"CP, art. 109, I",CP.a109.I,acessorio,Prazo prescricional de vinte anos,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,62,,C,"CP, art. 217-A",CP.a217A,acessorio,Estupro de vulnerável,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,62,,C,"CP, art. 115",CP.a115,distrator,Redução dos prazos de prescrição,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,1,2024-07-28,62,,C,"CP, art. 111, I",CP.a111.I,distrator,Termo inicial da prescrição,http://oab.fgv.br/arq/644/552356_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(1).pdf
+41,2,2024-09-22,Peça,,,"CPP, art. 593, I",CPP.a593.I,principal,Apelação contra sentença condenatória,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CPP, art. 593",CPP.a593,acessorio,Prazo da apelação,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CPP, art. 564, IV",CPP.a564.IV,principal,Nulidade por omissão de formalidade essencial,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CPP, art. 399, § 2º",CPP.a399.p2,principal,Identidade física do juiz,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CPP, art. 386, VII",CPP.a386.VII,principal,Absolvição por insuficiência de provas,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CPP, art. 386, II",CPP.a386.II,principal,Absolvição por falta de prova da existência do fato,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CPP, art. 386, V",CPP.a386.V,principal,Absolvição por falta de prova da autoria,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CP, art. 68, parágrafo único",CP.a68.pu,principal,Concurso de causas de aumento da parte especial,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,Vedação da analogia em prejuízo do réu,TEMA.PRINC.analogia,principal,Vedação da analogia em prejuízo do réu,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CP, art. 92, I, a",CP.a92.I.a,acessorio,Perda do cargo como efeito da condenação,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CP, art. 91, II, b",CP.a91.II.b,principal,Perda do produto ou proveito do crime,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CP, art. 91-A, § 2º",CP.a91A.p2,principal,Perda alargada: procedência lícita do patrimônio,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CP, art. 317, § 1º",CP.a317.p1,acessorio,Corrupção passiva majorada,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,Peça,,,"CP, art. 327, § 2º",CP.a327.p2,acessorio,Aumento para ocupante de função de direção,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,1,B,,"CPP, art. 617",CPP.a617,principal,Vedação da reformatio in pejus,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,1,B,,Súmula 160 do STF,TEMA.SUM.STF.160,principal,Nulidade não arguida no recurso da acusação,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,2,A,,"CPP, art. 310",CPP.a310,principal,Audiência de custódia,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,2,B,,"CP, art. 155",CP.a155,principal,Furto: elementar coisa alheia,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,2,B,,Princípio da insignificância,TEMA.PRINC.insignificancia,principal,Princípio da insignificância,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,2,B,,"CP, art. 155, § 1º",CP.a155.p1,acessorio,Furto durante o repouso noturno,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,2,B,,"CP, art. 14, II",CP.a14.II,acessorio,Tentativa,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,3,A,,"CP, art. 133",CP.a133,principal,Abandono de incapaz (crime de perigo concreto),http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,3,A,,"CP, art. 133, § 3º, II",CP.a133.p3.II,acessorio,Aumento pelo parentesco,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,3,B,,"CPP, art. 384",CPP.a384,principal,Mutatio libelli,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,3,B,,"CP, art. 155",CP.a155,acessorio,Furto simples,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,3,B,,"CP, art. 69",CP.a69,acessorio,Concurso material,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,4,A,,"CP, art. 107, I",CP.a107.I,principal,Extinção da punibilidade pela morte do agente,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,4,A,,Princípio da intranscendência da pena,TEMA.PRINC.intranscendencia,principal,Princípio da intranscendência da pena,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,4,A,,"CP, art. 45, § 1º",CP.a45.p1,acessorio,Prestação pecuniária,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,4,A,,"CP, art. 331",CP.a331,acessorio,Desacato,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,4,B,,"CPP, art. 621, III",CPP.a621.III,principal,Revisão criminal por novas provas de inocência,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+41,2,2024-09-22,4,B,,"CPP, art. 623",CPP.a623,principal,Legitimidade para a revisão criminal após a morte do réu,http://oab.fgv.br/arq/644/523283_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(2).pdf
+42,1,2024-12-01,57,,C,"CP, art. 7º, § 2º, b",CP.a7.p2.b,principal,Condições da extraterritorialidade (dupla tipicidade),http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,57,,C,"CP, art. 7º, II, b",CP.a7.II.b,acessorio,Extraterritorialidade condicionada (crime praticado por brasileiro),http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,57,,C,"CTB, art. 306",L9503.a306,acessorio,Embriaguez ao volante,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,57,,C,"CP, art. 5º",CP.a5,distrator,Territorialidade,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,58,,A,"CP, art. 215-A",CP.a215A,principal,Importunação sexual,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,58,,A,"CP, art. 225",CP.a225,acessorio,Ação penal nos crimes contra a dignidade sexual,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,58,,A,"CP, art. 140, § 2º",CP.a140.p2,distrator,Injúria real,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,58,,A,"CP, art. 213",CP.a213,distrator,Estupro,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,58,,A,"CP, art. 215",CP.a215,distrator,Violação sexual mediante fraude,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,59,,C,"CP, art. 21",CP.a21,principal,Erro sobre a ilicitude do fato (erro de proibição direto),http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,59,,C,"CP, art. 218-C",CP.a218C,acessorio,Divulgação de cena de sexo ou de pornografia,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,59,,C,"CP, art. 20, § 3º",CP.a20.p3,distrator,Erro sobre a pessoa,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,59,,C,"CP, art. 20, § 1º",CP.a20.p1,distrator,Descriminantes putativas (erro de tipo permissivo),http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,60,,C,"CP, art. 180",CP.a180,principal,Receptação dolosa,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,60,,C,"CP, art. 20",CP.a20,acessorio,Erro sobre elementos do tipo,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,60,,C,"CP, art. 23, III",CP.a23.III,distrator,Estrito cumprimento do dever legal e exercício regular de direito,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,60,,C,"CP, art. 22",CP.a22,distrator,Obediência hierárquica,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,61,,A,"CP, art. 31",CP.a31,principal,Casos de impunibilidade (ajuste e determinação),http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,61,,A,"CP, art. 121, § 2º, I",CP.a121.p2.I,acessorio,Homicídio mediante paga,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,61,,A,"CP, art. 288",CP.a288,distrator,Associação criminosa,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,61,,A,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,61,,A,"CP, art. 16",CP.a16,distrator,Arrependimento posterior,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,62,,C,"CP, art. 2º, parágrafo único",CP.a2.pu,principal,Retroatividade da lei mais benéfica (lei intermediária),http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,1,2024-12-01,62,,C,"CP, art. 159, § 3º",CP.a159.p3,acessorio,Extorsão mediante sequestro com resultado morte,http://oab.fgv.br/arq/645/402439_OAB%2042%20-%20ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 396",CPP.a396,principal,Resposta à acusação (cabimento e prazo de dez dias),http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 396-A",CPP.a396A,principal,Conteúdo da resposta à acusação,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 157",CPP.a157,principal,Provas ilícitas,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 241",CPP.a241,principal,Mandado de busca domiciliar,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 245",CPP.a245,principal,Execução da busca domiciliar,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 395, III",CPP.a395.III,principal,Rejeição da denúncia por falta de justa causa,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 41",CPP.a41,principal,Requisitos da denúncia,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"Lei 9.613/1998, art. 2º, § 1º",L9613.a2.p1,principal,Denúncia instruída com indícios da infração antecedente,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 395, I",CPP.a395.I,principal,Rejeição da denúncia por inépcia,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CP, art. 64, I",CP.a64.I,principal,Período depurador da reincidência,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CP, art. 63",CP.a63,acessorio,Reincidência,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 28-A",CPP.a28A,principal,Acordo de não persecução penal,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 28-A, § 2º, II",CPP.a28A.p2.II,acessorio,Vedação do ANPP ao reincidente,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 28-A, § 14º",CPP.a28A.p14,principal,Remessa ao órgão superior na recusa do ANPP,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"Lei 9.613/1998, art. 1º",L9613.a1,principal,Lavagem de dinheiro: ocultação ou dissimulação,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,Peça,,,"CPP, art. 397, III",CPP.a397.III,principal,Absolvição sumária por atipicidade,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,1,A,,"CP, art. 20, § 1º",CP.a20.p1,principal,Descriminantes putativas (erro de tipo permissivo),http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,1,A,,"CP, art. 121, § 3º",CP.a121.p3,acessorio,Homicídio culposo,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,1,A,,"CP, art. 25",CP.a25,acessorio,Legítima defesa,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,1,A,,"CP, art. 121",CP.a121,acessorio,Homicídio simples,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,1,B,,"CP, art. 13",CP.a13,principal,Relação de causalidade,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,2,A,,"Lei 11.340/2006, art. 17",L11340.a17,principal,Vedação de penas pecuniárias na violência doméstica,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,2,A,,"Lei 11.340/2006, art. 5º, III",L11340.a5.III,acessorio,Violência doméstica em relação íntima de afeto,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,2,A,,"CP, art. 218-C, § 1º",CP.a218C.p1,acessorio,Divulgação de cena de sexo com aumento pela relação íntima de afeto,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,2,B,,"CPP, art. 598",CPP.a598,principal,Apelação supletiva do ofendido,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,2,B,,Súmula 448 do STF,TEMA.SUM.STF.448,principal,Prazo do assistente para recorrer supletivamente,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,2,B,,"CPP, art. 598, parágrafo único",CPP.a598.pu,principal,Prazo da apelação supletiva,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,3,B,,"CPP, art. 609, parágrafo único",CPP.a609.pu,principal,Embargos infringentes,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,3,B,,"CP, art. 307",CP.a307,acessorio,Falsa identidade,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,4,A,,"LEP, art. 112",L7210.a112,acessorio,Progressão de regime,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,4,B,,Súmula 493 do STJ,TEMA.SUM.STJ.493,principal,Pena substitutiva como condição do regime aberto,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+42,2,2025-02-16,4,B,,"LEP, art. 115",L7210.a115,acessorio,Condições especiais do regime aberto,http://oab.fgv.br/arq/645/513909_B005%20-%20DIREITO%20PENAL(CNS25)%20Tipo%201%20(4).pdf
+43,1,2025-04-27,57,,C,"CP, art. 163, parágrafo único, III",CP.a163.pu.III,principal,Dano qualificado contra o patrimônio público,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,57,,C,"CP, art. 163",CP.a163,distrator,Dano simples,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,58,,D,"CP, art. 44, I",CP.a44.I,principal,Substituição da pena: vedação no crime com violência à pessoa,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,58,,D,"CP, art. 44, II",CP.a44.II,acessorio,Substituição da pena e reincidência em crime doloso,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,58,,D,"CP, art. 129, § 1º",CP.a129.p1,acessorio,Lesão corporal de natureza grave,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,58,,D,"CP, art. 63",CP.a63,acessorio,Reincidência,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,58,,D,"CP, art. 44, § 3º",CP.a44.p3,distrator,Substituição da pena ao reincidente,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,59,,C,"CP, art. 7º, II, b",CP.a7.II.b,principal,Extraterritorialidade condicionada (personalidade ativa),http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,59,,C,"CP, art. 7º, § 2º",CP.a7.p2,acessorio,Condições da extraterritorialidade,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,59,,C,"CP, art. 7º, II, c",CP.a7.II.c,distrator,Princípio da bandeira (aeronaves e embarcações),http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,59,,C,"CP, art. 7º, § 3º",CP.a7.p3,distrator,Personalidade passiva (crime contra brasileiro),http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,59,,C,"CP, art. 7º, I",CP.a7.I,distrator,Extraterritorialidade incondicionada (princípio da defesa),http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,60,,A,"CP, art. 20",CP.a20,principal,Erro de tipo essencial,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,60,,A,"CP, art. 155",CP.a155,acessorio,Furto,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,60,,A,"CP, art. 20, § 3º",CP.a20.p3,distrator,Erro acidental (erro sobre a pessoa),http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,60,,A,"CP, art. 24",CP.a24,distrator,Estado de necessidade,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,60,,A,"CP, art. 21",CP.a21,distrator,Erro de proibição,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,61,,D,"CP, art. 29, § 2º",CP.a29.p2,principal,Cooperação dolosamente distinta,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,61,,D,"CP, art. 157, § 3º, II",CP.a157.p3.II,acessorio,Roubo com resultado morte (latrocínio),http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,61,,D,"CP, art. 29",CP.a29,distrator,Concurso de pessoas,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,61,,D,"CP, art. 155, § 4º",CP.a155.p4,distrator,Furto qualificado,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,62,,C,"CP, art. 13, § 1º",CP.a13.p1,principal,Superveniência de causa relativamente independente,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,62,,C,"CP, art. 121",CP.a121,acessorio,Homicídio doloso,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,62,,C,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,62,,C,"CP, art. 121, § 3º",CP.a121.p3,distrator,Homicídio culposo,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,1,2025-04-27,62,,C,"CP, art. 129, § 3º",CP.a129.p3,distrator,Lesão corporal seguida de morte,http://oab.fgv.br/arq/646/838452_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+43,2,2025-06-15,Peça,,,"CPP, art. 600",CPP.a600,principal,Razões e contrarrazões de apelação,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"CPP, art. 600, § 1º",CPP.a600.p1,acessorio,Prazo de razões do assistente,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"Lei 11.340/2006, art. 41",L11340.a41,principal,Inaplicabilidade da Lei 9.099/1995 à violência doméstica,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,Súmula 542 do STJ,TEMA.SUM.STJ.542,principal,Ação penal na lesão corporal com violência doméstica,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"CPP, art. 400-A, I",CPP.a400A.I,principal,Vedação de perguntas sobre elementos alheios aos fatos,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"CPP, art. 400, § 1º",CPP.a400.p1,principal,Indeferimento de provas irrelevantes,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"CPP, art. 212",CPP.a212,principal,Inquirição de testemunhas e indeferimento de perguntas,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"Lei 11.340/2006, art. 12, § 3º",L11340.a12.p3,principal,Laudo médico como prova da materialidade,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"CPP, art. 167",CPP.a167,principal,Suprimento do exame de corpo de delito,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"CP, art. 28, II",CP.a28.II,principal,Embriaguez voluntária ou culposa,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"CP, art. 44, I",CP.a44.I,principal,Substituição da pena: vedação no crime com violência,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,Súmula 588 do STJ,TEMA.SUM.STJ.588,principal,Vedação de restritivas de direitos na violência doméstica,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"Lei 11.340/2006, art. 17",L11340.a17,principal,Vedação de prestação pecuniária isolada na violência doméstica,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"CPP, art. 387, IV",CPP.a387.IV,principal,Valor mínimo de reparação na sentença,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,Peça,,,"CP, art. 129, § 13º",CP.a129.p13,acessorio,Lesão corporal contra a mulher por razões da condição do sexo feminino,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,1,A,,"CP, art. 13",CP.a13,principal,Relação de causalidade,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,1,A,,"CP, art. 121-A",CP.a121A,acessorio,Feminicídio,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,1,B,,Súmula 707 do STF,TEMA.SUM.STF.707,principal,Intimação do denunciado para contrarrazões ao recurso contra a rejeição da denúncia,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,1,B,,"CPP, art. 263",CPP.a263,principal,Direito de constituir defensor de confiança,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,2,A,,"CP, art. 1º",CP.a1,principal,Princípio da legalidade,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,2,A,,"LEP, art. 49",L7210.a49,principal,Classificação das faltas disciplinares,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,2,A,,"LEP, art. 50",L7210.a50,acessorio,Rol das faltas graves,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,2,B,,"LEP, art. 66, III, b",L7210.a66.III.b,principal,Competência do juízo da execução para a regressão,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,2,B,,"LEP, art. 48, parágrafo único",L7210.a48.pu,principal,Representação da autoridade administrativa ao juiz nas faltas graves,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,2,B,,"LEP, art. 54",L7210.a54,principal,Aplicação das sanções disciplinares,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,2,B,,"LEP, art. 118, I",L7210.a118.I,acessorio,Regressão por falta grave,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,3,A,,"CP, art. 24",CP.a24,principal,Estado de necessidade,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,3,A,,"CP, art. 23, I",CP.a23.I,principal,Exclusão da ilicitude,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,3,A,,"CP, art. 163",CP.a163,acessorio,Dano,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,3,B,,"CPP, art. 581, I",CPP.a581.I,acessorio,Recurso em sentido estrito contra a rejeição da queixa,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,4,A,,"CPP, art. 395, III",CPP.a395.III,acessorio,Rejeição da denúncia por falta de justa causa,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+43,2,2025-06-15,4,A,,"CP, art. 317",CP.a317,acessorio,Corrupção passiva,http://oab.fgv.br/arq/646/490620_OAB43%20-%20B005%20(DIREITO%20PENAL).pdf
+44,1,2025-08-17,57,,D,"CP, art. 215-A",CP.a215A,principal,Importunação sexual,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,57,,D,"CP, art. 213",CP.a213,distrator,Estupro,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,57,,D,"CP, art. 216-A",CP.a216A,distrator,Assédio sexual,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,58,,D,"CP, art. 106, I",CP.a106.I,principal,Extensão do perdão do ofendido,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,58,,D,"CPP, art. 51",CPP.a51,principal,Extensão do perdão do ofendido,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,58,,D,"CP, art. 140",CP.a140,principal,Injúria,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,58,,D,"CP, art. 107, V",CP.a107.V,acessorio,Perdão aceito como causa extintiva da punibilidade,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,58,,D,"CP, art. 145",CP.a145,acessorio,Ação penal nos crimes contra a honra,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,58,,D,"CP, art. 106, II",CP.a106.II,distrator,Perdão concedido por um dos ofendidos,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,58,,D,"CP, art. 138",CP.a138,distrator,Calúnia,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,58,,D,"CPP, art. 60",CPP.a60,distrator,Perempção,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,58,,D,"CP, art. 139",CP.a139,distrator,Difamação,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,59,,B,"CP, art. 20",CP.a20,principal,Erro de tipo essencial,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,59,,B,"CP, art. 155, § 4º, IV",CP.a155.p4.IV,principal,Furto qualificado pelo concurso de pessoas,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,59,,B,"CP, art. 20, § 1º",CP.a20.p1,distrator,Erro de tipo permissivo (descriminante putativa),http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,59,,B,"CP, art. 27",CP.a27,distrator,Inimputabilidade do menor de 18 anos,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,59,,B,Súmula 500 do STJ,TEMA.SUM.STJ.500,distrator,Corrupção de menores como crime formal,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,60,,C,"CP, art. 16",CP.a16,principal,Arrependimento posterior,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,60,,C,"CP, art. 171, § 3º",CP.a171.p3,acessorio,Estelionato em detrimento de entidade de direito público,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,60,,C,"CP, art. 15",CP.a15,distrator,Desistência voluntária e arrependimento eficaz,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,60,,C,"CP, art. 23, III",CP.a23.III,distrator,Exercício regular de direito,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,61,,D,"CP, art. 5º",CP.a5,principal,Territorialidade,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,61,,D,"CP, art. 7º, § 2º, b",CP.a7.p2.b,distrator,Dupla tipicidade na extraterritorialidade condicionada,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,61,,D,"CP, art. 7º, § 3º",CP.a7.p3,distrator,Extraterritorialidade por crime contra brasileiro,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,62,,C,"CP, art. 15",CP.a15,principal,Desistência voluntária e arrependimento eficaz,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,62,,C,"CP, art. 129, § 1º, II",CP.a129.p1.II,principal,Lesão corporal grave por perigo de vida,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,62,,C,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,62,,C,"CP, art. 129",CP.a129,distrator,Lesão corporal leve,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,1,2025-08-17,62,,C,"CP, art. 345",CP.a345,distrator,Exercício arbitrário das próprias razões,http://oab.fgv.br/arq/647/519680_ADVOGADO%20OAB(CNS01)%20Tipo%201%20(2).pdf
+44,2,2025-10-19,Peça,,,"CPP, art. 60, III",CPP.a60.III,principal,Perempção pela falta de pedido de condenação,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 107, IV",CP.a107.IV,principal,Extinção da punibilidade pela perempção,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 20, § 1º",CP.a20.p1,principal,Erro de tipo permissivo (descriminante putativa),http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 24",CP.a24,acessorio,Estado de necessidade,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 18, parágrafo único",CP.a18.pu,principal,Excepcionalidade do crime culposo,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CPP, art. 386, III",CPP.a386.III,principal,Absolvição por não constituir o fato infração penal,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CPP, art. 386, VI",CPP.a386.VI,principal,Absolvição por causa de isenção de pena,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 64, II",CP.a64.II,principal,Crime militar próprio e reincidência,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 61, I",CP.a61.I,acessorio,Agravante da reincidência,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 33, § 2º, c",CP.a33.p2.c,principal,Regime inicial aberto,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 44, I",CP.a44.I,principal,Substituição por pena restritiva de direitos,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 44, II",CP.a44.II,principal,Substituição por pena restritiva de direitos,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 44, III",CP.a44.III,principal,Substituição por pena restritiva de direitos,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 44, § 2º",CP.a44.p2,principal,Substituição na condenação até um ano,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 44, § 3º",CP.a44.p3,principal,Substituição para o reincidente,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 60, § 2º",CP.a60.p2,principal,Multa substitutiva,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,Peça,,,"CP, art. 163",CP.a163,principal,Dano,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,1,A,,Súmula 17 do STJ,TEMA.SUM.STJ.17,principal,Absorção do falso pelo estelionato (consunção),http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,1,A,,"CP, art. 171, § 3º",CP.a171.p3,acessorio,Estelionato majorado,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,1,A,,"CP, art. 297",CP.a297,acessorio,Falsificação de documento público,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,1,A,,"CP, art. 304",CP.a304,acessorio,Uso de documento falso,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,1,A,,"CP, art. 69",CP.a69,acessorio,Concurso material,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,1,B,,"CPP, art. 28-A, III",CPP.a28A.III,principal,Prestação de serviços no ANPP,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,2,A,,"CP, art. 4º",CP.a4,principal,Tempo do crime (teoria da atividade),http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,2,A,,"CP, art. 27",CP.a27,principal,Inimputabilidade do menor de 18 anos,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,2,A,,"CP, art. 121",CP.a121,acessorio,Homicídio,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,2,B,,"CPP, art. 361",CPP.a361,principal,Citação por edital,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,2,B,,"CPP, art. 363, § 1º",CPP.a363.p1,principal,Citação por edital,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,2,B,,"CPP, art. 564, III, e",CPP.a564.III.e,principal,Nulidade por falta de citação,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,3,A,,"CPP, art. 48",CPP.a48,principal,Indivisibilidade da ação penal privada,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,3,A,,"CPP, art. 49",CPP.a49,principal,Extensão da renúncia ao direito de queixa,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,3,A,,"CP, art. 107, V",CP.a107.V,principal,Extinção da punibilidade pela renúncia,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,3,A,,"CP, art. 345, parágrafo único",CP.a345.pu,acessorio,Ação privada no exercício arbitrário sem violência,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,3,B,,"CP, art. 345",CP.a345,principal,Exercício arbitrário das próprias razões,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,4,A,,"CP, art. 22",CP.a22,principal,Coação moral irresistível,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,4,A,,"CP, art. 29",CP.a29,acessorio,Concurso de pessoas (participação),http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+44,2,2025-10-19,4,B,,"CPP, art. 145",CPP.a145,principal,Incidente de falsidade documental,http://oab.fgv.br/arq/647/714989_OAB44%20-%20B005%20(DIREITO%20PENAL).pdf
+45,1,2025-12-21,57,,D,"CP, art. 7º, II, c",CP.a7.II.c,principal,Extraterritorialidade condicionada (aeronave privada brasileira),http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+45,1,2025-12-21,57,,D,"CP, art. 7º, § 2º",CP.a7.p2,acessorio,Condições da extraterritorialidade,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+45,1,2025-12-21,57,,D,"CP, art. 5º, § 1º",CP.a5.p1,distrator,Território por extensão,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+45,1,2025-12-21,57,,D,"CP, art. 4º",CP.a4,distrator,Tempo do crime,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 45,1,2025-12-21,58,,C,"CTB, art. 303",L9503.a303,principal,Lesão corporal culposa na direção de veículo,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 45,1,2025-12-21,58,,C,"CTB, art. 303, § 1º",L9503.a303.p1,acessorio,Causas de aumento da lesão culposa no trânsito,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 45,1,2025-12-21,58,,C,"CTB, art. 302, § 1º, I",L9503.a302.p1.I,acessorio,Falta de habilitação como causa de aumento,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
@@ -14,8 +596,8 @@
 45,1,2025-12-21,59,,D,"CP, art. 14, parágrafo único",CP.a14.pu,distrator,Pena da tentativa,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 45,1,2025-12-21,60,,C,Súmula 711 do STF,TEMA.SUM.STF.711,principal,Lei mais grave no crime permanente,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 45,1,2025-12-21,60,,C,"CP, art. 159",CP.a159,acessorio,Extorsão mediante sequestro,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
-45,1,2025-12-21,60,,C,"CP, art. 2",CP.a2,distrator,Lei penal no tempo,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
-45,1,2025-12-21,60,,C,"CP, art. 6",CP.a6,distrator,Lugar do crime (ubiquidade),http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+45,1,2025-12-21,60,,C,"CP, art. 2º",CP.a2,distrator,Lei penal no tempo,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
+45,1,2025-12-21,60,,C,"CP, art. 6º",CP.a6,distrator,Lugar do crime (ubiquidade),http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 45,1,2025-12-21,61,,A,"CP, art. 20",CP.a20,principal,Erro de tipo,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 45,1,2025-12-21,61,,A,"CP, art. 212",CP.a212,distrator,Vilipêndio a cadáver,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 45,1,2025-12-21,61,,A,"CP, art. 121, § 3º",CP.a121.p3,distrator,Homicídio culposo,http://oab.fgv.br/arq/648/405589_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
@@ -37,15 +619,23 @@
 45,2,2026-02-22,Peça,,,"CP, art. 33, § 2º, b",CP.a33.p2.b,principal,Regime inicial semiaberto,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,Peça,,,"CP, art. 77, § 1º",CP.a77.p1,principal,Sursis e condenação anterior a multa,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,Peça,,,Súmula 499 do STF,TEMA.SUM.STF.499,principal,Sursis e condenação anterior a multa,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
+45,2,2026-02-22,Peça,,,"CPP, art. 403, § 3º",CPP.a403.p3,principal,Fundamento legal das alegações finais por memoriais,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
+45,2,2026-02-22,Peça,,,"CPP, art. 404, parágrafo único",CPP.a404.pu,principal,Fundamento legal das alegações finais por memoriais,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,1,A,,"CP, art. 74",CP.a74,principal,Resultado diverso do pretendido,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,1,A,,"CP, art. 70",CP.a70,principal,Concurso formal,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,1,A,,"CP, art. 69",CP.a69,acessorio,Concurso material,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,1,B,,"CP, art. 167",CP.a167,principal,Ação penal no crime de dano,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,1,B,,"CP, art. 163",CP.a163,acessorio,Dano,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
+45,2,2026-02-22,1,B,,"CPP, art. 95, IV",CPP.a95.IV,principal,Ilegitimidade de parte,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
+45,2,2026-02-22,1,B,,"CPP, art. 564, II",CPP.a564.II,principal,Nulidade por ilegitimidade de parte,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
+45,2,2026-02-22,1,B,,"CPP, art. 395, II",CPP.a395.II,principal,Rejeição da denúncia por falta de condição da ação,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
+45,2,2026-02-22,2,A,,Súmula 707 do STF,TEMA.SUM.STF.707,principal,Nulidade pela falta de intimação para contrarrazões,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,2,B,,Vedação da analogia em prejuízo do réu,TEMA.PRINC.analogia,principal,Vedação da analogia em prejuízo do réu,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,2,B,,"CP, art. 171",CP.a171,acessorio,Estelionato,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
-45,2,2026-02-22,3,A,,"CP, art. 2, parágrafo único",CP.a2.pu,principal,Irretroatividade da lei penal mais grave,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
+45,2,2026-02-22,2,A,,"CPP, art. 263",CPP.a263,principal,Nomeação de defensor e direito de constituir advogado,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
+45,2,2026-02-22,3,A,,"CP, art. 2º, parágrafo único",CP.a2.pu,principal,Irretroatividade da lei penal mais grave,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,3,A,,"CP, art. 121-A",CP.a121A,acessorio,Feminicídio,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
+45,2,2026-02-22,3,B,,"CPP, art. 617",CPP.a617,principal,Vedação da reformatio in pejus,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,4,A,,"LEP, art. 112, V",L7210.a112.V,principal,Progressão de regime (40%),http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,4,A,,"CP, art. 157, § 2º-A, I",CP.a157.p2A.I,acessorio,Roubo com emprego de arma de fogo,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
 45,2,2026-02-22,4,B,,"LEP, art. 66, III, b",L7210.a66.III.b,principal,Competência do juízo da execução,http://oab.fgv.br/arq/648/510682_OAB45%20-%20B005%20(DIREITO%20PENAL).pdf
@@ -77,17 +667,27 @@
 46,1,2026-05-03,62,,C,"CP, art. 71",CP.a71,distrator,Crime continuado,http://oab.fgv.br/arq/649/561671_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 46,1,2026-05-03,62,,C,"CP, art. 70",CP.a70,distrator,Concurso formal,http://oab.fgv.br/arq/649/561671_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 46,2,2026-06-21,Peça,,,"CP, art. 288-A",CP.a288A,principal,Milícia privada,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
+46,2,2026-06-21,Peça,,,"CPP, art. 396",CPP.a396,principal,Resposta à acusação,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
+46,2,2026-06-21,Peça,,,"CPP, art. 396-A",CPP.a396A,principal,Resposta à acusação,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
+46,2,2026-06-21,Peça,,,"CPP, art. 41",CPP.a41,principal,Requisitos da denúncia,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
+46,2,2026-06-21,Peça,,,"CPP, art. 157",CPP.a157,principal,Prova ilícita,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
+46,2,2026-06-21,Peça,,,"CPP, art. 395, I",CPP.a395.I,principal,Rejeição da denúncia por inépcia,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
+46,2,2026-06-21,Peça,,,"CPP, art. 395, III",CPP.a395.III,principal,Rejeição da denúncia por falta de justa causa,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
+46,2,2026-06-21,Peça,,,"CPP, art. 397, III",CPP.a397.III,principal,Absolvição sumária: fato que evidentemente não constitui crime,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
+46,2,2026-06-21,Peça,,,"CPP, art. 401",CPP.a401,acessorio,Número de testemunhas,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 46,2,2026-06-21,1,A,,"CP, art. 15",CP.a15,principal,Desistência voluntária,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 46,2,2026-06-21,1,A,,"CP, art. 217-A",CP.a217A,acessorio,Estupro de vulnerável,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 46,2,2026-06-21,1,A,,"CP, art. 14, II",CP.a14.II,acessorio,Tentativa,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 46,2,2026-06-21,2,B,,"CP, art. 73",CP.a73,principal,Erro na execução (aberratio ictus),http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 46,2,2026-06-21,2,B,,"CP, art. 121, § 2º, IX",CP.a121.p2.IX,acessorio,Homicídio contra menor de 14 anos,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
+46,2,2026-06-21,2,A,,"CPP, art. 318, I",CPP.a318.I,principal,Prisão domiciliar do maior de 80 anos,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 46,2,2026-06-21,3,A,,"CP, art. 109, V",CP.a109.V,principal,Prescrição da pretensão executória,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 46,2,2026-06-21,3,A,,"CP, art. 113",CP.a113,principal,Prescrição no caso de evasão,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 46,2,2026-06-21,3,A,,"CP, art. 117, V",CP.a117.V,principal,Causas interruptivas da prescrição,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 46,2,2026-06-21,3,B,,"LEP, art. 127",L7210.a127,principal,Perda dos dias remidos por falta grave,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 46,2,2026-06-21,4,B,,"CP, art. 77",CP.a77,principal,Suspensão condicional da pena,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 46,2,2026-06-21,4,B,,"CP, art. 129",CP.a129,acessorio,Lesão corporal,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
+46,2,2026-06-21,4,A,,"CPP, art. 382",CPP.a382,principal,Embargos de declaração da sentença,http://oab.fgv.br/arq/649/516143_OAB46%20-%20B005%20(DIREITO%20PENAL).pdf
 47,1,2026-09-06,57,,B,"CP, art. 181, II",CP.a181.II,principal,Imunidade absoluta nos crimes contra o patrimônio (escusa absolutória),http://oab.fgv.br/arq/650/566837_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 47,1,2026-09-06,57,,B,"CP, art. 183",CP.a183,acessorio,Exceções às imunidades patrimoniais,http://oab.fgv.br/arq/650/566837_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
 47,1,2026-09-06,57,,B,"CP, art. 155, § 4º, I",CP.a155.p4.I,distrator,Furto qualificado pelo rompimento de obstáculo,http://oab.fgv.br/arq/650/566837_ADVOGADO%20OAB(CNS01)%20Tipo%201.pdf
@@ -118,15 +718,28 @@
 47,2,2026-10-18,Peça,,,"CP, art. 25",CP.a25,principal,Legítima defesa,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,Peça,,,"CP, art. 23, II",CP.a23.II,principal,Exclusão da ilicitude,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,Peça,,,"CP, art. 121",CP.a121,acessorio,Homicídio simples,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
-47,2,2026-10-18,1,A,,"Lei 9.613/1998, art. 4",L9613.a4,principal,Medidas assecuratórias na lavagem de dinheiro,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
-47,2,2026-10-18,1,A,,"Lei 9.613/1998, art. 4, § 2º",L9613.a4.p2,principal,Liberação de bens de origem lícita,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
-47,2,2026-10-18,1,B,,"Lei 9.613/1998, art. 1",L9613.a1,principal,Lavagem de dinheiro: ocultação ou dissimulação,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,Peça,,,"CPP, art. 600",CPP.a600,principal,Razões de apelado,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,Peça,,,"CPP, art. 571, V",CPP.a571.V,principal,Momento de arguição das nulidades,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,Peça,,,"CPP, art. 571, VIII",CPP.a571.VIII,principal,Momento de arguição das nulidades,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,Peça,,,"CPP, art. 572, I",CPP.a572.I,principal,Sanação da nulidade não arguida,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,Peça,,,"CPP, art. 483, § 1º",CPP.a483.p1,principal,Encerramento da votação dos quesitos,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,Peça,,,"CPP, art. 483, § 2º",CPP.a483.p2,principal,Encerramento da votação dos quesitos,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,Peça,,,"CPP, art. 489",CPP.a489,principal,Decisões do Júri por maioria,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,Peça,,,"CPP, art. 593, § 3º",CPP.a593.p3,principal,Apelação contra decisão manifestamente contrária à prova,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,Peça,,,"CPP, art. 593, III, d",CPP.a593.III.d,acessorio,Apelação contra decisão manifestamente contrária à prova,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,Peça,,,Súmula 713 do STF,TEMA.SUM.STF.713,principal,Efeito devolutivo da apelação no Júri,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,1,A,,"Lei 9.613/1998, art. 4º",L9613.a4,principal,Medidas assecuratórias na lavagem de dinheiro,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,1,A,,"Lei 9.613/1998, art. 4º, § 2º",L9613.a4.p2,principal,Liberação de bens de origem lícita,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,1,B,,"Lei 9.613/1998, art. 1º",L9613.a1,principal,Lavagem de dinheiro: ocultação ou dissimulação,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,1,B,,"CP, art. 155, § 4º-B",CP.a155.p4B,acessorio,Furto mediante fraude eletrônica,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,1,A,,"CPP, art. 125",CPP.a125,principal,Sequestro de bens,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,1,A,,"CPP, art. 130, I",CPP.a130.I,principal,Embargos ao sequestro,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,2,A,,"CP, art. 312, § 3º",CP.a312.p3,principal,Reparação do dano no peculato culposo,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,2,A,,"CP, art. 312, § 2º",CP.a312.p2,acessorio,Peculato culposo,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,3,B,,"CP, art. 71",CP.a71,principal,Crime continuado,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,3,B,,"CP, art. 297",CP.a297,acessorio,Falsificação de documento público,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,3,B,,"CP, art. 69",CP.a69,acessorio,Concurso material,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,3,A,,"CPP, art. 609, parágrafo único",CPP.a609.pu,principal,Embargos infringentes e de nulidade,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,4,B,,"CP, art. 67",CP.a67,principal,Concurso de agravantes e atenuantes (compensação),http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,4,B,,"CP, art. 65, III, d",CP.a65.III.d,principal,Atenuante da confissão espontânea,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,4,B,,"CP, art. 61, I",CP.a61.I,acessorio,Agravante da reincidência,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
@@ -134,3 +747,4 @@
 47,2,2026-10-18,4,B,,Tema 585 do STJ,TEMA.REP.STJ.585,principal,Compensação entre reincidência e confissão,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,4,A,,"CP, art. 157",CP.a157,acessorio,Roubo,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
 47,2,2026-10-18,4,A,,"CP, art. 155",CP.a155,acessorio,Furto simples,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
+47,2,2026-10-18,4,A,,"CPP, art. 384",CPP.a384,principal,Mutatio libelli,http://oab.fgv.br/arq/650/656159_OAB47%20-%20B005%20(DIREITO%20PENAL).pdf
