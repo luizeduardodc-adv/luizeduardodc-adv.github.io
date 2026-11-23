@@ -197,7 +197,7 @@
   <p>Provas do Exame de Ordem Unificado, do Conselho Federal da OAB, aplicadas pela FGV. Ferramenta acadêmica independente, sem vínculo com a OAB ou a FGV e sem endosso de nenhuma delas; a marca identifica apenas a fonte das provas.</p>
 </div>
 <div class="numeros" id="numeros" aria-live="polite"></div>
-<p class="note">Versão de teste com <span id="serie"></span> (1ª e 2ª fase), cuja classificação ainda está em conferência pelo autor. As contagens descrevem provas já aplicadas e não indicam o que será cobrado.</p>
+<p class="note">Versão de teste com <span id="serie"></span> (1ª e 2ª fase), cuja classificação passou por verificação independente e ainda está em conferência pelo autor. As contagens descrevem provas já aplicadas e não indicam o que será cobrado.</p>
 
 <div class="barra-ctl">
   <div class="abas" role="tablist" aria-label="Visões">
@@ -248,11 +248,12 @@
   <summary><span id="t-metodo">Metodologia</span><small><span class="ab">Mostrar</span><span class="fe">Ocultar</span></small></summary>
   <div class="corpo-m">
   <ol>
-    <li>Fontes: cadernos de prova, gabaritos definitivos e padrões de resposta definitivos publicados pela FGV em oab.fgv.br. Na 1ª fase, o gabarito indica só a alternativa correta; o dispositivo é atribuído pelo autor. Na 2ª fase, segue-se o fundamento indicado no padrão de respostas.</li>
+    <li>Fontes: cadernos de prova, gabaritos definitivos e padrões de resposta definitivos publicados pela FGV em oab.fgv.br. Do 25º ao 34º Exame, a FGV não publicou o gabarito definitivo da 1ª fase em arquivo próprio: vale o gabarito preliminar, corrigido pelos comunicados de anulação e de retificação. Na 1ª fase, o gabarito indica só a alternativa correta; o dispositivo é atribuído pelo autor. Na 2ª fase, segue-se o fundamento indicado no padrão de respostas.</li>
     <li>Papéis: principal (o dispositivo que decide a resposta; havendo fundamentos alternativos no padrão para a mesma tese, todos), acessório (também necessário à resposta, inclusive o crime imputado sem tese própria) e distrator (presente só nas alternativas incorretas). A contagem padrão considera só o principal.</li>
     <li>Contagem: cada questão (na 2ª fase, cada item) conta uma vez em cada ponto da estrutura, ainda que cobre mais de um parágrafo ou inciso do mesmo artigo.</li>
     <li>Estrutura e texto legal: texto compilado do Planalto, extraído em <span id="data-planalto"></span>, sem o texto revogado. A classificação considera a redação vigente na data da prova; quando o dispositivo mudou depois dela, a ficha traz o aviso "redação alterada"; quando foi revogado ou renumerado depois dela, a cobrança fica no dispositivo da época, com o aviso "revogado depois da prova" e a indicação do dispositivo que hoje trata da matéria. A comparação usa o início de vigência da lei alteradora.</li>
     <li>Súmulas e teses entram como temas próprios, apenas do STF e do STJ. O Código de Processo Penal integra o mapa desde 22/11/2026, com os fundamentos processuais da 2ª fase; fundamentos constitucionais e de leis ainda fora do mapa aparecem na ficha da questão.</li>
+    <li>Conferência: cada exame foi classificado e, depois, conferido por inteiro numa segunda leitura independente das mesmas fontes (gabarito lido na imagem do original, dispositivo, papel, redação na data da prova e súmulas, letra por letra); as divergências foram corrigidas antes da publicação.</li>
     <li>Questões anuladas ficam nas fichas, marcadas, e fora das contagens. Reaplicações não entram.</li>
     <li>Limitações: a atribuição do dispositivo é interpretação do autor; questões com vários temas admitem leitura diversa do dispositivo principal; os links da FGV podem mudar entre exames.</li>
   </ol>
@@ -385,7 +386,7 @@ function fichas(){
     const n=(fase!=='2'?f1.length:0)+(fase!=='1'?f2.length:0);
     const datas=[fase!=='2'&&f1.length?`1ª fase em ${d(f1[0].data)}`:'',fase!=='1'&&f2.length?`2ª fase em ${d(f2[0].data)}`:''].filter(Boolean).join(' · ');
     return `<details class="exame" data-ex="${ex}"${exAbertos.has(String(ex))?' open':''}><summary><span class="ex-t"><span class="ex-n">${ex}º Exame de Ordem Unificado</span><small>${datas}</small></span><span class="ex-q">${n} ${n===1?'questão':'questões'}</span></summary><div class="ex-corpo">
-      <p class="fontes">1ª fase em ${d(f1[0]?.data||'')}: <a href="${esc(f1[0]?.link_caderno)}">caderno tipo 1</a> e <a href="${esc(f1[0]?.link_gabarito)}">gabarito definitivo</a> (FGV). 2ª fase em ${d(f2[0]?.data||'')}: <a href="${esc(f2[0]?.link_caderno)}">caderno de Direito Penal</a> e <a href="${esc(f2[0]?.link_gabarito)}">padrão de respostas definitivo</a> (FGV).</p>
+      <p class="fontes">1ª fase em ${d(f1[0]?.data||'')}: <a href="${esc(f1[0]?.link_caderno)}">caderno tipo 1</a> e <a href="${esc(f1[0]?.link_gabarito)}">gabarito${(f1[0]?.exame||99)<=34?'':' definitivo'}</a> (FGV). 2ª fase em ${d(f2[0]?.data||'')}: <a href="${esc(f2[0]?.link_caderno)}">caderno de Direito Penal</a> e <a href="${esc(f2[0]?.link_gabarito)}">padrão de respostas definitivo</a> (FGV).</p>
       ${fase!=='2'&&f1.length?`<p class="fase-t">1ª fase · questões ${f1[0].numero} a ${f1[f1.length-1].numero} do caderno tipo 1</p>${f1.map(cart).join('')}`:''}
       ${fase!=='1'&&f2.length?`<p class="fase-t">2ª fase · prova prático-profissional</p>${f2.map(cart).join('')}`:''}</div></details>`}).join('');
 }
