@@ -251,8 +251,8 @@
     <li>Fontes: cadernos de prova, gabaritos definitivos e padrões de resposta definitivos publicados pela FGV em oab.fgv.br. Do 18º ao 34º Exame, a FGV não publicou o gabarito definitivo da 1ª fase em arquivo próprio: vale o gabarito preliminar, corrigido pelos comunicados de anulação e de retificação. A série começa no 16º Exame, o mais antigo com documentos no sistema da FGV. Na 1ª fase, o gabarito indica só a alternativa correta; o dispositivo é atribuído pelo autor. Na 2ª fase, segue-se o fundamento indicado no padrão de respostas.</li>
     <li>Papéis: principal (o dispositivo que decide a resposta; havendo fundamentos alternativos no padrão para a mesma tese, todos), acessório (também necessário à resposta, inclusive o crime imputado sem tese própria) e distrator (presente só nas alternativas incorretas). A contagem padrão considera só o principal.</li>
     <li>Contagem: cada questão (na 2ª fase, cada item) conta uma vez em cada ponto da estrutura, ainda que cobre mais de um parágrafo ou inciso do mesmo artigo.</li>
-    <li>Estrutura e texto legal: texto compilado do Planalto, extraído em <span id="data-planalto"></span>, sem o texto revogado. A classificação considera a redação vigente na data da prova; quando o dispositivo mudou depois dela, a ficha traz o aviso "redação alterada"; quando foi revogado ou renumerado depois dela, a cobrança fica no dispositivo da época, com o aviso "revogado depois da prova" e a indicação do dispositivo que hoje trata da matéria. A comparação usa o início de vigência da lei alteradora.</li>
-    <li>Súmulas e teses entram como temas próprios, apenas do STF e do STJ. O Código de Processo Penal integra o mapa desde 22/11/2026, com os fundamentos processuais da 2ª fase; fundamentos constitucionais e de leis ainda fora do mapa aparecem na ficha da questão.</li>
+    <li>Estrutura e texto legal: texto compilado do Planalto, extraído em <span id="data-planalto"></span> (as Leis 9.099/1995, 12.850/2013 e 10.826/2003, em 23/11/2026), sem o texto revogado. A classificação considera a redação vigente na data da prova; quando o dispositivo mudou depois dela, a ficha traz o aviso "redação alterada"; quando foi revogado ou renumerado depois dela, a cobrança fica no dispositivo da época, com o aviso "revogado depois da prova" e a indicação do dispositivo que hoje trata da matéria. A comparação usa o início de vigência da lei alteradora.</li>
+    <li>Súmulas e teses entram como temas próprios, apenas do STF e do STJ. O Código de Processo Penal integra o mapa desde 22/11/2026, com os fundamentos processuais da 2ª fase; as Leis 9.099/1995 (só a parte criminal), 12.850/2013 e 10.826/2003, desde 23/11/2026; fundamentos constitucionais e de leis ainda fora do mapa aparecem na ficha da questão.</li>
     <li>Conferência: cada exame foi classificado e, depois, conferido por inteiro numa segunda leitura independente das mesmas fontes (gabarito lido na imagem do original, dispositivo, papel, redação na data da prova e súmulas, letra por letra); as divergências foram corrigidas antes da publicação. Depois, uma revisão transversal comparou, entre todos os exames, as ligações ao mesmo dispositivo, para uniformizar papel, nível e rótulo em situações equivalentes.</li>
     <li>Questões anuladas ficam nas fichas, marcadas, e fora das contagens. Reaplicações não entram.</li>
     <li>Limitações: a atribuição do dispositivo é interpretação do autor; questões com vários temas admitem leitura diversa do dispositivo principal; os links da FGV podem mudar entre exames.</li>
@@ -281,7 +281,7 @@ D.nos.forEach(n=>{if(!filhos.has(n.p))filhos.set(n.p,[]);filhos.get(n.p).push(n)
 const quest=new Map(Q.questoes.map(q=>[q.id,q]));
 $('data-planalto').textContent=D.meta.extracao_planalto.split('-').reverse().join('/');
 $('data-atual').textContent=D.meta.atualizado_em.split('-').reverse().join('/');
-const SIG={CP:'CP',CPP:'CPP',L11343:'Lei 11.343/2006',L8072:'Lei 8.072/1990',L11340:'Lei 11.340/2006',L9503:'CTB',L9613:'Lei 9.613/1998',L7210:'LEP'};
+const SIG={CP:'CP',CPP:'CPP',L11343:'Lei 11.343/2006',L8072:'Lei 8.072/1990',L11340:'Lei 11.340/2006',L9503:'CTB',L9613:'Lei 9.613/1998',L7210:'LEP',L9099:'Lei 9.099/1995',L12850:'Lei 12.850/2013',L10826:'Lei 10.826/2003'};
 const EXAMES=[...new Set(Q.questoes.map(q=>q.exame))].sort((a,b)=>a-b);
 $('serie').textContent=`${EXAMES.length} exames, do ${EXAMES[0]}º ao ${EXAMES[EXAMES.length-1]}º Exame de Ordem Unificado`;
 const ESTR={parte:'',livro:'Livro',titulo:'Título',capitulo:'Capítulo',secao:'Seção',subsecao:'Subseção'};
@@ -325,8 +325,8 @@ function mapa(){
   const raizes=D.nos.filter(n=>n.p===null);
   $('arvore').innerHTML=raizes.map(r=>no(r,0)).join('')||'<p class="vazio">Sem cobrança nos filtros escolhidos.</p>';
 }
-const NOME_DIP={CP:'Código Penal',CPP:'Código de Processo Penal',L11343:'Lei de Drogas',L8072:'Lei dos Crimes Hediondos',L11340:'Lei Maria da Penha',L9503:'Código de Trânsito (crimes)',L9613:'Lei de Lavagem de Dinheiro',L7210:'Lei de Execução Penal',TEMA:'Súmulas, teses e princípios'};
-const ORDEM_DIP=['CP','L11343','L8072','L11340','L9503','L9613','L7210','CPP','TEMA'];
+const NOME_DIP={CP:'Código Penal',CPP:'Código de Processo Penal',L11343:'Lei de Drogas',L8072:'Lei dos Crimes Hediondos',L11340:'Lei Maria da Penha',L9503:'Código de Trânsito (crimes)',L9613:'Lei de Lavagem de Dinheiro',L7210:'Lei de Execução Penal',L9099:'Lei dos Juizados Especiais (parte criminal)',L12850:'Lei das Organizações Criminosas',L10826:'Estatuto do Desarmamento',TEMA:'Súmulas, teses e princípios'};
+const ORDEM_DIP=['CP','L11343','L8072','L11340','L9503','L9613','L7210','L9099','L12850','L10826','CPP','TEMA'];
 function grupoCap(id){let x=nos.get(id),t=null,c=null,pt=null;while(x){if(x.t==='capitulo'&&!c)c=x;if(x.t==='titulo'&&!t)t=x;if(x.t==='parte')pt=x;x=nos.get(x.p)}
   const g=c||t;if(!g)return null;
   const sobre=[pt?cap(pt.r):'',t&&c?`Título ${t.n}`:'',c?`Capítulo ${c.n}`:`Título ${t.n}`].filter(Boolean).join(' · ');
