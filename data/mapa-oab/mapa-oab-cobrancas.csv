@@ -1,4 +1,505 @@
 ﻿exame,fase,data_da_prova,questao,item,gabarito,dispositivo,id_dispositivo,papel,tema,link_caderno
+16,1,2015-03-15,59,,C,"CP, art. 29",CP.a29,principal,Concurso de pessoas (participação),http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,59,,C,"CP, art. 13",CP.a13,principal,Relação de causalidade,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,59,,C,"CP, art. 155, § 4º, I",CP.a155.p4.I,acessorio,Furto qualificado pelo rompimento de obstáculo,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,59,,C,"CP, art. 13, § 2º",CP.a13.p2,distrator,Relevância da omissão,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,59,,C,"CP, art. 155, § 4º, IV",CP.a155.p4.IV,distrator,Furto qualificado pelo concurso de pessoas,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,59,,C,"CP, art. 135",CP.a135,distrator,Omissão de socorro,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,60,,C,"CP, art. 28, § 1º",CP.a28.p1,principal,Embriaguez completa por caso fortuito ou força maior,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,60,,C,"CP, art. 26",CP.a26,principal,Inimputabilidade por doença mental,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,60,,C,"CP, art. 97",CP.a97,acessorio,Imposição da medida de segurança para inimputável,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,60,,C,"CP, art. 213",CP.a213,acessorio,Estupro,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,60,,C,"CP, art. 28, II",CP.a28.II,distrator,Embriaguez voluntária ou culposa,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,61,,D,"CP, art. 110",CP.a110,principal,Prescrição da pretensão executória,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,61,,D,"CP, art. 115",CP.a115,principal,Redução dos prazos de prescrição,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,61,,D,"CP, art. 109, IV",CP.a109.IV,principal,Prazo prescricional de oito anos,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,61,,D,"CP, art. 112, I",CP.a112.I,acessorio,Termo inicial da prescrição da pretensão executória,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,62,,C,"CP, art. 24",CP.a24,principal,Estado de necessidade,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,62,,C,"CP, art. 23, I",CP.a23.I,acessorio,Exclusão da ilicitude pelo estado de necessidade,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,62,,C,"CP, art. 73",CP.a73,acessorio,Erro na execução,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,62,,C,"CP, art. 25",CP.a25,distrator,Legítima defesa,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,62,,C,"CP, art. 20, § 1º",CP.a20.p1,distrator,Descriminantes putativas,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,63,,B,"CP, art. 77, § 2º",CP.a77.p2,principal,Suspensão condicional da pena do maior de 70 anos (sursis etário),http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,63,,B,"CP, art. 44, I",CP.a44.I,acessorio,Substituição por restritivas de direitos,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,63,,B,"CP, art. 157",CP.a157,acessorio,Roubo,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,63,,B,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,63,,B,Princípio da insignificância,TEMA.PRINC.insignificancia,distrator,Princípio da insignificância,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,63,,B,Súmula 231 do STJ,TEMA.SUM.STJ.231,distrator,Atenuante e pena abaixo do mínimo legal,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,63,,B,"CP, art. 65, I",CP.a65.I,distrator,Atenuante da idade,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,63,,B,"CP, art. 65, III, d",CP.a65.III.d,distrator,Atenuante da confissão espontânea,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,63,,B,"CP, art. 77, III",CP.a77.III,acessorio,Sursis subsidiário à substituição,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,64,,C,"CP, art. 20, § 3º",CP.a20.p3,principal,Erro sobre a pessoa,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,64,,C,"CP, art. 123",CP.a123,principal,Infanticídio,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,64,,C,"CP, art. 121, § 3º",CP.a121.p3,distrator,Homicídio culposo,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,64,,C,"CP, art. 121",CP.a121,distrator,Homicídio simples,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,1,2015-03-15,64,,C,"CP, art. 121, § 2º",CP.a121.p2,distrator,Homicídio qualificado,http://oab.fgv.br/arq/615/15032015183319_CADERNO_TIPO_1_XVI_EXAME.pdf
+16,2,2015-05-17,Peça,,,"LEP, art. 197",L7210.a197,principal,Agravo em execução,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,Peça,,,Súmula 700 do STF,TEMA.SUM.STF.700,acessorio,Prazo do agravo em execução,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,Peça,,,"CPP, art. 589",CPP.a589,acessorio,Juízo de retratação no recurso em sentido estrito,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,Peça,,,"Lei 8.072/1990, art. 1º",L8072.a1,principal,Rol dos crimes hediondos,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,Peça,,,"CP, art. 83, I",CP.a83.I,principal,Livramento condicional: um terço da pena,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,Peça,,,"CP, art. 83, II",CP.a83.II,principal,Livramento condicional: metade da pena ao reincidente,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,Peça,,,Princípio da legalidade,TEMA.PRINC.legalidade,principal,Princípio da legalidade,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,Peça,,,Vedação da analogia em prejuízo do réu,TEMA.PRINC.analogia,principal,Vedação da analogia em prejuízo do réu,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,Peça,,,Súmula 439 do STJ,TEMA.SUM.STJ.439,principal,Exame criminológico e decisão motivada,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,Peça,,,"CP, art. 157",CP.a157,acessorio,Roubo,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,Peça,,,"CP, art. 83, V",CP.a83.V,acessorio,Livramento condicional: dois terços da pena nos crimes hediondos,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,Peça,,,"CP, art. 83, III",CP.a83.III,acessorio,Livramento condicional: comportamento satisfatório,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,1,A,,"Lei 8.072/1990, art. 2º, § 1º",L8072.a2.p1,principal,Regime inicial fechado obrigatório para crimes hediondos e equiparados,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,1,A,,Princípio da individualização da pena,TEMA.PRINC.individualizacao,principal,Princípio da individualização da pena,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,1,A,,"Lei 11.343/2006, art. 33",L11343.a33,acessorio,Tráfico de drogas,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,1,B,,"CPP, art. 617",CPP.a617,principal,Vedação da reformatio in pejus,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,1,B,,"Lei 11.343/2006, art. 40, IV",L11343.a40.IV,acessorio,Causa de aumento pelo emprego de arma de fogo no tráfico,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,2,A,,"CP, art. 2º, parágrafo único",CP.a2.pu,principal,Retroatividade da lei penal mais benéfica,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,2,A,,"CP, art. 213",CP.a213,principal,Estupro,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,2,A,,"CP, art. 71",CP.a71,principal,Crime continuado,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,2,A,,"CP, art. 214",CP.a214,acessorio,Atentado violento ao pudor,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,2,B,,"LEP, art. 66, I",L7210.a66.I,principal,Competência do juízo da execução para aplicar a lei mais benigna,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,2,B,,Súmula 611 do STF,TEMA.SUM.STF.611,principal,Aplicação da lei mais benigna pelo juízo das execuções,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,3,A,,"CP, art. 140",CP.a140,principal,Injúria,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,3,B,,"CPP, art. 51",CPP.a51,principal,Extensão do perdão aos querelados,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,3,B,,"CP, art. 106, I",CP.a106.I,principal,Perdão do ofendido concedido a qualquer dos querelados,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,3,B,,"CP, art. 107, V",CP.a107.V,acessorio,Extinção da punibilidade pelo perdão aceito,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,4,A,,"CPP, art. 321",CPP.a321,principal,Liberdade provisória,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,4,A,,"CPP, art. 310, III",CPP.a310.III,principal,Concessão de liberdade provisória ao receber o auto de prisão em flagrante,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,4,B,,"CPP, art. 313",CPP.a313,principal,Hipóteses de admissibilidade da prisão preventiva,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,4,B,,"CPP, art. 313, I",CPP.a313.I,acessorio,Crime doloso com pena máxima superior a quatro anos,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,4,B,,"CPP, art. 313, II",CPP.a313.II,acessorio,Reincidência em crime doloso,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,4,B,,"CPP, art. 312",CPP.a312,acessorio,Pressupostos da prisão preventiva,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+16,2,2015-05-17,4,B,,"CP, art. 180",CP.a180,acessorio,Receptação,http://oab.fgv.br/arq/615/17052015184702_XVI%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,1,2015-07-19,59,,D,Súmula 443 do STJ,TEMA.SUM.STJ.443,principal,Fundamentação do aumento no roubo circunstanciado,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,59,,D,"CP, art. 157, § 2º",CP.a157.p2,acessorio,Roubo circunstanciado,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,59,,D,"CP, art. 68",CP.a68,acessorio,Cálculo da pena (critério trifásico),http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,59,,D,"CP, art. 59",CP.a59,distrator,Circunstâncias judiciais (antecedentes),http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,59,,D,"CP, art. 67",CP.a67,distrator,Concurso de agravantes e atenuantes,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,59,,D,Tema 585 do STJ,TEMA.REP.STJ.585,distrator,Compensação entre a reincidência e a confissão espontânea,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,59,,D,Súmula 231 do STJ,TEMA.SUM.STJ.231,distrator,Atenuante e pena abaixo do mínimo legal,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,60,,D,Súmula 441 do STJ,TEMA.SUM.STJ.441,principal,Falta grave e prazo do livramento condicional,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,60,,D,"CP, art. 83",CP.a83,acessorio,Requisitos do livramento condicional,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,60,,D,"CP, art. 83, parágrafo único",CP.a83.pu,distrator,Livramento condicional no crime com violência ou grave ameaça,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,60,,D,"CP, art. 83, II",CP.a83.II,distrator,Livramento condicional do reincidente em crime doloso,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,60,,D,"LEP, art. 131",L7210.a131,distrator,Concessão do livramento pelo juiz da execução,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,60,,D,"LEP, art. 66, III, e",L7210.a66.III.e,distrator,Competência do juiz da execução para o livramento condicional,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,61,,B,"CP, art. 299",CP.a299,principal,Falsidade ideológica,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,61,,B,"CP, art. 297",CP.a297,distrator,Falsificação de documento público,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,61,,B,"CP, art. 298",CP.a298,distrator,Falsificação de documento particular,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,61,,B,"CP, art. 307",CP.a307,distrator,Falsa identidade,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,62,,C,"CP, art. 183, III",CP.a183.III,principal,Exceção à imunidade patrimonial: vítima idosa,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,62,,C,"CP, art. 155, § 4º, I",CP.a155.p4.I,principal,Furto qualificado pelo rompimento de obstáculo,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,62,,C,"CP, art. 181, II",CP.a181.II,distrator,Imunidade absoluta nos crimes contra o patrimônio (escusa absolutória),http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,62,,C,"CP, art. 156",CP.a156,distrator,Furto de coisa comum,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,62,,C,"CP, art. 163",CP.a163,distrator,Dano,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,62,,C,"CP, art. 70",CP.a70,distrator,Concurso formal,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,63,,C,"CP, art. 22",CP.a22,principal,Coação moral irresistível,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,63,,C,"CP, art. 23",CP.a23,distrator,Exclusão da ilicitude,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,64,,A,"CP, art. 17",CP.a17,principal,Crime impossível,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,1,2015-07-19,64,,A,"CP, art. 15",CP.a15,distrator,Desistência voluntária e arrependimento eficaz,http://oab.fgv.br/arq/616/19072015182947_CADERNO_TIPO_1_XVII_EXAME.pdf
+17,2,2015-09-13,Peça,,,"CPP, art. 403, § 3º",CPP.a403.p3,principal,Memoriais,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,Peça,,,"CP, art. 107, IV",CP.a107.IV,principal,Extinção da punibilidade pela prescrição,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,Peça,,,"CP, art. 109, IV",CP.a109.IV,principal,Prazo prescricional (pena máxima de dois a quatro anos),http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,Peça,,,"CP, art. 115",CP.a115,principal,Redução dos prazos de prescrição,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,Peça,,,"CP, art. 155",CP.a155,principal,"Furto (elementar ""para si ou para outrem"")",http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,Peça,,,"CPP, art. 386, III",CPP.a386.III,principal,Absolvição por não constituir o fato infração penal,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,Peça,,,Súmula 444 do STJ,TEMA.SUM.STJ.444,principal,Inquéritos e ações penais em curso e pena-base,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,Peça,,,"CP, art. 65, I",CP.a65.I,principal,Atenuante da menoridade relativa,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,Peça,,,"CP, art. 65, III, d",CP.a65.III.d,principal,Atenuante da confissão espontânea,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,Peça,,,"CP, art. 33, § 2º, c",CP.a33.p2.c,principal,Regime inicial aberto,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,Peça,,,"CP, art. 44",CP.a44,principal,Substituição por penas restritivas de direitos,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,1,A,,"CPP, art. 158",CPP.a158,principal,Exame de corpo de delito,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,1,A,,"CP, art. 155, § 4º, I",CP.a155.p4.I,principal,Furto qualificado pelo rompimento de obstáculo,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,1,A,,"CP, art. 155",CP.a155,acessorio,Furto simples,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,1,B,,Súmula 337 do STJ,TEMA.SUM.STJ.337,principal,Suspensão condicional do processo na desclassificação e na procedência parcial,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,2,A,,"CPP, art. 313, III",CPP.a313.III,principal,Prisão preventiva na violência doméstica,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,2,B,,"Lei 11.340/2006, art. 16",L11340.a16,principal,Retratação da representação na violência doméstica,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,2,B,,"CP, art. 147, parágrafo único",CP.a147.pu,principal,Ação penal na ameaça (redação anterior),http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,2,B,,"CP, art. 147",CP.a147,acessorio,Ameaça,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,3,A,,"CPP, art. 70",CPP.a70,principal,Competência pelo lugar da consumação,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,3,A,,"CPP, art. 108",CPP.a108,principal,Exceção de incompetência,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,3,A,,"CPP, art. 396-A",CPP.a396A,principal,Resposta à acusação (preliminar de incompetência),http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,3,B,,"CP, art. 157, § 2º, I",CP.a157.p2.I,principal,Roubo majorado pelo emprego de arma (redação anterior à Lei 13.654/2018),http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,3,B,,"CP, art. 157",CP.a157,acessorio,Roubo,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,4,A,,"CPP, art. 598",CPP.a598,principal,Apelação do ofendido não habilitado como assistente,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,4,A,,"CPP, art. 598, parágrafo único",CPP.a598.pu,principal,Prazo da apelação supletiva do ofendido,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,4,B,,"CP, art. 28, II",CP.a28.II,principal,Embriaguez voluntária ou culposa,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+17,2,2015-09-13,4,B,,"CP, art. 129, § 2º",CP.a129.p2,acessorio,Lesão corporal gravíssima,http://oab.fgv.br/arq/616/13092015182421_XVII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,1,2015-11-29,59,,C,"CP, art. 16",CP.a16,principal,Arrependimento posterior,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,59,,C,"CP, art. 155",CP.a155,acessorio,Furto,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,59,,C,"CP, art. 15",CP.a15,distrator,Desistência voluntária e arrependimento eficaz,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,60,,D,"CP, art. 213",CP.a213,principal,Estupro,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,60,,D,"CP, art. 215",CP.a215,distrator,Violação sexual mediante fraude,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,60,,D,"CP, art. 216-A",CP.a216A,distrator,Assédio sexual,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,60,,D,"CP, art. 228",CP.a228,distrator,Favorecimento da prostituição ou outra forma de exploração sexual,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,61,,A,"CP, art. 288",CP.a288,principal,Associação criminosa,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,62,,D,"CP, art. 134, § 2º",CP.a134.p2,principal,Exposição ou abandono de recém-nascido com resultado morte,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,62,,D,"CP, art. 134",CP.a134,acessorio,Exposição ou abandono de recém-nascido,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,62,,D,"CP, art. 133, § 2º",CP.a133.p2,distrator,Abandono de incapaz com resultado morte,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,62,,D,"CP, art. 121",CP.a121,distrator,Homicídio,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,62,,D,"CP, art. 123",CP.a123,distrator,Infanticídio,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,63,,C,"CP, art. 121, § 3º",CP.a121.p3,principal,Homicídio culposo,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,63,,C,"CP, art. 17",CP.a17,principal,Crime impossível,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,63,,C,"CP, art. 126",CP.a126,distrator,Aborto com consentimento da gestante,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,63,,C,"CP, art. 127",CP.a127,distrator,Forma qualificada do aborto,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,63,,C,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,63,,C,"CP, art. 121",CP.a121,distrator,Homicídio doloso,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,64,,D,"CTB, art. 291, § 1º, III",L9503.a291.p1.III,principal,Exclusão dos institutos da Lei 9.099/1995 na lesão culposa de trânsito em excesso de velocidade,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,64,,D,"CTB, art. 291",L9503.a291,acessorio,Aplicação da Lei 9.099/1995 aos crimes de trânsito,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,1,2015-11-29,64,,D,"CTB, art. 303",L9503.a303,acessorio,Lesão corporal culposa na direção de veículo automotor,http://oab.fgv.br/arq/617/29112015184841_CADERNO_TIPO_1_XVIII_EXAME.pdf
+18,2,2016-01-17,Peça,,,"CPP, art. 593, I",CPP.a593.I,principal,Apelação contra sentença condenatória,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,"CP, art. 213",CP.a213,principal,Estupro (tipo misto alternativo),http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,"CP, art. 71",CP.a71,principal,Crime continuado,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,Súmula 444 do STJ,TEMA.SUM.STJ.444,principal,Ações penais em curso e pena-base,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,Princípio da presunção de inocência (estado de inocência),TEMA.PRINC.presuncao_inocencia,principal,Princípio da presunção de inocência,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,"CP, art. 59",CP.a59,principal,Circunstâncias judiciais,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,"CP, art. 65, I",CP.a65.I,principal,Atenuante da menoridade relativa,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,"CP, art. 65, III, d",CP.a65.III.d,principal,Atenuante da confissão espontânea,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,"Lei 8.072/1990, art. 2º, § 1º",L8072.a2.p1,principal,Regime inicial fechado obrigatório nos crimes hediondos,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,Princípio da individualização da pena,TEMA.PRINC.individualizacao,principal,Princípio da individualização da pena,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,"CP, art. 33, § 2º, b",CP.a33.p2.b,principal,Regime semiaberto,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,"Lei 8.072/1990, art. 1º, V",L8072.a1.V,acessorio,Estupro como crime hediondo,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,Peça,,,"CPP, art. 593",CPP.a593,acessorio,Prazo da apelação,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,1,A,,"CP, art. 119",CP.a119,principal,Extinção da punibilidade no concurso de crimes,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,1,A,,"CP, art. 109, V",CP.a109.V,principal,Prescrição em quatro anos,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,1,A,,"CP, art. 110, § 1º",CP.a110.p1,acessorio,Prescrição pela pena aplicada (retroativa),http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,1,A,,"CP, art. 71",CP.a71,acessorio,Crime continuado,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,1,A,,"CP, art. 155, § 4º, II",CP.a155.p4.II,acessorio,Furto qualificado pelo abuso de confiança,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,1,B,,"CP, art. 107, IV",CP.a107.IV,principal,Extinção da punibilidade pela prescrição,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,2,A,,"CP, art. 2º, parágrafo único",CP.a2.pu,principal,Retroatividade da lei penal benéfica,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,2,A,,"CP, art. 288, parágrafo único",CP.a288.pu,principal,Aumento de pena na associação criminosa armada,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,2,A,,"CP, art. 288",CP.a288,acessorio,Associação criminosa,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,2,B,,"LEP, art. 66, I",L7210.a66.I,principal,Competência do juízo da execução para aplicar lei benéfica,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,2,B,,Súmula 611 do STF,TEMA.SUM.STF.611,principal,Competência do juízo das execuções para a lei mais benigna,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,3,A,,"CPP, art. 593, III, d",CPP.a593.III.d,principal,Apelação por decisão manifestamente contrária à prova dos autos,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,3,A,,Soberania dos veredictos do Tribunal do Júri,TEMA.PRINC.soberania_veredictos,principal,Soberania dos veredictos,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,3,A,,"CP, art. 25",CP.a25,acessorio,Legítima defesa,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,3,A,,"CP, art. 121",CP.a121,acessorio,Homicídio,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,3,B,,Súmula 713 do STF,TEMA.SUM.STF.713,principal,Efeito devolutivo da apelação contra decisões do júri,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,3,B,,Súmula 160 do STF,TEMA.SUM.STF.160,principal,Nulidade não arguida no recurso da acusação,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,3,B,,"CPP, art. 448, IV",CPP.a448.IV,acessorio,Impedimento de irmãos no mesmo Conselho de Sentença,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,4,A,,"CPP, art. 609, parágrafo único",CPP.a609.pu,principal,Embargos infringentes,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,4,B,,"Lei 11.343/2006, art. 33, § 4º",L11343.a33.p4,principal,Tráfico privilegiado e vedação da substituição,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,4,B,,Princípio da individualização da pena,TEMA.PRINC.individualizacao,principal,Princípio da individualização da pena,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+18,2,2016-01-17,4,B,,"CP, art. 44",CP.a44,acessorio,Substituição da pena privativa de liberdade,http://oab.fgv.br/arq/617/17012016184415_XVIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,1,2016-04-03,59,,B,"CP, art. 15",CP.a15,principal,Desistência voluntária,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,59,,B,"CP, art. 129",CP.a129,acessorio,Lesão corporal,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,59,,B,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,60,,B,"CP, art. 73",CP.a73,principal,Erro na execução (aberratio ictus),http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,60,,B,"CP, art. 20, § 3º",CP.a20.p3,distrator,Erro sobre a pessoa,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,60,,B,"CP, art. 74",CP.a74,distrator,Resultado diverso do pretendido (aberratio criminis),http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,60,,B,"CP, art. 20, § 2º",CP.a20.p2,distrator,Erro determinado por terceiro,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,61,,D,"CP, art. 349",CP.a349,principal,Favorecimento real,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,61,,D,"CP, art. 180",CP.a180,distrator,Receptação,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,61,,D,"CP, art. 180, § 1º",CP.a180.p1,distrator,Receptação qualificada,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,61,,D,"CP, art. 157, § 2º",CP.a157.p2,distrator,Roubo majorado,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,62,,B,"CP, art. 3º",CP.a3,principal,Lei excepcional ou temporária,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,62,,B,"CP, art. 163, parágrafo único, III",CP.a163.pu.III,acessorio,Dano qualificado contra o patrimônio da União,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,62,,B,"CP, art. 2º, parágrafo único",CP.a2.pu,distrator,Retroatividade da lei penal mais benéfica,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,63,,B,"CP, art. 129, § 3º",CP.a129.p3,distrator,Lesão corporal seguida de morte,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,63,,B,"CP, art. 121, § 2º, III",CP.a121.p2.III,distrator,Homicídio qualificado pela tortura,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,64,,A,"CP, art. 339",CP.a339,principal,Denunciação caluniosa,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,64,,A,"CP, art. 18, parágrafo único",CP.a18.pu,acessorio,Excepcionalidade do crime culposo,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,1,2016-04-03,64,,A,"CP, art. 138",CP.a138,distrator,Calúnia,http://oab.fgv.br/arq/620/05072016131425_CADERNO_TIPO_1_XIX_EXAME_alterado_FGV.PDF
+19,2,2016-05-29,Peça,,,"CPP, art. 600",CPP.a600,principal,Razões do apelado,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,"CPP, art. 593",CPP.a593,principal,Prazo da apelação,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,Súmula 444 do STJ,TEMA.SUM.STJ.444,principal,Inquéritos e ações em curso e pena-base,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,"CP, art. 59",CP.a59,acessorio,Circunstâncias judiciais (pena-base),http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,"CP, art. 61, II, h",CP.a61.II.h,principal,Agravante: crime contra mulher grávida,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,"CP, art. 61, II, l",CP.a61.II.l,principal,Agravante: embriaguez preordenada,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,Súmula 443 do STJ,TEMA.SUM.STJ.443,principal,Fração de aumento no roubo circunstanciado,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,"CP, art. 157, § 2º",CP.a157.p2,acessorio,Roubo circunstanciado,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,"CP, art. 157, § 2º, I",CP.a157.p2.I,acessorio,Roubo majorado pelo emprego de arma,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,"CP, art. 157, § 2º, II",CP.a157.p2.II,acessorio,Roubo majorado pelo concurso de pessoas,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,Súmula 718 do STF,TEMA.SUM.STF.718,principal,Gravidade abstrata e regime mais severo,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,Súmula 719 do STF,TEMA.SUM.STF.719,principal,Motivação idônea para regime mais severo,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,Súmula 440 do STJ,TEMA.SUM.STJ.440,principal,Regime mais gravoso e gravidade abstrata,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,Peça,,,"CP, art. 33, § 2º, b",CP.a33.p2.b,acessorio,Regime inicial semiaberto,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,1,A,,"CPP, art. 593, I",CPP.a593.I,principal,Apelação contra sentença condenatória,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,1,B,,"CP, art. 18, II",CP.a18.II,principal,Crime culposo,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,1,B,,"CTB, art. 302",L9503.a302,acessorio,Homicídio culposo na direção de veículo automotor,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,3,A,,Súmula 351 do STF,TEMA.SUM.STF.351,principal,Citação por edital de réu preso,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,3,A,,"CPP, art. 360",CPP.a360,principal,Citação do réu preso,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,3,A,,"CPP, art. 564, III, e",CPP.a564.III.e,acessorio,Nulidade por falta de citação,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,3,B,,"CP, art. 30",CP.a30,principal,Comunicabilidade das elementares,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,3,B,,"CP, art. 312",CP.a312,acessorio,Peculato,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,4,A,,"LEP, art. 197",L7210.a197,principal,Agravo em execução,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,4,B,,Súmula 493 do STJ,TEMA.SUM.STJ.493,principal,Pena substitutiva como condição do regime aberto,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,4,B,,"LEP, art. 115",L7210.a115,acessorio,Condições do regime aberto,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+19,2,2016-05-29,4,B,,"CP, art. 44",CP.a44,acessorio,Penas restritivas de direitos,http://oab.fgv.br/arq/620/29052016175615_XIX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,1,2016-07-24,59,,B,"CP, art. 18, parágrafo único",CP.a18.pu,principal,Excepcionalidade do crime culposo,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,59,,B,"CP, art. 314",CP.a314,distrator,"Extravio, sonegação ou inutilização de livro ou documento",http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,59,,B,"CP, art. 319",CP.a319,distrator,Prevaricação,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,59,,B,"CP, art. 320",CP.a320,distrator,Condescendência criminosa,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,60,,C,"CP, art. 20, § 3º",CP.a20.p3,principal,Erro sobre a pessoa,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,60,,C,"CP, art. 121",CP.a121,acessorio,Homicídio,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,60,,C,"CP, art. 73",CP.a73,distrator,Erro na execução,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,60,,C,"CP, art. 121, § 3º",CP.a121.p3,distrator,Homicídio culposo,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,60,,C,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,61,,D,"CP, art. 64, I",CP.a64.I,principal,Período depurador da reincidência,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,61,,D,"CP, art. 61, I",CP.a61.I,acessorio,Agravante da reincidência,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,61,,D,"CP, art. 63",CP.a63,acessorio,Reincidência,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,61,,D,"CP, art. 157",CP.a157,acessorio,Roubo,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,61,,D,"CP, art. 16",CP.a16,distrator,Arrependimento posterior,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,61,,D,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,61,,D,"CP, art. 61, II, h",CP.a61.II.h,distrator,Agravante do crime contra maior de 60 anos,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,62,,D,"CP, art. 121, § 2º, V",CP.a121.p2.V,principal,Homicídio qualificado para assegurar a impunidade de outro crime,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,62,,D,"CP, art. 155",CP.a155,principal,Furto,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,62,,D,"CP, art. 14, I",CP.a14.I,acessorio,Crime consumado,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,62,,D,"CP, art. 157, § 3º",CP.a157.p3,distrator,Roubo com resultado morte (latrocínio),http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,62,,D,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,63,,C,"Lei 11.340/2006, art. 5º, III",L11340.a5.III,principal,Violência doméstica em relação íntima de afeto,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,63,,C,"Lei 11.340/2006, art. 41",L11340.a41,distrator,Inaplicabilidade da Lei 9.099/1995,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,64,,A,"CP, art. 217-A",CP.a217A,principal,Estupro de vulnerável,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,1,2016-07-24,64,,A,"CP, art. 218",CP.a218,distrator,Corrupção de menores,http://oab.fgv.br/arq/621/24072016185034_CADERNO_TIPO_1_XX_EXAME.pdf
+20,2,2016-09-18,Peça,,,"CPP, art. 403, § 3º",CPP.a403.p3,principal,Memoriais,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"CPP, art. 404, parágrafo único",CPP.a404.pu,principal,Alegações finais por memorial,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"Lei 11.343/2006, art. 57",L11343.a57,principal,Procedimento da Lei de Drogas (debates),http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"CPP, art. 394, § 5º",CPP.a394.p5,principal,Aplicação subsidiária do procedimento ordinário,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"CP, art. 22",CP.a22,principal,Coação moral irresistível,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"CPP, art. 386, VI",CPP.a386.VI,principal,Absolvição por causa que isenta de pena,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"Lei 11.343/2006, art. 33",L11343.a33,acessorio,Tráfico de drogas,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"CP, art. 59",CP.a59,principal,Fixação da pena-base,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,Súmula 444 do STJ,TEMA.SUM.STJ.444,principal,Inquéritos e ações penais em curso e pena-base,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"CP, art. 65, I",CP.a65.I,principal,Atenuante do maior de 70 anos na data da sentença,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"CP, art. 65, III, d",CP.a65.III.d,principal,Atenuante da confissão espontânea,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"CP, art. 65, III, c",CP.a65.III.c,principal,Atenuante da coação resistível,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"Lei 11.343/2006, art. 33, § 4º",L11343.a33.p4,principal,Tráfico privilegiado,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"CP, art. 44",CP.a44,acessorio,Penas restritivas de direitos,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,"Lei 8.072/1990, art. 2º, § 1º",L8072.a2.p1,principal,Regime inicial fechado nos crimes hediondos,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,Princípio da individualização da pena,TEMA.PRINC.individualizacao,principal,Princípio da individualização da pena,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,Peça,,,Princípio da presunção de inocência (estado de inocência),TEMA.PRINC.presuncao_inocencia,principal,Princípio da presunção de inocência,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,1,A,,"CP, art. 44, I",CP.a44.I,principal,Substituição da pena no crime culposo,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,1,A,,"CTB, art. 302, § 1º, I",L9503.a302.p1.I,acessorio,Homicídio culposo na direção de veículo sem habilitação,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,1,A,,"CTB, art. 302, § 1º, II",L9503.a302.p1.II,acessorio,Homicídio culposo na direção de veículo na calçada,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,1,B,,Vedação da autoincriminação (nemo tenetur se detegere),TEMA.PRINC.nemo_tenetur,principal,Vedação da autoincriminação (direito ao silêncio),http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,1,B,,"CPP, art. 313, I",CPP.a313.I,principal,Prisão preventiva só em crime doloso,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,2,B,,"CP, art. 180",CP.a180,principal,Receptação simples,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,2,B,,"CP, art. 180, § 1º",CP.a180.p1,principal,Receptação qualificada,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,3,A,,"CP, art. 15",CP.a15,principal,Desistência voluntária,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,3,A,,"CP, art. 14, II",CP.a14.II,acessorio,Tentativa,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,3,A,,"CP, art. 171",CP.a171,acessorio,Estelionato,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,4,A,,"CP, art. 140, § 3º",CP.a140.p3,principal,Injúria qualificada por elementos de cor (injúria racial),http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,4,B,,"CP, art. 145, parágrafo único",CP.a145.pu,principal,Ação penal na injúria qualificada,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,4,B,,"CP, art. 103",CP.a103,principal,Decadência do direito de representação,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+20,2,2016-09-18,4,B,,"CPP, art. 38",CPP.a38,principal,Prazo decadencial,http://oab.fgv.br/arq/621/18092016181657_XX%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+21,1,2016-11-27,59,,A,"CP, art. 5º, § 1º",CP.a5.p1,principal,Extensão do território nacional (aeronave pública),http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,59,,A,"CP, art. 5º",CP.a5,acessorio,Territorialidade,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,59,,A,"CP, art. 7º, II, a",CP.a7.II.a,distrator,Extraterritorialidade pela justiça universal,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,59,,A,"CP, art. 7º, § 2º",CP.a7.p2,distrator,Condições da extraterritorialidade condicionada,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,60,,A,"CP, art. 44, II",CP.a44.II,principal,Substituição da pena: reincidência em crime doloso,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,60,,A,"CP, art. 44, I",CP.a44.I,principal,Substituição da pena: crime culposo,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,60,,A,"CP, art. 77, III",CP.a77.III,distrator,Sursis subsidiário à substituição,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,60,,A,"CP, art. 63",CP.a63,distrator,Reincidência,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,60,,A,"CP, art. 109, VI",CP.a109.VI,distrator,Prescrição da pena inferior a um ano,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,61,,B,"CP, art. 13, § 2º, b",CP.a13.p2.b,principal,Dever de agir de quem assumiu a responsabilidade de impedir o resultado,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,61,,B,"CP, art. 121, § 3º",CP.a121.p3,principal,Homicídio culposo,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,61,,B,"CP, art. 18, II",CP.a18.II,acessorio,Crime culposo,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,61,,B,"CP, art. 13, § 2º",CP.a13.p2,acessorio,Relevância da omissão (poder de agir),http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,61,,B,"CP, art. 18, I",CP.a18.I,distrator,Crime doloso,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,61,,B,"CP, art. 135",CP.a135,distrator,Omissão de socorro,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,62,,C,"CP, art. 155, § 4º, IV",CP.a155.p4.IV,principal,Furto qualificado pelo concurso de pessoas,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,62,,C,"CP, art. 29",CP.a29,acessorio,Concurso de pessoas,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,62,,C,"CP, art. 155",CP.a155,distrator,Furto simples,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,62,,C,"CP, art. 349",CP.a349,distrator,Favorecimento real,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,62,,C,"CP, art. 180",CP.a180,distrator,Receptação,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,63,,D,"CP, art. 18, parágrafo único",CP.a18.pu,principal,Excepcionalidade do crime culposo,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,63,,D,"CP, art. 299",CP.a299,acessorio,Falsidade ideológica,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,63,,D,"CP, art. 18, II",CP.a18.II,distrator,Crime culposo,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,63,,D,"CP, art. 297",CP.a297,distrator,Falsificação de documento público (falsidade material),http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,64,,D,"CP, art. 317",CP.a317,principal,Corrupção passiva,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,64,,D,"CP, art. 333",CP.a333,distrator,Corrupção ativa,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,1,2016-11-27,64,,D,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/624/27112016173211_CADERNO_TIPO_1_XXI_EXAME.pdf
+21,2,2017-01-22,Peça,,,"CPP, art. 396-A",CPP.a396A,principal,Resposta à acusação,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CPP, art. 396",CPP.a396,principal,Resposta à acusação (prazo de dez dias),http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CP, art. 107, IV",CP.a107.IV,principal,Extinção da punibilidade pela prescrição,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CP, art. 109, IV",CP.a109.IV,principal,Prescrição: pena máxima superior a dois e até quatro anos,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CP, art. 115",CP.a115,principal,Redução do prazo prescricional (menor de 21 anos),http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CP, art. 117, I",CP.a117.I,acessorio,Interrupção da prescrição pelo recebimento da denúncia,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CPP, art. 397, IV",CPP.a397.IV,principal,Absolvição sumária por extinção da punibilidade,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,Princípio da insignificância,TEMA.PRINC.insignificancia,principal,Princípio da insignificância,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CPP, art. 397, III",CPP.a397.III,principal,Absolvição sumária: fato que evidentemente não constitui crime,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CP, art. 24",CP.a24,principal,Estado de necessidade,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CPP, art. 397, I",CPP.a397.I,principal,Absolvição sumária: excludente manifesta da ilicitude,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CP, art. 155",CP.a155,acessorio,Furto simples,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CP, art. 14, II",CP.a14.II,acessorio,Tentativa,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,Peça,,,"CPP, art. 70",CPP.a70,acessorio,Competência pelo lugar do último ato de execução,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,1,A,,"CPP, art. 74, § 1º",CPP.a74.p1,principal,Competência do Tribunal do Júri,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,1,A,,"CP, art. 129, § 3º",CP.a129.p3,acessorio,Lesão corporal seguida de morte,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,1,B,,"CP, art. 19",CP.a19,principal,Agravação pelo resultado,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,1,B,,"CP, art. 13",CP.a13,principal,Relação de causalidade (concausa preexistente),http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,1,B,,Princípio da culpabilidade (responsabilidade penal individual),TEMA.PRINC.culpabilidade,principal,Vedação da responsabilidade penal objetiva,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,3,A,,"CPP, art. 155",CPP.a155,principal,Vedação da condenação fundada só em elementos informativos,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,3,B,,"CP, art. 157",CP.a157,acessorio,Roubo,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,3,B,,"CP, art. 59",CP.a59,principal,Fixação da pena-base,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,3,B,,"CP, art. 65, III, d",CP.a65.III.d,principal,Atenuante da confissão espontânea,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,3,B,,Súmula 545 do STJ,TEMA.SUM.STJ.545,principal,Confissão e atenuante,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,4,A,,Súmula 554 do STF,TEMA.SUM.STF.554,principal,Pagamento do cheque sem fundos e prosseguimento da ação penal,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,4,A,,"CP, art. 171, § 2º, VI",CP.a171.p2.VI,acessorio,Fraude no pagamento por meio de cheque,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,4,B,,Súmula 521 do STF,TEMA.SUM.STF.521,principal,Foro competente no estelionato por cheque sem fundos,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+21,2,2017-01-22,4,B,,"CPP, art. 70",CPP.a70,principal,Competência pelo lugar da consumação,http://oab.fgv.br/arq/624/22012017182417_XXI%20Exame%20Penal-%20SEGUNDA%20FASE.pdf
+22,1,2017-04-02,60,,A,"CP, art. 17",CP.a17,principal,Crime impossível por absoluta impropriedade do objeto,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,60,,A,"CP, art. 124",CP.a124,acessorio,Aborto provocado pela gestante,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,60,,A,"CP, art. 127",CP.a127,distrator,Forma qualificada do aborto,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,60,,A,"CP, art. 129, § 1º",CP.a129.p1,distrator,Lesão corporal de natureza grave,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,60,,A,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,61,,B,"CP, art. 70",CP.a70,distrator,Concurso formal,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,62,,D,"CP, art. 110, § 1º",CP.a110.p1,principal,Prescrição retroativa sem termo anterior à denúncia,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,62,,D,"CP, art. 115",CP.a115,acessorio,Redução dos prazos de prescrição,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,62,,D,"CP, art. 109, V",CP.a109.V,acessorio,Prazo prescricional de quatro anos,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,62,,D,"CP, art. 117, I",CP.a117.I,acessorio,Interrupção pelo recebimento da denúncia,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,62,,D,"CP, art. 117, IV",CP.a117.IV,acessorio,Interrupção pela publicação da sentença condenatória,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,62,,D,"CP, art. 110",CP.a110,distrator,Prescrição da pretensão executória,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,63,,C,"CP, art. 20",CP.a20,principal,Erro de tipo,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,63,,C,"CP, art. 21",CP.a21,principal,Erro sobre a ilicitude do fato,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,63,,C,"Lei 11.343/2006, art. 33",L11343.a33,acessorio,Tráfico de drogas,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,64,,A,"CP, art. 70, parágrafo único",CP.a70.pu,principal,Concurso material benéfico,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,64,,A,"CP, art. 70",CP.a70,acessorio,Concurso formal,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,64,,A,"CP, art. 69",CP.a69,acessorio,Concurso material,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,64,,A,"CP, art. 157, § 3º",CP.a157.p3,acessorio,Roubo com resultado morte (latrocínio),http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,64,,A,Súmula 231 do STJ,TEMA.SUM.STJ.231,distrator,Atenuante e pena abaixo do mínimo legal,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,64,,A,"CP, art. 65, III, d",CP.a65.III.d,distrator,Confissão espontânea,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,64,,A,Súmula 610 do STF,TEMA.SUM.STF.610,distrator,Latrocínio consumado sem subtração,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,64,,A,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,1,2017-04-02,64,,A,Súmula 500 do STJ,TEMA.SUM.STJ.500,distrator,Corrupção de menores como crime formal,http://oab.fgv.br/arq/625/02042017172423_CADERNO_TIPO_1_XXII_EXAME.pdf
+22,2,2017-05-28,Peça,,,"CPP, art. 593, I",CPP.a593.I,principal,Apelação contra sentença condenatória,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 15",CP.a15,principal,Desistência voluntária,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 147",CP.a147,principal,Ameaça,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 147, parágrafo único",CP.a147.pu,principal,Ação penal na ameaça (representação),http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 103",CP.a103,principal,Decadência do direito de representação,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 59",CP.a59,principal,Pena-base e antecedentes,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 65, I",CP.a65.I,principal,Atenuante da menoridade relativa,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 65, III, d",CP.a65.III.d,principal,Atenuante da confissão espontânea,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 157, § 2º, I",CP.a157.p2.I,principal,Emprego de arma no roubo (redação anterior),http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 14, parágrafo único",CP.a14.pu,principal,Diminuição de pena da tentativa,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 77",CP.a77,principal,Suspensão condicional da pena,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 33, § 2º",CP.a33.p2,principal,Regime inicial conforme a pena,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,Súmula 718 do STF,TEMA.SUM.STF.718,principal,Gravidade abstrata e regime mais severo,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,Súmula 719 do STF,TEMA.SUM.STF.719,principal,Motivação idônea para regime mais severo,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,Súmula 440 do STJ,TEMA.SUM.STJ.440,principal,Pena-base no mínimo e regime mais gravoso,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 157",CP.a157,acessorio,Roubo,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CP, art. 14, II",CP.a14.II,acessorio,Tentativa,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,Peça,,,"CPP, art. 593",CPP.a593,acessorio,Prazo da apelação,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,1,B,,"Lei 11.343/2006, art. 33, § 3º",L11343.a33.p3,principal,Oferta eventual de droga para consumo conjunto,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,1,B,,"Lei 11.343/2006, art. 33",L11343.a33,acessorio,Tráfico de drogas,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,2,A,,"CPP, art. 95, I",CPP.a95.I,principal,Exceção de suspeição,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,2,A,,"CPP, art. 104",CPP.a104,principal,Suspeição do órgão do Ministério Público,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,2,A,,"CPP, art. 254, I",CPP.a254.I,acessorio,Suspeição por amizade íntima,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,2,A,,"CPP, art. 254, IV",CPP.a254.IV,acessorio,Suspeição por aconselhamento da parte,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,2,A,,"CPP, art. 258",CPP.a258,acessorio,Impedimento e suspeição do Ministério Público,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,2,B,,"CP, art. 20",CP.a20,principal,Erro de tipo,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,2,B,,"CP, art. 217-A",CP.a217A,acessorio,Estupro de vulnerável,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,3,A,,Súmula 38 do STJ,TEMA.SUM.STJ.38,principal,Competência da Justiça Estadual para contravenções,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,4,A,,"CPP, art. 302",CPP.a302,principal,Hipóteses de flagrante,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,4,A,,"CPP, art. 310, I",CPP.a310.I,principal,Relaxamento da prisão ilegal,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,4,B,,"CP, art. 70",CP.a70,principal,Concurso formal,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+22,2,2017-05-28,4,B,,"CP, art. 157",CP.a157,acessorio,Roubo,http://oab.fgv.br/arq/625/695883_XXII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,1,2017-07-23,58,,B,"CP, art. 73",CP.a73,principal,Erro na execução (aberratio ictus),http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,58,,B,"CP, art. 20, § 3º",CP.a20.p3,acessorio,Erro sobre a pessoa,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,58,,B,"CP, art. 121",CP.a121,acessorio,Homicídio simples,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,58,,B,"CP, art. 121, § 4º",CP.a121.p4,acessorio,Aumento de pena no homicídio doloso contra maior de 60 anos,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,58,,B,"CP, art. 121, § 3º",CP.a121.p3,distrator,Homicídio culposo,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,58,,B,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,59,,B,"CP, art. 139",CP.a139,principal,Difamação,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,59,,B,"CP, art. 140",CP.a140,principal,Injúria,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,59,,B,"CP, art. 138",CP.a138,distrator,Calúnia,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,60,,C,"CP, art. 29, § 2º",CP.a29.p2,principal,Cooperação dolosamente distinta,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,60,,C,"CP, art. 155, § 4º, IV",CP.a155.p4.IV,acessorio,Furto qualificado pelo concurso de pessoas,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,60,,C,"CP, art. 157, § 2º, II",CP.a157.p2.II,acessorio,Roubo majorado pelo concurso de pessoas,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,60,,C,"CP, art. 29, § 1º",CP.a29.p1,distrator,Participação de menor importância,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,61,,D,"CP, art. 64, II",CP.a64.II,principal,Crimes militares próprios e reincidência,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,61,,D,"CP, art. 63",CP.a63,principal,Reincidência,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,61,,D,"CP, art. 61, I",CP.a61.I,acessorio,Agravante da reincidência,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,62,,B,"CP, art. 316",CP.a316,principal,Concussão,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,62,,B,"CP, art. 317",CP.a317,distrator,Corrupção passiva,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,62,,B,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,63,,D,"CP, art. 121, § 3º",CP.a121.p3,principal,Homicídio culposo,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,63,,D,"CP, art. 129, § 6º",CP.a129.p6,principal,Lesão corporal culposa,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,63,,D,"CP, art. 70",CP.a70,principal,Concurso formal,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,63,,D,"CP, art. 69",CP.a69,distrator,Concurso material,http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,1,2017-07-23,63,,D,"CP, art. 129, § 1º, III",CP.a129.p1.III,distrator,Lesão corporal grave (debilidade permanente de membro),http://oab.fgv.br/arq/626/853921_CADERNO_TIPO_1_XXIII_EXAME.pdf
+23,2,2017-09-17,Peça,,,"CPP, art. 403, § 3º",CPP.a403.p3,principal,Memoriais,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,Peça,,,"CPP, art. 28",CPP.a28,principal,Remessa ao órgão revisor do Ministério Público,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,Peça,,,"CP, art. 20",CP.a20,principal,Erro de tipo,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,Peça,,,"CPP, art. 386, III",CPP.a386.III,principal,Absolvição: fato que não constitui infração penal,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,Peça,,,"CPP, art. 386, VI",CPP.a386.VI,principal,Absolvição: circunstância que exclui o crime,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,Peça,,,"CP, art. 155",CP.a155,acessorio,Furto simples,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,Peça,,,"CP, art. 59",CP.a59,principal,Fixação da pena-base,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,Peça,,,"CP, art. 65, I",CP.a65.I,principal,Atenuante da menoridade relativa,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,Peça,,,"CP, art. 65, III, d",CP.a65.III.d,principal,Atenuante da confissão espontânea,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,Peça,,,"CP, art. 16",CP.a16,principal,Arrependimento posterior,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,Peça,,,"CP, art. 33, § 2º, c",CP.a33.p2.c,principal,Regime inicial aberto,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,Peça,,,"CP, art. 44",CP.a44,principal,Substituição por penas restritivas de direitos,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,1,A,,"CPP, art. 157",CPP.a157,principal,Provas ilícitas,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,1,A,,"CPP, art. 302",CPP.a302,acessorio,Flagrante delito,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,1,B,,"CP, art. 4º",CP.a4,principal,Tempo do crime (teoria da atividade),http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,1,B,,"CP, art. 27",CP.a27,principal,Inimputabilidade do menor de 18 anos,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,1,B,,"CP, art. 121",CP.a121,acessorio,Homicídio,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,2,A,,"LEP, art. 197",L7210.a197,principal,Agravo em execução,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,2,B,,"CP, art. 88",CP.a88,principal,Efeitos da revogação do livramento,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,2,B,,"LEP, art. 141",L7210.a141,principal,Revogação por infração anterior ao livramento,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,2,B,,"CP, art. 86, II",CP.a86.II,acessorio,Revogação obrigatória por crime anterior,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,3,B,,"CP, art. 1º",CP.a1,principal,Anterioridade da lei penal,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,3,B,,"CP, art. 154-A",CP.a154A,acessorio,Invasão de dispositivo informático,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,4,A,,"CP, art. 121, § 4º",CP.a121.p4,principal,Aumento de pena no homicídio,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,4,A,,"CP, art. 121, § 3º",CP.a121.p3,acessorio,Homicídio culposo,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+23,2,2017-09-17,4,B,,"CP, art. 121, § 5º",CP.a121.p5,principal,Perdão judicial,http://oab.fgv.br/arq/626/685780_XXIII%20Exame%20Penal%20-%20SEGUNDA%20FASE.pdf
+24,1,2017-11-19,58,,C,"CP, art. 44, II",CP.a44.II,principal,Substituição por restritivas de direitos: reincidência em crime doloso,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,58,,C,"CP, art. 44, I",CP.a44.I,acessorio,Substituição por restritivas de direitos: pena e ausência de violência,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,58,,C,"CP, art. 44, § 3º",CP.a44.p3,acessorio,Substituição para o condenado reincidente,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,58,,C,"CP, art. 163, parágrafo único, III",CP.a163.pu.III,acessorio,Dano qualificado contra patrimônio público,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,58,,C,"CP, art. 107, IX",CP.a107.IX,distrator,Perdão judicial,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,58,,C,"CP, art. 65, III, d",CP.a65.III.d,distrator,Atenuante da confissão espontânea,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,58,,C,"CP, art. 67",CP.a67,distrator,Concurso de agravantes e atenuantes,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,58,,C,"CP, art. 63",CP.a63,distrator,Reincidência,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,59,,A,"CP, art. 71",CP.a71,distrator,Crime continuado,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,59,,A,"CP, art. 70",CP.a70,distrator,Concurso formal,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,60,,A,Súmula 711 do STF,TEMA.SUM.STF.711,principal,Lei mais grave no crime permanente,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,60,,A,"CP, art. 148",CP.a148,acessorio,Sequestro e cárcere privado,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,60,,A,"CP, art. 2º, parágrafo único",CP.a2.pu,distrator,Retroatividade da lei mais benéfica,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,60,,A,"CP, art. 27",CP.a27,distrator,Inimputabilidade do menor de 18 anos,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,60,,A,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,61,,D,"CP, art. 16",CP.a16,principal,Arrependimento posterior,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,61,,D,"CP, art. 155",CP.a155,principal,Furto simples,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,61,,D,"CP, art. 29",CP.a29,principal,Concurso de pessoas,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,61,,D,"CP, art. 155, § 4º, III",CP.a155.p4.III,distrator,Furto qualificado pelo emprego de chave falsa,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,61,,D,"CP, art. 15",CP.a15,distrator,Arrependimento eficaz,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,61,,D,"CP, art. 30",CP.a30,distrator,Comunicabilidade das circunstâncias,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,62,,B,"CP, art. 109, V",CP.a109.V,principal,Prazo prescricional de quatro anos,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,62,,B,"CP, art. 115",CP.a115,principal,Redução do prazo prescricional pela menoridade relativa,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,62,,B,"CP, art. 117, I",CP.a117.I,principal,Interrupção da prescrição pelo recebimento da denúncia,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,62,,B,"CP, art. 129",CP.a129,acessorio,Lesão corporal,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,62,,B,"CP, art. 103",CP.a103,distrator,Decadência do direito de representação,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,62,,B,"CP, art. 117, II",CP.a117.II,distrator,Interrupção da prescrição pela pronúncia,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,62,,B,Súmula 191 do STJ,TEMA.SUM.STJ.191,distrator,Pronúncia interrompe a prescrição mesmo com desclassificação,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,62,,B,"CP, art. 10",CP.a10,acessorio,Contagem do prazo penal,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,63,,D,"Lei 11.343/2006, art. 33, § 4º",L11343.a33.p4,principal,Tráfico privilegiado,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,63,,D,Súmula 587 do STJ,TEMA.SUM.STJ.587,principal,Tráfico interestadual sem transposição de fronteiras,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,63,,D,"Lei 11.343/2006, art. 40, V",L11343.a40.V,acessorio,Majorante do tráfico interestadual,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,63,,D,"Lei 11.343/2006, art. 33",L11343.a33,acessorio,Tráfico de drogas,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,1,2017-11-19,63,,D,"CP, art. 14, II",CP.a14.II,distrator,Tentativa,http://oab.fgv.br/arq/627/1373500_Caderno%20de%20Prova%20-%20Tipo%201.pdf
+24,2,2018-01-21,Peça,,,"LEP, art. 197",L7210.a197,principal,Agravo em execução,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,Peça,,,"CPP, art. 589",CPP.a589,principal,Juízo de retratação,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,Peça,,,"Lei 8.072/1990, art. 1º",L8072.a1,principal,Rol dos crimes hediondos,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,Peça,,,Vedação da analogia em prejuízo do réu,TEMA.PRINC.analogia,principal,Vedação da analogia em prejuízo do réu,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,Peça,,,"CP, art. 63",CP.a63,principal,Reincidência,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,Peça,,,"LEP, art. 112",L7210.a112,principal,Requisitos da progressão de regime,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,Peça,,,Súmula 439 do STJ,TEMA.SUM.STJ.439,principal,Exame criminológico por decisão motivada,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,Peça,,,"Lei 11.343/2006, art. 35",L11343.a35,acessorio,Associação para o tráfico,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,Peça,,,"Lei 11.343/2006, art. 44, parágrafo único",L11343.a44.pu,acessorio,Livramento condicional nos crimes da Lei de Drogas,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,Peça,,,"Lei 8.072/1990, art. 2º",L8072.a2,acessorio,Crimes hediondos e equiparados,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,Peça,,,"Lei 8.072/1990, art. 2º, § 2º",L8072.a2.p2,acessorio,Frações de progressão nos crimes hediondos (2/5 e 3/5),http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,Peça,,,Súmula 700 do STF,TEMA.SUM.STF.700,acessorio,Prazo do agravo em execução,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,1,A,,"CPP, art. 158",CPP.a158,principal,Indispensabilidade do exame de corpo de delito,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,1,A,,"CP, art. 129, § 2º, IV",CP.a129.p2.IV,acessorio,Lesão corporal gravíssima por deformidade permanente,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,1,B,,"CP, art. 77, § 2º",CP.a77.p2,principal,Suspensão condicional da pena etária,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,1,B,,"CP, art. 44, I",CP.a44.I,acessorio,Substituição por restritivas de direitos,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,2,A,,"CPP, art. 621, II",CPP.a621.II,principal,Revisão criminal: condenação fundada em documento falso,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,2,A,,"CPP, art. 621, III",CPP.a621.III,principal,Revisão criminal: prova nova de inocência,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,2,B,,"CP, art. 217-A",CP.a217A,principal,Estupro de vulnerável,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,2,B,,"CP, art. 213",CP.a213,acessorio,Estupro,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,3,B,,"CP, art. 180",CP.a180,acessorio,Receptação,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,4,A,,"CPP, art. 310, III",CPP.a310.III,principal,Liberdade provisória,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,4,A,,"CP, art. 23, I",CP.a23.I,acessorio,Exclusão da ilicitude pelo estado de necessidade,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,4,B,,"CP, art. 24",CP.a24,principal,Estado de necessidade,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
+24,2,2018-01-21,4,B,,"CP, art. 23, I",CP.a23.I,principal,Exclusão da ilicitude pelo estado de necessidade,http://oab.fgv.br/arq/627/694309_Caderno%20de%20provas%20(Direito%20Penal).pdf
 25,1,2018-04-08,58,,C,"CP, art. 121, § 2º",CP.a121.p2,principal,Homicídio qualificado,http://oab.fgv.br/arq/628/1299791_CADERNO_TIPO_1_XXV_EXAME.pdf
 25,1,2018-04-08,58,,C,"CP, art. 14, II",CP.a14.II,principal,Tentativa,http://oab.fgv.br/arq/628/1299791_CADERNO_TIPO_1_XXV_EXAME.pdf
 25,1,2018-04-08,58,,C,"CP, art. 121, § 2º, III",CP.a121.p2.III,acessorio,Homicídio qualificado por asfixia ou meio insidioso,http://oab.fgv.br/arq/628/1299791_CADERNO_TIPO_1_XXV_EXAME.pdf
