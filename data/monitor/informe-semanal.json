@@ -1,8 +1,8 @@
 {
- "gerado_em": "2026-11-23 18:25",
+ "gerado_em": "2026-11-24 17:12",
  "periodo": {
-  "inicio": "2026-11-16",
-  "fim": "2026-11-22"
+  "inicio": "2026-11-17",
+  "fim": "2026-11-23"
  },
  "total": 12,
  "por_casa": {
@@ -14,11 +14,11 @@
   "PLP": 1,
   "PEC": 1
  },
- "apresentadas_na_semana": 12,
+ "apresentadas_na_semana": 10,
  "natureza": {
-  "Cria ou altera tipo penal": 2,
+  "Cria ou altera tipo penal": 4,
   "Processo penal": 3,
-  "Aumenta pena": 1,
+  "Aumenta pena": 2,
   "Hediondez": 1,
   "Execução penal": 1
  },
@@ -27,7 +27,6 @@
   "Código de Processo Penal": 2,
   "Lei de Drogas": 1,
   "Crimes hediondos": 1,
-  "Código de Trânsito (crimes)": 1,
   "Juizados Especiais (Lei 9.099)": 1
  },
  "partidos": {
@@ -55,7 +54,7 @@
      "RS"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654163",
    "natureza": [
     "Cria ou altera tipo penal"
@@ -76,7 +75,7 @@
      "AL"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654320",
    "natureza": [
     "Cria ou altera tipo penal"
@@ -99,7 +98,7 @@
      "RS"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654744",
    "natureza": [],
    "diplomas": []
@@ -118,7 +117,7 @@
      "BA"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654802",
    "natureza": [
     "Processo penal"
@@ -141,7 +140,7 @@
      "SP"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655015",
    "natureza": [],
    "diplomas": []
@@ -160,9 +159,12 @@
      "MA"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655134",
-   "natureza": [],
+   "natureza": [
+    "Aumenta pena",
+    "Cria ou altera tipo penal"
+   ],
    "diplomas": [
     "Código Penal"
    ]
@@ -181,7 +183,7 @@
      "SP"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655533",
    "natureza": [
     "Processo penal"
@@ -204,10 +206,11 @@
      "MA"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655542",
    "natureza": [
-    "Aumenta pena"
+    "Aumenta pena",
+    "Cria ou altera tipo penal"
    ],
    "diplomas": [
     "Código Penal"
@@ -236,8 +239,7 @@
    ],
    "diplomas": [
     "Lei de Drogas",
-    "Crimes hediondos",
-    "Código de Trânsito (crimes)"
+    "Crimes hediondos"
    ]
   },
   {
