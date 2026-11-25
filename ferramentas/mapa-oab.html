@@ -153,6 +153,17 @@
 #dica{position:fixed;z-index:50;pointer-events:none;background:var(--fg);color:var(--bg);font-size:13px;line-height:1.35;padding:6px 9px;border-radius:6px;max-width:16rem}
 .grupo-lei{margin:0 0 26px}
 #ranking .rank li{grid-template-columns:minmax(0,1fr) 9rem 2.2rem}
+#ranking .rank.geral li{grid-template-columns:2.4rem minmax(0,1fr) 9rem 2.2rem;align-items:start}
+#ranking .rank.geral .trilho{margin-top:6px}
+#ranking .rank.geral .pos,#ranking .rank.geral .qt{line-height:1.5}
+.sub-ctl{display:flex;flex-wrap:wrap;gap:10px 22px;margin:0 0 12px}
+.sub-ctl .pilulas[hidden]{display:none}
+.qs{margin-top:2px}
+.qs summary{cursor:pointer;color:var(--muted);font-size:13px}
+.qs .refs{margin-top:4px;gap:2px}
+#ranking .rank .qs .refs li{display:flex;padding:0;border:0;font-size:13.5px}
+.mais{font:500 14px var(--body);border:1px solid var(--rule-ctrl);background:var(--bg);color:var(--accent);border-radius:999px;padding:6px 14px;cursor:pointer;margin-top:12px}
+.mais:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .grupo-lei>h2{font-size:21px;margin:0 0 6px}
 .grupo-cap{font:500 11.5px var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
 .grupo-cap b{display:block;font:500 14.5px var(--body);letter-spacing:0;text-transform:none;color:var(--fg)}
@@ -162,6 +173,7 @@
  .rank li{grid-template-columns:1.6rem minmax(0,1fr) 2rem}
  .rank .trilho{display:none}
  #ranking .rank li{grid-template-columns:minmax(0,1fr) 2rem}
+ #ranking .rank.geral li{grid-template-columns:2rem minmax(0,1fr) 2rem}
  .corpo{padding-left:14px}
  .numeros b{font-size:32px}
  .exame>summary{flex-wrap:wrap;row-gap:2px}
@@ -236,7 +248,13 @@
   <div class="arv" id="arvore"><p class="vazio">Carregando os dados…</p></div>
 </section>
 <section class="visao" id="v-ranking" role="tabpanel" aria-labelledby="t-ranking" hidden>
-  <p class="ajuda">Artigos e súmulas por número de questões que os cobraram, agrupados por lei e, no Código Penal, por capítulo, nos filtros escolhidos.</p>
+  <div class="sub-ctl">
+    <div class="pilulas" id="f-ordem"><span>Ordem</span><div>
+      <button data-v="geral" aria-pressed="true">Ranking geral</button><button data-v="lei" aria-pressed="false">Por lei</button></div></div>
+    <div class="pilulas" id="f-nivel"><span>Nível</span><div>
+      <button data-v="disp" aria-pressed="true">Dispositivo</button><button data-v="art" aria-pressed="false">Artigo</button></div></div>
+  </div>
+  <p class="ajuda" id="ajuda-rank"></p>
   <div id="ranking"></div>
 </section>
 <section class="visao" id="v-fichas" role="tabpanel" aria-labelledby="t-fichas" hidden>
@@ -333,8 +351,35 @@ function grupoCap(id){let x=nos.get(id),t=null,c=null,pt=null;while(x){if(x.t===
   return {id:g.id,sobre,nome:cap(g.r||'')}}
 function unidades(cs,chave){const m=new Map();cs.forEach(c=>{const k=chave(c);if(k==null)return;const u=c.q+'|'+(c.i||'');if(!m.has(k))m.set(k,new Map());m.get(k).set(u,quest.get(c.q).fase)});return m}
 function ordemNo(id){return D.nos.findIndex(n=>n.id===id)}
+let ordemRk='geral',nivel='disp',todosRk=false;
+const TOPO=30;
+function rankingGeral(cs){
+  const chave=c=>nivel==='disp'?c.d:artigoDe(c.d)?.id;
+  const m=new Map();cs.forEach(c=>{const k=chave(c);if(!k)return;if(!m.has(k))m.set(k,new Map());m.get(k).set(c.q+'|'+(c.i||''),c)});
+  const ids=[...m.keys()].sort((a,b)=>m.get(b).size-m.get(a).size||ORDEM_DIP.indexOf(a.split('.')[0])-ORDEM_DIP.indexOf(b.split('.')[0])||ordemNo(a)-ordemNo(b));
+  if(!ids.length){$('ranking').innerHTML='<p class="vazio">Sem cobrança nos filtros escolhidos.</p>';return}
+  const max=m.get(ids[0]).size;let pos=0,ant=-1;
+  const lista=(todosRk?ids:ids.filter((id,i)=>i<TOPO||m.get(id).size===m.get(ids[TOPO-1]).size));
+  const li=lista.map((id,i)=>{const us=m.get(id),n=nos.get(id),tema=id.startsWith('TEMA.');if(us.size!==ant){pos=i+1;ant=us.size}
+    const art=artigoDe(id);
+    const nome=tema?esc(n.n||n.r):esc(rot(id))+(nivel==='disp'&&n.t==='artigo'&&filhos.has(id)?', caput':'');
+    const rub=tema?(n.n?n.r:''):(n.r||art?.r||'');
+    let f1=0,f2=0;us.forEach(c=>quest.get(c.q).fase===1?f1++:f2++);
+    const fases=[f1?`${f1} na 1ª fase`:'',f2?`${f2} na 2ª fase`:''].filter(Boolean).join(', ');
+    const qs=[...us.values()].sort((a,b)=>a.q.localeCompare(b.q,'pt',{numeric:true})).map(c=>`<li><a href="#${c.q}" data-ficha>${esc(qrot(quest.get(c.q),c.i))}</a>${papel!=='principal'?`<span class="papel ${c.papel}">${PAPEL[c.papel]}</span>`:''}${nivel==='art'&&c.d!==id?`<span class="vazio">${esc(rot(c.d))}</span>`:''}</li>`).join('');
+    return `<li><span class="pos">${pos}º</span><span class="disp"><b>${nome}</b>${rub?' · '+esc(rub):''}<details class="qs"><summary>${us.size} ${us.size===1?'questão':'questões'} (${fases})</summary><ul class="refs">${qs}</ul></details></span>${barra(us.size,max)}<span class="qt">${us.size}</span></li>`}).join('');
+  const resto=ids.length-lista.length;
+  $('ranking').innerHTML=`<ol class="rank geral">${li}</ol>`+(resto>0?`<p><button type="button" class="mais" id="rk-mais">Mostrar todos (${ids.length})</button></p>`:(todosRk&&ids.length>TOPO?`<p><button type="button" class="mais" id="rk-menos">Mostrar só os ${TOPO} primeiros</button></p>`:''));
+  const b=$('rk-mais')||$('rk-menos');if(b)b.onclick=()=>{todosRk=!todosRk;ranking()};
+}
 function ranking(){
   const cs=filtradas();numeros(cs);
+  $('f-nivel').hidden=ordemRk!=='geral';
+  $('ajuda-rank').textContent=ordemRk==='geral'
+    ?(nivel==='disp'?'Dispositivos (caput, parágrafo, inciso, alínea), súmulas e princípios em ordem decrescente do número de questões que os cobraram, nos filtros escolhidos. Cada questão conta uma vez por dispositivo; empates dividem a posição.'
+      :'Artigos, súmulas e princípios em ordem decrescente do número de questões que os cobraram, somados o caput e os parágrafos, incisos e alíneas, nos filtros escolhidos. Cada questão conta uma vez por artigo; empates dividem a posição.')
+    :'Artigos e súmulas por número de questões que os cobraram, agrupados por lei e, no Código Penal, por capítulo, nos filtros escolhidos.';
+  if(ordemRk==='geral'){rankingGeral(cs);return}
   const porArt=unidades(cs,c=>artigoDe(c.d)?.id);let max=0;porArt.forEach(v=>max=Math.max(max,v.size));
   const refs=new Map();cs.forEach(c=>{const a=artigoDe(c.d);if(!a)return;if(!refs.has(a.id))refs.set(a.id,new Map());refs.get(a.id).set(c.q+'|'+(c.i||''),c)});
   const linha=(id)=>{const n=nos.get(id),us=refs.get(id),tema=id.startsWith('TEMA.');
@@ -394,7 +439,7 @@ const VIS={panorama,mapa,ranking,fichas};let atual='panorama';
 function abrir(v,foco){atual=v;document.querySelectorAll('[role=tab]').forEach(t=>{const s=t.id==='t-'+v;t.setAttribute('aria-selected',s);t.tabIndex=s?0:-1;if(s&&foco)t.focus()});document.querySelectorAll('.visao').forEach(s=>s.hidden=s.id!=='v-'+v);VIS[v]()}
 document.querySelectorAll('[role=tab]').forEach((t,i,all)=>{t.onclick=()=>abrir(t.id.slice(2));t.onkeydown=e=>{const d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(d){abrir(all[(i+d+all.length)%all.length].id.slice(2),true);e.preventDefault()}}});
 function pil(id,set){document.querySelectorAll(`#${id} button`).forEach(b=>b.onclick=()=>{document.querySelectorAll(`#${id} button`).forEach(x=>x.setAttribute('aria-pressed',x===b));set(b.dataset.v);VIS[atual]()})}
-pil('f-fase',v=>fase=v);pil('f-papel',v=>papel=v);pil('f-exame',v=>janela=v);
+pil('f-fase',v=>fase=v);pil('f-papel',v=>papel=v);pil('f-exame',v=>janela=v);pil('f-ordem',v=>ordemRk=v);pil('f-nivel',v=>{nivel=v;todosRk=false});
 $('mostrar-zero').onchange=mapa;
 document.addEventListener('click',e=>{const a=e.target.closest('a[data-ficha]');if(!a)return;e.preventDefault();const id=a.getAttribute('href').slice(1);
   if(!exameOk(quest.get(id).exame)){janela='todos';document.querySelectorAll('#f-exame button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.v==='todos'))}
