@@ -6,7 +6,7 @@ Só usa contagens agregadas (classe, assunto, órgão julgador, grau, mês de aj
 a API não traz partes nem processos sigilosos.
 Documentação: https://datajud-wiki.cnj.jus.br/api-publica/
 """
-import json, os, re, sys, time, urllib.request
+import json, os, random, re, sys, time, urllib.error, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timezone
 
@@ -46,18 +46,25 @@ def chave():
     return CHAVE_RESERVA
 
 
-def consulta(corpo, k, tentativas=4):
+def consulta(corpo, k, tentativas=7):
     dados = json.dumps(corpo).encode()
     for i in range(tentativas):
+        espera = 20 * 2 ** i  # 20 s, 40 s, 80 s... até cerca de 21 min no total
         try:
             req = urllib.request.Request(URL, data=dados, headers={"Authorization": "APIKey " + k, "Content-Type": "application/json"})
             r = json.loads(urllib.request.urlopen(req, timeout=300).read())
             if "error" in r:
                 raise RuntimeError(json.dumps(r["error"])[:300])
             return r
+        except urllib.error.HTTPError as e:
+            # 429: limite de requisições do DataJud; respeita o Retry-After, quando vier.
+            if e.code == 429 and (e.headers.get("Retry-After") or "").isdigit():
+                espera = max(espera, int(e.headers["Retry-After"]))
+            print(f"Tentativa {i + 1} falhou: {e}", file=sys.stderr)
         except Exception as e:
             print(f"Tentativa {i + 1} falhou: {e}", file=sys.stderr)
-            time.sleep(15 * (i + 1))
+        if i < tentativas - 1:
+            time.sleep(espera + random.uniform(0, 5))
     raise SystemExit("DataJud não respondeu.")
 
 
@@ -132,7 +139,7 @@ def comarca(nome):
 def main():
     k = chave()
     anos = list(range(ANO_INICIAL, date.today().year + 1))
-    with ThreadPoolExecutor(max_workers=4) as ex:
+    with ThreadPoolExecutor(max_workers=2) as ex:
         fut_m = ex.submit(meses, k)
         res = dict(ex.map(lambda a: ano(a, k), anos))
         serie = fut_m.result()
