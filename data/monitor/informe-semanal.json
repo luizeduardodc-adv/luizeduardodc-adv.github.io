@@ -1,66 +1,47 @@
 {
- "gerado_em": "2026-11-24 17:12",
+ "gerado_em": "2026-11-25 16:17",
  "periodo": {
-  "inicio": "2026-11-17",
-  "fim": "2026-11-23"
+  "inicio": "2026-11-18",
+  "fim": "2026-11-24"
  },
- "total": 12,
+ "total": 14,
  "por_casa": {
-  "Câmara": 9,
-  "Senado": 3
+  "Câmara": 12,
+  "Senado": 2
  },
  "por_tipo": {
-  "PL": 10,
+  "PL": 12,
   "PLP": 1,
   "PEC": 1
  },
- "apresentadas_na_semana": 10,
+ "apresentadas_na_semana": 9,
  "natureza": {
   "Cria ou altera tipo penal": 4,
-  "Processo penal": 3,
-  "Aumenta pena": 2,
+  "Processo penal": 4,
+  "Aumenta pena": 4,
   "Hediondez": 1,
   "Execução penal": 1
  },
  "diplomas": {
   "Código Penal": 3,
-  "Código de Processo Penal": 2,
+  "Código de Processo Penal": 3,
   "Lei de Drogas": 1,
   "Crimes hediondos": 1,
-  "Juizados Especiais (Lei 9.099)": 1
+  "ECA (crimes)": 1
  },
  "partidos": {
-  "PL": 3,
   "PP": 1,
+  "PL": 2,
   "AVANTE": 1,
   "PSOL": 1,
   "PT": 3,
-  "MISSÃO": 1,
+  "MISSÃO": 2,
   "UNIÃO": 1,
-  "MDB": 1
+  "REPUBLIC": 1,
+  "PCdoB": 1,
+  "PSD": 1
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5861,
-   "ano": 2026,
-   "ementa": "Institui a Lei Manfred e Marisia von Richthofen, que proíbe e criminaliza a obtenção de vantagem econômica, direta ou indireta, por pessoa condenada pela prática de infração penal, mediante exploração comercial, promoção ou monetização do próprio delito, estabelece mecanismos de perda de valores, reparação das vítimas e responsabilização de terceiros que atuem para fraudar a proibição, e dá outras providências.",
-   "apresentacao": "2026-11-16",
-   "aut": [
-    [
-     "Sanderson",
-     "PL",
-     "RS"
-    ]
-   ],
-   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654163",
-   "natureza": [
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": []
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -243,6 +224,93 @@
    ]
   },
   {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5921,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 9.610, de 19 de fevereiro de 1998, para vedar a obtenção de vantagem econômica por pessoa condenada definitivamente pela exploração comercial de infração penal por ela praticada e estabelecer mecanismos de destinação dos valores à reparação das vítimas e de seus sucessores.",
+   "apresentacao": "2026-11-23",
+   "aut": [
+    [
+     "Ricardo Ayres",
+     "REPUBLIC",
+     "TO"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2656745",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5924,
+   "ano": 2026,
+   "ementa": "Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para tornar obrigatória a conversão das medidas cautelares diversas da prisão em prisão preventiva, nos casos de descumprimento e da outras providências.",
+   "apresentacao": "2026-11-23",
+   "aut": [
+    [
+     "Kim Kataguiri",
+     "MISSÃO",
+     "SP"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2657826",
+   "natureza": [
+    "Processo penal"
+   ],
+   "diplomas": [
+    "Código de Processo Penal"
+   ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5925,
+   "ano": 2026,
+   "ementa": "Altera o art. 297 da Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para aumentar a pena do crime de impedimento ou embaraço ao exercício do sufrágio, estabelecer causas de aumento de pena, disciplinar a responsabilização dos participantes, prever a perda de cargo, função pública ou mandato eletivo e especificar condutas que comprometam o deslocamento de eleitores e o acesso aos locais de votação.",
+   "apresentacao": "2026-11-23",
+   "aut": [
+    [
+     "Daiana Santos",
+     "PCdoB",
+     "RS"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2657827",
+   "natureza": [
+    "Aumenta pena"
+   ],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5927,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), para aumentar as penas dos crimes relacionados à pornografia infantil.",
+   "apresentacao": "2026-11-23",
+   "aut": [
+    [
+     "Lucas Redecker",
+     "PSD",
+     "RS"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2658842",
+   "natureza": [
+    "Aumenta pena",
+    "Cria ou altera tipo penal"
+   ],
+   "diplomas": [
+    "ECA (crimes)"
+   ]
+  },
+  {
    "casa": "Senado",
    "sigla": "PLP",
    "numero": 309,
@@ -260,27 +328,6 @@
    "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176447",
    "natureza": [],
    "diplomas": []
-  },
-  {
-   "casa": "Senado",
-   "sigla": "PL",
-   "numero": 5877,
-   "ano": 2026,
-   "ementa": "Altera a Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil), a Lei nº 8.906, de 4 de julho de 1994 (Estatuto da Advocacia), e a Lei nº 9.099, de 26 de setembro de 1995, para conceituar a litigância abusiva e a litigância predatória, dispor sobre a transparência da cessão e do financiamento de direitos litigiosos e estabelecer as consequências processuais e disciplinares do uso abusivo do processo.",
-   "apresentacao": "2026-11-17",
-   "aut": [
-    [
-     "Alessandro Vieira",
-     "MDB",
-     "SE"
-    ]
-   ],
-   "situacao": "Aguardando despacho",
-   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176437",
-   "natureza": [],
-   "diplomas": [
-    "Juizados Especiais (Lei 9.099)"
-   ]
   },
   {
    "casa": "Senado",
