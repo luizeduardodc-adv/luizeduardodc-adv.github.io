@@ -1,112 +1,44 @@
 {
- "gerado_em": "2026-11-25 16:17",
+ "gerado_em": "2026-11-26 16:03",
  "periodo": {
-  "inicio": "2026-11-18",
-  "fim": "2026-11-24"
+  "inicio": "2026-11-19",
+  "fim": "2026-11-25"
  },
- "total": 14,
+ "total": 11,
  "por_casa": {
-  "Câmara": 12,
+  "Câmara": 9,
   "Senado": 2
  },
  "por_tipo": {
-  "PL": 12,
-  "PLP": 1,
+  "PL": 10,
   "PEC": 1
  },
- "apresentadas_na_semana": 9,
+ "apresentadas_na_semana": 8,
  "natureza": {
-  "Cria ou altera tipo penal": 4,
-  "Processo penal": 4,
   "Aumenta pena": 4,
+  "Cria ou altera tipo penal": 3,
+  "Processo penal": 3,
   "Hediondez": 1,
   "Execução penal": 1
  },
  "diplomas": {
-  "Código Penal": 3,
-  "Código de Processo Penal": 3,
+  "Código Penal": 2,
+  "Código de Processo Penal": 2,
   "Lei de Drogas": 1,
   "Crimes hediondos": 1,
   "ECA (crimes)": 1
  },
  "partidos": {
-  "PP": 1,
-  "PL": 2,
-  "AVANTE": 1,
   "PSOL": 1,
-  "PT": 3,
+  "PT": 2,
   "MISSÃO": 2,
   "UNIÃO": 1,
   "REPUBLIC": 1,
   "PCdoB": 1,
-  "PSD": 1
+  "PSD": 1,
+  "PL": 1
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5868,
-   "ano": 2026,
-   "ementa": "Altera o art. 352 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 – Código Penal, para tipificar a evasão ou tentativa de evasão de pessoa presa ou submetida a medida de segurança detentiva, independentemente do emprego de violência ou grave ameaça, e estabelecer tratamento penal mais rigoroso para essas condutas quando praticadas mediante violência ou grave ameaça à pessoa.",
-   "apresentacao": "2026-11-16",
-   "aut": [
-    [
-     "Delegado Fabio Costa",
-     "PP",
-     "AL"
-    ]
-   ],
-   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654320",
-   "natureza": [
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": [
-    "Código Penal"
-   ]
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5883,
-   "ano": 2026,
-   "ementa": "Institui diretrizes para a oferta voluntária de abordagens especializadas destinadas à redução da libido de pessoas condenadas por crimes sexuais contra crianças e adolescentes.",
-   "apresentacao": "2026-11-17",
-   "aut": [
-    [
-     "Giovani Cherini",
-     "PL",
-     "RS"
-    ]
-   ],
-   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654744",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5887,
-   "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para estabelecer garantias à intimidade, à dignidade e à integridade das mulheres submetidas à abordagem pessoal, disciplinando sua realização por agente do sexo feminino e as hipóteses excepcionais de execução por agente do sexo masculino.",
-   "apresentacao": "2026-11-17",
-   "aut": [
-    [
-     "Pastor Sargento Isidório",
-     "AVANTE",
-     "BA"
-    ]
-   ],
-   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2654802",
-   "natureza": [
-    "Processo penal"
-   ],
-   "diplomas": [
-    "Código de Processo Penal"
-   ]
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -121,7 +53,7 @@
      "SP"
     ]
    ],
-   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
+   "situacao": "Aguardando Autorização do Despacho",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655015",
    "natureza": [],
    "diplomas": []
@@ -312,25 +244,6 @@
   },
   {
    "casa": "Senado",
-   "sigla": "PLP",
-   "numero": 309,
-   "ano": 2026,
-   "ementa": "Altera a Lei Complementar nº 64, de 18 de maio de 1990 (Lei das Inelegibilidades), para tornar inelegíveis, desde a condenação por órgão colegiado até o transcurso do prazo de 8 (oito) anos após o cumprimento da pena, os que forem condenados por crimes praticados contra a mulher por razões da condição do sexo feminino.",
-   "apresentacao": "2026-11-17",
-   "aut": [
-    [
-     "Rogério Carvalho",
-     "PT",
-     "SE"
-    ]
-   ],
-   "situacao": "Aguardando despacho",
-   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176447",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Senado",
    "sigla": "PEC",
    "numero": 24,
    "ano": 2026,
@@ -480,6 +393,25 @@
    ],
    "situacao": "Aguardando despacho",
    "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176489",
+   "natureza": [],
+   "diplomas": []
+  },
+  {
+   "casa": "Senado",
+   "sigla": "PL",
+   "numero": 5962,
+   "ano": 2026,
+   "ementa": "Altera as Leis nº 9.807, de 13 de julho de 1999, e nº 9.454, de 7 de abril de 1997, para aperfeiçoar os programas especiais de proteção a vítimas e testemunhas ameaçadas e permitir, em caráter excepcional e mediante decisão judicial, a substituição do número de inscrição no Cadastro de Pessoas Físicas (CPF) de pessoas protegidas.",
+   "apresentacao": "2026-11-25",
+   "aut": [
+    [
+     "Comissão de Segurança Pública",
+     "",
+     ""
+    ]
+   ],
+   "situacao": "Aguardando recebimento de emendas perante a Mesa",
+   "tramitacao": "https://www25.senado.leg.br/web/atividade/materias/-/materia/176554",
    "natureza": [],
    "diplomas": []
   }
