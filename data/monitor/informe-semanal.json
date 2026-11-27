@@ -1,8 +1,8 @@
 {
- "gerado_em": "2026-11-26 16:03",
+ "gerado_em": "2026-11-27 16:01",
  "periodo": {
-  "inicio": "2026-11-19",
-  "fim": "2026-11-25"
+  "inicio": "2026-11-20",
+  "fim": "2026-11-26"
  },
  "total": 11,
  "por_casa": {
@@ -13,75 +13,33 @@
   "PL": 10,
   "PEC": 1
  },
- "apresentadas_na_semana": 8,
+ "apresentadas_na_semana": 7,
  "natureza": {
-  "Aumenta pena": 4,
-  "Cria ou altera tipo penal": 3,
   "Processo penal": 3,
+  "Aumenta pena": 5,
+  "Cria ou altera tipo penal": 3,
   "Hediondez": 1,
-  "Execução penal": 1
+  "Execução penal": 1,
+  "Reduz ou descriminaliza": 1
  },
  "diplomas": {
-  "Código Penal": 2,
   "Código de Processo Penal": 2,
+  "Código Penal": 1,
   "Lei de Drogas": 1,
   "Crimes hediondos": 1,
   "ECA (crimes)": 1
  },
  "partidos": {
-  "PSOL": 1,
-  "PT": 2,
   "MISSÃO": 2,
+  "PT": 1,
   "UNIÃO": 1,
   "REPUBLIC": 1,
   "PCdoB": 1,
   "PSD": 1,
-  "PL": 1
+  "PSOL": 1,
+  "PL": 2
  },
  "itens": [
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5891,
-   "ano": 2026,
-   "ementa": "Altera a Lei n° 14.717, de 31 de outubro de 2023, para dispor sobre hipótese de requerimento de benefício de pensão especial aos filhos e aos dependentes de mulher vítima de crime de feminicídio pela autoridade policial, Ministério Público, Defensoria Pública e Conselho Tutelar ou por determinação judicial.",
-   "apresentacao": "2026-11-17",
-   "aut": [
-    [
-     "Erika Hilton",
-     "PSOL",
-     "SP"
-    ]
-   ],
-   "situacao": "Aguardando Autorização do Despacho",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655015",
-   "natureza": [],
-   "diplomas": []
-  },
-  {
-   "casa": "Câmara",
-   "sigla": "PL",
-   "numero": 5894,
-   "ano": 2026,
-   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para agravar, de forma proporcional ao número de agressores, a pena dos crimes de lesão corporal e de homicídio cometidos mediante espancamento coletivo.",
-   "apresentacao": "2026-11-18",
-   "aut": [
-    [
-     "Rubens Pereira Júnior",
-     "PT",
-     "MA"
-    ]
-   ],
-   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
-   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655134",
-   "natureza": [
-    "Aumenta pena",
-    "Cria ou altera tipo penal"
-   ],
-   "diplomas": [
-    "Código Penal"
-   ]
-  },
   {
    "casa": "Câmara",
    "sigla": "PL",
@@ -96,7 +54,7 @@
      "SP"
     ]
    ],
-   "situacao": "Aguardando Despacho do Presidente da Câmara dos Deputados",
+   "situacao": "Aguardando Autorização do Despacho",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655533",
    "natureza": [
     "Processo penal"
@@ -143,7 +101,7 @@
      "GO"
     ]
    ],
-   "situacao": "",
+   "situacao": "Aguardando Autorização do Despacho",
    "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2655664",
    "natureza": [
     "Hediondez",
@@ -241,6 +199,50 @@
    "diplomas": [
     "ECA (crimes)"
    ]
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5966,
+   "ano": 2026,
+   "ementa": "Altera a Lei nº 9.605, de 12 de fevereiro de 1998, para aumentar as penas aplicáveis à pesquisa, lavra ou extração ilegal de recursos minerais, estabelecer causas de aumento de pena e tipificar a comercialização e o financiamento de recurso mineral extraído ilegalmente; e revoga o art. 44 da Lei nº 9.605, de 12 de fevereiro de 1998, e o art. 21 da Lei nº 7.805, de 18 de julho de 1989.",
+   "apresentacao": "2026-11-25",
+   "aut": [
+    [
+     "Duda Salabert",
+     "PSOL",
+     "MG"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2659904",
+   "natureza": [
+    "Aumenta pena",
+    "Cria ou altera tipo penal",
+    "Reduz ou descriminaliza"
+   ],
+   "diplomas": []
+  },
+  {
+   "casa": "Câmara",
+   "sigla": "PL",
+   "numero": 5971,
+   "ano": 2026,
+   "ementa": "Altera a Lei 9.605/1998, para aumentar a pena e criar nova causa de aumento para o crime de maus-tratos animais.",
+   "apresentacao": "2026-11-25",
+   "aut": [
+    [
+     "Cabo Gilberto Silva",
+     "PL",
+     "PB"
+    ]
+   ],
+   "situacao": "",
+   "tramitacao": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2659989",
+   "natureza": [
+    "Aumenta pena"
+   ],
+   "diplomas": []
   },
   {
    "casa": "Senado",
